@@ -1,0 +1,25 @@
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://purl.org/dc/terms/date> "2026-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://purl.org/dc/terms/description> "Corrected name from Villa Floresca to Villa Floresta"@en .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://purl.org/dc/terms/source> "1. Municipal Ordinance No. 25-032 dated 15 September 2025;\n2. Certification signed by the Municipal Mayor dated 02 October 2025."@en .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0304926040> .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0304926040> .
+<https://psgc.gov.ph/event/2026-01-13/0001> <http://www.w3.org/ns/prov#generatedAtTime> "2025-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://purl.org/dc/terms/date> "2026-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 02 October 2025."@en .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1600208010> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1600208010> .
+<https://psgc.gov.ph/event/2026-01-13/0002> <http://www.w3.org/ns/prov#generatedAtTime> "2025-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://purl.org/dc/terms/date> "2026-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://purl.org/dc/terms/description> "Corrected name from Santo Rosario to Sto. Rosario"@en .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 02 October 2025."@en .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1600208011> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1600208011> .
+<https://psgc.gov.ph/event/2026-01-13/0003> <http://www.w3.org/ns/prov#generatedAtTime> "2025-10-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/change-type/renaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
