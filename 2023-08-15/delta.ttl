@@ -1,1 +1,256 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://psgc.gov.ph/event/2023-08-15/0000> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Leon T. Postigo (Zamboanga del Norte) renamed to Bacungan"@en ;
+    dct:source "Republic Act No. 6830 dated 30 December 1989"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/907226000> .
+
+<https://psgc.gov.ph/event/2023-08-15/0001> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Alimbo-Baybay (Nabas, Aklan) renamed to Alimbo Baybay"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 15 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600414001> .
+
+<https://psgc.gov.ph/event/2023-08-15/0002> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Lombuyan (Barbaza, Antique) renamed to Lumboyan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 22 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600602025> .
+
+<https://psgc.gov.ph/event/2023-08-15/0003> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Centro Ilawod (Bugasong, Antique) renamed to Centro Ilauod"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600604018> .
+
+<https://psgc.gov.ph/event/2023-08-15/0004> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Piape I (Hamtic, Antique) renamed to Piapi I"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 09 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600608039> .
+
+<https://psgc.gov.ph/event/2023-08-15/0005> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Piape II (Hamtic, Antique) renamed to Piapi II"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 09 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600608040> .
+
+<https://psgc.gov.ph/event/2023-08-15/0006> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Piape III (Hamtic, Antique) renamed to Piapi III"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 09 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600608041> .
+
+<https://psgc.gov.ph/event/2023-08-15/0007> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Tig-Ohot (Sibalom, Antique) renamed to Tig-ohot"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600616071> .
+
+<https://psgc.gov.ph/event/2023-08-15/0008> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Pis-Anan (Sibalom, Antique) renamed to Pis-anan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600616060> .
+
+<https://psgc.gov.ph/event/2023-08-15/0009> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Bulalacao (Sibalom, Antique) renamed to Bululacao"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600616011> .
+
+<https://psgc.gov.ph/event/2023-08-15/0010> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Justa (Tibiao, Antique) renamed to Sta. Justa"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 18 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600617018> .
+
+<https://psgc.gov.ph/event/2023-08-15/0011> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santo Rosario (Tibiao, Antique) renamed to Sto. Rosario"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 18 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600617019> .
+
+<https://psgc.gov.ph/event/2023-08-15/0012> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Ana (Tibiao, Antique) renamed to Sta. Ana"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 18 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600617017> .
+
+<https://psgc.gov.ph/event/2023-08-15/0013> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Balloscas (Tobias Fornier, Antique) renamed to Ballescas"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600607007> .
+
+<https://psgc.gov.ph/event/2023-08-15/0014> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Salamague (Tobias Fornier, Antique) renamed to Samalague"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600607043> .
+
+<https://psgc.gov.ph/event/2023-08-15/0015> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santo Tomas (Tobias Fornier, Antique) renamed to Sto. Tomas"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 11 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/600607044> .
+
+<https://psgc.gov.ph/event/2023-08-15/0016> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Bianuan (Casiguran, Aurora) renamed to Bianoan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 30 March 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/307702019> .
+
+<https://psgc.gov.ph/event/2023-08-15/0017> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Telepatio (San Ildefonso, Bulacan) renamed to Telapatio"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 05 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/301419035> .
+
+<https://psgc.gov.ph/event/2023-08-15/0018> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Jurisdiction (Alcala, Cagayan) renamed to Jurisdiccion"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 16 December 2021"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/201516019> .
+
+<https://psgc.gov.ph/event/2023-08-15/0019> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Rizaluna (Aurora, Isabela) renamed to Rizalina"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 27 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203103016> .
+
+<https://psgc.gov.ph/event/2023-08-15/0020> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Dalig-Kalinga (Aurora, Isabela) renamed to Dalig Kalinga"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 27 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203103010> .
+
+<https://psgc.gov.ph/event/2023-08-15/0021> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Caloocan (Delfin Albano, Isabela) renamed to Calaocan"@en ;
+    dct:source "Certification signed by Acting-Municipal Mayor dated 07 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203118030> .
+
+<https://psgc.gov.ph/event/2023-08-15/0022> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santo Rosario (Delfin Albano, Isabela) renamed to Sto. Rosario"@en ;
+    dct:source "Certification signed by Acting-Municipal Mayor dated 07 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203118025> .
+
+<https://psgc.gov.ph/event/2023-08-15/0023> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Pongpongan (Jones, Isabela) renamed to Pungpongan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 20 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203115033> .
+
+<https://psgc.gov.ph/event/2023-08-15/0024> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Eleonor (Maconacon, Isabela) renamed to Eleanor"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 25 May 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203117002> .
+
+<https://psgc.gov.ph/event/2023-08-15/0025> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Diddadungan (Palanan, Isabela) renamed to Didaddungan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 03 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203121016> .
+
+<https://psgc.gov.ph/event/2023-08-15/0026> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Domingo (Quirino, Isabela) renamed to Sto. Domingo"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 03 July 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203123016> .
+
+<https://psgc.gov.ph/event/2023-08-15/0027> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Catalina (Quirino, Isabela) renamed to Sta. Catalina"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 03 July 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203123013> .
+
+<https://psgc.gov.ph/event/2023-08-15/0028> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Cruz (San Manuel, Isabela) renamed to Sta. Cruz"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 13 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203130019> .
+
+<https://psgc.gov.ph/event/2023-08-15/0029> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santo Niño (Tumauini, Isabela) renamed to Sto. Niño"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 23 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203137047> .
+
+<https://psgc.gov.ph/event/2023-08-15/0030> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Catalina (Tumauini, Isabela) renamed to Sta. Catalina"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 23 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203137046> .
+
+<https://psgc.gov.ph/event/2023-08-15/0031> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Santa Visitacion (Tumauini, Isabela) renamed to Sta. Visitacion"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 23 June 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203137027> .
+
+<https://psgc.gov.ph/event/2023-08-15/0032> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Napaccu Grande (Reina Mercedes, Isabela) renamed to Nappaccu Grande"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 05 July 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203125012> .
+
+<https://psgc.gov.ph/event/2023-08-15/0033> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Napaccu Pequeño (Reina Mercedes, Isabela) renamed to Nappaccu Pequeño"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 05 July 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203125013> .
+
+<https://psgc.gov.ph/event/2023-08-15/0034> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Salucong (Reina Mercedes, Isabela) renamed to Sallucong"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 05 July 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/203125014> .
+
+<https://psgc.gov.ph/event/2023-08-15/0035> a org:ChangeEvent ;
+    dct:date "2023-08-15"^^xsd:date ;
+    dct:description "Matayumcab (Gerona, Tarlac) renamed to Matayuncab"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 April 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/306906021> .

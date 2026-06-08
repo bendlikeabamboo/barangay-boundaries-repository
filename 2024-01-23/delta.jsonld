@@ -1,1 +1,924 @@
-[]
+[
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/name_correction",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Name Correction"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/R",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rural"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/U",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Urban"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Luna (City of Iloilo) renamed to Luna (Jaro)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000097"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000097",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 187
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Luna (Jaro)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000097"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022097"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022097"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Luna (City of Iloilo) renamed to Luna (La Paz)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000198"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000198",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 578
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Luna (La Paz)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000198"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022198"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022198"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Isidro (City of Iloilo) renamed to San Isidro (Jaro)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000151"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000151",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 11728
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Isidro (Jaro)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000151"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022151"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022151"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0003",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Isidro (City of Iloilo) renamed to San Isidro (La Paz)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000199"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000199",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4301
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Isidro (La Paz)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000199"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022199"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022199"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0004",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Jose (City of Iloilo) renamed to San Jose (Jaro)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000154"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000154",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 296
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Jose (Jaro)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000154"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022154"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022154"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0005",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Jose (City of Iloilo) renamed to San Jose (Arevalo)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000155"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000155",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2185
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Jose (Arevalo)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000155"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022155"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022155"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0006",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Jose (City of Iloilo) renamed to San Jose (City Proper)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000200"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000200",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 231
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Jose (City Proper)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000200"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022200"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022200"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0007",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Pedro (City of Iloilo) renamed to San Pedro (Molo)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000158"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000158",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3029
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Pedro (Molo)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000158"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022158"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022158"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0008",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "San Pedro (City of Iloilo) renamed to San Pedro (Jaro)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000159"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000159",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1133
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "San Pedro (Jaro)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000159"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022159"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022159"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0009",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Tabuc Suba (City of Iloilo) renamed to Tabuc Suba (Jaro)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000175"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000175",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 10866
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Tabuc Suba (Jaro)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000175"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022175"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022175"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-01-23/0010",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Tabuc Suba (City of Iloilo) renamed to Tabuc Suba (La Paz)"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0631000201"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0631000201",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-01-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 3925
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Tabuc Suba (La Paz)"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0631000201"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "063022201"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "063022201"
+      }
+    ]
+  }
+]

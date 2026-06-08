@@ -1,99 +1,177 @@
-<https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guinhalinan"@en .
-<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/event/2024-10-18/0000> <http://purl.org/dc/terms/description> "Juan-Loreto Tamayo (Bgy) created"@en .
-<https://psgc.gov.ph/entity/1380100192> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100189> <http://schema.org/population> "261729"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#identifier> "1380100191"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-10-18/0002> <http://purl.org/dc/terms/description> "Barangay 176-B (Bgy) created"@en .
-<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://purl.org/dc/terms/description> "Corrected name from Santa Fe to Sta. Fe"@en .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/ns/org#identifier> "1102303019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1206317017> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
 <https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/ns/org#identifier> "1380100192"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-A"@en .
-<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1606801027> .
-<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#identifier> "1206317017"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1380100191> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100192> .
-<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/event/2024-10-18/0004> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0000> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0000> <http://purl.org/dc/terms/description> "Juan-Loreto Tamayo (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-10-18/0001> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guinhalinan"@en .
+<https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1606801027> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Niño"@en .
+<https://psgc.gov.ph/entity/1102314018> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/ns/org#identifier> "1102314018"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1380100190> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1102314016> .
 <https://psgc.gov.ph/event/2024-10-18/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://purl.org/dc/terms/source> "Republic Act No. 11986 dated 21 March 2024; Plebiscite conducted on 10 August 2024"@en .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1102303019> .
+<https://psgc.gov.ph/entity/1380100191> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://purl.org/dc/terms/description> "Barangay 176-B (Bgy) created"@en .
+<https://psgc.gov.ph/entity/1102314016> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#identifier> "1380100194"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1380100194> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 25 September 2024"@en .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 17 September 2024"@en .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#identifier> "1206317017"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 25 September 2024"@en .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100193> .
 <https://psgc.gov.ph/entity/1380100193> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-10-18/0003> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/event/2024-10-18/0006> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100194> .
-<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-D"@en .
-<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#identifier> "1380100194"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/ns/org#identifier> "1380100190"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-10-18/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1206317017> .
-<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
-<https://psgc.gov.ph/event/2024-10-18/0007> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1606801027> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100193> .
-<https://psgc.gov.ph/entity/1380100194> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0001> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0005> <http://purl.org/dc/terms/description> "Barangay 176-E (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
-<https://psgc.gov.ph/event/2024-10-18/0005> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100190> .
-<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-B"@en .
-<https://psgc.gov.ph/entity/1380100190> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/2004/02/skos/core#prefLabel> "Juan-Loreto Tamayo"@en .
-<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#identifier> "1606801027"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-10-18/0006> <http://purl.org/dc/terms/description> "Barangay 176-F (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100189> .
-<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/event/2024-10-18/0004> <http://purl.org/dc/terms/description> "Barangay 176-D (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/event/2024-10-18/0003> <http://purl.org/dc/terms/description> "Barangay 176-C (Bgy) created"@en .
-<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
 <https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1380100189> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/event/2024-10-18/0008> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
-<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#identifier> "1380100189"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-10-18/0002> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-C"@en .
-<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-F"@en .
-<https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/event/2024-10-18/0008> <http://purl.org/dc/terms/description> "Barangay 176 (Bgy) removed"@en .
-<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#identifier> "1380100193"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100190> .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sta. Cruz"@en .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Niño"@en .
+<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-D"@en .
+<https://psgc.gov.ph/entity/1380100189> <http://schema.org/population> "261729"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#identifier> "1606801027"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://purl.org/dc/terms/description> "Barangay 176-F (Bgy) created"@en .
 <https://psgc.gov.ph/event/2024-10-18/0001> <http://purl.org/dc/terms/description> "Barangay 176-A (Bgy) created"@en .
+<https://psgc.gov.ph/entity/1102303019> <http://schema.org/population> "6210"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sta. Fe"@en .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/2004/02/skos/core#altLabel> "Santa Cruz"@en .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1102303019> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/2004/02/skos/core#prefLabel> "Juan-Loreto Tamayo"@en .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1102314018> <http://schema.org/population> "1319"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1102314016> .
+<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://purl.org/dc/terms/description> "Barangay 176-D (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
 <https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100191> .
+<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
 <https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/event/2024-10-18/0007> <http://purl.org/dc/terms/description> "Guinhalinan (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-10-18/0000> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1206317017> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/ns/org#identifier> "1102314017"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/ns/org#identifier> "1380100190"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1606801027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-C"@en .
+<https://psgc.gov.ph/event/2024-10-18/0000> <http://purl.org/dc/terms/source> "Sangguniang Panlalawigan Resolution No. 158, Series of 2023 dated 27 February 2023; Plebiscite conducted on 13 July 2024"@en .
+<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
 <https://psgc.gov.ph/event/2024-10-18/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 25 September 2024"@en .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/ns/org#identifier> "1102314016"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1206317017> .
+<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102314016> <http://schema.org/population> "1511"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1102314017> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://purl.org/dc/terms/description> "Corrected name from Santa Cruz to Sta. Cruz"@en .
+<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#identifier> "1380100193"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Niño"@en .
+<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100189> .
+<https://psgc.gov.ph/entity/1206317017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://purl.org/dc/terms/description> "Barangay 176 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/1380100190> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-B"@en .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1102314017> .
+<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-F"@en .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2024-10-18/0001> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2024-10-18/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-10-18/0005> <http://purl.org/dc/terms/description> "Barangay 176-E (Bgy) created"@en .
+<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#identifier> "1380100189"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1380100192> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1606801027> .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://purl.org/dc/terms/description> "Barangay 176-C (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100194> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/concept/change-type/renaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1380100192> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1102314018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
 <https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-E"@en .
+<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/entity/1380100189> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1102314016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-10-18/0008> <http://purl.org/dc/terms/date> "2024-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-10-18/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1102314017> <http://schema.org/population> "1638"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1102303019> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Niño"@en .
+<https://psgc.gov.ph/event/2024-10-18/0010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://purl.org/dc/terms/source> "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en .
+<https://psgc.gov.ph/entity/1380100194> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-10-18/0003> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/event/2024-10-18/0011> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1102314017> .
+<https://psgc.gov.ph/event/2024-10-18/0007> <http://purl.org/dc/terms/description> "Guinhalinan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-10-18/0009> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1102303019> .
+<https://psgc.gov.ph/entity/1102314017> <http://www.w3.org/2004/02/skos/core#altLabel> "Santa Fe"@en .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1102314018> .
+<https://psgc.gov.ph/event/2024-10-18/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-10-18/0012> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1102314018> .
+<https://psgc.gov.ph/entity/1380100191> <http://www.w3.org/ns/org#identifier> "1380100191"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-10-18/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1380100192> .
+<https://psgc.gov.ph/event/2024-10-18/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1380100176> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1380100193> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1380100189> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay 176-A"@en .

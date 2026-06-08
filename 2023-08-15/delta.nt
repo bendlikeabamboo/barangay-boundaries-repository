@@ -1,0 +1,216 @@
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://purl.org/dc/terms/description> "Leon T. Postigo (Zamboanga del Norte) renamed to Bacungan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://purl.org/dc/terms/source> "Republic Act No. 6830 dated 30 December 1989"@en .
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/907226000> .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://purl.org/dc/terms/description> "Alimbo-Baybay (Nabas, Aklan) renamed to Alimbo Baybay"@en .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 15 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600414001> .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://purl.org/dc/terms/description> "Lombuyan (Barbaza, Antique) renamed to Lumboyan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 22 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600602025> .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://purl.org/dc/terms/description> "Centro Ilawod (Bugasong, Antique) renamed to Centro Ilauod"@en .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600604018> .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://purl.org/dc/terms/description> "Piape I (Hamtic, Antique) renamed to Piapi I"@en .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 09 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600608039> .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://purl.org/dc/terms/description> "Piape II (Hamtic, Antique) renamed to Piapi II"@en .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 09 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600608040> .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://purl.org/dc/terms/description> "Piape III (Hamtic, Antique) renamed to Piapi III"@en .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 09 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600608041> .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://purl.org/dc/terms/description> "Tig-Ohot (Sibalom, Antique) renamed to Tig-ohot"@en .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600616071> .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://purl.org/dc/terms/description> "Pis-Anan (Sibalom, Antique) renamed to Pis-anan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0008> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600616060> .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://purl.org/dc/terms/description> "Bulalacao (Sibalom, Antique) renamed to Bululacao"@en .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0009> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600616011> .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://purl.org/dc/terms/description> "Santa Justa (Tibiao, Antique) renamed to Sta. Justa"@en .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 18 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0010> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600617018> .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://purl.org/dc/terms/description> "Santo Rosario (Tibiao, Antique) renamed to Sto. Rosario"@en .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 18 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0011> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600617019> .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://purl.org/dc/terms/description> "Santa Ana (Tibiao, Antique) renamed to Sta. Ana"@en .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 18 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0012> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600617017> .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://purl.org/dc/terms/description> "Balloscas (Tobias Fornier, Antique) renamed to Ballescas"@en .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0013> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600607007> .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://purl.org/dc/terms/description> "Salamague (Tobias Fornier, Antique) renamed to Samalague"@en .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0014> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600607043> .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://purl.org/dc/terms/description> "Santo Tomas (Tobias Fornier, Antique) renamed to Sto. Tomas"@en .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 11 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0015> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/600607044> .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://purl.org/dc/terms/description> "Bianuan (Casiguran, Aurora) renamed to Bianoan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 30 March 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0016> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/307702019> .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://purl.org/dc/terms/description> "Telepatio (San Ildefonso, Bulacan) renamed to Telapatio"@en .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 05 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0017> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/301419035> .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://purl.org/dc/terms/description> "Jurisdiction (Alcala, Cagayan) renamed to Jurisdiccion"@en .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 16 December 2021"@en .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0018> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/201516019> .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://purl.org/dc/terms/description> "Rizaluna (Aurora, Isabela) renamed to Rizalina"@en .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 27 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0019> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203103016> .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://purl.org/dc/terms/description> "Dalig-Kalinga (Aurora, Isabela) renamed to Dalig Kalinga"@en .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 27 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0020> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203103010> .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://purl.org/dc/terms/description> "Caloocan (Delfin Albano, Isabela) renamed to Calaocan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://purl.org/dc/terms/source> "Certification signed by Acting-Municipal Mayor dated 07 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0021> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203118030> .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://purl.org/dc/terms/description> "Santo Rosario (Delfin Albano, Isabela) renamed to Sto. Rosario"@en .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://purl.org/dc/terms/source> "Certification signed by Acting-Municipal Mayor dated 07 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0022> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203118025> .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://purl.org/dc/terms/description> "Pongpongan (Jones, Isabela) renamed to Pungpongan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 20 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0023> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203115033> .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://purl.org/dc/terms/description> "Eleonor (Maconacon, Isabela) renamed to Eleanor"@en .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 25 May 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0024> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203117002> .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://purl.org/dc/terms/description> "Diddadungan (Palanan, Isabela) renamed to Didaddungan"@en .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 03 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0025> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203121016> .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://purl.org/dc/terms/description> "Santa Domingo (Quirino, Isabela) renamed to Sto. Domingo"@en .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 03 July 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0026> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203123016> .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://purl.org/dc/terms/description> "Santa Catalina (Quirino, Isabela) renamed to Sta. Catalina"@en .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 03 July 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0027> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203123013> .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://purl.org/dc/terms/description> "Santa Cruz (San Manuel, Isabela) renamed to Sta. Cruz"@en .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 13 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0028> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203130019> .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://purl.org/dc/terms/description> "Santo Niño (Tumauini, Isabela) renamed to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 23 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0029> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203137047> .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://purl.org/dc/terms/description> "Santa Catalina (Tumauini, Isabela) renamed to Sta. Catalina"@en .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 23 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0030> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203137046> .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://purl.org/dc/terms/description> "Santa Visitacion (Tumauini, Isabela) renamed to Sta. Visitacion"@en .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 23 June 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0031> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203137027> .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://purl.org/dc/terms/description> "Napaccu Grande (Reina Mercedes, Isabela) renamed to Nappaccu Grande"@en .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 05 July 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0032> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203125012> .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://purl.org/dc/terms/description> "Napaccu Pequeño (Reina Mercedes, Isabela) renamed to Nappaccu Pequeño"@en .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 05 July 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0033> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203125013> .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://purl.org/dc/terms/description> "Salucong (Reina Mercedes, Isabela) renamed to Sallucong"@en .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 05 July 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0034> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/203125014> .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://purl.org/dc/terms/date> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://purl.org/dc/terms/description> "Matayumcab (Gerona, Tarlac) renamed to Matayuncab"@en .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 April 2023"@en .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2023-08-15/0035> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/306906021> .

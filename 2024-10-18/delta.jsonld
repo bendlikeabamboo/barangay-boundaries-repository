@@ -1,6 +1,166 @@
 [
   {
-    "@id": "https://psgc.gov.ph/entity/1206317017",
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0009",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Santo Niño to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 17 September 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102303019"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102303019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-A (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100189"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1380100189",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 261729
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-A"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1380100189"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1102303019",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 6210
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sto. Niño"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1102303019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1380100191",
     "@type": [
       "http://www.w3.org/ns/org#OrganizationalUnit"
     ],
@@ -13,28 +173,22 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Juan-Loreto Tamayo"
+        "@value": "Barangay 176-C"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1206317017"
+        "@value": "1380100191"
       }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -54,6 +208,152 @@
         "@value": "Barangay 176-C (Bgy) created"
       }
     ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100191"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rural"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1380100190",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-B"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1380100190"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0004",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-D (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100192"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/U",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/renaming",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/creation",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Juan-Loreto Tamayo (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Sangguniang Panlalawigan Resolution No. 158, Series of 2023 dated 27 February 2023; Plebiscite conducted on 13 July 2024"
+      }
+    ],
     "http://www.w3.org/ns/org#classification": [
       {
         "@id": "https://psgc.gov.ph/concept/change-type/creation"
@@ -61,7 +361,146 @@
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/1380100191"
+        "@id": "https://psgc.gov.ph/entity/1206317017"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/deletion",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/R",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1102314016",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1511
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santa Cruz"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sta. Cruz"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1102314016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1102314018",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1319
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sto. Niño"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1102314018"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-B (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100190"
       }
     ]
   },
@@ -84,10 +523,10 @@
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
@@ -98,7 +537,7 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0004",
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0007",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -111,7 +550,13 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 176-D (Bgy) created"
+        "@value": "Guinhalinan (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11986 dated 21 March 2024; Plebiscite conducted on 10 August 2024"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
@@ -121,7 +566,188 @@
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/1380100192"
+        "@id": "https://psgc.gov.ph/entity/1606801027"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0008",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176 (Bgy) removed"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1102314017",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1638
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santa Fe"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sta. Fe"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1102314017"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1380100194",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Barangay 176-F"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1380100194"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1206317017",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Juan-Loreto Tamayo"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1206317017"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0012",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Santo Niño to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 25 September 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102314018"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102314018"
       }
     ]
   },
@@ -158,6 +784,44 @@
     ]
   },
   {
+    "@id": "https://psgc.gov.ph/entity/1606801027",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-10-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Guinhalinan"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1606801027"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://psgc.gov.ph/event/2024-10-18/0005",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
@@ -174,9 +838,20 @@
         "@value": "Barangay 176-E (Bgy) created"
       }
     ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
     "http://www.w3.org/ns/org#classification": [
       {
         "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
       }
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
@@ -186,101 +861,7 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/entity/1380100189",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://schema.org/population": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 261729
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-A"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1380100189"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Rural"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/creation",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/deletion",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1380100194",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-F"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1380100194"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0008",
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0011",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -293,22 +874,33 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 176 (Bgy) removed"
+        "@value": "Corrected name from Santa Fe to Sta. Fe"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 25 September 2024"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/1380100176"
+        "@id": "https://psgc.gov.ph/entity/1102314017"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102314017"
       }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0000",
+    "@id": "https://psgc.gov.ph/event/2024-10-18/0010",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -321,17 +913,28 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Juan-Loreto Tamayo (Bgy) created"
+        "@value": "Corrected name from Santa Cruz to Sta. Cruz"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 25 September 2024"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1102314016"
       }
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/1206317017"
+        "@id": "https://psgc.gov.ph/entity/1102314016"
       }
     ]
   },
@@ -352,194 +955,25 @@
         "@value": "Barangay 176-F (Bgy) created"
       }
     ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"
+      }
+    ],
     "http://www.w3.org/ns/org#classification": [
       {
         "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1380100176"
       }
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
       {
         "@id": "https://psgc.gov.ph/entity/1380100194"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0007",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Guinhalinan (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1606801027"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1380100191",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-C"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1380100191"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0001",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-A (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1380100189"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1380100190",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-B"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1380100190"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-10-18/0002",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 176-B (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1380100190"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1606801027",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-10-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Guinhalinan"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1606801027"
       }
     ]
   }

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0031",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0010",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -13,101 +13,28 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 5 (Bgy) removed"
+        "@value": "Barangay 4 (Bgy), Ormoc City, Leyte merged into Barangay South"
       }
     ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738044"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0009",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
+    "http://purl.org/dc/terms/source": [
       {
         "@language": "en",
-        "@value": "Barangay 10 (Bgy) removed"
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738022"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0035",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
+        "@id": "https://psgc.gov.ph/entity/0803738043"
       }
     ],
-    "http://purl.org/dc/terms/description": [
+    "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@language": "en",
-        "@value": "Barangay 9 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738048"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0020",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 20 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738033"
+        "@id": "https://psgc.gov.ph/entity/0803738116"
       }
     ]
   },
@@ -125,22 +52,33 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 14 (Bgy) removed"
+        "@value": "Barangay 7 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738026"
+        "@id": "https://psgc.gov.ph/entity/0803738046"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
       }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0029",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0041",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -153,73 +91,28 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 3 (Bgy) removed"
+        "@value": "Barangay Imurung, Municipality of Baggao, Cagayan renamed from Imurong to Imurung"
       }
     ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738042"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0030",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
+    "http://purl.org/dc/terms/source": [
       {
         "@language": "en",
-        "@value": "Barangay 4 (Bgy) removed"
+        "@value": "Certification dated 6 February 2023 signed by Municipal Mayor"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738043"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0015",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
+        "@id": "https://psgc.gov.ph/entity/0201506025"
       }
     ],
-    "http://purl.org/dc/terms/description": [
+    "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@language": "en",
-        "@value": "Barangay 16 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738028"
+        "@id": "https://psgc.gov.ph/entity/0201506025"
       }
     ]
   },
@@ -237,342 +130,23 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 8 (Bgy) removed"
+        "@value": "Barangay 28 (Bgy), Ormoc City, Leyte merged into Barangay East"
       }
     ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738047"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0018",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
+    "http://purl.org/dc/terms/source": [
       {
         "@language": "en",
-        "@value": "Barangay 19 (Bgy) removed"
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738031"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0027",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 27 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738040"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0005",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay West (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738117"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0007",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Datu Dalidigan (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1903617145"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0016",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 17 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738029"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0028",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 28 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
         "@id": "https://psgc.gov.ph/entity/0803738041"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0026",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 26 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738039"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0022",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 22 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738035"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Rural"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0004",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay South (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738116"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/0301420060",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Muzon East"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "0301420060"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/creation",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0003",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay East (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
       }
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
@@ -582,41 +156,7 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0012",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 13 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738025"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/deletion",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/0803738116",
+    "@id": "https://psgc.gov.ph/entity/1903617145",
     "@type": [
       "http://www.w3.org/ns/org#OrganizationalUnit"
     ],
@@ -626,30 +166,24 @@
         "@value": "2023-04-18"
       }
     ],
-    "http://schema.org/population": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 2468
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Barangay South"
+        "@value": "Datu Dalidigan"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "0803738116"
+        "@value": "1903617145"
       }
     ]
   },
@@ -672,10 +206,10 @@
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
@@ -686,39 +220,7 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/entity/0301420061",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Muzon South"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "0301420061"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0001",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0020",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -731,395 +233,28 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Muzon South (Bgy) created"
+        "@value": "Barangay 14 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738026"
       }
     ],
     "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0301420061"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0002",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Muzon West (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0301420062"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0006",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Boganga II (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1903617144"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0033",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 7 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738046"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0010",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 11 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738023"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0000",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Muzon East (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0301420060"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0032",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 6 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738045"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0008",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 1 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738021"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0019",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 2 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738032"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0014",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 15 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738027"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0024",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 24 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738037"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1903617144",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Boganga II"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1903617144"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/0803738115",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://schema.org/population": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 2918
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Barangay East"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "0803738115"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0023",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-04-18"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Barangay 23 (Bgy) removed"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0803738036"
+        "@id": "https://psgc.gov.ph/entity/0803738117"
       }
     ]
   },
@@ -1137,17 +272,28 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 18 (Bgy) removed"
+        "@value": "Barangay 11 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738030"
+        "@id": "https://psgc.gov.ph/entity/0803738023"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
       }
     ]
   },
@@ -1165,22 +311,33 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 12 (Bgy) removed"
+        "@value": "Barangay 5 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738024"
+        "@id": "https://psgc.gov.ph/entity/0803738044"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
       }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/event/2023-04-18/0025",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0026",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -1193,17 +350,73 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 25 (Bgy) removed"
+        "@value": "Barangay 20 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738038"
+        "@id": "https://psgc.gov.ph/entity/0803738033"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0006",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Datu Dalidigan (Bgy), City of Marawi, Lanao del Sur created from Sagonsongan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "City Ordinance No. 05-010, Series of 2022; plebiscite conducted 18 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617119"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617145"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-18"
       }
     ]
   },
@@ -1221,17 +434,373 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Barangay 21 (Bgy) removed"
+        "@value": "Barangay 15 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
       }
     ],
     "http://www.w3.org/ns/org#originalOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0803738034"
+        "@id": "https://psgc.gov.ph/entity/0803738027"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Muzon East (Bgy), City of San Jose Del Monte, Bulacan created from split of Muzon"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "RA 11896 dated 01 Jul 2022; plebiscite conducted 25 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/split"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420060"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-25"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Muzon (City of San Jose Del Monte, Bulacan) split into Muzon East, Muzon Proper, Muzon South, and Muzon West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "RA 11896 dated 01 Jul 2022; plebiscite conducted 25 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/split"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420060"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420061"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420062"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-25"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0036",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay South (Bgy), Ormoc City, Leyte created from merger of Barangays 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 15, 17, 23, 27"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738021"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738024"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738025"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738027"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738029"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738032"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738036"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738040"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738042"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738043"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738044"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738045"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738046"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738047"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0014",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 8 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738047"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0030",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 24 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738037"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rural"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0028",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 22 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738035"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0040",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay Sta. Maria, Municipality of Presentacion, Camarines Sur renamed from Santa Maria to Sta. Maria"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification dated 18 November 2022 signed by Municipal Mayor"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0501729018"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0501729018"
       }
     ]
   },
@@ -1260,10 +829,10 @@
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
@@ -1274,13 +843,160 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0031",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 25 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738038"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/entity/1903617145",
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0037",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay West (Bgy), Ormoc City, Leyte created from merger of Barangays 14, 19, 20, 21, 22, 24, 26"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738026"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738031"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738033"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738034"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738035"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738037"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738039"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0003",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Muzon South (Bgy), City of San Jose Del Monte, Bulacan created from split of Muzon"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "RA 11896 dated 01 Jul 2022; plebiscite conducted 25 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/split"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420061"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-25"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/U",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Urban"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0301420061",
     "@type": [
       "http://www.w3.org/ns/org#OrganizationalUnit"
     ],
@@ -1293,22 +1009,1163 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Datu Dalidigan"
+        "@value": "Muzon South"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
       },
       {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
       }
     ],
     "http://www.w3.org/ns/org#identifier": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1903617145"
+        "@value": "0301420061"
       }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0032",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 26 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738039"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0033",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 27 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738040"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0301420007",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 106603
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Muzon Proper"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0301420007"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0022",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 16 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738028"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0039",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay Pagsangaan, Municipality of Presentacion, Camarines Sur renamed from Pagsangahan to Pagsangaan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification dated 18 November 2022 signed by Municipal Mayor"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0501729014"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0501729014"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0035",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay East (Bgy), Ormoc City, Leyte created from merger of Barangays 9, 10, 11, 16, 18, 25, 28"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738022"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738023"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738028"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738030"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738038"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738041"
+      },
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738048"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0007",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 1 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738021"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0803738115",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2918
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Barangay East"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0025",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 19 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738031"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0012",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 6 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738045"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0038",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Municipality of Pio V. Corpus, Masbate renamed from Pio V. Corpuz to Pio V. Corpus"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 1116"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0504116000"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0504116000"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0016",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 10 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738022"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0004",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Muzon West (Bgy), City of San Jose Del Monte, Bulacan created from split of Muzon"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "RA 11896 dated 01 Jul 2022; plebiscite conducted 25 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/split"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420062"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-25"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0023",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 17 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738029"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0024",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 18 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738030"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0301420060",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Muzon East"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0301420060"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Muzon Proper (Bgy), City of San Jose Del Monte, Bulacan created from split of Muzon"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "RA 11896 dated 01 Jul 2022; plebiscite conducted 25 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/split"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0301420007"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-25"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0027",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 21 (Bgy), Ormoc City, Leyte merged into Barangay West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738034"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738117"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0019",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 13 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738025"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0029",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 23 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738036"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0015",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 9 (Bgy), Ormoc City, Leyte merged into Barangay East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738048"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738115"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0005",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Boganga II (Bgy), City of Marawi, Lanao del Sur created from Boganga"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "City Ordinance No. 07-010, Series of 2022; plebiscite conducted 18 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617016"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617144"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-18"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1903617144",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Boganga II"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1903617144"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0803738116",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2468
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Barangay South"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/name_correction",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0042",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay Marracuru, Municipality of Enrile, Cagayan renamed from Maracuru to Marracuru"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification dated 28 December 2022 signed by Municipal Mayor"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0201512015"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0201512015"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0018",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 12 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738024"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/merger",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0008",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 2 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738032"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/split",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-04-18/0009",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Barangay 3 (Bgy), Ormoc City, Leyte merged into Barangay South"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Provincial Ordinance No. 2009-6-044"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/merger"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738042"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803738116"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/creation",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   }
 ]

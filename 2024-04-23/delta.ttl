@@ -7,83 +7,207 @@
 
 <https://psgc.gov.ph/event/2024-04-23/0000> a org:ChangeEvent ;
     dct:date "2024-04-23"^^xsd:date ;
-    dct:description "Guintolan (Bgy) created"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/0908304019> .
-
-<https://psgc.gov.ph/event/2024-04-23/0001> a org:ChangeEvent ;
-    dct:date "2024-04-23"^^xsd:date ;
     dct:description "Angoyao (Bgy) created"@en ;
+    dct:source "City Ordinance No. 20-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1903617146> .
 
-<https://psgc.gov.ph/event/2024-04-23/0002> a org:ChangeEvent ;
+<https://psgc.gov.ph/event/2024-04-23/0001> a org:ChangeEvent ;
     dct:date "2024-04-23"^^xsd:date ;
     dct:description "Sultan Corobong (Bgy) created"@en ;
+    dct:source "City Ordinance No. 18-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1903617147> .
 
-<https://psgc.gov.ph/event/2024-04-23/0003> a org:ChangeEvent ;
+<https://psgc.gov.ph/event/2024-04-23/0002> a org:ChangeEvent ;
     dct:date "2024-04-23"^^xsd:date ;
     dct:description "Sultan Panoroganan (Bgy) created"@en ;
+    dct:source "City Ordinance No. 19-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1903617148> .
 
+<https://psgc.gov.ph/event/2024-04-23/0003> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Transfer: Guintolan transferred from Municipality of Payao to Municipality of Imelda, Zamboanga Sibugay"@en ;
+    dct:source "Supreme Court Decision GR 243167 dated 28 June 2021"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0908304019> .
+
 <https://psgc.gov.ph/event/2024-04-23/0004> a org:ChangeEvent ;
     dct:date "2024-04-23"^^xsd:date ;
-    dct:description "Guintolan (Bgy) removed"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/0908311008> .
+    dct:description "Hibonawan (Burauen, Leyte) renamed to Hibunawan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 21 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803710032> .
 
 <https://psgc.gov.ph/event/2024-04-23/0005> a org:ChangeEvent ;
     dct:date "2024-04-23"^^xsd:date ;
-    dct:description "PSGC code changed from 0908311008 to 0908304019"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/0908311008> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/0908304019> .
+    dct:description "Gitablan (Burauen, Leyte) renamed to Gitabla"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 21 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803710030> .
 
-<https://psgc.gov.ph/concept/change-type/code_change> a skos:Concept .
+<https://psgc.gov.ph/event/2024-04-23/0006> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Digahongan (Dagami, Leyte) renamed to Digahungan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717021> .
 
-<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
+<https://psgc.gov.ph/event/2024-04-23/0007> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Hitumnog (Dagami, Leyte) renamed to Hitomnog"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717027> .
+
+<https://psgc.gov.ph/event/2024-04-23/0008> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Lapu-lapu Pob. (Dagami, Leyte) renamed to Lapu-Lapu"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717040> .
+
+<https://psgc.gov.ph/event/2024-04-23/0009> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Lobe-lobe (Dagami, Leyte) renamed to Lobe-Lobe"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717030> .
+
+<https://psgc.gov.ph/event/2024-04-23/0010> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Lobe-lobe East (Dagami, Leyte) renamed to Lobe-Lobe East"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717060> .
+
+<https://psgc.gov.ph/event/2024-04-23/0011> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Santo Domingo (Dagami, Leyte) renamed to Sto. Domingo"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 14 December 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717052> .
+
+<https://psgc.gov.ph/event/2024-04-23/0012> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Casalungan (Javier, Leyte) renamed to Casulongan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 21 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803724009> .
+
+<https://psgc.gov.ph/event/2024-04-23/0013> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Santa Cruz (Julita, Leyte) renamed to Sta. Cruz"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 22 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803725024> .
+
+<https://psgc.gov.ph/event/2024-04-23/0014> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Santo Niño (Julita, Leyte) renamed to Sto. Niño"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 22 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803725025> .
+
+<https://psgc.gov.ph/event/2024-04-23/0015> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Gimenarat East (La Paz, Leyte) renamed to Gimiranat East"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 28 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803728015> .
+
+<https://psgc.gov.ph/event/2024-04-23/0016> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Gimenarat West (La Paz, Leyte) renamed to Gimiranat West"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 28 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803728016> .
+
+<https://psgc.gov.ph/event/2024-04-23/0017> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Palañogan (Mahaplag, Leyte) renamed to Palanogan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 28 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803731014> .
+
+<https://psgc.gov.ph/event/2024-04-23/0018> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Santa Cruz (Mahaplag, Leyte) renamed to Sta. Cruz"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 28 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803731021> .
+
+<https://psgc.gov.ph/event/2024-04-23/0019> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Santo Niño (Mahaplag, Leyte) renamed to Sto. Niño"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 28 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803731028> .
+
+<https://psgc.gov.ph/event/2024-04-23/0020> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Mercadohay (Tabontabon, Leyte) renamed to Mercaduhay"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 22 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803746009> .
+
+<https://psgc.gov.ph/event/2024-04-23/0021> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Guingawan (Tabontabon, Leyte) renamed to Guingauan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 22 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803746007> .
+
+<https://psgc.gov.ph/event/2024-04-23/0022> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Aporawan (Aborlan, Palawan) renamed to Apurawan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 21 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705301003> .
+
+<https://psgc.gov.ph/event/2024-04-23/0023> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Apo-Aporawan (Aborlan, Palawan) renamed to Apoaporawan"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 21 November 2023"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705301001> .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/transfer> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/name_correction> a skos:Concept ;
+    skos:prefLabel "Name Correction"@en .
 
 <https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
     skos:prefLabel "Rural"@en .
 
+<https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+
 <https://psgc.gov.ph/entity/1903617146> a org:OrganizationalUnit ;
     dct:date "2024-04-23"^^xsd:date ;
     skos:prefLabel "Angoyao"@en ;
-    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
-        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>, <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1903617146"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1903617147> a org:OrganizationalUnit ;
     dct:date "2024-04-23"^^xsd:date ;
     skos:prefLabel "Sultan Corobong"@en ;
-    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
-        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>, <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1903617147"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1903617148> a org:OrganizationalUnit ;
     dct:date "2024-04-23"^^xsd:date ;
     skos:prefLabel "Sultan Panoroganan"@en ;
-    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
-        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>, <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1903617148"^^xsd:string .
 
 <https://psgc.gov.ph/entity/0908304019> a org:OrganizationalUnit ;
     dct:date "2024-04-23"^^xsd:date ;
     schema1:population 1850 ;
     skos:prefLabel "Guintolan"@en ;
-    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
-        <https://psgc.gov.ph/concept/urban-rural/R> ;
-    org:identifier "0908304019"^^xsd:string,
-        "098311008"^^xsd:string,
-        "098311008"^^psgc:correspondence-code .
-
-<https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept ;
-    skos:prefLabel "Rural"@en .
-
-<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
-
-<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
-
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>, <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "0908304019"^^xsd:string, "098311008"^^xsd:string, "098311008"^^<https://psgc.gov.ph/correspondence-code> .

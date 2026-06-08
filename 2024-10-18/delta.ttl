@@ -1,126 +1,215 @@
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://schema.org/> .
 @prefix org: <http://www.w3.org/ns/org#> .
-@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://psgc.gov.ph/event/2024-10-18/0000> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Juan-Loreto Tamayo (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Juan-Loreto Tamayo (Bgy) created"@en ;
+    dcterms:source "Sangguniang Panlalawigan Resolution No. 158, Series of 2023 dated 27 February 2023; Plebiscite conducted on 13 July 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1206317017> .
 
 <https://psgc.gov.ph/event/2024-10-18/0001> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-A (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-A (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100189> .
 
 <https://psgc.gov.ph/event/2024-10-18/0002> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-B (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-B (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100190> .
 
 <https://psgc.gov.ph/event/2024-10-18/0003> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-C (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-C (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100191> .
 
 <https://psgc.gov.ph/event/2024-10-18/0004> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-D (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-D (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100192> .
 
 <https://psgc.gov.ph/event/2024-10-18/0005> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-E (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-E (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100193> .
 
 <https://psgc.gov.ph/event/2024-10-18/0006> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176-F (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176-F (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1380100194> .
 
 <https://psgc.gov.ph/event/2024-10-18/0007> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Guinhalinan (Bgy) created"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Guinhalinan (Bgy) created"@en ;
+    dcterms:source "Republic Act No. 11986 dated 21 March 2024; Plebiscite conducted on 10 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1606801027> .
 
 <https://psgc.gov.ph/event/2024-10-18/0008> a org:ChangeEvent ;
-    dct:date "2024-10-18"^^xsd:date ;
-    dct:description "Barangay 176 (Bgy) removed"@en ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Barangay 176 (Bgy) removed"@en ;
+    dcterms:source "Republic Act No. 11993 dated 03 April 2024; Plebiscite conducted on 31 August 2024"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
     org:originalOrganization <https://psgc.gov.ph/entity/1380100176> .
 
+<https://psgc.gov.ph/event/2024-10-18/0009> a org:ChangeEvent ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Corrected name from Santo Niño to Sto. Niño"@en ;
+    dcterms:source "Certification signed by Municipal Mayor dated 17 September 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1102303019> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1102303019> .
+
+<https://psgc.gov.ph/event/2024-10-18/0010> a org:ChangeEvent ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Corrected name from Santa Cruz to Sta. Cruz"@en ;
+    dcterms:source "Certification signed by Municipal Mayor dated 25 September 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1102314016> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1102314016> .
+
+<https://psgc.gov.ph/event/2024-10-18/0011> a org:ChangeEvent ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Corrected name from Santa Fe to Sta. Fe"@en ;
+    dcterms:source "Certification signed by Municipal Mayor dated 25 September 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1102314017> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1102314017> .
+
+<https://psgc.gov.ph/event/2024-10-18/0012> a org:ChangeEvent ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    dcterms:description "Corrected name from Santo Niño to Sto. Niño"@en ;
+    dcterms:source "Certification signed by Municipal Mayor dated 25 September 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1102314018> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1102314018> .
+
 <https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
 
+<https://psgc.gov.ph/concept/urban-rural/U> a skos:Concept .
+
 <https://psgc.gov.ph/entity/1206317017> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Juan-Loreto Tamayo"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1206317017"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100189> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
-    schema1:population 261729 ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    ns1:population 261729 ;
     skos:prefLabel "Barangay 176-A"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100189"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100190> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Barangay 176-B"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100190"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100191> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Barangay 176-C"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100191"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100192> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Barangay 176-D"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100192"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100193> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Barangay 176-E"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100193"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1380100194> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Barangay 176-F"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1380100194"^^xsd:string .
 
 <https://psgc.gov.ph/entity/1606801027> a org:OrganizationalUnit ;
-    dct:date "2024-10-18"^^xsd:date ;
+    dcterms:date "2024-10-18"^^xsd:date ;
     skos:prefLabel "Guinhalinan"@en ;
     org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
         <https://psgc.gov.ph/concept/urban-rural/-> ;
     org:identifier "1606801027"^^xsd:string .
 
-<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+<https://psgc.gov.ph/entity/1102303019> a org:OrganizationalUnit ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    ns1:population 6210 ;
+    skos:altLabel "Santo Niño"@en ;
+    skos:prefLabel "Sto. Niño"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "1102303019"^^xsd:string .
 
-<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+<https://psgc.gov.ph/entity/1102314016> a org:OrganizationalUnit ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    ns1:population 1511 ;
+    skos:altLabel "Santa Cruz"@en ;
+    skos:prefLabel "Sta. Cruz"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1102314016"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1102314017> a org:OrganizationalUnit ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    ns1:population 1638 ;
+    skos:altLabel "Santa Fe"@en ;
+    skos:prefLabel "Sta. Fe"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1102314017"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1102314018> a org:OrganizationalUnit ;
+    dcterms:date "2024-10-18"^^xsd:date ;
+    ns1:population 1319 ;
+    skos:altLabel "Santo Niño"@en ;
+    skos:prefLabel "Sto. Niño"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1102314018"^^xsd:string .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/renaming> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
 
 <https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept ;
     skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
 

@@ -1,66 +1,179 @@
-<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#identifier> "1903617148"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617146> .
-<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/description> "PSGC code changed from 0908311008 to 0908304019"@en .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0908311008> .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
-<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/description> "Sultan Panoroganan (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/description> "Angoyao (Bgy) created"@en .
-<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1903617148> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
-<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#identifier> "1903617147"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0908304019> .
-<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
-<https://psgc.gov.ph/entity/0908304019> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#identifier> "1903617146"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/description> "Sultan Corobong (Bgy) created"@en .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "0908304019"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1903617147> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Panoroganan"@en .
-<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/2004/02/skos/core#prefLabel> "Angoyao"@en .
-<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<https://psgc.gov.ph/correspondence-code> .
-<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
-<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/description> "Guintolan (Bgy) created"@en .
-<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617148> .
-<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/entity/1903617146> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/entity/0908304019> <http://schema.org/population> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0908311008> .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
-<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
-<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guintolan"@en .
-<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
-<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/concept/change-type/code_change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/code_change> .
-<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Corobong"@en .
-<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0908304019> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/description> "Angoyao (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/source> "City Ordinance No. 20-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617146> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
 <https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/description> "Sultan Corobong (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/source> "City Ordinance No. 18-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617147> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
 <https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/description> "Guintolan (Bgy) removed"@en .
-<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617147> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/description> "Sultan Panoroganan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/source> "City Ordinance No. 19-11, Series of 2023; Plebiscite conducted on 09 March 2024"@en .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617148> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/description> "Transfer: Guintolan transferred from Municipality of Payao to Municipality of Imelda, Zamboanga Sibugay"@en .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/source> "Supreme Court Decision GR 243167 dated 28 June 2021"@en .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/transfer> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0908304019> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/description> "Hibonawan (Burauen, Leyte) renamed to Hibunawan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 21 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803710032> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/description> "Gitablan (Burauen, Leyte) renamed to Gitabla"@en .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 21 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803710030> .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://purl.org/dc/terms/description> "Digahongan (Dagami, Leyte) renamed to Digahungan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717021> .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://purl.org/dc/terms/description> "Hitumnog (Dagami, Leyte) renamed to Hitomnog"@en .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717027> .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://purl.org/dc/terms/description> "Lapu-lapu Pob. (Dagami, Leyte) renamed to Lapu-Lapu"@en .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0008> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717040> .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://purl.org/dc/terms/description> "Lobe-lobe (Dagami, Leyte) renamed to Lobe-Lobe"@en .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0009> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717030> .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://purl.org/dc/terms/description> "Lobe-lobe East (Dagami, Leyte) renamed to Lobe-Lobe East"@en .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0010> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717060> .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://purl.org/dc/terms/description> "Santo Domingo (Dagami, Leyte) renamed to Sto. Domingo"@en .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 14 December 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0011> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803717052> .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://purl.org/dc/terms/description> "Casalungan (Javier, Leyte) renamed to Casulongan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 21 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0012> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803724009> .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://purl.org/dc/terms/description> "Santa Cruz (Julita, Leyte) renamed to Sta. Cruz"@en .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 22 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0013> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803725024> .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://purl.org/dc/terms/description> "Santo Niño (Julita, Leyte) renamed to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 22 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0014> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803725025> .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://purl.org/dc/terms/description> "Gimenarat East (La Paz, Leyte) renamed to Gimiranat East"@en .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 28 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0015> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803728015> .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://purl.org/dc/terms/description> "Gimenarat West (La Paz, Leyte) renamed to Gimiranat West"@en .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 28 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0016> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803728016> .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://purl.org/dc/terms/description> "Palañogan (Mahaplag, Leyte) renamed to Palanogan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 28 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0017> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803731014> .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://purl.org/dc/terms/description> "Santa Cruz (Mahaplag, Leyte) renamed to Sta. Cruz"@en .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 28 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0018> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803731021> .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://purl.org/dc/terms/description> "Santo Niño (Mahaplag, Leyte) renamed to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 28 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0019> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803731028> .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://purl.org/dc/terms/description> "Mercadohay (Tabontabon, Leyte) renamed to Mercaduhay"@en .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 22 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0020> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803746009> .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://purl.org/dc/terms/description> "Guingawan (Tabontabon, Leyte) renamed to Guingauan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 22 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0021> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803746007> .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://purl.org/dc/terms/description> "Aporawan (Aborlan, Palawan) renamed to Apurawan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 21 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0022> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705301003> .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://purl.org/dc/terms/description> "Apo-Aporawan (Aborlan, Palawan) renamed to Apoaporawan"@en .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 21 November 2023"@en .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-04-23/0023> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705301001> .
+<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/concept/change-type/transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/concept/change-type/name_correction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/concept/change-type/name_correction> <http://www.w3.org/2004/02/skos/core#prefLabel> "Name Correction"@en .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1903617146> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/2004/02/skos/core#prefLabel> "Angoyao"@en .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#identifier> "1903617146"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1903617147> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Corobong"@en .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#identifier> "1903617147"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1903617148> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Panoroganan"@en .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#identifier> "1903617148"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0908304019> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0908304019> <http://schema.org/population> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guintolan"@en .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "0908304019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<https://psgc.gov.ph/correspondence-code> .

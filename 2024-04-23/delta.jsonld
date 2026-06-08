@@ -1,6 +1,88 @@
 [
   {
-    "@id": "https://psgc.gov.ph/event/2024-04-23/0002",
+    "@id": "https://psgc.gov.ph/concept/change-type/creation",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/transfer",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/name_correction",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Name Correction"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/R",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rural"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Angoyao (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "City Ordinance No. 20-11, Series of 2023; Plebiscite conducted on 09 March 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617146"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0001",
     "@type": [
       "http://www.w3.org/ns/org#ChangeEvent"
     ],
@@ -16,6 +98,12 @@
         "@value": "Sultan Corobong (Bgy) created"
       }
     ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "City Ordinance No. 18-11, Series of 2023; Plebiscite conducted on 09 March 2024"
+      }
+    ],
     "http://www.w3.org/ns/org#classification": [
       {
         "@id": "https://psgc.gov.ph/concept/change-type/creation"
@@ -28,15 +116,71 @@
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0002",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Sultan Panoroganan (Bgy) created"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "City Ordinance No. 19-11, Series of 2023; Plebiscite conducted on 09 March 2024"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/creation"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1903617148"
+      }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/concept/change-type/deletion",
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0003",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Transfer: Guintolan transferred from Municipality of Payao to Municipality of Imelda, Zamboanga Sibugay"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Supreme Court Decision GR 243167 dated 28 June 2021"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/transfer"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0908304019"
+      }
     ]
   },
   {
@@ -53,29 +197,701 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Guintolan (Bgy) removed"
+        "@value": "Hibonawan (Burauen, Leyte) renamed to Hibunawan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 21 November 2023"
       }
     ],
     "http://www.w3.org/ns/org#classification": [
       {
-        "@id": "https://psgc.gov.ph/concept/change-type/deletion"
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
       }
     ],
-    "http://www.w3.org/ns/org#originalOrganization": [
+    "http://www.w3.org/ns/org#resultingOrganization": [
       {
-        "@id": "https://psgc.gov.ph/entity/0908311008"
+        "@id": "https://psgc.gov.ph/entity/0803710032"
       }
     ]
   },
   {
-    "@id": "https://psgc.gov.ph/concept/urban-rural/R",
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0005",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Gitablan (Burauen, Leyte) renamed to Gitabla"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 21 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803710030"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0006",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Digahongan (Dagami, Leyte) renamed to Digahungan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717021"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0007",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Hitumnog (Dagami, Leyte) renamed to Hitomnog"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717027"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0008",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Lapu-lapu Pob. (Dagami, Leyte) renamed to Lapu-Lapu"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717040"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0009",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Lobe-lobe (Dagami, Leyte) renamed to Lobe-Lobe"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717030"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0010",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Lobe-lobe East (Dagami, Leyte) renamed to Lobe-Lobe East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717060"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0011",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Domingo (Dagami, Leyte) renamed to Sto. Domingo"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 December 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803717052"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0012",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Casalungan (Javier, Leyte) renamed to Casulongan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 21 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803724009"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0013",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Cruz (Julita, Leyte) renamed to Sta. Cruz"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 22 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803725024"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0014",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño (Julita, Leyte) renamed to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 22 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803725025"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0015",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Gimenarat East (La Paz, Leyte) renamed to Gimiranat East"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 28 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803728015"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0016",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Gimenarat West (La Paz, Leyte) renamed to Gimiranat West"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 28 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803728016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0017",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Palañogan (Mahaplag, Leyte) renamed to Palanogan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 28 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803731014"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0018",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Cruz (Mahaplag, Leyte) renamed to Sta. Cruz"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 28 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803731021"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0019",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño (Mahaplag, Leyte) renamed to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 28 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803731028"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0020",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Mercadohay (Tabontabon, Leyte) renamed to Mercaduhay"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 22 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803746009"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0021",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Guingawan (Tabontabon, Leyte) renamed to Guingauan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 22 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0803746007"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0022",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Aporawan (Aborlan, Palawan) renamed to Apurawan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 21 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705301003"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2024-04-23/0023",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Apo-Aporawan (Aborlan, Palawan) renamed to Apoaporawan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 21 November 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705301001"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1903617146",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Rural"
+        "@value": "Angoyao"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1903617146"
       }
     ]
   },
@@ -108,6 +924,38 @@
       {
         "@type": "http://www.w3.org/2001/XMLSchema#string",
         "@value": "1903617147"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1903617148",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-04-23"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sultan Panoroganan"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1903617148"
       }
     ]
   },
@@ -155,211 +1003,6 @@
         "@type": "https://psgc.gov.ph/correspondence-code",
         "@value": "098311008"
       }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-04-23/0005",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "PSGC code changed from 0908311008 to 0908304019"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/code_change"
-      }
-    ],
-    "http://www.w3.org/ns/org#originalOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0908311008"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0908304019"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-04-23/0000",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Guintolan (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/0908304019"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1903617146",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Angoyao"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1903617146"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/urban-rural/-",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Rural"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-04-23/0003",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Sultan Panoroganan (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1903617148"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/code_change",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/event/2024-04-23/0001",
-    "@type": [
-      "http://www.w3.org/ns/org#ChangeEvent"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "en",
-        "@value": "Angoyao (Bgy) created"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/change-type/creation"
-      }
-    ],
-    "http://www.w3.org/ns/org#resultingOrganization": [
-      {
-        "@id": "https://psgc.gov.ph/entity/1903617146"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/entity/1903617148",
-    "@type": [
-      "http://www.w3.org/ns/org#OrganizationalUnit"
-    ],
-    "http://purl.org/dc/terms/date": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2024-04-23"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Sultan Panoroganan"
-      }
-    ],
-    "http://www.w3.org/ns/org#classification": [
-      {
-        "@id": "https://psgc.gov.ph/concept/urban-rural/-"
-      },
-      {
-        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
-      }
-    ],
-    "http://www.w3.org/ns/org#identifier": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#string",
-        "@value": "1903617148"
-      }
-    ]
-  },
-  {
-    "@id": "https://psgc.gov.ph/concept/change-type/creation",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   }
 ]

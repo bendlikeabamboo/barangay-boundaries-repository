@@ -1,1 +1,1226 @@
-[]
+[
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Leon T. Postigo (Zamboanga del Norte) renamed to Bacungan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Republic Act No. 6830 dated 30 December 1989"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/907226000"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Alimbo-Baybay (Nabas, Aklan) renamed to Alimbo Baybay"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 15 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600414001"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Lombuyan (Barbaza, Antique) renamed to Lumboyan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 22 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600602025"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0003",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Centro Ilawod (Bugasong, Antique) renamed to Centro Ilauod"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600604018"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0004",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Piape I (Hamtic, Antique) renamed to Piapi I"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 09 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600608039"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0005",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Piape II (Hamtic, Antique) renamed to Piapi II"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 09 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600608040"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0006",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Piape III (Hamtic, Antique) renamed to Piapi III"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 09 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600608041"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0007",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Tig-Ohot (Sibalom, Antique) renamed to Tig-ohot"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600616071"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0008",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Pis-Anan (Sibalom, Antique) renamed to Pis-anan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600616060"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0009",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Bulalacao (Sibalom, Antique) renamed to Bululacao"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600616011"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0010",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Justa (Tibiao, Antique) renamed to Sta. Justa"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 18 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600617018"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0011",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Rosario (Tibiao, Antique) renamed to Sto. Rosario"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 18 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600617019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0012",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Ana (Tibiao, Antique) renamed to Sta. Ana"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 18 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600617017"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0013",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Balloscas (Tobias Fornier, Antique) renamed to Ballescas"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600607007"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0014",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Salamague (Tobias Fornier, Antique) renamed to Samalague"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600607043"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0015",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Tomas (Tobias Fornier, Antique) renamed to Sto. Tomas"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 11 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/600607044"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0016",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Bianuan (Casiguran, Aurora) renamed to Bianoan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 30 March 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/307702019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0017",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Telepatio (San Ildefonso, Bulacan) renamed to Telapatio"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 05 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/301419035"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0018",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Jurisdiction (Alcala, Cagayan) renamed to Jurisdiccion"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 16 December 2021"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/201516019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0019",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Rizaluna (Aurora, Isabela) renamed to Rizalina"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 27 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203103016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0020",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Dalig-Kalinga (Aurora, Isabela) renamed to Dalig Kalinga"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 27 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203103010"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0021",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Caloocan (Delfin Albano, Isabela) renamed to Calaocan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Acting-Municipal Mayor dated 07 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203118030"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0022",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Rosario (Delfin Albano, Isabela) renamed to Sto. Rosario"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Acting-Municipal Mayor dated 07 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203118025"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0023",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Pongpongan (Jones, Isabela) renamed to Pungpongan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 20 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203115033"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0024",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Eleonor (Maconacon, Isabela) renamed to Eleanor"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 25 May 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203117002"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0025",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Diddadungan (Palanan, Isabela) renamed to Didaddungan"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 03 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203121016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0026",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Domingo (Quirino, Isabela) renamed to Sto. Domingo"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 03 July 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203123016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0027",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Catalina (Quirino, Isabela) renamed to Sta. Catalina"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 03 July 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203123013"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0028",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Cruz (San Manuel, Isabela) renamed to Sta. Cruz"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 13 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203130019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0029",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño (Tumauini, Isabela) renamed to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 23 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203137047"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0030",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Catalina (Tumauini, Isabela) renamed to Sta. Catalina"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 23 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203137046"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0031",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Santa Visitacion (Tumauini, Isabela) renamed to Sta. Visitacion"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 23 June 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203137027"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0032",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Napaccu Grande (Reina Mercedes, Isabela) renamed to Nappaccu Grande"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 05 July 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203125012"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0033",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Napaccu Pequeño (Reina Mercedes, Isabela) renamed to Nappaccu Pequeño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 05 July 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203125013"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0034",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Salucong (Reina Mercedes, Isabela) renamed to Sallucong"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 05 July 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/203125014"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2023-08-15/0035",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-15"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Matayumcab (Gerona, Tarlac) renamed to Matayuncab"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by Municipal Mayor dated 14 April 2023"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/name_correction"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/306906021"
+      }
+    ]
+  }
+]

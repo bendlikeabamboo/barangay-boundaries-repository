@@ -499,73 +499,73 @@
 
 <https://psgc.gov.ph/event/2023-10-24/0082> a org:ChangeEvent ;
     dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300033 to 1381500036"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+
+<https://psgc.gov.ph/event/2023-10-24/0083> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
     dct:description "PSGC code changed from 1380300028 to 1381500037"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
     org:originalOrganization <https://psgc.gov.ph/entity/1380300028> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1381500037> .
 
-<https://psgc.gov.ph/event/2023-10-24/0083> a org:ChangeEvent ;
-    dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300016 to 1381500032"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300016> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500032> .
-
 <https://psgc.gov.ph/event/2023-10-24/0084> a org:ChangeEvent ;
     dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300022 to 1381500035"@en ;
+    dct:description "PSGC code changed from 1380300019 to 1381500033"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300022> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500035> .
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300019> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500033> .
 
 <https://psgc.gov.ph/event/2023-10-24/0085> a org:ChangeEvent ;
-    dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300032 to 1381500038"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300032> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500038> .
-
-<https://psgc.gov.ph/event/2023-10-24/0086> a org:ChangeEvent ;
-    dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300004 to 1381500030"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300004> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500030> .
-
-<https://psgc.gov.ph/event/2023-10-24/0087> a org:ChangeEvent ;
-    dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300021 to 1381500034"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300021> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500034> .
-
-<https://psgc.gov.ph/event/2023-10-24/0088> a org:ChangeEvent ;
-    dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300007 to 1381500031"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300007> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500031> .
-
-<https://psgc.gov.ph/event/2023-10-24/0089> a org:ChangeEvent ;
     dct:date "2023-10-24"^^xsd:date ;
     dct:description "PSGC code changed from 1380300003 to 1381500029"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
     org:originalOrganization <https://psgc.gov.ph/entity/1380300003> ;
     org:resultingOrganization <https://psgc.gov.ph/entity/1381500029> .
 
+<https://psgc.gov.ph/event/2023-10-24/0086> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300021 to 1381500034"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300021> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500034> .
+
+<https://psgc.gov.ph/event/2023-10-24/0087> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300007 to 1381500031"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300007> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500031> .
+
+<https://psgc.gov.ph/event/2023-10-24/0088> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300022 to 1381500035"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300022> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500035> .
+
+<https://psgc.gov.ph/event/2023-10-24/0089> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300032 to 1381500038"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300032> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500038> .
+
 <https://psgc.gov.ph/event/2023-10-24/0090> a org:ChangeEvent ;
     dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300033 to 1381500036"@en ;
+    dct:description "PSGC code changed from 1380300016 to 1381500032"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300016> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500032> .
 
 <https://psgc.gov.ph/event/2023-10-24/0091> a org:ChangeEvent ;
     dct:date "2023-10-24"^^xsd:date ;
-    dct:description "PSGC code changed from 1380300019 to 1381500033"@en ;
+    dct:description "PSGC code changed from 1380300004 to 1381500030"@en ;
     org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1380300019> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1381500033> .
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300004> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500030> .
 
 <https://psgc.gov.ph/entity/0402103076> a org:OrganizationalUnit ;
     dct:date "2023-10-24"^^xsd:date ;

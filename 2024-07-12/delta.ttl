@@ -41406,4 +41406,33 @@
 <https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
 
 <https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+<https://psgc.gov.ph/concept/change-type/name_correction> a skos:Concept ;
+    skos:prefLabel "Name Correction"@en .
 
+<https://psgc.gov.ph/entity/1705320014> a org:OrganizationalUnit ;
+    dct:date "2024-07-12"^^xsd:date ;
+    schema1:population "984"^^xsd:integer ;
+    skos:prefLabel "Maytegued"@en ;
+    org:classification <https://psgc.gov.ph/concept/urban-rural/R>,
+        <https://psgc.gov.ph/concept/geographic-level/Bgy> ;
+    org:identifier "1705320014"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0803717033> a org:OrganizationalUnit ;
+    dct:date "2024-07-12"^^xsd:date ;
+    schema1:population "596"^^xsd:integer ;
+    skos:prefLabel "Maragongdong"@en ;
+    org:classification <https://psgc.gov.ph/concept/urban-rural/R>,
+        <https://psgc.gov.ph/concept/geographic-level/Bgy> ;
+    org:identifier "0803717033"^^xsd:string .
+
+<https://psgc.gov.ph/event/2024-07-12/4258> a org:ChangeEvent ;
+    dct:date "2024-07-12"^^xsd:date ;
+    dct:description "Meytegued (Bgy) renamed to Maytegued"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705320014> .
+
+<https://psgc.gov.ph/event/2024-07-12/4259> a org:ChangeEvent ;
+    dct:date "2024-07-12"^^xsd:date ;
+    dct:description "Maragondong (Bgy) renamed to Maragongdong"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/name_correction> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0803717033> .

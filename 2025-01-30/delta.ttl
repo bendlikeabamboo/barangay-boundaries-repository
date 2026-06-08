@@ -1,1 +1,74 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2025-01-30/0000> a org:ChangeEvent ;
+    dct:date "2025-01-30"^^xsd:date ;
+    dct:description "Corrected name from Gasweling to Gaswiling"@en ;
+    dct:source "Provincial Resolution No. 1118, s. 1968 dated 29 October 1968"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1401108010> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1401108010> .
+
+<https://psgc.gov.ph/event/2025-01-30/0001> a org:ChangeEvent ;
+    dct:date "2025-01-30"^^xsd:date ;
+    dct:description "Corrected name from Guevarra to Guevara"@en ;
+    dct:source "Certification signed by Municipal Mayor dated 02 October 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0306907007> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0306907007> .
+
+<https://psgc.gov.ph/event/2025-01-30/0002> a org:ChangeEvent ;
+    dct:date "2025-01-30"^^xsd:date ;
+    dct:description "Corrected name from Anahawan to Anhawan"@en ;
+    dct:source "1. Certification signed by Municipal Mayor dated 03 October 2024; 2. Copy of the official review by the NHCP dated 26 November 2024."@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1804609001> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1804609001> .
+
+<https://psgc.gov.ph/concept/urban-rural/U> a skos:Concept ;
+    skos:prefLabel "Urban"@en .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/entity/0306907007> a org:OrganizationalUnit ;
+    dct:date "2025-01-30"^^xsd:date ;
+    schema1:population 5062 ;
+    skos:altLabel "Guevarra"@en ;
+    skos:prefLabel "Guevara"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "0306907007"^^xsd:string,
+        "36907007"^^xsd:string,
+        "36907007"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1401108010> a org:OrganizationalUnit ;
+    dct:date "2025-01-30"^^xsd:date ;
+    schema1:population 1005 ;
+    skos:altLabel "Gasweling"@en ;
+    skos:prefLabel "Gaswiling"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1401108010"^^xsd:string,
+        "141108010"^^xsd:string,
+        "141108010"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1804609001> a org:OrganizationalUnit ;
+    dct:date "2025-01-30"^^xsd:date ;
+    schema1:population 450 ;
+    skos:altLabel "Anahawan"@en ;
+    skos:prefLabel "Anhawan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1804609001"^^xsd:string,
+        "74609001"^^xsd:string,
+        "74609001"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/change-type/renaming> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
 

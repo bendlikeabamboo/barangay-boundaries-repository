@@ -1,0 +1,57 @@
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/ns/org#identifier> "0306907007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/concept/change-type/renaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://purl.org/dc/terms/source> "1. Certification signed by Municipal Mayor dated 03 October 2024; 2. Copy of the official review by the NHCP dated 26 November 2024."@en .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guevara"@en .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://purl.org/dc/terms/description> "Corrected name from Gasweling to Gaswiling"@en .
+<https://psgc.gov.ph/entity/1401108010> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1804609001> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/2004/02/skos/core#altLabel> "Guevarra"@en .
+<https://psgc.gov.ph/entity/0306907007> <http://schema.org/population> "5062"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1804609001> <http://schema.org/population> "450"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0306907007> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://purl.org/dc/terms/description> "Corrected name from Anahawan to Anhawan"@en .
+<https://psgc.gov.ph/entity/1401108010> <http://schema.org/population> "1005"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urban"@en .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/ns/org#identifier> "141108010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gaswiling"@en .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://purl.org/dc/terms/description> "Corrected name from Guevarra to Guevara"@en .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://purl.org/dc/terms/source> "Certification signed by Municipal Mayor dated 02 October 2024"@en .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://purl.org/dc/terms/source> "Provincial Resolution No. 1118, s. 1968 dated 29 October 1968"@en .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/ns/org#identifier> "74609001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/ns/org#identifier> "74609001"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/ns/org#identifier> "36907007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/2004/02/skos/core#altLabel> "Anahawan"@en .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/ns/org#identifier> "36907007"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1804609001> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/ns/org#identifier> "1401108010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/ns/org#identifier> "1804609001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1401108010> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0306907007> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/ns/org#identifier> "141108010"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/2004/02/skos/core#prefLabel> "Anhawan"@en .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://purl.org/dc/terms/date> "2025-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1401108010> <http://www.w3.org/2004/02/skos/core#altLabel> "Gasweling"@en .
+<https://psgc.gov.ph/entity/1804609001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-01-30/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1804609001> .
+<https://psgc.gov.ph/event/2025-01-30/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1401108010> .
+<https://psgc.gov.ph/entity/0306907007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2025-01-30/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0306907007> .

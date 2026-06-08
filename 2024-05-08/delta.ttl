@@ -1,5 +1,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix psgc: <https://psgc.gov.ph/> .
 @prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -7,60 +8,591 @@
 
 <https://psgc.gov.ph/event/2024-05-08/0000> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Dunguan (Bgy) created"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999904007> .
+    dct:description "PSGC code changed from 1999907007 to 1999908009"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999907007> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908009> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0001> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Macabual (Bgy) created"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999908009> .
+    dct:description "PSGC code changed from 1999908003 to 1999904007"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999908003> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904007> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0002> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Panicupan (Bgy) created"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999908010> .
+    dct:description "PSGC code changed from 1999906008 to 1999908010"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999906008> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908010> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0003> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Panicupan (Bgy) removed"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999906008> .
+    dct:description "Corrected name from Interim Province Code for 63 barangays of BARMM based on PSA Board Resolution No. 13 Series of 2021 to Special Geographic Area"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999900000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999900000> .
 
 <https://psgc.gov.ph/event/2024-05-08/0004> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Macabual (Bgy) removed"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999907007> .
+    dct:description "Corrected name from Carmen Cluster to Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999901000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0005> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "Dunguan (Bgy) removed"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999908003> .
+    dct:description "Corrected name from Kabacan Cluster to Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999902000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0006> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "PSGC code changed from 1999906008 to 1999908010"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999906008> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999908010> .
+    dct:description "Corrected name from Midsayap Cluster I to Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999903000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0007> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "PSGC code changed from 1999908003 to 1999904007"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999908003> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999904007> .
+    dct:description "Corrected name from Midsayap Cluster II to Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999904000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
 
 <https://psgc.gov.ph/event/2024-05-08/0008> a org:ChangeEvent ;
     dct:date "2024-05-08"^^xsd:date ;
-    dct:description "PSGC code changed from 1999907007 to 1999908009"@en ;
-    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
-    org:originalOrganization <https://psgc.gov.ph/entity/1999907007> ;
-    org:resultingOrganization <https://psgc.gov.ph/entity/1999908009> .
+    dct:description "Corrected name from Pigcawayan Cluster to Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999905000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0009> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Corrected name from Pikit Cluster I to Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999906000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0010> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Corrected name from Pikit Cluster II to Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999907000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0011> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Corrected name from Pikit Cluster III to Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999908000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908000> ;
+    prov:generatedAtTime "2024-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0012> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kib-Ayao transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0013> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kitulaan transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0014> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Langogan transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0015> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Manarapan transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0016> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nasapian transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0017> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Pebpoloan transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0018> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Tupig transferred from Carmen Cluster to Municipality of Kapalawan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 45 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999901007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0019> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Buluan transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0020> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nanga-an transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0021> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Pedtad transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0022> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Sanggadong transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0023> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Simbuhay transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0024> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Simone transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0025> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Tamped transferred from Kabacan Cluster to Municipality of Old Kaabakan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 44 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999902007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0026> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Central Labas transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0027> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kapinpilan transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0028> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Malingao transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0029> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Mudseng transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0030> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Sambulawan transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0031> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Tugal transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0032> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Tumbras transferred from Midsayap Cluster I to Municipality of Kadayangan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 42 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999903007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0033> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Damatulan transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0034> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kadigasan transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0035> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kadingilan transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0036> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kudarangan transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0037> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nabalawag transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0038> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Olandang transferred from Midsayap Cluster II to Municipality of Nabalawag"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 43 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0039> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Balacayon transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0040> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Buricain transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0041> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Datu Binasing transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0042> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Datu Mantil transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0043> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kadingilan transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0044> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Libungan Torreta transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0045> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Lower Baguer transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0046> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Lower Pangangkalan transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905008> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0047> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Matilac transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905009> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0048> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Patot transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905010> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0049> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Simsiman transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905011> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0050> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Upper Pangangkalan transferred from Pigcawayan Cluster to Municipality of Pahamuddin"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 41 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999905012> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0051> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Balungis transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0052> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Batulawan transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0053> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Fort Pikit transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0054> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Gokoton transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0055> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nabundas transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0056> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nalapaan transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0057> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Nunguan transferred from Pikit Cluster I to Municipality of Malidegao"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 46 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999906007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0058> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Bagoaingud transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0059> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Barungis transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0060> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Buliok transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907003> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0061> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Bulol transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0062> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Gligli transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0063> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Kabasalan transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0064> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Rajah Muda transferred from Pikit Cluster II to Municipality of Ligawasan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 48 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999907008> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0065> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Balong transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908001> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0066> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Bualan transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908002> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0067> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Lagunde transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908004> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0068> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Macasendeg transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908005> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0069> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Manaulanan transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908006> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0070> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Pamalian transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908007> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2024-05-08/0071> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Transfer: Tapodoc transferred from Pikit Cluster III to Municipality of Tugunan"@en ;
+    dct:source "Bangsamoro Autonomy Act No. 47 dated 15 September 2022; Plebiscite conducted on 13 April 2024"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/transfer> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908008> ;
+    prov:generatedAtTime "2024-04-28"^^xsd:date .
+
+<https://psgc.gov.ph/concept/geographic-level/> a skos:Concept .
 
 <https://psgc.gov.ph/entity/1999904007> a org:OrganizationalUnit ;
     dct:date "2024-05-08"^^xsd:date ;
@@ -92,14 +624,79 @@
         "1999908010"^^xsd:string,
         "124712048"^^psgc:correspondence-code .
 
+<https://psgc.gov.ph/entity/1999900000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Interim Province Code for 63 barangays of BARMM based on PSA Board Resolution No. 13 Series of 2021"@en ;
+    skos:prefLabel "Special Geographic Area"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/> ;
+    org:identifier "1999900000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999901000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Carmen Cluster"@en ;
+    skos:prefLabel "Kapalawan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999901000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999902000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Kabacan Cluster"@en ;
+    skos:prefLabel "Old Kaabakan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999902000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999903000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Midsayap Cluster I"@en ;
+    skos:prefLabel "Kadayangan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999903000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999904000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Midsayap Cluster II"@en ;
+    skos:prefLabel "Nabalawag"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999904000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999905000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Pigcawayan Cluster"@en ;
+    skos:prefLabel "Pahamuddin"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999905000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999906000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Pikit Cluster I"@en ;
+    skos:prefLabel "Malidegao"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999906000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999907000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Pikit Cluster II"@en ;
+    skos:prefLabel "Ligawasan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999907000"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1999908000> a org:FormalOrganization ;
+    dct:date "2024-05-08"^^xsd:date ;
+    skos:altLabel "Pikit Cluster III"@en ;
+    skos:prefLabel "Tugunan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun> ;
+    org:identifier "1999908000"^^xsd:string .
+
 <https://psgc.gov.ph/concept/change-type/code_change> a skos:Concept .
-
-<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
-
-<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
 
 <https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
 
 <https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
     skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/geographic-level/Mun> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/renaming> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/transfer> a skos:Concept .
 

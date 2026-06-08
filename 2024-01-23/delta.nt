@@ -1,0 +1,172 @@
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000200> .
+<https://psgc.gov.ph/entity/0631000155> <http://schema.org/population> "2185"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/ns/org#identifier> "0631000155"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/ns/org#identifier> "0631000199"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tabuc Suba (Jaro)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/ns/org#identifier> "063022175"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000159> <http://schema.org/population> "1133"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tabuc Suba (La Paz)"@en .
+<https://psgc.gov.ph/entity/0631000159> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0631000200> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/ns/org#identifier> "063022097"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/ns/org#identifier> "063022155"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/ns/org#identifier> "0631000159"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://purl.org/dc/terms/description> "San Isidro (City of Iloilo) renamed to San Isidro (La Paz)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Jose (City Proper)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/ns/org#identifier> "063022159"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000200> <http://schema.org/population> "231"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/ns/org#identifier> "063022154"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://purl.org/dc/terms/description> "San Jose (City of Iloilo) renamed to San Jose (Arevalo)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/ns/org#identifier> "063022158"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/ns/org#identifier> "063022200"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000201> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000155> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/ns/org#identifier> "063022175"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/2004/02/skos/core#prefLabel> "Luna (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/ns/org#identifier> "0631000175"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Jose (Jaro)"@en .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urban"@en .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Pedro (Jaro)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://purl.org/dc/terms/description> "San Jose (City of Iloilo) renamed to San Jose (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Isidro (Jaro)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0631000198> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000155> .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://purl.org/dc/terms/description> "San Pedro (City of Iloilo) renamed to San Pedro (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000198> <http://schema.org/population> "578"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://purl.org/dc/terms/description> "San Isidro (City of Iloilo) renamed to San Isidro (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/ns/org#identifier> "063022159"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000158> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/ns/org#identifier> "0631000097"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000199> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000201> <http://schema.org/population> "3925"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000175> <http://schema.org/population> "10866"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://purl.org/dc/terms/description> "Tabuc Suba (City of Iloilo) renamed to Tabuc Suba (La Paz)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://purl.org/dc/terms/description> "San Jose (City of Iloilo) renamed to San Jose (City Proper)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://purl.org/dc/terms/description> "Tabuc Suba (City of Iloilo) renamed to Tabuc Suba (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/ns/org#identifier> "063022201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/change-type/name_correction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000201> .
+<https://psgc.gov.ph/entity/0631000151> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/ns/org#identifier> "063022151"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/ns/org#identifier> "063022154"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://purl.org/dc/terms/description> "Luna (City of Iloilo) renamed to Luna (Jaro)"@en .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000158> .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000154> .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/ns/org#identifier> "063022199"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0631000097> <http://schema.org/population> "187"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000175> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-01-23/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000097> .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/ns/org#identifier> "0631000200"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Pedro (Molo)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000175> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/ns/org#identifier> "063022155"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000151> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/ns/org#identifier> "063022158"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/2004/02/skos/core#prefLabel> "Luna (La Paz)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000199> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/ns/org#identifier> "0631000158"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/ns/org#identifier> "063022151"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000151> <http://www.w3.org/ns/org#identifier> "0631000151"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000159> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-01-23/0007> <http://purl.org/dc/terms/description> "San Pedro (City of Iloilo) renamed to San Pedro (Molo)"@en .
+<https://psgc.gov.ph/entity/0631000154> <http://schema.org/population> "296"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/concept/change-type/name_correction> <http://www.w3.org/2004/02/skos/core#prefLabel> "Name Correction"@en .
+<https://psgc.gov.ph/entity/0631000097> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000199> <http://schema.org/population> "4301"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/ns/org#identifier> "063022198"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Isidro (La Paz)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0008> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000159> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/ns/org#identifier> "0631000198"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000158> <http://schema.org/population> "3029"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000097> <http://www.w3.org/ns/org#identifier> "063022097"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000151> <http://schema.org/population> "11728"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/ns/org#identifier> "063022198"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000199> <http://www.w3.org/ns/org#identifier> "063022199"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0631000154> <http://www.w3.org/ns/org#identifier> "0631000154"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0010> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-01-23/0004> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000200> <http://www.w3.org/ns/org#identifier> "063022200"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://purl.org/dc/terms/source> "PSA Press Release: No Change in the Fourth Quarter 2023 PSGC - district descriptors added to 11 barangays in City of Iloilo to differentiate those sharing identical names; PSA states this does not constitute a name change but is additional information indicating the district where the barangay is situated"@en .
+<https://psgc.gov.ph/event/2024-01-23/0009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0631000198> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/name_correction> .
+<https://psgc.gov.ph/entity/0631000175> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0631000198> .
+<https://psgc.gov.ph/entity/0631000155> <http://www.w3.org/2004/02/skos/core#prefLabel> "San Jose (Arevalo)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0001> <http://purl.org/dc/terms/description> "Luna (City of Iloilo) renamed to Luna (La Paz)"@en .
+<https://psgc.gov.ph/event/2024-01-23/0006> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/ns/org#identifier> "0631000201"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-01-23/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0631000201> <http://www.w3.org/ns/org#identifier> "063022201"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0631000154> <http://purl.org/dc/terms/date> "2024-01-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0631000158> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
