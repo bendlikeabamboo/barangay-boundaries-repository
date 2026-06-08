@@ -1,0 +1,78 @@
+id: extract_psgc_entities
+description: Extract normalized geographic entities from a batch of PSGC datafile rows.
+system: |
+  You are a data extraction agent for the Philippine Standard Geographic Code (PSGC).
+  Given a batch of rows from the PSGC publication datafile, extract and normalize
+  each geographic entity. Preserve all fields exactly as provided unless normalization
+  is explicitly required.
+
+  Rules:
+  - PSGC codes must be exactly 10 digits, zero-padded.
+  - Geographic levels: Reg (Region), Prov (Province), City, Mun (Municipality), Bgy (Barangay), SubMun (Sub-municipality).
+  - Status "Pob." means poblacion (urban center barangay). "Capital" means capital municipality.
+  - City class values: HUC (Highly Urbanized City), CC (Component City), ICC (Independent Component City).
+  - Income class values: 1st, 2nd, 3rd, 4th, 5th, 6th (may be empty for barangays).
+  - Urban/Rural: U (urban), R (rural), or empty.
+  - Population is an integer, may be null.
+  - Old names are alternate/historical names.
+  - If a name contains "City of" prefix, the entity level should be City.
+  - If a name contains "Municipality of" prefix, the entity level should be Mun (unless already City).
+  - If a name contains "Province of" prefix, the entity level should be Prov.
+  - If a name contains "(Capital)" suffix, set is_capital=true and remove it from the name.
+  - Preserve Filipino names with diacritics (ñ, é, etc.) exactly as given.
+user_template: |
+  Extract geographic entities from the following PSGC datafile batch (snapshot date: {{ snapshot_date }}).
+
+  Each row has columns: 10-digit PSGC Code | Name | Correspondence Code | Geographic Level | Old names | City Class | Income Classification | Urban/Rural | Population | Status
+
+  {{ rows_text }}
+
+  Return a list of entities matching the output schema.
+output_schema:
+  type: array
+  items:
+    type: object
+    properties:
+      code:
+        type: string
+        pattern: "^\\d{10}$"
+        description: 10-digit PSGC code
+      name:
+        type: string
+        description: Official name
+      correspondence_code:
+        type: string
+        description: 9-digit correspondence code for identity tracking
+      geographic_level:
+        type: string
+        enum: [Reg, Prov, City, Mun, Bgy, SubMun]
+      old_name:
+        type: string
+        nullable: true
+        description: Historical/alternate name
+      city_class:
+        type: string
+        enum: [HUC, CC, ICC, "", null]
+        nullable: true
+      income_class:
+        type: string
+        enum: [1st, 2nd, 3rd, 4th, 5th, 6th, "", null]
+        nullable: true
+      urban_rural:
+        type: string
+        enum: [U, R, "", null]
+        nullable: true
+      population:
+        type: integer
+        nullable: true
+      status:
+        type: string
+        enum: [Pob., Capital, "", null]
+        nullable: true
+      is_capital:
+        type: boolean
+        default: false
+      is_poblacion:
+        type: boolean
+        default: false
+    required: [code, name, correspondence_code, geographic_level]

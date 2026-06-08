@@ -1,0 +1,827 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2023-10-24/0000> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban 1 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103076> .
+
+<https://psgc.gov.ph/event/2023-10-24/0001> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103077> .
+
+<https://psgc.gov.ph/event/2023-10-24/0002> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Kaingin Digman (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103078> .
+
+<https://psgc.gov.ph/event/2023-10-24/0003> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Ligas 1 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103079> .
+
+<https://psgc.gov.ph/event/2023-10-24/0004> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mabolo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103080> .
+
+<https://psgc.gov.ph/event/2023-10-24/0005> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Maliksi 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103081> .
+
+<https://psgc.gov.ph/event/2023-10-24/0006> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mambog 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103082> .
+
+<https://psgc.gov.ph/event/2023-10-24/0007> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Niog (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103083> .
+
+<https://psgc.gov.ph/event/2023-10-24/0008> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103084> .
+
+<https://psgc.gov.ph/event/2023-10-24/0009> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu 4 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103085> .
+
+<https://psgc.gov.ph/event/2023-10-24/0010> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Poblacion (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103086> .
+
+<https://psgc.gov.ph/event/2023-10-24/0011> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Real (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103087> .
+
+<https://psgc.gov.ph/event/2023-10-24/0012> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Salinas 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103088> .
+
+<https://psgc.gov.ph/event/2023-10-24/0013> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Sinbanali (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103089> .
+
+<https://psgc.gov.ph/event/2023-10-24/0014> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba 1 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103090> .
+
+<https://psgc.gov.ph/event/2023-10-24/0015> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba 3 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103091> .
+
+<https://psgc.gov.ph/event/2023-10-24/0016> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote 1 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103092> .
+
+<https://psgc.gov.ph/event/2023-10-24/0017> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote 2 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103093> .
+
+<https://psgc.gov.ph/event/2023-10-24/0018> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Cembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500029> .
+
+<https://psgc.gov.ph/event/2023-10-24/0019> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Comembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500030> .
+
+<https://psgc.gov.ph/event/2023-10-24/0020> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "East Rembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500031> .
+
+<https://psgc.gov.ph/event/2023-10-24/0021> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Pembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500032> .
+
+<https://psgc.gov.ph/event/2023-10-24/0022> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Pitogo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500033> .
+
+<https://psgc.gov.ph/event/2023-10-24/0023> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Post Proper Northside (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500034> .
+
+<https://psgc.gov.ph/event/2023-10-24/0024> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Post Proper Southside (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500035> .
+
+<https://psgc.gov.ph/event/2023-10-24/0025> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Rizal (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+
+<https://psgc.gov.ph/event/2023-10-24/0026> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "South Cembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500037> .
+
+<https://psgc.gov.ph/event/2023-10-24/0027> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "West Rembo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500038> .
+
+<https://psgc.gov.ph/event/2023-10-24/0028> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Alima (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103001> .
+
+<https://psgc.gov.ph/event/2023-10-24/0029> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103002> .
+
+<https://psgc.gov.ph/event/2023-10-24/0030> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Banalo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103003> .
+
+<https://psgc.gov.ph/event/2023-10-24/0031> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Daang Bukid (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103005> .
+
+<https://psgc.gov.ph/event/2023-10-24/0032> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Digman (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103006> .
+
+<https://psgc.gov.ph/event/2023-10-24/0033> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Kaingin (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103009> .
+
+<https://psgc.gov.ph/event/2023-10-24/0034> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Ligas I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103010> .
+
+<https://psgc.gov.ph/event/2023-10-24/0035> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mabolo I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103011> .
+
+<https://psgc.gov.ph/event/2023-10-24/0036> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Niog I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103015> .
+
+<https://psgc.gov.ph/event/2023-10-24/0037> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Real I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103019> .
+
+<https://psgc.gov.ph/event/2023-10-24/0038> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Sineguelasan (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103022> .
+
+<https://psgc.gov.ph/event/2023-10-24/0039> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Tabing Dagat (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103023> .
+
+<https://psgc.gov.ph/event/2023-10-24/0040> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103024> .
+
+<https://psgc.gov.ph/event/2023-10-24/0041> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote I (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103025> .
+
+<https://psgc.gov.ph/event/2023-10-24/0042> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103029> .
+
+<https://psgc.gov.ph/event/2023-10-24/0043> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103030> .
+
+<https://psgc.gov.ph/event/2023-10-24/0044> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban IV (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103031> .
+
+<https://psgc.gov.ph/event/2023-10-24/0045> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban V (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103032> .
+
+<https://psgc.gov.ph/event/2023-10-24/0046> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Campo Santo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103033> .
+
+<https://psgc.gov.ph/event/2023-10-24/0047> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Ligas II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103035> .
+
+<https://psgc.gov.ph/event/2023-10-24/0048> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mabolo II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103037> .
+
+<https://psgc.gov.ph/event/2023-10-24/0049> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mabolo III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103038> .
+
+<https://psgc.gov.ph/event/2023-10-24/0050> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Maliksi II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103039> .
+
+<https://psgc.gov.ph/event/2023-10-24/0051> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Maliksi III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103040> .
+
+<https://psgc.gov.ph/event/2023-10-24/0052> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mambog II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103041> .
+
+<https://psgc.gov.ph/event/2023-10-24/0053> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Mambog V (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103044> .
+
+<https://psgc.gov.ph/event/2023-10-24/0054> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Niog II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103051> .
+
+<https://psgc.gov.ph/event/2023-10-24/0055> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Niog III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103052> .
+
+<https://psgc.gov.ph/event/2023-10-24/0056> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103053> .
+
+<https://psgc.gov.ph/event/2023-10-24/0057> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103054> .
+
+<https://psgc.gov.ph/event/2023-10-24/0058> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu V (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103056> .
+
+<https://psgc.gov.ph/event/2023-10-24/0059> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "P.F. Espiritu VI (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103057> .
+
+<https://psgc.gov.ph/event/2023-10-24/0060> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Real II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103060> .
+
+<https://psgc.gov.ph/event/2023-10-24/0061> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Salinas II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103061> .
+
+<https://psgc.gov.ph/event/2023-10-24/0062> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Salinas III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103062> .
+
+<https://psgc.gov.ph/event/2023-10-24/0063> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Salinas IV (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103063> .
+
+<https://psgc.gov.ph/event/2023-10-24/0064> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103067> .
+
+<https://psgc.gov.ph/event/2023-10-24/0065> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba IV (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103068> .
+
+<https://psgc.gov.ph/event/2023-10-24/0066> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba V (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103069> .
+
+<https://psgc.gov.ph/event/2023-10-24/0067> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba VI (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103070> .
+
+<https://psgc.gov.ph/event/2023-10-24/0068> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Talaba VII (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103071> .
+
+<https://psgc.gov.ph/event/2023-10-24/0069> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote II (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103072> .
+
+<https://psgc.gov.ph/event/2023-10-24/0070> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote III (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103073> .
+
+<https://psgc.gov.ph/event/2023-10-24/0071> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Zapote IV (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0402103074> .
+
+<https://psgc.gov.ph/event/2023-10-24/0072> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Cembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300003> .
+
+<https://psgc.gov.ph/event/2023-10-24/0073> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Comembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300004> .
+
+<https://psgc.gov.ph/event/2023-10-24/0074> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "East Rembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300007> .
+
+<https://psgc.gov.ph/event/2023-10-24/0075> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Pembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300016> .
+
+<https://psgc.gov.ph/event/2023-10-24/0076> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Pitogo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300019> .
+
+<https://psgc.gov.ph/event/2023-10-24/0077> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Post Proper Northside (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300021> .
+
+<https://psgc.gov.ph/event/2023-10-24/0078> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Post Proper Southside (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300022> .
+
+<https://psgc.gov.ph/event/2023-10-24/0079> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "South Cembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300028> .
+
+<https://psgc.gov.ph/event/2023-10-24/0080> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "West Rembo (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300032> .
+
+<https://psgc.gov.ph/event/2023-10-24/0081> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Rizal (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> .
+
+<https://psgc.gov.ph/event/2023-10-24/0082> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300028 to 1381500037"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300028> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500037> .
+
+<https://psgc.gov.ph/event/2023-10-24/0083> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300016 to 1381500032"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300016> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500032> .
+
+<https://psgc.gov.ph/event/2023-10-24/0084> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300022 to 1381500035"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300022> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500035> .
+
+<https://psgc.gov.ph/event/2023-10-24/0085> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300032 to 1381500038"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300032> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500038> .
+
+<https://psgc.gov.ph/event/2023-10-24/0086> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300004 to 1381500030"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300004> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500030> .
+
+<https://psgc.gov.ph/event/2023-10-24/0087> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300021 to 1381500034"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300021> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500034> .
+
+<https://psgc.gov.ph/event/2023-10-24/0088> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300007 to 1381500031"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300007> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500031> .
+
+<https://psgc.gov.ph/event/2023-10-24/0089> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300003 to 1381500029"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300003> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500029> .
+
+<https://psgc.gov.ph/event/2023-10-24/0090> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300033 to 1381500036"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+
+<https://psgc.gov.ph/event/2023-10-24/0091> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300019 to 1381500033"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300019> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500033> .
+
+<https://psgc.gov.ph/entity/0402103076> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 6931 ;
+    skos:prefLabel "Aniban 1"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103076"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103077> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 5270 ;
+    skos:prefLabel "Aniban 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103077"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103078> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 5937 ;
+    skos:prefLabel "Kaingin Digman"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103078"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103079> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 9293 ;
+    skos:prefLabel "Ligas 1"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103079"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103080> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 4455 ;
+    skos:prefLabel "Mabolo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103080"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103081> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 8018 ;
+    skos:prefLabel "Maliksi 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103081"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103082> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 8321 ;
+    skos:prefLabel "Mambog 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103082"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103083> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 17898 ;
+    skos:prefLabel "Niog"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103083"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103084> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 6699 ;
+    skos:prefLabel "P.F. Espiritu 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103084"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103085> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 8608 ;
+    skos:prefLabel "P.F. Espiritu 4"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103085"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103086> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 8287 ;
+    skos:prefLabel "Poblacion"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103086"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103087> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 9113 ;
+    skos:prefLabel "Real"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103087"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103088> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 7513 ;
+    skos:prefLabel "Salinas 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103088"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103089> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 14773 ;
+    skos:prefLabel "Sinbanali"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103089"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103090> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 7384 ;
+    skos:prefLabel "Talaba 1"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103090"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103091> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 7276 ;
+    skos:prefLabel "Talaba 3"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103091"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103092> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 10542 ;
+    skos:prefLabel "Zapote 1"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103092"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0402103093> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 5675 ;
+    skos:prefLabel "Zapote 2"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "0402103093"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1381500029> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 26213 ;
+    skos:prefLabel "Cembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602003"^^xsd:string,
+        "1381500029"^^xsd:string,
+        "137602003"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500030> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 16818 ;
+    skos:prefLabel "Comembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602004"^^xsd:string,
+        "1381500030"^^xsd:string,
+        "137602004"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500031> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 28114 ;
+    skos:prefLabel "East Rembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602007"^^xsd:string,
+        "1381500031"^^xsd:string,
+        "137602007"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500032> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 48275 ;
+    skos:prefLabel "Pembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602016"^^xsd:string,
+        "1381500032"^^xsd:string,
+        "137602016"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500033> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 14395 ;
+    skos:prefLabel "Pitogo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602019"^^xsd:string,
+        "1381500033"^^xsd:string,
+        "137602019"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500034> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 28572 ;
+    skos:prefLabel "Post Proper Northside"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602021"^^xsd:string,
+        "1381500034"^^xsd:string,
+        "137602021"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500035> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 52428 ;
+    skos:prefLabel "Post Proper Southside"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602022"^^xsd:string,
+        "1381500035"^^xsd:string,
+        "137602022"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500036> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 15103 ;
+    skos:prefLabel "Rizal"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602033"^^xsd:string,
+        "1381500036"^^xsd:string,
+        "137602033"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500037> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 29899 ;
+    skos:prefLabel "South Cembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602028"^^xsd:string,
+        "1381500037"^^xsd:string,
+        "137602028"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1381500038> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 42635 ;
+    skos:prefLabel "West Rembo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602032"^^xsd:string,
+        "1381500038"^^xsd:string,
+        "137602032"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/change-type/code_change> a skos:Concept .
+
+<https://psgc.gov.ph/concept/urban-rural/U> a skos:Concept ;
+    skos:prefLabel "Urban"@en .
+
+<https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
+

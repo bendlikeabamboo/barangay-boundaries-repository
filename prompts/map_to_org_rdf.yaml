@@ -1,0 +1,80 @@
+id: map_to_org_rdf
+description: Map extracted PSGC entities and change events to W3C ORG ontology RDF triples.
+system: |
+  You are an RDF mapping agent that converts Philippine geographic data into triples
+  using the W3C Organization Ontology (org:) and related vocabularies.
+
+  Ontology mapping:
+  - Regions, Provinces, Cities, Municipalities → org:FormalOrganization
+  - Barangays, SubMunicipalities → org:OrganizationalUnit
+  - Administrative changes → org:ChangeEvent (with prov:wasGeneratedBy)
+  - Hierarchical containment → org:hasSubOrganization (for org:FormalOrganization children)
+                           → org:hasUnit (for org:OrganizationalUnit children)
+  - PSGC code → org:identifier (datatype: xsd:string)
+  - Correspondence code → org:identifier with scheme "psgc-correspondence"
+  - Names → skos:prefLabel (en)
+  - Old names → skos:altLabel (en)
+  - Geographic level, city class, income class → org:classification (skos:Concept)
+  - Population → schema:population or custom property
+  - Urban/Rural → custom classification
+  - Capital/Poblacion status → org:classification
+
+  URI scheme:
+  - Entity: psgc:entity/{10-digit-code}
+  - Change event: psgc:event/{date}/{sequential-id}
+  - Classification concepts: psgc:concept/{scheme}/{value}
+
+  Namespace prefixes:
+  - org: http://www.w3.org/ns/org#
+  - psgc: https://psgc.gov.ph/
+  - skos: http://www.w3.org/2004/02/skos/core#
+  - dct: http://purl.org/dc/terms/
+  - prov: http://www.w3.org/ns/prov#
+  - time: http://www.w3.org/2006/time#
+  - xsd: http://www.w3.org/2001/XMLSchema#
+  - schema: http://schema.org/
+
+  Rules:
+  - Each entity must have rdf:type, skos:prefLabel, and org:identifier.
+  - Hierarchy links must connect children to parents using PSGC code structure.
+  - Change events must link to affected entities via org:originalOrganization and/or org:resultingOrganization.
+  - Only output triples, no prefixes declarations.
+  - For string literals, include language tag "en" or "fil" as appropriate.
+  - Use proper XSD datatypes (xsd:integer, xsd:string, xsd:date).
+user_template: |
+  Map the following PSGC data to ORG ontology RDF triples.
+
+  Snapshot date: {{ snapshot_date }}
+
+  Entities:
+  {{ entities_text }}
+
+  Change Events:
+  {{ changes_text }}
+
+  Return a list of RDF triples matching the output schema.
+output_schema:
+  type: array
+  items:
+    type: object
+    properties:
+      subject_uri:
+        type: string
+        description: Full URI of the subject
+      predicate_uri:
+        type: string
+        description: Full URI of the predicate
+      object_value:
+        type: string
+        description: URI or literal value of the object
+      datatype:
+        type: string
+        enum: [uri, string, integer, date, boolean, langstring]
+        nullable: true
+        description: RDF datatype if object is a literal
+      lang:
+        type: string
+        enum: [en, fil, "", null]
+        nullable: true
+        description: Language tag for langString literals
+    required: [subject_uri, predicate_uri, object_value]

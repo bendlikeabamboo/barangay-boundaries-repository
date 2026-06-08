@@ -1,0 +1,89 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2024-04-23/0000> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Guintolan (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0908304019> .
+
+<https://psgc.gov.ph/event/2024-04-23/0001> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Angoyao (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1903617146> .
+
+<https://psgc.gov.ph/event/2024-04-23/0002> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Sultan Corobong (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1903617147> .
+
+<https://psgc.gov.ph/event/2024-04-23/0003> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Sultan Panoroganan (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1903617148> .
+
+<https://psgc.gov.ph/event/2024-04-23/0004> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "Guintolan (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0908311008> .
+
+<https://psgc.gov.ph/event/2024-04-23/0005> a org:ChangeEvent ;
+    dct:date "2024-04-23"^^xsd:date ;
+    dct:description "PSGC code changed from 0908311008 to 0908304019"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0908311008> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0908304019> .
+
+<https://psgc.gov.ph/concept/change-type/code_change> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/entity/1903617146> a org:OrganizationalUnit ;
+    dct:date "2024-04-23"^^xsd:date ;
+    skos:prefLabel "Angoyao"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1903617146"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1903617147> a org:OrganizationalUnit ;
+    dct:date "2024-04-23"^^xsd:date ;
+    skos:prefLabel "Sultan Corobong"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1903617147"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1903617148> a org:OrganizationalUnit ;
+    dct:date "2024-04-23"^^xsd:date ;
+    skos:prefLabel "Sultan Panoroganan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1903617148"^^xsd:string .
+
+<https://psgc.gov.ph/entity/0908304019> a org:OrganizationalUnit ;
+    dct:date "2024-04-23"^^xsd:date ;
+    schema1:population 1850 ;
+    skos:prefLabel "Guintolan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "0908304019"^^xsd:string,
+        "098311008"^^xsd:string,
+        "098311008"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+

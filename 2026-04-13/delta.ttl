@@ -1,0 +1,218 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2026-04-13/0000> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Merger: San Rafael merged into Dacanlao"@en ;
+    dct:source "GR 234228 dated 25 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/merger> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0401007038> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0401007019> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0001> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Sanchez-Mira to Sanchez Mira"@en ;
+    dct:source """1. Certification signed by the Municipal Mayor with the following supporting documents:
+a. Ereccion de los Pueblos de Cagayan 1863-1898 Tomo VII, provided by the National Archives of the Philippines to the said municipality;
+b. Census of the Philippine Islands: 1903, Volume Two;
+c. RA 7809 dated 16 September 1994;
+d. Sangguniang Bayan Resolution No. 2026-12-058, dated 09 February 2026;
+e. The Biography of General Manuel Sanchez Mira
+
+2. Letter of the NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025."""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0201522000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0201522000> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0002> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Ginitligan to Genitligan"@en ;
+    dct:source """1. Municipal Resolution No. 128-2018, dated 07 May 2024;
+2. Letter of the NHCP recommending the use of the barangay’s name based on historical records, dated 31 March 2025;
+3. History of Barangay Genitligan"""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0502002010> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0502002010> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0003> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Santo Rosario to Sto. Rosario"@en ;
+    dct:source """1. Certification dated 26 February 2026, signed by the Municipal Mayor;
+2. Corporate Seal of Barangay Sto. Rosario."""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1001309030> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1001309030> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0004> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Saint Peter to St. Peter"@en ;
+    dct:source "Municipal Resolution No. 112-72 dated 24 August 1972"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1001312058> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1001312058> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0005> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Santo Niño to Sto. Niño"@en ;
+    dct:source "Certification dated 27 February 2026, signed by City Mayor"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1001312061> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1001312061> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0006> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Santo Niño to Sto. Niño"@en ;
+    dct:source """1. Certification dated 26 February 2026, signed by the Municipal Mayor;
+2. Barangay Ordinance No. 18-78 dated 12 April 1976;
+3. Barangay Ordinance No. 34 dated 01 June 1970, Series of 1970"""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1001314021> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1001314021> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0007> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Ambuclao to Ambuklao"@en ;
+    dct:source """1. Municipal Ordinance No. 38, Series of 2025;
+2. Letter of NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025"""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1401104001> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1401104001> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2026-04-13/0008> a org:ChangeEvent ;
+    dct:date "2026-04-13"^^xsd:date ;
+    dct:description "Corrected name from Daclan to Daklan"@en ;
+    dct:source """1. Municipal Ordinance No. 38, Series of 2025;
+2. Letter of NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025"""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1401104004> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1401104004> ;
+    prov:generatedAtTime "2026-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/concept/change-type/merger> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Mun> a skos:Concept .
+
+<https://psgc.gov.ph/concept/income-class/2nd> a skos:Concept ;
+    skos:prefLabel "Income Class 2nd"@en .
+
+<https://psgc.gov.ph/entity/0401007019> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 7683 ;
+    skos:prefLabel "Dacanlao"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "0401007019"^^xsd:string,
+        "041007019"^^xsd:string,
+        "041007019"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/urban-rural/U> a skos:Concept ;
+    skos:prefLabel "Urban"@en .
+
+<https://psgc.gov.ph/entity/0201522000> a org:FormalOrganization ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 26292 ;
+    skos:altLabel "Sanchez-Mira"@en ;
+    skos:prefLabel "Sanchez Mira"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun>,
+        <https://psgc.gov.ph/concept/income-class/2nd> ;
+    org:identifier "0201522000"^^xsd:string,
+        "021522000"^^xsd:string,
+        "021522000"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/0502002010> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 1000 ;
+    skos:altLabel "Ginitligan"@en ;
+    skos:prefLabel "Genitligan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "0502002010"^^xsd:string,
+        "052002010"^^xsd:string,
+        "052002010"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1001309030> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 790 ;
+    skos:altLabel "Santo Rosario"@en ;
+    skos:prefLabel "Sto. Rosario"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1001309030"^^xsd:string,
+        "101309030"^^xsd:string,
+        "101309030"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1001312058> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 2835 ;
+    skos:altLabel "Saint Peter"@en ;
+    skos:prefLabel "St. Peter"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1001312058"^^xsd:string,
+        "101312058"^^xsd:string,
+        "101312058"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1001312061> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 1975 ;
+    skos:altLabel "Santo Niño"@en ;
+    skos:prefLabel "Sto. Niño"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1001312061"^^xsd:string,
+        "101312061"^^xsd:string,
+        "101312061"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1001314021> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 4352 ;
+    skos:altLabel "Santo Niño"@en ;
+    skos:prefLabel "Sto. Niño"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1001314021"^^xsd:string,
+        "101314021"^^xsd:string,
+        "101314021"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1401104001> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 3670 ;
+    skos:altLabel "Ambuclao"@en ;
+    skos:prefLabel "Ambuklao"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "1401104001"^^xsd:string,
+        "141104001"^^xsd:string,
+        "141104001"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1401104004> a org:OrganizationalUnit ;
+    dct:date "2026-04-13"^^xsd:date ;
+    schema1:population 1889 ;
+    skos:altLabel "Daclan"@en ;
+    skos:prefLabel "Daklan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1401104004"^^xsd:string,
+        "141104004"^^xsd:string,
+        "141104004"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/change-type/renaming> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+

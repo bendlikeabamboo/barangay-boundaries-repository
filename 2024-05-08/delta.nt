@@ -1,0 +1,81 @@
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1999908010> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/ns/org#identifier> "124717004"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1999904007> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/ns/org#identifier> "124712034"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-05-08/0002> <http://purl.org/dc/terms/description> "Panicupan (Bgy) created"@en .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/2004/02/skos/core#prefLabel> "Macabual"@en .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999908009> .
+<https://psgc.gov.ph/entity/1999908009> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0002> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://purl.org/dc/terms/description> "PSGC code changed from 1999906008 to 1999908010"@en .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999904007> .
+<https://psgc.gov.ph/event/2024-05-08/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999908003> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/code_change> .
+<https://psgc.gov.ph/event/2024-05-08/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-05-08/0001> <http://purl.org/dc/terms/description> "Macabual (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-05-08/0005> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-05-08/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/ns/org#identifier> "124712034"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2024-05-08/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999908009> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dunguan"@en .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Panicupan"@en .
+<https://psgc.gov.ph/event/2024-05-08/0003> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/ns/org#identifier> "1999908010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999908010> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999907007> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/ns/org#identifier> "124712048"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/code_change> .
+<https://psgc.gov.ph/event/2024-05-08/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-05-08/0003> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999906008> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1999908010> <http://schema.org/population> "2357"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-05-08/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-05-08/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999907007> .
+<https://psgc.gov.ph/event/2024-05-08/0004> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-05-08/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/ns/org#identifier> "1999904007"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999908003> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/ns/org#identifier> "124712048"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-05-08/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1999906008> .
+<https://psgc.gov.ph/event/2024-05-08/0000> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0008> <http://purl.org/dc/terms/description> "PSGC code changed from 1999907007 to 1999908009"@en .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-05-08/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999904007> .
+<https://psgc.gov.ph/event/2024-05-08/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1999904007> <http://schema.org/population> "3285"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1999904007> <http://www.w3.org/ns/org#identifier> "124717004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-05-08/0001> <http://purl.org/dc/terms/date> "2024-05-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://purl.org/dc/terms/description> "PSGC code changed from 1999908003 to 1999904007"@en .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-05-08/0005> <http://purl.org/dc/terms/description> "Dunguan (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2024-05-08/0004> <http://purl.org/dc/terms/description> "Macabual (Bgy) removed"@en .
+<https://psgc.gov.ph/concept/change-type/code_change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-05-08/0000> <http://purl.org/dc/terms/description> "Dunguan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-05-08/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1999908009> <http://schema.org/population> "4557"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-05-08/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2024-05-08/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1999908010> .
+<https://psgc.gov.ph/event/2024-05-08/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-05-08/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-05-08/0003> <http://purl.org/dc/terms/description> "Panicupan (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1999908009> <http://www.w3.org/ns/org#identifier> "1999908009"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-05-08/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2024-05-08/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/code_change> .
+<https://psgc.gov.ph/entity/1999908010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .

@@ -1,0 +1,171 @@
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0401007019> <http://schema.org/population> "7683"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/2004/02/skos/core#altLabel> "Ginitligan"@en .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/ns/org#identifier> "021522000"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/ns/org#identifier> "1001312058"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001312061> <http://schema.org/population> "1975"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/ns/org#identifier> "1401104001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://purl.org/dc/terms/description> "Merger: San Rafael merged into Dacanlao"@en .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1001312058> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001312061> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1001309030> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1401104004> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/ns/org#identifier> "141104001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://purl.org/dc/terms/source> "GR 234228 dated 25 February 2025"@en .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/2004/02/skos/core#altLabel> "Daclan"@en .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0401007038> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Niño"@en .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/ns/org#identifier> "052002010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Niño"@en .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0502002010> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/ns/org#identifier> "101309030"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/ns/org#identifier> "1001312061"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1001309030> .
+<https://psgc.gov.ph/entity/0502002010> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1401104004> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://purl.org/dc/terms/source> "Certification dated 27 February 2026, signed by City Mayor"@en .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/ns/org#identifier> "141104004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/change-type/merger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#FormalOrganization> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sanchez Mira"@en .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://purl.org/dc/terms/source> "1. Municipal Resolution No. 128-2018, dated 07 May 2024;\n2. Letter of the NHCP recommending the use of the barangay’s name based on historical records, dated 31 March 2025;\n3. History of Barangay Genitligan"@en .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/ns/org#identifier> "101309030"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1001309030> .
+<https://psgc.gov.ph/concept/income-class/2nd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Income Class 2nd"@en .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/ns/org#identifier> "1401104004"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/2004/02/skos/core#prefLabel> "Daklan"@en .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://purl.org/dc/terms/source> "1. Municipal Ordinance No. 38, Series of 2025;\n2. Letter of NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025"@en .
+<https://psgc.gov.ph/entity/0201522000> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/ns/org#identifier> "141104001"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/2004/02/skos/core#altLabel> "Saint Peter"@en .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1401104004> <http://schema.org/population> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://purl.org/dc/terms/description> "Corrected name from Santo Rosario to Sto. Rosario"@en .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/ns/org#identifier> "0401007019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/2004/02/skos/core#prefLabel> "St. Peter"@en .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/ns/org#identifier> "021522000"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/ns/org#identifier> "101312058"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://purl.org/dc/terms/source> "1. Certification signed by the Municipal Mayor with the following supporting documents:\na. Ereccion de los Pueblos de Cagayan 1863-1898 Tomo VII, provided by the National Archives of the Philippines to the said municipality;\nb. Census of the Philippine Islands: 1903, Volume Two;\nc. RA 7809 dated 16 September 1994;\nd. Sangguniang Bayan Resolution No. 2026-12-058, dated 09 February 2026;\ne. The Biography of General Manuel Sanchez Mira\n\n2. Letter of the NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025."@en .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://purl.org/dc/terms/description> "Corrected name from Sanchez-Mira to Sanchez Mira"@en .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/0502002010> <http://schema.org/population> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/ns/org#identifier> "101312061"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/2004/02/skos/core#altLabel> "Ambuclao"@en .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/2004/02/skos/core#prefLabel> "Genitligan"@en .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/ns/org#identifier> "141104004"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://purl.org/dc/terms/source> "1. Certification dated 26 February 2026, signed by the Municipal Mayor;\n2. Barangay Ordinance No. 18-78 dated 12 April 1976;\n3. Barangay Ordinance No. 34 dated 01 June 1970, Series of 1970"@en .
+<https://psgc.gov.ph/entity/0201522000> <http://schema.org/population> "26292"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Rosario"@en .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/ns/org#identifier> "041007019"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Niño"@en .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/ns/org#identifier> "041007019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Niño"@en .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0201522000> .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1401104004> .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://purl.org/dc/terms/description> "Corrected name from Daclan to Daklan"@en .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Rosario"@en .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://purl.org/dc/terms/source> "1. Certification dated 26 February 2026, signed by the Municipal Mayor;\n2. Corporate Seal of Barangay Sto. Rosario."@en .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://purl.org/dc/terms/source> "Municipal Resolution No. 112-72 dated 24 August 1972"@en .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0201522000> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/ns/org#identifier> "101314021"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/ns/org#identifier> "0201522000"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001314021> <http://schema.org/population> "4352"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/ns/org#identifier> "052002010"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/concept/geographic-level/Mun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/2004/02/skos/core#altLabel> "Sanchez-Mira"@en .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1001314021> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/income-class/2nd> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1401104001> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1001309030> <http://schema.org/population> "790"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/ns/org#identifier> "0502002010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/change-type/renaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1001314021> .
+<https://psgc.gov.ph/event/2026-04-13/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1001312061> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1401104001> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://purl.org/dc/terms/description> "Corrected name from Saint Peter to St. Peter"@en .
+<https://psgc.gov.ph/entity/1401104001> <http://schema.org/population> "3670"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0502002010> .
+<https://psgc.gov.ph/entity/1001312058> <http://schema.org/population> "2835"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0502002010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1001312058> .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1001312061> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/ns/org#identifier> "101314021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0201522000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Mun> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/ns/org#identifier> "1001314021"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/ns/org#identifier> "101312058"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2026-04-13/0008> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1001314021> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-04-13/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1001312058> .
+<https://psgc.gov.ph/entity/1401104001> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://purl.org/dc/terms/description> "Corrected name from Ginitligan to Genitligan"@en .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/merger> .
+<https://psgc.gov.ph/event/2026-04-13/0002> <http://www.w3.org/ns/prov#generatedAtTime> "2026-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/ns/org#identifier> "101312061"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1001309030> <http://www.w3.org/ns/org#identifier> "1001309030"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/concept/income-class/2nd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1001312058> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://purl.org/dc/terms/description> "Corrected name from Ambuclao to Ambuklao"@en .
+<https://psgc.gov.ph/entity/0401007019> <http://purl.org/dc/terms/date> "2026-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0401007019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dacanlao"@en .
+<https://psgc.gov.ph/event/2026-04-13/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urban"@en .
+<https://psgc.gov.ph/event/2026-04-13/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0401007019> .
+<https://psgc.gov.ph/entity/1001312061> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1001314021> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1401104004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1401104001> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ambuklao"@en .
+<https://psgc.gov.ph/event/2026-04-13/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2026-04-13/0007> <http://purl.org/dc/terms/source> "1. Municipal Ordinance No. 38, Series of 2025;\n2. Letter of NHCP recommending the use of the barangay’s name based on historical records, dated 06 February 2025"@en .

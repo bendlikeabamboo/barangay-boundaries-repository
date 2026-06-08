@@ -1,0 +1,105 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2024-05-08/0000> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Dunguan (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904007> .
+
+<https://psgc.gov.ph/event/2024-05-08/0001> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Macabual (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908009> .
+
+<https://psgc.gov.ph/event/2024-05-08/0002> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Panicupan (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908010> .
+
+<https://psgc.gov.ph/event/2024-05-08/0003> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Panicupan (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999906008> .
+
+<https://psgc.gov.ph/event/2024-05-08/0004> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Macabual (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999907007> .
+
+<https://psgc.gov.ph/event/2024-05-08/0005> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "Dunguan (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999908003> .
+
+<https://psgc.gov.ph/event/2024-05-08/0006> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "PSGC code changed from 1999906008 to 1999908010"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999906008> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908010> .
+
+<https://psgc.gov.ph/event/2024-05-08/0007> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "PSGC code changed from 1999908003 to 1999904007"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999908003> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999904007> .
+
+<https://psgc.gov.ph/event/2024-05-08/0008> a org:ChangeEvent ;
+    dct:date "2024-05-08"^^xsd:date ;
+    dct:description "PSGC code changed from 1999907007 to 1999908009"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1999907007> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1999908009> .
+
+<https://psgc.gov.ph/entity/1999904007> a org:OrganizationalUnit ;
+    dct:date "2024-05-08"^^xsd:date ;
+    schema1:population 3285 ;
+    skos:prefLabel "Dunguan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "124717004"^^xsd:string,
+        "1999904007"^^xsd:string,
+        "124717004"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1999908009> a org:OrganizationalUnit ;
+    dct:date "2024-05-08"^^xsd:date ;
+    schema1:population 4557 ;
+    skos:prefLabel "Macabual"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "124712034"^^xsd:string,
+        "1999908009"^^xsd:string,
+        "124712034"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1999908010> a org:OrganizationalUnit ;
+    dct:date "2024-05-08"^^xsd:date ;
+    schema1:population 2357 ;
+    skos:prefLabel "Panicupan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "124712048"^^xsd:string,
+        "1999908010"^^xsd:string,
+        "124712048"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/change-type/code_change> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+

@@ -1,0 +1,236 @@
+<https://psgc.gov.ph/event/2023-04-18/0023> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0015> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420060> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muzon East"@en .
+<https://psgc.gov.ph/entity/0803738116> <http://schema.org/population> "2468"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2023-04-18/0006> <http://purl.org/dc/terms/description> "Boganga II (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0008> <http://purl.org/dc/terms/description> "Barangay 1 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/0803738116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0018> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0035> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738048> .
+<https://psgc.gov.ph/event/2023-04-18/0033> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0301420062> <http://www.w3.org/ns/org#identifier> "0301420062"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2023-04-18/0028> <http://purl.org/dc/terms/description> "Barangay 28 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0803738117> <http://www.w3.org/ns/org#identifier> "0803738117"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2023-04-18/0015> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0017> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0000> <http://purl.org/dc/terms/description> "Muzon East (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0803738115> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0027> <http://purl.org/dc/terms/description> "Barangay 27 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0000> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0008> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738021> .
+<https://psgc.gov.ph/entity/1903617145> <http://www.w3.org/2004/02/skos/core#prefLabel> "Datu Dalidigan"@en .
+<https://psgc.gov.ph/entity/1903617145> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0025> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0010> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0013> <http://purl.org/dc/terms/description> "Barangay 14 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/0301420060> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420061> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0023> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738036> .
+<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0803738115> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay East"@en .
+<https://psgc.gov.ph/event/2023-04-18/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0014> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738027> .
+<https://psgc.gov.ph/event/2023-04-18/0023> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0018> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738031> .
+<https://psgc.gov.ph/entity/0803738116> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0003> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0803738117> <http://schema.org/population> "2403"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2023-04-18/0029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0025> <http://purl.org/dc/terms/description> "Barangay 25 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0025> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738038> .
+<https://psgc.gov.ph/event/2023-04-18/0010> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0019> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738032> .
+<https://psgc.gov.ph/entity/0803738116> <http://www.w3.org/ns/org#identifier> "0803738116"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2023-04-18/0007> <http://purl.org/dc/terms/description> "Datu Dalidigan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0022> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0005> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0007> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617145> .
+<https://psgc.gov.ph/event/2023-04-18/0029> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0027> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738040> .
+<https://psgc.gov.ph/entity/0301420062> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0007> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0032> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0803738115> <http://www.w3.org/ns/org#identifier> "0803738115"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1903617145> <http://www.w3.org/ns/org#identifier> "1903617145"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2023-04-18/0022> <http://purl.org/dc/terms/description> "Barangay 22 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0029> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0008> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0803738116> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay South"@en .
+<https://psgc.gov.ph/event/2023-04-18/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0028> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0004> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0006> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0803738117> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0013> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738026> .
+<https://psgc.gov.ph/event/2023-04-18/0012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1903617144> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0013> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0015> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738028> .
+<https://psgc.gov.ph/event/2023-04-18/0021> <http://purl.org/dc/terms/description> "Barangay 21 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0015> <http://purl.org/dc/terms/description> "Barangay 16 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0022> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0032> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0012> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0034> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738047> .
+<https://psgc.gov.ph/event/2023-04-18/0022> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738035> .
+<https://psgc.gov.ph/event/2023-04-18/0003> <http://purl.org/dc/terms/description> "Barangay East (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0009> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0011> <http://purl.org/dc/terms/description> "Barangay 12 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/1903617144> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2023-04-18/0028> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0803738115> <http://schema.org/population> "2918"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2023-04-18/0028> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738041> .
+<https://psgc.gov.ph/event/2023-04-18/0035> <http://purl.org/dc/terms/description> "Barangay 9 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0301420060> .
+<https://psgc.gov.ph/entity/1903617144> <http://www.w3.org/2004/02/skos/core#prefLabel> "Boganga II"@en .
+<https://psgc.gov.ph/event/2023-04-18/0011> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738024> .
+<https://psgc.gov.ph/entity/0803738115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0021> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738034> .
+<https://psgc.gov.ph/event/2023-04-18/0013> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0024> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/entity/0803738117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0008> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0010> <http://purl.org/dc/terms/description> "Barangay 11 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0012> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803738115> .
+<https://psgc.gov.ph/event/2023-04-18/0010> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738023> .
+<https://psgc.gov.ph/event/2023-04-18/0017> <http://purl.org/dc/terms/description> "Barangay 18 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0032> <http://purl.org/dc/terms/description> "Barangay 6 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0009> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0024> <http://purl.org/dc/terms/description> "Barangay 24 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0029> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738042> .
+<https://psgc.gov.ph/event/2023-04-18/0011> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0014> <http://purl.org/dc/terms/description> "Barangay 15 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803738117> .
+<https://psgc.gov.ph/event/2023-04-18/0014> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0016> <http://purl.org/dc/terms/description> "Barangay 17 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0034> <http://purl.org/dc/terms/description> "Barangay 8 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0029> <http://purl.org/dc/terms/description> "Barangay 3 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0034> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0031> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738044> .
+<https://psgc.gov.ph/entity/0301420060> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0016> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738029> .
+<https://psgc.gov.ph/event/2023-04-18/0016> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0033> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738046> .
+<https://psgc.gov.ph/event/2023-04-18/0002> <http://purl.org/dc/terms/description> "Muzon West (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0020> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738033> .
+<https://psgc.gov.ph/event/2023-04-18/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0803738116> .
+<https://psgc.gov.ph/entity/0803738115> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0024> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0030> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617145> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0026> <http://purl.org/dc/terms/description> "Barangay 26 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0009> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738022> .
+<https://psgc.gov.ph/event/2023-04-18/0026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0001> <http://purl.org/dc/terms/description> "Muzon South (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0033> <http://purl.org/dc/terms/description> "Barangay 7 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0034> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0018> <http://purl.org/dc/terms/description> "Barangay 19 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0035> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0005> <http://purl.org/dc/terms/description> "Barangay West (Bgy) created"@en .
+<https://psgc.gov.ph/event/2023-04-18/0016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/entity/0301420061> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0803738115> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0803738117> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barangay West"@en .
+<https://psgc.gov.ph/event/2023-04-18/0025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0011> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420061> <http://www.w3.org/ns/org#identifier> "0301420061"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1903617145> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0301420060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0803738117> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2023-04-18/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617144> .
+<https://psgc.gov.ph/event/2023-04-18/0027> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/entity/0301420060> <http://www.w3.org/ns/org#identifier> "0301420060"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2023-04-18/0031> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0026> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0030> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/entity/0803738116> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420062> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muzon West"@en .
+<https://psgc.gov.ph/entity/0301420061> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2023-04-18/0019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0012> <http://purl.org/dc/terms/description> "Barangay 13 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0020> <http://purl.org/dc/terms/description> "Barangay 20 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0009> <http://purl.org/dc/terms/description> "Barangay 10 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0012> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738025> .
+<https://psgc.gov.ph/event/2023-04-18/0020> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1903617144> <http://www.w3.org/ns/org#identifier> "1903617144"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0803738116> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2023-04-18/0021> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0030> <http://purl.org/dc/terms/description> "Barangay 4 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/1903617144> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2023-04-18/0002> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0026> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0035> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420061> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muzon South"@en .
+<https://psgc.gov.ph/event/2023-04-18/0009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0301420062> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0031> <http://purl.org/dc/terms/description> "Barangay 5 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0014> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0020> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/event/2023-04-18/0026> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738039> .
+<https://psgc.gov.ph/event/2023-04-18/0023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/event/2023-04-18/0007> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0032> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738045> .
+<https://psgc.gov.ph/event/2023-04-18/0027> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0301420061> .
+<https://psgc.gov.ph/event/2023-04-18/0017> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738030> .
+<https://psgc.gov.ph/event/2023-04-18/0031> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0004> <http://purl.org/dc/terms/description> "Barangay South (Bgy) created"@en .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0301420062> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/0803738117> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0024> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738037> .
+<https://psgc.gov.ph/event/2023-04-18/0015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0019> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0301420060> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2023-04-18/0023> <http://purl.org/dc/terms/description> "Barangay 23 (Bgy) removed"@en .
+<https://psgc.gov.ph/entity/1903617145> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0001> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2023-04-18/0033> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617144> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2023-04-18/0030> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0803738043> .
+<https://psgc.gov.ph/event/2023-04-18/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0301420062> .
+<https://psgc.gov.ph/event/2023-04-18/0019> <http://purl.org/dc/terms/description> "Barangay 2 (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2023-04-18/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2023-04-18/0017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2023-04-18/0021> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2023-04-18/0025> <http://purl.org/dc/terms/date> "2023-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .

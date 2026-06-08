@@ -1,0 +1,126 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2024-10-18/0000> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Juan-Loreto Tamayo (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1206317017> .
+
+<https://psgc.gov.ph/event/2024-10-18/0001> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-A (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100189> .
+
+<https://psgc.gov.ph/event/2024-10-18/0002> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-B (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100190> .
+
+<https://psgc.gov.ph/event/2024-10-18/0003> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-C (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100191> .
+
+<https://psgc.gov.ph/event/2024-10-18/0004> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-D (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100192> .
+
+<https://psgc.gov.ph/event/2024-10-18/0005> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-E (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100193> .
+
+<https://psgc.gov.ph/event/2024-10-18/0006> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176-F (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1380100194> .
+
+<https://psgc.gov.ph/event/2024-10-18/0007> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Guinhalinan (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1606801027> .
+
+<https://psgc.gov.ph/event/2024-10-18/0008> a org:ChangeEvent ;
+    dct:date "2024-10-18"^^xsd:date ;
+    dct:description "Barangay 176 (Bgy) removed"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/deletion> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380100176> .
+
+<https://psgc.gov.ph/concept/change-type/deletion> a skos:Concept .
+
+<https://psgc.gov.ph/entity/1206317017> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Juan-Loreto Tamayo"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1206317017"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100189> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    schema1:population 261729 ;
+    skos:prefLabel "Barangay 176-A"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100189"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100190> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Barangay 176-B"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100190"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100191> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Barangay 176-C"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100191"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100192> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Barangay 176-D"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100192"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100193> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Barangay 176-E"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100193"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1380100194> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Barangay 176-F"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1380100194"^^xsd:string .
+
+<https://psgc.gov.ph/entity/1606801027> a org:OrganizationalUnit ;
+    dct:date "2024-10-18"^^xsd:date ;
+    skos:prefLabel "Guinhalinan"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/-> ;
+    org:identifier "1606801027"^^xsd:string .
+
+<https://psgc.gov.ph/concept/change-type/creation> a skos:Concept .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+
+<https://psgc.gov.ph/concept/urban-rural/-> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+

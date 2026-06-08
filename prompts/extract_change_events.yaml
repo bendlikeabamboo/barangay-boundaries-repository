@@ -1,0 +1,79 @@
+id: extract_change_events
+description: Parse structured change events from PSGC Summary of Changes raw text.
+system: |
+  You are a data extraction agent for the Philippine Standard Geographic Code (PSGC).
+  Given raw text from the Summary of Changes document, extract structured change events.
+
+  The Summary of Changes contains administrative changes to Philippine geographic units
+  organized by quarter (e.g., "January - March 2001 Updates"). Each entry describes:
+  - Creation of new provinces, cities, municipalities, barangays
+  - Transfer of units between parent units
+  - Renaming of units
+  - Merging or splitting of barangays
+  - Deletion of units
+  - Re-enlistment of previously deleted units
+  - Changes to PSGC codes
+  - Reclassification (e.g., municipality becoming a city, CC converting to HUC)
+
+  Rules:
+  - Normalize messy/inconsistent unit type descriptions to one of the canonical event types.
+  - Extract legal basis (Republic Act numbers, executive orders, plebiscite dates).
+  - Multi-row entries (e.g., merging of barangays where the second row has only old name/code)
+    should be combined into a single change event.
+  - Entity names may include prefixes like "City of", "Municipality of", "Province of",
+    "Barangay" — preserve these as-is in the entity_name field.
+  - Dates are in Philippine context (MM/DD/YYYY or "Month DD, YYYY").
+  - Old codes may be blank for new creations.
+  - Mother unit is the parent geographic unit (e.g., province for a municipality transfer).
+  - Some entries have "NaN" or blank values — treat these as null.
+user_template: |
+  Extract change events from the following PSGC Summary of Changes data.
+  Snapshot date: {{ snapshot_date }}
+
+  {{ changes_text }}
+
+  Return a list of change events matching the output schema.
+output_schema:
+  type: array
+  items:
+    type: object
+    properties:
+      event_type:
+        type: string
+        enum: [creation, deletion, transfer, renaming, merger, split, reclassification, code_change, reenlistment, unknown]
+      entity_name:
+        type: string
+        description: Full name of the affected entity
+      new_code:
+        type: string
+        nullable: true
+        description: New 10-digit PSGC code
+      old_code:
+        type: string
+        nullable: true
+        description: Previous 10-digit PSGC code
+      old_name:
+        type: string
+        nullable: true
+        description: Previous name of the entity
+      legal_basis:
+        type: string
+        nullable: true
+        description: Republic Act, Executive Order, or other legal reference
+      effective_date:
+        type: string
+        nullable: true
+        description: Date when the change took effect
+      plebiscite_date:
+        type: string
+        nullable: true
+        description: Date of plebiscite if applicable
+      mother_unit:
+        type: string
+        nullable: true
+        description: Parent geographic unit
+      description:
+        type: string
+        nullable: true
+        description: Additional description or notes
+    required: [event_type, entity_name]

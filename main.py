@@ -1,6 +1,4 @@
-def main():
-    print("Hello from barangay-boundaries-repository!")
-
+from barangay_boundaries_repository.cli import cli
 
 if __name__ == "__main__":
-    main()
+    cli()

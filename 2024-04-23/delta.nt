@@ -1,0 +1,66 @@
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#identifier> "1903617148"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617146> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/description> "PSGC code changed from 0908311008 to 0908304019"@en .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0908311008> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://purl.org/dc/terms/description> "Sultan Panoroganan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/description> "Angoyao (Bgy) created"@en .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1903617148> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/deletion> .
+<https://psgc.gov.ph/concept/change-type/creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#identifier> "1903617147"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0908304019> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/entity/0908304019> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#identifier> "1903617146"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/description> "Sultan Corobong (Bgy) created"@en .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "0908304019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1903617147> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Panoroganan"@en .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/2004/02/skos/core#prefLabel> "Angoyao"@en .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#identifier> "098311008"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/creation> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/description> "Guintolan (Bgy) created"@en .
+<https://psgc.gov.ph/event/2024-04-23/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617148> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1903617148> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1903617146> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/0908304019> <http://schema.org/population> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0908311008> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/concept/urban-rural/-> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-04-23/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0908304019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guintolan"@en .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/change-type/code_change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1903617146> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/-> .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/code_change> .
+<https://psgc.gov.ph/entity/1903617147> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sultan Corobong"@en .
+<https://psgc.gov.ph/event/2024-04-23/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0908304019> .
+<https://psgc.gov.ph/event/2024-04-23/0001> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://purl.org/dc/terms/date> "2024-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/change-type/deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/event/2024-04-23/0004> <http://purl.org/dc/terms/description> "Guintolan (Bgy) removed"@en .
+<https://psgc.gov.ph/event/2024-04-23/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1903617147> .
