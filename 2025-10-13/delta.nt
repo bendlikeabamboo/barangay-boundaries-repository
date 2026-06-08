@@ -1,0 +1,12 @@
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://purl.org/dc/terms/date> "2025-10-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://purl.org/dc/terms/description> "Corrected name from Lubusan to Lubosan"@en .
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0907313012> .
+<https://psgc.gov.ph/event/2025-10-13/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0907313012> .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://purl.org/dc/terms/date> "2025-10-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://purl.org/dc/terms/description> "Corrected name from Pinagsakahan to Pinagsakayan"@en .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0405607061> .
+<https://psgc.gov.ph/event/2025-10-13/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0405607061> .

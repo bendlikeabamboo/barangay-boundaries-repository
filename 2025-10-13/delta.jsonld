@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "@id": "https://psgc.gov.ph/event/2025-10-13/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-13"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Lubusan to Lubosan"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0907313012"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0907313012"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-10-13/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-10-13"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Pinagsakahan to Pinagsakayan"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405607061"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405607061"
+      }
+    ]
+  }
+]

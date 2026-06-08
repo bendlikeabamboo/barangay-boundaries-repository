@@ -1,1 +1,169 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix psgc: <https://psgc.gov.ph/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://psgc.gov.ph/event/2025-04-23/0000> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Concepcion No. 1 to Concepcion 1"@en ;
+    dct:source "Certification signed by the Municipal Mayor dated 27 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0405645013> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0405645013> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0001> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Guisguis-San Roque to Guisguis San Roque"@en ;
+    dct:source "Certification signed by the Municipal Mayor dated 27 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0405645016> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0405645016> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0002> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Guisguis-Talon to Guisguis Talon"@en ;
+    dct:source "Certification signed by the Municipal Mayor dated 27 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0405645017> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0405645017> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0003> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Santa Lucia to Sta. Lucia"@en ;
+    dct:source "Certification signed by the Municipal Mayor dated 19 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1705109018> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705109018> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0004> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Santo Niño to Sto. Niño"@en ;
+    dct:source "Certification signed by the Municipal Mayor dated 19 February 2025"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1705109019> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705109019> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0005> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from De Carabao to Carabao"@en ;
+    dct:source """1. RA No. 9032 dated 12 March 2001;
+
+2. Sangguniang Panlalawigan Resolution No. 2008-61, dated 26 February 2008, Series of 2008;
+
+3. Certification signed by the Municipal Mayor dated 04 November 2024."""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1705322014> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705322014> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/event/2025-04-23/0006> a org:ChangeEvent ;
+    dct:date "2025-04-23"^^xsd:date ;
+    dct:description "Corrected name from Rizal to Dr. Jose P. Rizal"@en ;
+    dct:source """1. Republic Act (RA) No. 6652 dated 17 April 1988;
+
+2. Certification signed by the Municipal Mayor dated 27 February 2025."""@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1705323000> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1705323000> ;
+    prov:generatedAtTime "2025-03-28"^^xsd:date .
+
+<https://psgc.gov.ph/concept/geographic-level/Mun> a skos:Concept .
+
+<https://psgc.gov.ph/concept/income-class/1st> a skos:Concept ;
+    skos:prefLabel "Income Class 1st"@en .
+
+<https://psgc.gov.ph/entity/0405645013> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 5764 ;
+    skos:altLabel "Concepcion No. 1"@en ;
+    skos:prefLabel "Concepcion 1"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "0405645013"^^xsd:string,
+        "045645013"^^xsd:string,
+        "045645013"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/0405645016> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 2645 ;
+    skos:altLabel "Guisguis-San Roque"@en ;
+    skos:prefLabel "Guisguis San Roque"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "0405645016"^^xsd:string,
+        "045645016"^^xsd:string,
+        "045645016"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/0405645017> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 4376 ;
+    skos:altLabel "Guisguis-Talon"@en ;
+    skos:prefLabel "Guisguis Talon"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "0405645017"^^xsd:string,
+        "045645017"^^xsd:string,
+        "045645017"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1705109018> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 5634 ;
+    skos:altLabel "Santa Lucia"@en ;
+    skos:prefLabel "Sta. Lucia"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "1705109018"^^xsd:string,
+        "175109018"^^xsd:string,
+        "175109018"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1705109019> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 7490 ;
+    skos:altLabel "Santo Niño"@en ;
+    skos:prefLabel "Sto. Niño"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "1705109019"^^xsd:string,
+        "175109019"^^xsd:string,
+        "175109019"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1705322014> a org:OrganizationalUnit ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 2639 ;
+    skos:altLabel "De Carabao"@en ;
+    skos:prefLabel "Carabao"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/R> ;
+    org:identifier "1705322014"^^xsd:string,
+        "175322014"^^xsd:string,
+        "175322014"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/entity/1705323000> a org:FormalOrganization ;
+    dct:date "2025-04-23"^^xsd:date ;
+    schema1:population 56162 ;
+    skos:altLabel "Rizal"@en ;
+    skos:prefLabel "Dr. Jose P. Rizal"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Mun>,
+        <https://psgc.gov.ph/concept/income-class/1st> ;
+    org:identifier "1705323000"^^xsd:string,
+        "175323000"^^xsd:string,
+        "175323000"^^psgc:correspondence-code .
+
+<https://psgc.gov.ph/concept/urban-rural/R> a skos:Concept ;
+    skos:prefLabel "Rural"@en .
+
+<https://psgc.gov.ph/concept/urban-rural/U> a skos:Concept ;
+    skos:prefLabel "Urban"@en .
+
+<https://psgc.gov.ph/concept/geographic-level/Bgy> a skos:Concept .
+
+<https://psgc.gov.ph/concept/change-type/renaming> a skos:Concept .
 

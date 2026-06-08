@@ -1,1 +1,17 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://psgc.gov.ph/event/2025-10-13/0001> a org:ChangeEvent ;
+    dct:date "2025-10-13"^^xsd:date ;
+    dct:description "Corrected name from Lubusan to Lubosan"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0907313012> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0907313012> .
+
+<https://psgc.gov.ph/event/2025-10-13/0002> a org:ChangeEvent ;
+    dct:date "2025-10-13"^^xsd:date ;
+    dct:description "Corrected name from Pinagsakahan to Pinagsakayan"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/renaming> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/0405607061> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0405607061> .

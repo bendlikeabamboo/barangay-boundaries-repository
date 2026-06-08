@@ -1,0 +1,135 @@
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guisguis Talon"@en .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/ns/org#identifier> "1705109018"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1705109018> <http://schema.org/population> "5634"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://purl.org/dc/terms/description> "Corrected name from De Carabao to Carabao"@en .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/ns/org#identifier> "175109019"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/2004/02/skos/core#altLabel> "De Carabao"@en .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/2004/02/skos/core#altLabel> "Santa Lucia"@en .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/2004/02/skos/core#altLabel> "Guisguis-San Roque"@en .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0405645016> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 27 February 2025"@en .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://purl.org/dc/terms/description> "Corrected name from Concepcion No. 1 to Concepcion 1"@en .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/ns/org#identifier> "045645017"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/ns/org#identifier> "175323000"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/ns/org#identifier> "045645013"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://purl.org/dc/terms/description> "Corrected name from Guisguis-Talon to Guisguis Talon"@en .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://purl.org/dc/terms/description> "Corrected name from Rizal to Dr. Jose P. Rizal"@en .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/ns/org#identifier> "1705109019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/ns/org#identifier> "175323000"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/ns/org#identifier> "045645013"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705109018> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/ns/org#identifier> "175322014"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sto. Niño"@en .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#FormalOrganization> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://purl.org/dc/terms/description> "Corrected name from Santo Niño to Sto. Niño"@en .
+<https://psgc.gov.ph/entity/1705109019> <http://schema.org/population> "7490"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 19 February 2025"@en .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/income-class/1st> .
+<https://psgc.gov.ph/entity/0405645013> <http://schema.org/population> "5764"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/ns/org#identifier> "045645016"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0405645016> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/2004/02/skos/core#altLabel> "Guisguis-Talon"@en .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0405645016> <http://schema.org/population> "2645"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://purl.org/dc/terms/source> "1. RA No. 9032 dated 12 March 2001;\n\n2. Sangguniang Panlalawigan Resolution No. 2008-61, dated 26 February 2008, Series of 2008;\n\n3. Certification signed by the Municipal Mayor dated 04 November 2024."@en .
+<https://psgc.gov.ph/entity/1705109018> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0405645013> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://purl.org/dc/terms/source> "1. Republic Act (RA) No. 6652 dated 17 April 1988;\n\n2. Certification signed by the Municipal Mayor dated 27 February 2025."@en .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/ns/org#identifier> "175109019"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1705109019> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1705109018> .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/2004/02/skos/core#altLabel> "Rizal"@en .
+<https://psgc.gov.ph/entity/1705323000> <http://schema.org/population> "56162"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/ns/org#identifier> "0405645017"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://purl.org/dc/terms/description> "Corrected name from Guisguis-San Roque to Guisguis San Roque"@en .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/concept/change-type/renaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705109019> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/2004/02/skos/core#altLabel> "Concepcion No. 1"@en .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dr. Jose P. Rizal"@en .
+<https://psgc.gov.ph/entity/1705323000> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://purl.org/dc/terms/description> "Corrected name from Santa Lucia to Sta. Lucia"@en .
+<https://psgc.gov.ph/concept/income-class/1st> <http://www.w3.org/2004/02/skos/core#prefLabel> "Income Class 1st"@en .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0405645017> .
+<https://psgc.gov.ph/concept/urban-rural/R> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rural"@en .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0405645016> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705322014> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 27 February 2025"@en .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/2004/02/skos/core#prefLabel> "Guisguis San Roque"@en .
+<https://psgc.gov.ph/concept/geographic-level/Bgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705322014> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/geographic-level/Mun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705323000> .
+<https://psgc.gov.ph/entity/1705322014> <http://schema.org/population> "2639"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/concept/urban-rural/U> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urban"@en .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/ns/org#identifier> "045645017"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sta. Lucia"@en .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/ns/org#identifier> "175109018"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/ns/org#identifier> "0405645016"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0405645017> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0405645013> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Bgy> .
+<https://psgc.gov.ph/entity/1705109019> <http://www.w3.org/2004/02/skos/core#altLabel> "Santo Niño"@en .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/ns/org#identifier> "0405645013"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/0405645017> .
+<https://psgc.gov.ph/event/2025-04-23/0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#ChangeEvent> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/event/2025-04-23/0003> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 19 February 2025"@en .
+<https://psgc.gov.ph/event/2025-04-23/0005> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1705322014> .
+<https://psgc.gov.ph/entity/0405645017> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/R> .
+<https://psgc.gov.ph/concept/income-class/1st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/ns/org#identifier> "175322014"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://purl.org/dc/terms/date> "2025-04-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<https://psgc.gov.ph/entity/0405645017> <http://schema.org/population> "4376"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Carabao"@en .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/ns/org#identifier> "1705323000"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0006> <http://www.w3.org/ns/org#originalOrganization> <https://psgc.gov.ph/entity/1705323000> .
+<https://psgc.gov.ph/entity/1705109018> <http://www.w3.org/ns/org#identifier> "175109018"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/event/2025-04-23/0002> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/change-type/renaming> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/0405645013> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concepcion 1"@en .
+<https://psgc.gov.ph/entity/0405645016> <http://www.w3.org/ns/org#identifier> "045645016"^^<https://psgc.gov.ph/correspondence-code> .
+<https://psgc.gov.ph/entity/0405645013> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/urban-rural/U> .
+<https://psgc.gov.ph/event/2025-04-23/0004> <http://www.w3.org/ns/org#resultingOrganization> <https://psgc.gov.ph/entity/1705109019> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://www.w3.org/ns/prov#generatedAtTime> "2025-03-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://psgc.gov.ph/entity/1705322014> <http://www.w3.org/ns/org#identifier> "1705322014"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://psgc.gov.ph/entity/1705323000> <http://www.w3.org/ns/org#classification> <https://psgc.gov.ph/concept/geographic-level/Mun> .
+<https://psgc.gov.ph/event/2025-04-23/0000> <http://purl.org/dc/terms/source> "Certification signed by the Municipal Mayor dated 27 February 2025"@en .

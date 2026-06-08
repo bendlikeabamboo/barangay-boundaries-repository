@@ -1,1 +1,735 @@
-[]
+[
+  {
+    "@id": "https://psgc.gov.ph/concept/income-class/1st",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Income Class 1st"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0003",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Santa Lucia to Sta. Lucia"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by the Municipal Mayor dated 19 February 2025"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705109018"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705109018"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1705109019",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 7490
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santo Niño"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sto. Niño"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1705109019"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "175109019"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "175109019"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0005",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from De Carabao to Carabao"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "1. RA No. 9032 dated 12 March 2001;\n\n2. Sangguniang Panlalawigan Resolution No. 2008-61, dated 26 February 2008, Series of 2008;\n\n3. Certification signed by the Municipal Mayor dated 04 November 2024."
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705322014"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705322014"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1705109018",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 5634
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Santa Lucia"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sta. Lucia"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1705109018"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "175109018"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "175109018"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Mun",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0004",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Santo Niño to Sto. Niño"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by the Municipal Mayor dated 19 February 2025"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705109019"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705109019"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0405645016",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2645
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Guisguis-San Roque"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Guisguis San Roque"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0405645016"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "045645016"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "045645016"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0405645013",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 5764
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Concepcion No. 1"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Concepcion 1"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/U"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0405645013"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "045645013"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "045645013"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0006",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Rizal to Dr. Jose P. Rizal"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "1. Republic Act (RA) No. 6652 dated 17 April 1988;\n\n2. Certification signed by the Municipal Mayor dated 27 February 2025."
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705323000"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/1705323000"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1705322014",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2639
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "De Carabao"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Carabao"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1705322014"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "175322014"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "175322014"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/0405645017",
+    "@type": [
+      "http://www.w3.org/ns/org#OrganizationalUnit"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4376
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Guisguis-Talon"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Guisguis Talon"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/urban-rural/R"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Bgy"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "0405645017"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "045645017"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "045645017"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/change-type/renaming",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/U",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Urban"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0000",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Concepcion No. 1 to Concepcion 1"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by the Municipal Mayor dated 27 February 2025"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645013"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645013"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/entity/1705323000",
+    "@type": [
+      "http://www.w3.org/ns/org#FormalOrganization"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 56162
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Rizal"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Dr. Jose P. Rizal"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/income-class/1st"
+      },
+      {
+        "@id": "https://psgc.gov.ph/concept/geographic-level/Mun"
+      }
+    ],
+    "http://www.w3.org/ns/org#identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1705323000"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "175323000"
+      },
+      {
+        "@type": "https://psgc.gov.ph/correspondence-code",
+        "@value": "175323000"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0002",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Guisguis-Talon to Guisguis Talon"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by the Municipal Mayor dated 27 February 2025"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645017"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645017"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/concept/urban-rural/R",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rural"
+      }
+    ]
+  },
+  {
+    "@id": "https://psgc.gov.ph/event/2025-04-23/0001",
+    "@type": [
+      "http://www.w3.org/ns/org#ChangeEvent"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-23"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Corrected name from Guisguis-San Roque to Guisguis San Roque"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@language": "en",
+        "@value": "Certification signed by the Municipal Mayor dated 27 February 2025"
+      }
+    ],
+    "http://www.w3.org/ns/org#classification": [
+      {
+        "@id": "https://psgc.gov.ph/concept/change-type/renaming"
+      }
+    ],
+    "http://www.w3.org/ns/org#originalOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645016"
+      }
+    ],
+    "http://www.w3.org/ns/org#resultingOrganization": [
+      {
+        "@id": "https://psgc.gov.ph/entity/0405645016"
+      }
+    ],
+    "http://www.w3.org/ns/prov#generatedAtTime": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-28"
+      }
+    ]
+  }
+]
