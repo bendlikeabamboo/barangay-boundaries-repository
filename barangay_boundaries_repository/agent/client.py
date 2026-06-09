@@ -25,7 +25,9 @@ class LLMClient:
         self.model = model or settings.openai_model
 
         if not self.api_key:
-            raise ValueError("OPENAI_API_KEY is required. Set it in .env or pass api_key.")
+            raise ValueError(
+                "OPENAI_API_KEY is required. Set it in .env or pass api_key."
+            )
 
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
 
@@ -51,7 +53,15 @@ class LLMClient:
 
         if output_model is not None:
             schema = json.dumps(output_model.model_json_schema())
-            kwargs["extra_body"] = {"response_format": {"type": "json_schema", "json_schema": {"name": output_model.__name__, "schema": json.loads(schema)}}}
+            kwargs["extra_body"] = {
+                "response_format": {
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": output_model.__name__,
+                        "schema": json.loads(schema),
+                    },
+                }
+            }
 
         last_error: Exception | None = None
         for attempt in range(max_retries):
@@ -78,6 +88,10 @@ class LLMClient:
 
             except Exception as e:
                 last_error = e
-                logger.warning("LLM call attempt %d/%d failed: %s", attempt + 1, max_retries, e)
+                logger.warning(
+                    "LLM call attempt %d/%d failed: %s", attempt + 1, max_retries, e
+                )
 
-        raise RuntimeError(f"LLM call failed after {max_retries} retries: {last_error}") from last_error
+        raise RuntimeError(
+            f"LLM call failed after {max_retries} retries: {last_error}"
+        ) from last_error

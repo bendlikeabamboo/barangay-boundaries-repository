@@ -130,9 +130,15 @@ def parse_datafile(path) -> PsgcDatafile:
         name = str(row[name_col]).strip() if pd.notna(row[name_col]) else ""
         corr_code = str(row[corr_col]).strip() if pd.notna(row[corr_col]) else ""
         level = str(row[level_col]).strip() if pd.notna(row[level_col]) else ""
-        old_name = str(row[old_name_col]).strip() if pd.notna(row[old_name_col]) else None
-        city_class = str(row[city_class_col]).strip() if pd.notna(row[city_class_col]) else None
-        income_class = str(row[income_col]).strip() if pd.notna(row[income_col]) else None
+        old_name = (
+            str(row[old_name_col]).strip() if pd.notna(row[old_name_col]) else None
+        )
+        city_class = (
+            str(row[city_class_col]).strip() if pd.notna(row[city_class_col]) else None
+        )
+        income_class = (
+            str(row[income_col]).strip() if pd.notna(row[income_col]) else None
+        )
         urban_rural = str(row[urban_col]).strip() if pd.notna(row[urban_col]) else None
         pop_val = row[pop_col]
         try:
@@ -143,12 +149,20 @@ def parse_datafile(path) -> PsgcDatafile:
         if status == "" or status == "nan":
             status = None
 
-        rows.append(PsgcRow(
-            code=code, name=name, correspondence_code=corr_code,
-            geographic_level=level, old_name=old_name, city_class=city_class,
-            income_class=income_class, urban_rural=urban_rural,
-            population=population, status=status,
-        ))
+        rows.append(
+            PsgcRow(
+                code=code,
+                name=name,
+                correspondence_code=corr_code,
+                geographic_level=level,
+                old_name=old_name,
+                city_class=city_class,
+                income_class=income_class,
+                urban_rural=urban_rural,
+                population=population,
+                status=status,
+            )
+        )
 
     notes: list[str] = []
     if "Notes" in wb.sheetnames:
@@ -194,7 +208,10 @@ def _parse_change_sheet(path, sheet_name: str) -> list[ChangeEntry]:
         if row_vals[1] == "" and row_vals[0] == "":
             continue
 
-        if row_vals[0] == "REPUBLIC OF THE PHILIPPINES" or row_vals[0] == "PHILIPPINE STATISTICS AUTHORITY":
+        if (
+            row_vals[0] == "REPUBLIC OF THE PHILIPPINES"
+            or row_vals[0] == "PHILIPPINE STATISTICS AUTHORITY"
+        ):
             continue
 
         if not row_vals[0] and not row_vals[1]:
@@ -225,19 +242,23 @@ def _parse_change_sheet(path, sheet_name: str) -> list[ChangeEntry]:
                     )
             continue
 
-        unit_type_normalized = _normalize_change_type(unit_type_raw) if unit_type_raw else "unknown"
+        unit_type_normalized = (
+            _normalize_change_type(unit_type_raw) if unit_type_raw else "unknown"
+        )
 
-        entries.append(ChangeEntry(
-            entity_name=entity_name or "",
-            unit_type_raw=unit_type_raw or "",
-            unit_type_normalized=unit_type_normalized,
-            new_code=new_code,
-            mother_unit=mother_unit,
-            old_code=old_code,
-            description=description,
-            remarks=remarks,
-            section_date=current_section,
-        ))
+        entries.append(
+            ChangeEntry(
+                entity_name=entity_name or "",
+                unit_type_raw=unit_type_raw or "",
+                unit_type_normalized=unit_type_normalized,
+                new_code=new_code,
+                mother_unit=mother_unit,
+                old_code=old_code,
+                description=description,
+                remarks=remarks,
+                section_date=current_section,
+            )
+        )
 
     return entries
 
@@ -260,4 +281,8 @@ def parse_changes(path) -> ChangeLog:
         elif re.search(r"1977", name, re.IGNORECASE):
             historical_entries = _parse_change_sheet(path, name)
 
-    return ChangeLog(snapshot_date=snapshot_date, entries=entries, historical_entries=historical_entries)
+    return ChangeLog(
+        snapshot_date=snapshot_date,
+        entries=entries,
+        historical_entries=historical_entries,
+    )

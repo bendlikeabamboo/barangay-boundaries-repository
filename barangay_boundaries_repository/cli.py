@@ -7,7 +7,10 @@ from pathlib import Path
 import click
 
 from barangay_boundaries_repository.ingest.scanner import find_snapshot, scan_snapshots
-from barangay_boundaries_repository.ingest.xlsx_parser import parse_datafile, parse_changes
+from barangay_boundaries_repository.ingest.xlsx_parser import (
+    parse_datafile,
+    parse_changes,
+)
 from barangay_boundaries_repository.rdf.builder import RdfBuilder
 from barangay_boundaries_repository.rdf.delta import compute_delta
 
@@ -63,7 +66,9 @@ def ingest_cmd(date: str, data_dir: str | None) -> None:
 
     if snap.changes:
         changelog = parse_changes(snap.changes.path)
-        click.echo(f"Changes: {len(changelog.entries)} entries (2001-present), {len(changelog.historical_entries)} (1977-2000)")
+        click.echo(
+            f"Changes: {len(changelog.entries)} entries (2001-present), {len(changelog.historical_entries)} (1977-2000)"
+        )
         types: dict[str, int] = {}
         for e in changelog.entries:
             types[e.unit_type_normalized] = types.get(e.unit_type_normalized, 0) + 1
@@ -77,11 +82,22 @@ def ingest_cmd(date: str, data_dir: str | None) -> None:
 
 @cli.command("process")
 @click.option("--date", required=True, help="Snapshot date (YYYY-MM-DD)")
-@click.option("--output", default=None, type=click.Path(), help="Output file path (default: ./{date}/delta.ttl)")
-@click.option("--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"]))
-@click.option("--full", is_flag=True, default=False, help="Output full snapshot instead of delta")
+@click.option(
+    "--output",
+    default=None,
+    type=click.Path(),
+    help="Output file path (default: ./{date}/delta.ttl)",
+)
+@click.option(
+    "--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"])
+)
+@click.option(
+    "--full", is_flag=True, default=False, help="Output full snapshot instead of delta"
+)
 @click.option("--batch-size", default=50, type=int, help="LLM batch size for datafile")
-def process_cmd(date: str, output: str | None, fmt: str, full: bool, batch_size: int) -> None:
+def process_cmd(
+    date: str, output: str | None, fmt: str, full: bool, batch_size: int
+) -> None:
     """Process a snapshot: by default outputs the delta; use --full for the complete graph."""
     if output is None:
         filename = "psgc.ttl" if full else "delta.ttl"
@@ -105,11 +121,16 @@ def process_cmd(date: str, output: str | None, fmt: str, full: bool, batch_size:
         click.echo(f"Building RDF from {len(datafile.rows)} rows...")
         for row in datafile.rows:
             builder.add_entity(
-                code=row.code, name=row.name, level=row.geographic_level,
+                code=row.code,
+                name=row.name,
+                level=row.geographic_level,
                 correspondence_code=row.correspondence_code,
-                old_name=row.old_name, city_class=row.city_class,
-                income_class=row.income_class, urban_rural=row.urban_rural,
-                population=row.population, status=row.status,
+                old_name=row.old_name,
+                city_class=row.city_class,
+                income_class=row.income_class,
+                urban_rural=row.urban_rural,
+                population=row.population,
+                status=row.status,
             )
 
         builder.build_hierarchy_from_entities()
@@ -135,7 +156,9 @@ def process_cmd(date: str, output: str | None, fmt: str, full: bool, batch_size:
 
 
 @cli.command("process-all")
-@click.option("--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"]))
+@click.option(
+    "--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"])
+)
 def process_all_cmd(fmt: str) -> None:
     """Generate delta.ttl for every snapshot with a datafile."""
     snapshots = scan_snapshots()
@@ -148,7 +171,9 @@ def process_all_cmd(fmt: str) -> None:
         out_path.parent.mkdir(parents=True, exist_ok=True)
 
         if prev_date is None:
-            click.echo(f"{date}: first snapshot (no predecessor), generating baseline delta...")
+            click.echo(
+                f"{date}: first snapshot (no predecessor), generating baseline delta..."
+            )
             _generate_baseline_delta(date, out_path, fmt)
         else:
             click.echo(f"{date}: computing delta vs {prev_date}...")
@@ -168,10 +193,14 @@ def _generate_baseline_delta(date: str, out_path: Path, fmt: str) -> None:
 
     for i, row in enumerate(datafile.rows):
         builder.add_entity(
-            code=row.code, name=row.name, level=row.geographic_level,
+            code=row.code,
+            name=row.name,
+            level=row.geographic_level,
             correspondence_code=row.correspondence_code,
-            city_class=row.city_class, income_class=row.income_class,
-            urban_rural=row.urban_rural, population=row.population,
+            city_class=row.city_class,
+            income_class=row.income_class,
+            urban_rural=row.urban_rural,
+            population=row.population,
             status=row.status,
         )
         builder.add_change_event(
@@ -205,8 +234,15 @@ def _compute_and_write_delta(date: str, output: str, fmt: str) -> None:
 @cli.command("delta")
 @click.option("--from", "date_from", required=True, help="From snapshot date")
 @click.option("--to", "date_to", required=True, help="To snapshot date")
-@click.option("--output", default=None, type=click.Path(), help="Output file path (default: ./delta.ttl)")
-@click.option("--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"]))
+@click.option(
+    "--output",
+    default=None,
+    type=click.Path(),
+    help="Output file path (default: ./delta.ttl)",
+)
+@click.option(
+    "--format", "fmt", default="turtle", type=click.Choice(["turtle", "json-ld", "nt"])
+)
 def delta_cmd(date_from: str, date_to: str, output: str | None, fmt: str) -> None:
     """Compute RDF delta between two specific PSGC snapshots."""
     ext = _FMT_EXT.get(fmt, "ttl")
@@ -239,7 +275,9 @@ def validate_cmd(input_path: str) -> None:
         raise SystemExit(1)
 
     ORG = Namespace("http://www.w3.org/ns/org#")
-    org_entities = len(list(g.subjects(predicate=RDF.type, object=ORG.FormalOrganization)))
+    org_entities = len(
+        list(g.subjects(predicate=RDF.type, object=ORG.FormalOrganization))
+    )
     org_units = len(list(g.subjects(predicate=RDF.type, object=ORG.OrganizationalUnit)))
     change_events = len(list(g.subjects(predicate=RDF.type, object=ORG.ChangeEvent)))
 

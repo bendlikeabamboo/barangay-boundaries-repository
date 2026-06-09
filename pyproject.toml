@@ -17,4 +17,5 @@ dependencies = [
     "rdflib>=7.6.0",
     "ruff>=0.15.16",
     "shapely>=2.1.2",
+    "ty>=0.0.45",
 ]

@@ -19,9 +19,18 @@ from barangay_boundaries_repository.rdf.builder import (
 logger = logging.getLogger(__name__)
 
 _MONTH_MAP = {
-    "january": "01", "february": "02", "march": "03", "april": "04",
-    "may": "05", "june": "06", "july": "07", "august": "08",
-    "september": "09", "october": "10", "november": "11", "december": "12",
+    "january": "01",
+    "february": "02",
+    "march": "03",
+    "april": "04",
+    "may": "05",
+    "june": "06",
+    "july": "07",
+    "august": "08",
+    "september": "09",
+    "october": "10",
+    "november": "11",
+    "december": "12",
 }
 
 _SECTION_DATE_RE = re.compile(
@@ -189,7 +198,9 @@ def compute_delta(
                     if dc[:2] != mun_prefix:
                         continue
                 absorbed_candidates.append(dc)
-            if absorbed_candidates and surviving_code not in [m[0] for m in mergers.values()]:
+            if absorbed_candidates and surviving_code not in [
+                m[0] for m in mergers.values()
+            ]:
                 mergers[surviving_code] = (surviving_code, absorbed_candidates)
                 deleted_codes.difference_update(absorbed_candidates)
                 created_codes.discard(surviving_code)
@@ -197,9 +208,16 @@ def compute_delta(
     logger.info(
         "Delta %s → %s: %d created, %d deleted, %d code changes, %d renames, "
         "%d mergers, %d splits, %d name corrections, %d transfers",
-        date_from, date_to, len(created_codes), len(deleted_codes),
-        len(code_changes), len(renames), len(mergers), len(splits),
-        len(name_corrections), len(transfers),
+        date_from,
+        date_to,
+        len(created_codes),
+        len(deleted_codes),
+        len(code_changes),
+        len(renames),
+        len(mergers),
+        len(splits),
+        len(name_corrections),
+        len(transfers),
     )
 
     seq = 0
@@ -207,10 +225,14 @@ def compute_delta(
     for code in sorted(created_codes):
         row = new_by_code[code]
         builder.add_entity(
-            code=row.code, name=row.name, level=row.geographic_level,
+            code=row.code,
+            name=row.name,
+            level=row.geographic_level,
             correspondence_code=row.correspondence_code,
-            city_class=row.city_class, income_class=row.income_class,
-            urban_rural=row.urban_rural, population=row.population,
+            city_class=row.city_class,
+            income_class=row.income_class,
+            urban_rural=row.urban_rural,
+            population=row.population,
             status=row.status,
         )
         legal_basis, effective_date = _enrich_from_xlsx(code)
@@ -241,10 +263,14 @@ def compute_delta(
         old_row = old_by_corr[corr][0]
         new_row = new_by_corr[corr][0]
         builder.add_entity(
-            code=new_code, name=new_row.name, level=new_row.geographic_level,
+            code=new_code,
+            name=new_row.name,
+            level=new_row.geographic_level,
             correspondence_code=new_row.correspondence_code,
-            city_class=new_row.city_class, income_class=new_row.income_class,
-            urban_rural=new_row.urban_rural, population=new_row.population,
+            city_class=new_row.city_class,
+            income_class=new_row.income_class,
+            urban_rural=new_row.urban_rural,
+            population=new_row.population,
             status=new_row.status,
         )
         legal_basis, effective_date = _enrich_from_xlsx(new_code)
@@ -263,10 +289,14 @@ def compute_delta(
         old_row = old_by_corr[corr][0]
         new_row = new_by_corr[corr][0]
         builder.add_entity(
-            code=new_code, name=new_row.name, level=new_row.geographic_level,
+            code=new_code,
+            name=new_row.name,
+            level=new_row.geographic_level,
             correspondence_code=new_row.correspondence_code,
-            city_class=new_row.city_class, income_class=new_row.income_class,
-            urban_rural=new_row.urban_rural, population=new_row.population,
+            city_class=new_row.city_class,
+            income_class=new_row.income_class,
+            urban_rural=new_row.urban_rural,
+            population=new_row.population,
             status=new_row.status,
         )
         legal_basis, effective_date = _enrich_from_xlsx(new_code)
@@ -284,10 +314,14 @@ def compute_delta(
     for corr, (surviving, absorbed) in mergers.items():
         new_row = new_by_code[surviving]
         builder.add_entity(
-            code=surviving, name=new_row.name, level=new_row.geographic_level,
+            code=surviving,
+            name=new_row.name,
+            level=new_row.geographic_level,
             correspondence_code=new_row.correspondence_code,
-            city_class=new_row.city_class, income_class=new_row.income_class,
-            urban_rural=new_row.urban_rural, population=new_row.population,
+            city_class=new_row.city_class,
+            income_class=new_row.income_class,
+            urban_rural=new_row.urban_rural,
+            population=new_row.population,
             status=new_row.status,
         )
         legal_basis, effective_date = _enrich_from_xlsx(surviving)
@@ -310,10 +344,14 @@ def compute_delta(
         for sc in split_codes:
             new_row = new_by_code[sc]
             builder.add_entity(
-                code=sc, name=new_row.name, level=new_row.geographic_level,
+                code=sc,
+                name=new_row.name,
+                level=new_row.geographic_level,
                 correspondence_code=new_row.correspondence_code,
-                city_class=new_row.city_class, income_class=new_row.income_class,
-                urban_rural=new_row.urban_rural, population=new_row.population,
+                city_class=new_row.city_class,
+                income_class=new_row.income_class,
+                urban_rural=new_row.urban_rural,
+                population=new_row.population,
                 status=new_row.status,
             )
         legal_basis, effective_date = _enrich_from_xlsx(original)
@@ -334,11 +372,15 @@ def compute_delta(
     for code, old_name, new_name in name_corrections:
         row = new_by_code[code]
         builder.add_entity(
-            code=code, name=row.name, level=row.geographic_level,
+            code=code,
+            name=row.name,
+            level=row.geographic_level,
             correspondence_code=row.correspondence_code,
             old_name=old_name,
-            city_class=row.city_class, income_class=row.income_class,
-            urban_rural=row.urban_rural, population=row.population,
+            city_class=row.city_class,
+            income_class=row.income_class,
+            urban_rural=row.urban_rural,
+            population=row.population,
             status=row.status,
         )
         legal_basis, effective_date = _enrich_from_xlsx(code)

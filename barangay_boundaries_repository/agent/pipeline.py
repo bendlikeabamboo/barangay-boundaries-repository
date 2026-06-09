@@ -70,7 +70,9 @@ class Pipeline:
     def __init__(self, client: LLMClient | None = None) -> None:
         self.client = client or LLMClient()
 
-    def process_datafile(self, date: str, batch_size: int = 50) -> list[GeographicEntity]:
+    def process_datafile(
+        self, date: str, batch_size: int = 50
+    ) -> list[GeographicEntity]:
         snapshot = find_snapshot(date)
         if snapshot is None:
             raise FileNotFoundError(f"No snapshot found for date: {date}")
@@ -88,7 +90,12 @@ class Pipeline:
             rows_text = _rows_to_text(batch, start=i)
             user_msg = prompt.render(snapshot_date=date, rows_text=rows_text)
 
-            logger.info("Processing datafile batch %d-%d / %d", i, min(i + batch_size, total), total)
+            logger.info(
+                "Processing datafile batch %d-%d / %d",
+                i,
+                min(i + batch_size, total),
+                total,
+            )
 
             result = self.client.complete(
                 system=prompt.system,
@@ -123,7 +130,12 @@ class Pipeline:
             text = _entries_to_text(batch)
             user_msg = prompt.render(snapshot_date=date, changes_text=text)
 
-            logger.info("Processing changes batch %d-%d / %d", i, min(i + batch_size, total), total)
+            logger.info(
+                "Processing changes batch %d-%d / %d",
+                i,
+                min(i + batch_size, total),
+                total,
+            )
 
             result = self.client.complete(
                 system=prompt.system,
@@ -134,7 +146,9 @@ class Pipeline:
             if isinstance(result, BatchExtractionResult):
                 all_events.extend(result.change_events)
 
-        logger.info("Extracted %d change events from %d entries", len(all_events), total)
+        logger.info(
+            "Extracted %d change events from %d entries", len(all_events), total
+        )
         return all_events
 
     def process_press_release(self, date: str) -> list[ChangeEvent]:

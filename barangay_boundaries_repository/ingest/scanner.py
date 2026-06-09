@@ -10,7 +10,9 @@ from barangay_boundaries_repository.config import settings
 _DATAFILE_RE = re.compile(r"(?i)(Publication.?Datafile|Datafile\d).*\.xlsx")
 _CHANGES_RE = re.compile(r"(?i)(Summary.*Changes|Changes.*ema).*\.xlsx")
 _PRESS_RE = re.compile(r"(?i)Press.?Release.*\.pdf")
-_PROV_SUM_RE = re.compile(r"(?i)(National.*and.*Provincial.*Summary|Provincial.*Summary).*\.xlsx")
+_PROV_SUM_RE = re.compile(
+    r"(?i)(National.*and.*Provincial.*Summary|Provincial.*Summary).*\.xlsx"
+)
 
 
 @dataclass(frozen=True)
@@ -83,7 +85,9 @@ def scan_snapshots(data_dir: Path | None = None) -> list[Snapshot]:
         files: list[SnapshotFile] = []
         for child in sorted(entry.iterdir()):
             if child.is_file():
-                decoded_name = re.sub(r"%[0-9A-Fa-f]{2}", lambda m: unquote(m.group()), child.name)
+                decoded_name = re.sub(
+                    r"%[0-9A-Fa-f]{2}", lambda m: unquote(m.group()), child.name
+                )
                 ftype = _classify_file(decoded_name)
                 if ftype:
                     files.append(SnapshotFile(path=child, file_type=ftype))

@@ -96,12 +96,16 @@ class RdfBuilder:
         self._entity_levels[code] = level
 
         if correspondence_code:
-            self.graph.add((uri, ORG.identifier, Literal(correspondence_code, datatype=XSD.string)))
-            self.graph.add((
-                uri,
-                ORG.identifier,
-                Literal(correspondence_code, datatype=PSGC["correspondence-code"]),
-            ))
+            self.graph.add(
+                (uri, ORG.identifier, Literal(correspondence_code, datatype=XSD.string))
+            )
+            self.graph.add(
+                (
+                    uri,
+                    ORG.identifier,
+                    Literal(correspondence_code, datatype=PSGC["correspondence-code"]),
+                )
+            )
 
         if old_name:
             self.graph.add((uri, SKOS.altLabel, Literal(old_name, lang="en")))
@@ -110,13 +114,21 @@ class RdfBuilder:
             if city_class:
                 concept = _concept_uri("city-class", city_class)
                 self.graph.add((concept, RDF.type, SKOS.Concept))
-                self.graph.add((concept, SKOS.prefLabel, Literal(city_class, lang="en")))
+                self.graph.add(
+                    (concept, SKOS.prefLabel, Literal(city_class, lang="en"))
+                )
                 self.graph.add((uri, ORG.classification, concept))
 
             if income_class:
                 concept = _concept_uri("income-class", income_class)
                 self.graph.add((concept, RDF.type, SKOS.Concept))
-                self.graph.add((concept, SKOS.prefLabel, Literal(f"Income Class {income_class}", lang="en")))
+                self.graph.add(
+                    (
+                        concept,
+                        SKOS.prefLabel,
+                        Literal(f"Income Class {income_class}", lang="en"),
+                    )
+                )
                 self.graph.add((uri, ORG.classification, concept))
 
         if urban_rural:
@@ -127,7 +139,9 @@ class RdfBuilder:
             self.graph.add((uri, ORG.classification, concept))
 
         if population is not None:
-            self.graph.add((uri, SCHEMA.population, Literal(population, datatype=XSD.integer)))
+            self.graph.add(
+                (uri, SCHEMA.population, Literal(population, datatype=XSD.integer))
+            )
 
         if status == "Capital":
             concept = _concept_uri("status", "capital")
@@ -167,7 +181,9 @@ class RdfBuilder:
     ) -> URIRef:
         event_uri = PSGC[f"event/{self.snapshot_date}/{event_id}"]
         self.graph.add((event_uri, RDF.type, ORG.ChangeEvent))
-        self.graph.add((event_uri, DCT.date, Literal(self.snapshot_date, datatype=XSD.date)))
+        self.graph.add(
+            (event_uri, DCT.date, Literal(self.snapshot_date, datatype=XSD.date))
+        )
 
         type_concept = _concept_uri("change-type", event_type)
         self.graph.add((type_concept, RDF.type, SKOS.Concept))
@@ -178,16 +194,26 @@ class RdfBuilder:
 
         if final_entity_codes:
             for code in final_entity_codes:
-                self.graph.add((event_uri, ORG.resultingOrganization, _entity_uri(code)))
+                self.graph.add(
+                    (event_uri, ORG.resultingOrganization, _entity_uri(code))
+                )
         if final_old_codes:
             for code in final_old_codes:
                 self.graph.add((event_uri, ORG.originalOrganization, _entity_uri(code)))
         if legal_basis:
             self.graph.add((event_uri, DCT.source, Literal(legal_basis, lang="en")))
         if effective_date:
-            self.graph.add((event_uri, PROV.generatedAtTime, Literal(effective_date, datatype=XSD.date)))
+            self.graph.add(
+                (
+                    event_uri,
+                    PROV.generatedAtTime,
+                    Literal(effective_date, datatype=XSD.date),
+                )
+            )
         if description:
-            self.graph.add((event_uri, DCT.description, Literal(description, lang="en")))
+            self.graph.add(
+                (event_uri, DCT.description, Literal(description, lang="en"))
+            )
 
         return event_uri
 
