@@ -259,6 +259,67 @@ def delta_cmd(date_from: str, date_to: str, output: str | None, fmt: str) -> Non
     click.echo(f"Delta graph ({len(delta_graph)} triples) written to {output}")
 
 
+@cli.command("convert-geo")
+@click.option(
+    "--source",
+    default=None,
+    type=click.Path(exists=True),
+    help="Source directory with NAMRIA shapefiles (default: ./namria)",
+)
+@click.option(
+    "--output-dir",
+    default=None,
+    type=click.Path(),
+    help="Output directory for GeoJSON files (default: ./2023-10-24)",
+)
+@click.option(
+    "--tolerance",
+    default=0.005,
+    type=float,
+    help="Douglas-Peucker simplification tolerance in degrees (default: 0.005)",
+)
+@click.option(
+    "--levels",
+    default="0,1,2,3,4",
+    help="Comma-separated admin levels to convert (default: 0,1,2,3,4)",
+)
+@click.option(
+    "--drop-columns",
+    is_flag=True,
+    default=False,
+    help="Drop metadata columns, keep only names and pcodes",
+)
+def convert_geo_cmd(
+    source: str | None,
+    output_dir: str | None,
+    tolerance: float,
+    levels: str,
+    drop_columns: bool,
+) -> None:
+    """Convert NAMRIA shapefiles to web-optimized GeoJSON."""
+    from barangay_boundaries_repository.namria_converter import convert_all
+
+    src = Path(source) if source else _REPO_ROOT / "namria"
+    out = Path(output_dir) if output_dir else _REPO_ROOT / "2023-10-24"
+
+    level_list = [int(l.strip()) for l in levels.split(",")]
+
+    try:
+        results = convert_all(
+            source_dir=src,
+            output_dir=out,
+            tolerance=tolerance,
+            levels=level_list,
+            drop_columns=drop_columns,
+        )
+    except FileNotFoundError as e:
+        click.echo(str(e), err=True)
+        raise SystemExit(1)
+
+    for r in results:
+        click.echo(f"  {r['output']}: {r['features']} features ({r['size_mb']} MB)")
+
+
 @cli.command("validate")
 @click.option("--input", "input_path", required=True, type=click.Path(exists=True))
 def validate_cmd(input_path: str) -> None:
