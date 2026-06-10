@@ -224,6 +224,8 @@ def load_geojson_pcodes(geojson_dir: Path) -> dict[int, dict[str, str]]:
 def compute_coverage(
     psgc: dict[int, dict[str, str]],
     geojson: dict[int, dict[str, str]],
+    *,
+    enriched_geojson_dir: Path | None = None,
 ) -> CoverageReport:
     report = CoverageReport(date="")
 
@@ -238,6 +240,20 @@ def compute_coverage(
 
         matched = psgc_set & geojson_set
 
+        if enriched_geojson_dir is not None:
+            enriched_path = enriched_geojson_dir / f"adm{adm_level}.geojson"
+            if enriched_path.exists():
+                enriched_psgc_ids: set[str] = set()
+                with open(enriched_path) as f:
+                    enriched_data = json.load(f)
+                for feature in enriched_data["features"]:
+                    psgc_id = feature.get("properties", {}).get("psgc_id")
+                    status = feature.get("properties", {}).get("psgc_status", "")
+                    if psgc_id and status in ("matched", "fuzzy"):
+                        enriched_psgc_ids.add(psgc_id)
+                enriched_matched = enriched_psgc_ids & psgc_set
+                matched = matched | enriched_matched
+
         report.levels[adm_level] = LevelResult(
             adm_level=adm_level,
             psgc_count=len(psgc_set),
@@ -245,79 +261,8 @@ def compute_coverage(
             matched_count=len(matched),
             matched_pcodes=matched,
             psgc_only={k: psgc_map[k] for k in sorted(psgc_set - geojson_set)},
-            geojson_only={k: geojson_map[k] for k in sorted(geojson_set - psgc_set)},
+            geojson_only={k: geojson_map[k] for k in sorted(geojson_set - matched)},
         )
-
-    return report
-
-
-def compute_coverage_from_enriched(
-    geojson_dir: Path,
-    psgc: dict[int, dict[str, str]],
-) -> CoverageReport:
-    report = CoverageReport(date="")
-
-    for adm_level in range(5):
-        enriched_path = geojson_dir / "enriched" / f"adm{adm_level}.geojson"
-        gj_path = geojson_dir / f"adm{adm_level}.geojson"
-
-        if not gj_path.exists():
-            continue
-
-        geojson_map: dict[str, str] = {}
-        with open(gj_path) as f:
-            gj_data = json.load(f)
-        for feature in gj_data["features"]:
-            props = feature.get("properties", {})
-            pcode = props.get(_PCODE_COL.format(level=adm_level))
-            name = props.get(_NAME_COL.format(level=adm_level), "")
-            if adm_level == 0:
-                pcode = _ADM0_PCODE
-                name = name or "Philippines (the)"
-            if pcode and pcode not in geojson_map:
-                geojson_map[pcode] = name
-
-        psgc_map = psgc.get(adm_level, {})
-
-        if enriched_path.exists():
-            enriched_psgc_ids: set[str] = set()
-            with open(enriched_path) as f:
-                enriched_data = json.load(f)
-            for feature in enriched_data["features"]:
-                psgc_id = feature.get("properties", {}).get("psgc_id")
-                status = feature.get("properties", {}).get("psgc_status", "")
-                if psgc_id and status in ("matched", "fuzzy"):
-                    enriched_psgc_ids.add(psgc_id)
-
-            psgc_set = set(psgc_map.keys())
-            geojson_set = set(geojson_map.keys())
-            matched = psgc_set & geojson_set
-            enriched_matched = enriched_psgc_ids & psgc_set
-            all_matched = matched | enriched_matched
-
-            report.levels[adm_level] = LevelResult(
-                adm_level=adm_level,
-                psgc_count=len(psgc_set),
-                geojson_count=len(geojson_set),
-                matched_count=len(all_matched),
-                matched_pcodes=all_matched,
-                psgc_only={k: psgc_map[k] for k in sorted(psgc_set - geojson_set)},
-                geojson_only={k: geojson_map[k] for k in sorted(geojson_set - all_matched)},
-            )
-        else:
-            psgc_set = set(psgc_map.keys())
-            geojson_set = set(geojson_map.keys())
-            matched = psgc_set & geojson_set
-
-            report.levels[adm_level] = LevelResult(
-                adm_level=adm_level,
-                psgc_count=len(psgc_set),
-                geojson_count=len(geojson_set),
-                matched_count=len(matched),
-                matched_pcodes=matched,
-                psgc_only={k: psgc_map[k] for k in sorted(psgc_set - geojson_set)},
-                geojson_only={k: geojson_map[k] for k in sorted(geojson_set - psgc_set)},
-            )
 
     return report
 
@@ -325,11 +270,13 @@ def compute_coverage_from_enriched(
 def compute_coverage_with_huc(
     psgc: dict[int, dict[str, str]],
     geojson: dict[int, dict[str, str]],
+    *,
+    enriched_geojson_dir: Path | None = None,
 ) -> CoverageReport:
     huc_mapping = _load_huc_mapping()
     virtual_provinces = huc_mapping.get("virtual_provinces", {})
 
-    report = compute_coverage(psgc, geojson)
+    report = compute_coverage(psgc, geojson, enriched_geojson_dir=enriched_geojson_dir)
 
     adm2 = report.levels.get(2)
     if adm2 is None:

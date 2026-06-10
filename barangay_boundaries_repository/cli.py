@@ -526,8 +526,14 @@ def reconcile_cmd(
     type=click.Path(),
     help="Output directory for enriched GeoJSON (default: ./<date>/enriched/)",
 )
-@click.option("--levels", default="0,1,2,3,4", help="Comma-separated admin levels (default: 0,1,2,3,4)")
-def enrich_cmd(date: str, geojson_dir: str | None, output: str | None, levels: str) -> None:
+@click.option(
+    "--levels",
+    default="0,1,2,3,4",
+    help="Comma-separated admin levels (default: 0,1,2,3,4)",
+)
+def enrich_cmd(
+    date: str, geojson_dir: str | None, output: str | None, levels: str
+) -> None:
     from barangay_boundaries_repository.enrich import enrich_geojson
 
     gj_dir = Path(geojson_dir) if geojson_dir else _REPO_ROOT / date
@@ -550,6 +556,69 @@ def enrich_cmd(date: str, geojson_dir: str | None, output: str | None, levels: s
             click.echo(f"  ADM{level}: {features} features enriched → {out_path}")
         except Exception as e:
             click.echo(f"  ADM{level}: error - {e}", err=True)
+
+
+@cli.command("geojson")
+@click.option("--date", required=True, help="PSGC snapshot date (YYYY-MM-DD)")
+@click.option(
+    "--tolerance",
+    default=0.005,
+    type=float,
+    help="Douglas-Peucker simplification tolerance in degrees (default: 0.005)",
+)
+@click.option(
+    "--levels",
+    default="0,1,2,3,4",
+    help="Comma-separated admin levels (default: 0,1,2,3,4)",
+)
+@click.option(
+    "--source",
+    default=None,
+    type=click.Path(exists=True),
+    help="NAMRIA shapefiles directory (default: ./namria)",
+)
+@click.option(
+    "--threshold",
+    default=0.7,
+    type=float,
+    help="Name matching threshold for reconciliation (default: 0.7)",
+)
+@click.option(
+    "--skip-raw-reconcile",
+    is_flag=True,
+    default=False,
+    help="Skip reconciliation of raw data (only enrich)",
+)
+@click.option(
+    "--skip-enrich",
+    is_flag=True,
+    default=False,
+    help="Skip enrichment step (only generate raw data + coverage)",
+)
+def geojson_cmd(
+    date: str,
+    tolerance: float,
+    levels: str,
+    source: str | None,
+    threshold: float,
+    skip_raw_reconcile: bool,
+    skip_enrich: bool,
+) -> None:
+    """Full NAMRIA→GeoJSON pipeline: convert, cover, reconcile, enrich, cover, reconcile."""
+    from barangay_boundaries_repository.geojson_pipeline import run_geojson_pipeline
+
+    level_list = [int(part.strip()) for part in levels.split(",")]
+    src = Path(source) if source else None
+
+    run_geojson_pipeline(
+        date=date,
+        tolerance=tolerance,
+        levels=level_list,
+        reconcile_threshold=threshold,
+        source_dir=src,
+        skip_raw_reconcile=skip_raw_reconcile,
+        skip_enrich=skip_enrich,
+    )
 
 
 def _write_json_report(report, output_path: Path) -> None:
