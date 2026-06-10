@@ -78,8 +78,9 @@ def load_psgc_pcodes(date: str) -> dict[int, dict[str, str]]:
 
     municipalities_df = bg.municipalities.to_frame()
     cities_df = bg.cities.to_frame()
-    if len(municipalities_df) > 0 or len(cities_df) > 0:
-        adm3_dfs = [df for df in (municipalities_df, cities_df) if len(df) > 0]
+    sga_df = bg.special_geographic_areas.to_frame()
+    if len(municipalities_df) > 0 or len(cities_df) > 0 or len(sga_df) > 0:
+        adm3_dfs = [df for df in (municipalities_df, cities_df, sga_df) if len(df) > 0]
         combined = pd.concat(adm3_dfs, ignore_index=True)
         pcodes = "PH" + combined["psgc_id"].str[:7]
         result[3] = dict(zip(pcodes, combined["name"]))
@@ -198,8 +199,14 @@ def load_geojson_pcodes(geojson_dir: Path) -> dict[int, dict[str, str]]:
         pcodes: dict[str, str] = {}
         for feature in data["features"]:
             props = feature.get("properties", {})
-            pcode = props.get(_PCODE_COL.format(level=adm_level))
-            name = props.get(_NAME_COL.format(level=adm_level), "")
+
+            pcode = props.get("psgc_id")
+            if pcode is None:
+                pcode = props.get(_PCODE_COL.format(level=adm_level))
+
+            name = props.get("psgc_name") or props.get(
+                _NAME_COL.format(level=adm_level), ""
+            )
 
             if adm_level == 0:
                 pcode = _ADM0_PCODE
@@ -329,9 +336,15 @@ def compute_coverage_with_huc(
         return report
 
     extra_matched: set[str] = set()
+    vp_pcodes: set[str] = set()
+
+    for _namria_code, vp_info in virtual_provinces.items():
+        vp_pcode = vp_info.get("psgc_pcode")
+        if vp_pcode:
+            vp_pcodes.add(vp_pcode)
 
     for gj_code in list(adm2.geojson_only.keys()):
-        if gj_code in virtual_provinces:
+        if gj_code in virtual_provinces or gj_code in vp_pcodes:
             extra_matched.add(gj_code)
 
     if extra_matched:
