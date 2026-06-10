@@ -1,0 +1,140 @@
+{
+  "virtual_provinces": {
+    "PH09097": {
+      "psgc_code": "0990100000",
+      "psgc_pcode": "PH09901",
+      "name": "City of Isabela (Not a Province)",
+      "type": "huc_isabela"
+    },
+    "PH13039": {
+      "psgc_code": null,
+      "psgc_pcode": null,
+      "name": "Metropolitan Manila First District",
+      "type": "mm_district"
+    },
+    "PH13074": {
+      "psgc_code": null,
+      "psgc_pcode": null,
+      "name": "Metropolitan Manila Second District",
+      "type": "mm_district"
+    },
+    "PH13075": {
+      "psgc_code": null,
+      "psgc_pcode": null,
+      "name": "Metropolitan Manila Third District",
+      "type": "mm_district"
+    },
+    "PH13076": {
+      "psgc_code": null,
+      "psgc_pcode": null,
+      "name": "Metropolitan Manila Fourth District",
+      "type": "mm_district"
+    },
+    "PH19099": {
+      "psgc_code": "1999900000",
+      "psgc_pcode": "PH19999",
+      "name": "Special Geographic Area",
+      "type": "sga"
+    }
+  },
+  "metro_manila_districts": {
+    "PH13039": ["PH1380600"],
+    "PH13074": ["PH1380500", "PH1380700", "PH1381200", "PH1381300", "PH1381400"],
+    "PH13075": ["PH1380100", "PH1380400", "PH1380900", "PH1381600"],
+    "PH13076": ["PH1380200", "PH1380300", "PH1380800", "PH1381000", "PH1381100", "PH1381500", "PH1381701"]
+  },
+  "huc_cities_under_province": {
+    "PH03054": [
+      {"namria_adm3_pcode": "PH0305401", "psgc_code": "0330100000", "psgc_pcode": "PH0330100", "name": "Angeles City"}
+    ],
+    "PH03071": [
+      {"namria_adm3_pcode": "PH0307107", "psgc_code": "0331400000", "psgc_pcode": "PH0331400", "name": "Olongapo City"}
+    ],
+    "PH04056": [
+      {"namria_adm3_pcode": "PH0405624", "psgc_code": "0431200000", "psgc_pcode": "PH0431200", "name": "Lucena City"}
+    ],
+    "PH06030": [
+      {"namria_adm3_pcode": "PH0603022", "psgc_code": "0631000000", "psgc_pcode": "PH0631000", "name": "Iloilo City"}
+    ],
+    "PH06045": [
+      {"namria_adm3_pcode": "PH0604501", "psgc_code": "0630200000", "psgc_pcode": "PH0630200", "name": "Bacolod City"}
+    ],
+    "PH07022": [
+      {"namria_adm3_pcode": "PH0702217", "psgc_code": "0730600000", "psgc_pcode": "PH0730600", "name": "Cebu City"},
+      {"namria_adm3_pcode": "PH0702226", "psgc_code": "0731100000", "psgc_pcode": "PH0731100", "name": "Lapu-Lapu City"},
+      {"namria_adm3_pcode": "PH0702230", "psgc_code": "0731300000", "psgc_pcode": "PH0731300", "name": "Mandaue City"}
+    ],
+    "PH08037": [
+      {"namria_adm3_pcode": "PH0803747", "psgc_code": "0831600000", "psgc_pcode": "PH0831600", "name": "Tacloban City"}
+    ],
+    "PH09073": [
+      {"namria_adm3_pcode": "PH0907332", "psgc_code": "0931700000", "psgc_pcode": "PH0931700", "name": "Zamboanga City"}
+    ],
+    "PH10035": [
+      {"namria_adm3_pcode": "PH1003504", "psgc_code": "1030900000", "psgc_pcode": "PH1030900", "name": "Iligan City"}
+    ],
+    "PH10043": [
+      {"namria_adm3_pcode": "PH1004305", "psgc_code": "1030500000", "psgc_pcode": "PH1030500", "name": "Cagayan de Oro City"}
+    ],
+    "PH11024": [
+      {"namria_adm3_pcode": "PH1102402", "psgc_code": "1130700000", "psgc_pcode": "PH1130700", "name": "Davao City"}
+    ],
+    "PH12063": [
+      {"namria_adm3_pcode": "PH1206303", "psgc_code": "1230800000", "psgc_pcode": "PH1230800", "name": "General Santos City"}
+    ],
+    "PH14011": [
+      {"namria_adm3_pcode": "PH1401102", "psgc_code": "1430300000", "psgc_pcode": "PH1430300", "name": "Baguio City"}
+    ],
+    "PH16002": [
+      {"namria_adm3_pcode": "PH1600202", "psgc_code": "1630400000", "psgc_pcode": "PH1630400", "name": "Butuan City"}
+    ],
+    "PH17053": [
+      {"namria_adm3_pcode": "PH1705316", "psgc_code": "1731500000", "psgc_pcode": "PH1731500", "name": "Puerto Princesa City"}
+    ]
+  },
+  "namria_adm3_to_psgc": {
+    "PH0305401": "PH0330100",
+    "PH0307107": "PH0331400",
+    "PH0405624": "PH0431200",
+    "PH0603022": "PH0631000",
+    "PH0604501": "PH0630200",
+    "PH0702217": "PH0730600",
+    "PH0702226": "PH0731100",
+    "PH0702230": "PH0731300",
+    "PH0803747": "PH0831600",
+    "PH0907332": "PH0931700",
+    "PH0909701": "PH0990100",
+    "PH1003504": "PH1030900",
+    "PH1004305": "PH1030500",
+    "PH1102402": "PH1130700",
+    "PH1206303": "PH1230800",
+    "PH1303901": "PH1380600",
+    "PH1307401": "PH1380500",
+    "PH1307402": "PH1380700",
+    "PH1307403": "PH1381200",
+    "PH1307404": "PH1381300",
+    "PH1307405": "PH1381400",
+    "PH1307501": "PH1380100",
+    "PH1307502": "PH1380400",
+    "PH1307503": "PH1380900",
+    "PH1307504": "PH1381600",
+    "PH1307601": "PH1380200",
+    "PH1307602": "PH1380300",
+    "PH1307603": "PH1380800",
+    "PH1307604": "PH1381000",
+    "PH1307605": "PH1381100",
+    "PH1307606": "PH1381500",
+    "PH1307607": "PH1381701",
+    "PH1401102": "PH1430300",
+    "PH1600202": "PH1630400",
+    "PH1705316": "PH1731500",
+    "PH1909901": "PH1999900",
+    "PH1909902": "PH1999900",
+    "PH1909903": "PH1999900",
+    "PH1909904": "PH1999900",
+    "PH1909905": "PH1999900",
+    "PH1909906": "PH1999900",
+    "PH1909907": "PH1999900",
+    "PH1909908": "PH1999900"
+  }
+}

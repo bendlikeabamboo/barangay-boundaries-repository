@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -7,6 +8,15 @@ from pathlib import Path
 from pydantic import BaseModel
 
 from rapidfuzz.fuzz import token_set_ratio, token_sort_ratio
+
+_MAPPING_PATH = Path(__file__).resolve().parent / "namria" / "huc_adm2_mapping.json"
+
+
+def _load_huc_mapping() -> dict:
+    if not _MAPPING_PATH.exists():
+        return {}
+    with open(_MAPPING_PATH) as f:
+        return json.load(f)
 
 
 class ADM3Match(BaseModel):
@@ -67,15 +77,38 @@ def _match_adm3(
     psgc_only: dict[str, str],
     geojson_only: dict[str, str],
     threshold: float,
+    huc_mapping: dict | None = None,
 ) -> tuple[list[ADM3Match], dict[str, str], dict[str, str]]:
     psgc_remaining = dict(psgc_only)
     gj_remaining = dict(geojson_only)
     matches: list[ADM3Match] = []
 
-    psgc_sanitized = {k: _sanitize(v) for k, v in psgc_only.items()}
-    gj_sanitized = {k: _sanitize(v) for k, v in geojson_only.items()}
+    adm3_to_psgc = {}
+    if huc_mapping:
+        adm3_to_psgc = huc_mapping.get("namria_adm3_to_psgc", {})
 
-    for gj_code, gj_name in sorted(geojson_only.items()):
+    direct_huc_matches: list[ADM3Match] = []
+    if adm3_to_psgc:
+        for gj_code, gj_name in sorted(gj_remaining.items()):
+            if gj_code in adm3_to_psgc:
+                psgc_pcode = adm3_to_psgc[gj_code]
+                if psgc_pcode in psgc_remaining:
+                    direct_huc_matches.append(
+                        ADM3Match(
+                            psgc_code=psgc_pcode,
+                            psgc_name=psgc_remaining[psgc_pcode],
+                            geojson_code=gj_code,
+                            geojson_name=gj_name,
+                            score=1.0,
+                        )
+                    )
+                    del psgc_remaining[psgc_pcode]
+                    del gj_remaining[gj_code]
+
+    psgc_sanitized = {k: _sanitize(v) for k, v in psgc_remaining.items()}
+    gj_sanitized = {k: _sanitize(v) for k, v in gj_remaining.items()}
+
+    for gj_code, gj_name in sorted(gj_remaining.items()):
         gj_san = gj_sanitized[gj_code]
         best_score = 0.0
         best_psgc_code: str | None = None
@@ -104,34 +137,45 @@ def _match_adm3(
             del psgc_remaining[best_psgc_code]
             del gj_remaining[gj_code]
 
-    return matches, psgc_remaining, gj_remaining
+    all_matches = direct_huc_matches + matches
+    return all_matches, psgc_remaining, gj_remaining
 
 
 def _match_adm4_by_parent(
     adm3_matches: list[ADM3Match],
     psgc_only_adm4: dict[str, str],
     geojson_only_adm4: dict[str, str],
+    huc_mapping: dict | None = None,
 ) -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
-    psgc_parent_groups: dict[str, dict[str, str]] = defaultdict(dict)
-    for code, name in psgc_only_adm4.items():
-        parent = code[:9]
-        psgc_parent_groups[parent][code] = name
+    adm3_to_psgc = {}
+    if huc_mapping:
+        adm3_to_psgc = huc_mapping.get("namria_adm3_to_psgc", {})
+
+    gj_psgc_parent_map: dict[str, str] = {}
+    for match in adm3_matches:
+        gj_psgc_parent_map[match.geojson_code] = match.psgc_code
 
     gj_parent_groups: dict[str, dict[str, str]] = defaultdict(dict)
     for code, name in geojson_only_adm4.items():
-        parent = code[:9]
-        gj_parent_groups[parent][code] = name
+        namria_parent = code[:9]
+        psgc_parent = gj_psgc_parent_map.get(namria_parent, namria_parent)
+        gj_parent_groups[psgc_parent][code] = name
+
+    psgc_parent_groups: dict[str, dict[str, str]] = defaultdict(dict)
+    for code, name in psgc_only_adm4.items():
+        psgc_parent_prefix = code[:9]
+        mapped_parent = adm3_to_psgc.get(psgc_parent_prefix, psgc_parent_prefix)
+        psgc_parent_groups[mapped_parent][code] = name
 
     remapped: dict[str, str] = {}
     unmatched_psgc: dict[str, str] = dict(psgc_only_adm4)
     unmatched_gj: dict[str, str] = dict(geojson_only_adm4)
 
-    for match in adm3_matches:
-        psgc_parent = match.psgc_code
-        gj_parent = match.geojson_code
+    all_parents = set(gj_parent_groups.keys()) | set(psgc_parent_groups.keys())
 
-        psgc_brgys = psgc_parent_groups.get(psgc_parent)
-        gj_brgys = gj_parent_groups.get(gj_parent)
+    for parent in all_parents:
+        psgc_brgys = psgc_parent_groups.get(parent, {})
+        gj_brgys = gj_parent_groups.get(parent, {})
         if not psgc_brgys or not gj_brgys:
             continue
 
@@ -212,7 +256,7 @@ def reconcile(
     threshold: float = 0.7,
     as_of: str | None = None,
 ) -> ReconcileResult:
-    import json
+    huc_mapping = _load_huc_mapping()
 
     with open(diff_path) as f:
         diff = json.load(f)
@@ -232,12 +276,14 @@ def reconcile(
         psgc_only=adm3_data.get("psgc_only", {}),
         geojson_only=adm3_data.get("geojson_only", {}),
         threshold=threshold,
+        huc_mapping=huc_mapping if huc_mapping else None,
     )
 
     adm4_remapped, adm4_unmatched_psgc, adm4_unmatched_geojson = _match_adm4_by_parent(
         adm3_matches=adm3_matches,
         psgc_only_adm4=adm4_data.get("psgc_only", {}),
         geojson_only_adm4=adm4_data.get("geojson_only", {}),
+        huc_mapping=huc_mapping if huc_mapping else None,
     )
 
     return ReconcileResult(

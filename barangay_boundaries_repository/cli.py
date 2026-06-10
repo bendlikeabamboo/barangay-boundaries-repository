@@ -369,7 +369,7 @@ def coverage_cmd(
 ) -> None:
     """Evaluate PSGC vs GeoJSON coverage for a snapshot."""
     from barangay_boundaries_repository.coverage import (
-        compute_coverage,
+        compute_coverage_with_huc,
         load_geojson_pcodes,
         load_psgc_pcodes,
     )
@@ -388,7 +388,7 @@ def coverage_cmd(
         click.echo(f"Failed to load GeoJSON from {gj_dir}: {e}", err=True)
         raise SystemExit(1)
 
-    report = compute_coverage(psgc, geojson)
+    report = compute_coverage_with_huc(psgc, geojson)
     report.date = date
 
     _print_report(report, verbose)
@@ -510,6 +510,46 @@ def reconcile_cmd(
         with open(out, "w") as f:
             json.dump(out_data, f, indent=2, ensure_ascii=False)
         click.echo(f"\n  Report written to {output}")
+
+
+@cli.command("enrich")
+@click.option("--date", required=True, help="PSGC snapshot date (YYYY-MM-DD)")
+@click.option(
+    "--geojson-dir",
+    default=None,
+    type=click.Path(exists=True),
+    help="Directory with adm{0-4}.geojson files (default: ./<date>)",
+)
+@click.option(
+    "--output",
+    default=None,
+    type=click.Path(),
+    help="Output directory for enriched GeoJSON (default: ./<date>/enriched/)",
+)
+@click.option("--levels", default="0,1,2,3,4", help="Comma-separated admin levels (default: 0,1,2,3,4)")
+def enrich_cmd(date: str, geojson_dir: str | None, output: str | None, levels: str) -> None:
+    from barangay_boundaries_repository.enrich import enrich_geojson
+
+    gj_dir = Path(geojson_dir) if geojson_dir else _REPO_ROOT / date
+    out_dir = Path(output) if output else _REPO_ROOT / date / "enriched"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    level_list = [int(l.strip()) for l in levels.split(",")]
+
+    for level in level_list:
+        gj_path = gj_dir / f"adm{level}.geojson"
+        out_path = out_dir / f"adm{level}.geojson"
+
+        if not gj_path.exists():
+            click.echo(f"  Skipping ADM{level}: {gj_path} not found")
+            continue
+
+        try:
+            result = enrich_geojson(gj_path, date, out_path)
+            features = len(result.get("features", []))
+            click.echo(f"  ADM{level}: {features} features enriched → {out_path}")
+        except Exception as e:
+            click.echo(f"  ADM{level}: error - {e}", err=True)
 
 
 def _write_json_report(report, output_path: Path) -> None:
