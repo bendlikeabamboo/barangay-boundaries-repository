@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 
 import barangay as bg
 import pandas as pd
 from pydantic import BaseModel, Field
+
+logger = logging.getLogger(__name__)
 
 _NAME_COL = "ADM{level}_EN"
 _PCODE_COL = "ADM{level}_PCODE"
@@ -62,6 +65,7 @@ class CoverageReport(BaseModel):
 
 
 def load_psgc_pcodes(date: str) -> dict[int, dict[str, str]]:
+    logger.info("Loading PSGC pcodes for %s...", date)
     bg.use_version(date)
 
     result: dict[int, dict[str, str]] = {}
@@ -94,6 +98,11 @@ def load_psgc_pcodes(date: str) -> dict[int, dict[str, str]]:
         result[4] = dict(zip(pcodes, combined["name"]))
 
     result[0] = {_ADM0_PCODE: "Philippines (the)"}
+
+    logger.info(
+        "PSGC pcodes by level: %s",
+        {lvl: len(codes) for lvl, codes in sorted(result.items())},
+    )
 
     return result
 

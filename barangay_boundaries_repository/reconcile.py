@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -8,6 +9,8 @@ from pathlib import Path
 from pydantic import BaseModel
 
 from rapidfuzz.fuzz import token_set_ratio, token_sort_ratio
+
+logger = logging.getLogger(__name__)
 
 _MAPPING_PATH = Path(__file__).resolve().parent / "namria" / "huc_adm2_mapping.json"
 
@@ -79,6 +82,13 @@ def _match_adm3(
     threshold: float,
     huc_mapping: dict | None = None,
 ) -> tuple[list[ADM3Match], dict[str, str], dict[str, str]]:
+    logger.info(
+        "ADM3 matching: %d PSGC-only, %d GeoJSON-only, threshold=%.0f",
+        len(psgc_only),
+        len(geojson_only),
+        threshold * 100,
+    )
+
     psgc_remaining = dict(psgc_only)
     gj_remaining = dict(geojson_only)
     matches: list[ADM3Match] = []
@@ -89,6 +99,7 @@ def _match_adm3(
 
     direct_huc_matches: list[ADM3Match] = []
     if adm3_to_psgc:
+        logger.debug("Applying %d HUC ADM3→PSGC mappings", len(adm3_to_psgc))
         for gj_code, gj_name in sorted(gj_remaining.items()):
             if gj_code in adm3_to_psgc:
                 psgc_pcode = adm3_to_psgc[gj_code]
@@ -104,6 +115,13 @@ def _match_adm3(
                     )
                     del psgc_remaining[psgc_pcode]
                     del gj_remaining[gj_code]
+
+    logger.info(
+        "  HUC direct matches: %d; remaining %d PSGC, %d GeoJSON for fuzzy matching",
+        len(direct_huc_matches),
+        len(psgc_remaining),
+        len(gj_remaining),
+    )
 
     psgc_sanitized = {k: _sanitize(v) for k, v in psgc_remaining.items()}
     gj_sanitized = {k: _sanitize(v) for k, v in gj_remaining.items()}
@@ -147,6 +165,13 @@ def _match_adm4_by_parent(
     geojson_only_adm4: dict[str, str],
     huc_mapping: dict | None = None,
 ) -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
+    logger.info(
+        "ADM4 by-parent matching: %d PSGC-only barangays, %d GeoJSON-only barangays, %d ADM3 matches as parent keys",
+        len(psgc_only_adm4),
+        len(geojson_only_adm4),
+        len(adm3_matches),
+    )
+
     adm3_to_psgc = {}
     if huc_mapping:
         adm3_to_psgc = huc_mapping.get("namria_adm3_to_psgc", {})
@@ -248,6 +273,13 @@ def _match_adm4_by_parent(
                 unmatched_gj.pop(gj_code, None)
                 unmatched_psgc.pop(best_psgc, None)
 
+    logger.info(
+        "ADM4 by-parent result: %d remapped, %d unmatched PSGC, %d unmatched GeoJSON",
+        len(remapped),
+        len(unmatched_psgc),
+        len(unmatched_gj),
+    )
+
     return remapped, unmatched_psgc, unmatched_gj
 
 
@@ -256,6 +288,7 @@ def reconcile(
     threshold: float = 0.7,
     as_of: str | None = None,
 ) -> ReconcileResult:
+    logger.info("Reconciling from %s (threshold=%.2f)", diff_path, threshold)
     huc_mapping = _load_huc_mapping()
 
     with open(diff_path) as f:

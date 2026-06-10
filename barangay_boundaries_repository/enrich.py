@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -9,6 +10,8 @@ import barangay as bg
 import pandas as pd
 
 from rapidfuzz.fuzz import token_set_ratio, token_sort_ratio
+
+logger = logging.getLogger(__name__)
 
 _MAPPING_PATH = Path(__file__).resolve().parent / "namria" / "huc_adm2_mapping.json"
 
@@ -53,6 +56,7 @@ def enrich_geojson(
     psgc_date: str,
     output_path: Path,
 ) -> dict:
+    logger.info("Enriching %s with PSGC data from %s", geojson_path.name, psgc_date)
     bg.use_version(psgc_date)
 
     huc_mapping = _load_huc_mapping()
@@ -126,6 +130,10 @@ def _enrich_adm2(
     psgc_date: str,
     output_path: Path,
 ) -> dict:
+    logger.info(
+        "  ADM2 enrichment: matching %d features against PSGC provinces",
+        len(data["features"]),
+    )
     bg.use_version(psgc_date)
     provinces_df = bg.provinces.to_frame()
 
@@ -188,6 +196,10 @@ def _enrich_adm3(
     psgc_date: str,
     output_path: Path,
 ) -> dict:
+    logger.info(
+        "  ADM3 enrichment: matching %d features against PSGC municipalities/cities",
+        len(data["features"]),
+    )
     bg.use_version(psgc_date)
     munis_df = bg.municipalities.to_frame()
     cities_df = bg.cities.to_frame()
@@ -270,6 +282,10 @@ def _enrich_adm4(
     psgc_date: str,
     output_path: Path,
 ) -> dict:
+    logger.info(
+        "  ADM4 enrichment: matching %d barangay features (this may take a while)",
+        len(data["features"]),
+    )
     bg.use_version(psgc_date)
     barangays_df = bg.barangays.to_frame()
     sga_df = bg.special_geographic_areas.to_frame()
@@ -383,11 +399,133 @@ def _enrich_adm4(
         else:
             props["psgc_status"] = "unmatched"
 
+    unmatched_features = [
+        f for f in data["features"] if f["properties"].get("psgc_status") == "unmatched"
+    ]
+    if unmatched_features and psgc_by_code:
+        fallback_matches = _fallback_search_batch(
+            unmatched_features, psgc_by_code, psgc_date
+        )
+        for gj_code, (
+            psgc_id,
+            psgc_code,
+            psgc_name,
+            confidence,
+        ) in fallback_matches.items():
+            for f in data["features"]:
+                p = f["properties"]
+                if p.get("ADM4_PCODE") == gj_code:
+                    p["psgc_id"] = psgc_id
+                    p["psgc_code"] = psgc_code
+                    p["psgc_name"] = psgc_name
+                    if confidence >= 1.0:
+                        p["psgc_status"] = "matched"
+                    else:
+                        p["psgc_status"] = "fuzzy"
+                    p["match_confidence"] = confidence
+                    break
+
     return _write_output(data, output_path)
+
+
+_SGA_ADM3_PREFIX = "Special Geographic Area - "
+
+_SGA_EXCEPTION_DATE = "2023-10-24"
+
+_HOOK_PASSES = [
+    ["barangay", "municipality", "province"],
+    ["barangay", "municipality"],
+    ["barangay", "province"],
+    ["barangay"],
+]
+
+_EXACT_NAME_HOOK_THRESHOLD = 100.0
+
+
+def _compose_query(
+    brgy_name: str,
+    mun_name: str,
+    prov_name: str,
+    hooks: list[str],
+    psgc_date: str,
+) -> str:
+    parts = [brgy_name]
+    if "municipality" in hooks and mun_name:
+        clean_mun = mun_name
+        if psgc_date == _SGA_EXCEPTION_DATE and mun_name.startswith(_SGA_ADM3_PREFIX):
+            clean_mun = mun_name[len(_SGA_ADM3_PREFIX) :]
+        parts.append(clean_mun)
+    if "province" in hooks and prov_name:
+        parts.append(prov_name)
+    return ", ".join(parts)
+
+
+def _fallback_search_batch(
+    unmatched_features: list[dict],
+    all_psgc_brgys: dict[str, tuple[str, str]],
+    psgc_date: str,
+) -> dict[str, tuple[str, str, str, float]]:
+    from barangay.models import AdminLevel
+    from barangay.search import search_fuzzy
+
+    remaining: dict[str, tuple[str, str, str]] = {}
+    for feature in unmatched_features:
+        p = feature["properties"]
+        remaining[p["ADM4_PCODE"]] = (
+            p.get("ADM4_EN", ""),
+            p.get("ADM3_EN", ""),
+            p.get("ADM2_EN", ""),
+        )
+
+    matched: dict[str, tuple[str, str, str, float]] = {}
+    used_psgc: set[str] = set()
+
+    for hooks in _HOOK_PASSES:
+        if not remaining:
+            break
+        threshold = _EXACT_NAME_HOOK_THRESHOLD if hooks == ["barangay"] else 70.0
+        for gj_code in list(remaining.keys()):
+            brgy_name, mun_name, prov_name = remaining[gj_code]
+            query = _compose_query(brgy_name, mun_name, prov_name, hooks, psgc_date)
+            results = search_fuzzy(
+                query,
+                level=AdminLevel.BARANGAY,
+                match_hooks=hooks,
+                threshold=threshold,
+                limit=1,
+                as_of=psgc_date,
+            )
+            if results:
+                r = results[0]
+                psgc_pcode = "PH" + r.psgc_id
+                if psgc_pcode in all_psgc_brgys and psgc_pcode not in used_psgc:
+                    used_psgc.add(psgc_pcode)
+                    brgy_psgc_id, brgy_name = all_psgc_brgys[psgc_pcode]
+                    matched[gj_code] = (
+                        psgc_pcode,
+                        brgy_psgc_id,
+                        brgy_name,
+                        round(r.score / 100, 3),
+                    )
+                    del remaining[gj_code]
+
+    return matched
 
 
 def _write_output(data: dict, output_path: Path) -> dict:
     output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    status_counts: dict[str, int] = {}
+    for feature in data.get("features", []):
+        status = feature.get("properties", {}).get("psgc_status", "unknown")
+        status_counts[status] = status_counts.get(status, 0) + 1
+
+    logger.info(
+        "  Enrichment result → %s: %s",
+        output_path.name,
+        dict(sorted(status_counts.items())),
+    )
+
     with open(output_path, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     return data

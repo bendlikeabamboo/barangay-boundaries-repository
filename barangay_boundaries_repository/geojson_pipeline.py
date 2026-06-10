@@ -51,8 +51,21 @@ def run_geojson_pipeline(
 
     _step_convert(src_dir, raw_dir, tolerance, levels)
     _step_huc_mapping(raw_dir, date)
+    logger.info("Loading PSGC pcodes for %s...", date)
     psgc = load_psgc_pcodes(date)
+    logger.info(
+        "PSGC pcodes loaded: %s",
+        {lvl: len(codes) for lvl, codes in sorted(psgc.items())},
+    )
+
+    logger.info("Loading GeoJSON pcodes from %s...", raw_dir)
     geojson_pcodes = load_geojson_pcodes(raw_dir)
+    logger.info(
+        "GeoJSON pcodes loaded: %s",
+        {lvl: len(codes) for lvl, codes in sorted(geojson_pcodes.items())},
+    )
+
+    logger.info("Computing coverage...")
     report = compute_coverage_with_huc(psgc, geojson_pcodes)
     report.date = date
     _step_write_diff(report, raw_dir)
@@ -71,11 +84,16 @@ def run_geojson_pipeline(
         _step_write_diff(enriched_report, enriched_dir)
         _step_reconcile(enriched_dir, reconcile_threshold, date)
         _step_write_summary(enriched_report, enriched_dir, "enriched")
+    else:
+        logger.info("Skipping enrichment")
 
 
 def _step_convert(
     source_dir: Path, output_dir: Path, tolerance: float, levels: list[int]
 ) -> None:
+    logger.info(
+        "Phase: converting shapefiles (levels=%s, tolerance=%.6f)", levels, tolerance
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
     results = convert_all(
         source_dir=source_dir,
@@ -141,7 +159,7 @@ def _step_write_diff(report: CoverageReport, output_dir: Path) -> None:
     with open(diff_path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     logger.info(
-        "  Diff written to %s (coverage: %.1f%%)", diff_path, report.overall_coverage
+        "  Diff written to %s (coverage: %.3f%%)", diff_path, report.overall_coverage
     )
 
 
@@ -173,7 +191,7 @@ def _step_write_summary(report: CoverageReport, output_dir: Path, stage: str) ->
     summary_path = output_dir / "summary.md"
     lines: list[str] = []
     lines.append(f"# Coverage Summary ({stage}) — {report.date}\n")
-    lines.append(f"**Overall coverage: {report.overall_coverage:.1f}%**\n")
+    lines.append(f"**Overall coverage: {report.overall_coverage:.3f}%**\n")
     lines.append(
         "| Level | PSGC | GeoJSON | Matched | Coverage | PSGC-only | GeoJSON-only |"
     )
@@ -184,12 +202,12 @@ def _step_write_summary(report: CoverageReport, output_dir: Path, stage: str) ->
         lr = report.levels[adm_level]
         lines.append(
             f"| ADM{adm_level} | {lr.psgc_count} | {lr.geojson_count} | "
-            f"{lr.matched_count} | {lr.coverage_pct:.1f}% | "
+            f"{lr.matched_count} | {lr.coverage_pct:.3f}% | "
             f"{len(lr.psgc_only)} | {len(lr.geojson_only)} |"
         )
     lines.append(
         f"| **Total** | **{report.total_psgc}** | **{report.total_geojson}** | "
-        f"**{report.total_matched}** | **{report.overall_coverage:.1f}%** | "
+        f"**{report.total_matched}** | **{report.overall_coverage:.3f}%** | "
         f"**{sum(len(lr.psgc_only) for lr in report.levels.values())}** | "
         f"**{sum(len(lr.geojson_only) for lr in report.levels.values())}** |"
     )
