@@ -348,3 +348,192 @@ def validate_cmd(input_path: str) -> None:
 
     if org_entities + org_units == 0 and change_events == 0:
         click.echo("WARNING: No ORG ontology entities found in graph", err=True)
+
+
+@cli.command("coverage")
+@click.option("--date", required=True, help="PSGC snapshot date (YYYY-MM-DD)")
+@click.option(
+    "--geojson-dir",
+    default=None,
+    type=click.Path(exists=True),
+    help="GeoJSON directory (default: ./<date>)",
+)
+@click.option(
+    "--verbose", "-v", is_flag=True, default=False, help="Show unmatched entries"
+)
+@click.option(
+    "--output", "-o", default=None, type=click.Path(), help="Write JSON report to file"
+)
+def coverage_cmd(
+    date: str, geojson_dir: str | None, verbose: bool, output: str | None
+) -> None:
+    """Evaluate PSGC vs GeoJSON coverage for a snapshot."""
+    from barangay_boundaries_repository.coverage import (
+        compute_coverage,
+        load_geojson_pcodes,
+        load_psgc_pcodes,
+    )
+
+    gj_dir = Path(geojson_dir) if geojson_dir else _REPO_ROOT / date
+
+    try:
+        psgc = load_psgc_pcodes(date)
+    except Exception as e:
+        click.echo(f"Failed to load PSGC data for {date}: {e}", err=True)
+        raise SystemExit(1)
+
+    try:
+        geojson = load_geojson_pcodes(gj_dir)
+    except Exception as e:
+        click.echo(f"Failed to load GeoJSON from {gj_dir}: {e}", err=True)
+        raise SystemExit(1)
+
+    report = compute_coverage(psgc, geojson)
+    report.date = date
+
+    _print_report(report, verbose)
+
+    if output:
+        _write_json_report(report, Path(output))
+
+
+def _print_report(report, verbose: bool) -> None:
+    click.echo(f"\nCoverage Report: PSGC vs GeoJSON ({report.date})\n")
+
+    header = f"  {'Level':<8} {'PSGC':>6} {'GeoJSON':>8} {'Matched':>8} {'Coverage':>9} {'PSGC-only':>10} {'GeoJSON-only':>12}"
+    sep = "  " + "\u2500" * 69
+    click.echo(header)
+    click.echo(sep)
+
+    for adm_level in sorted(report.levels):
+        lr = report.levels[adm_level]
+        click.echo(
+            f"  ADM{adm_level:<4} {lr.psgc_count:>6} {lr.geojson_count:>8} "
+            f"{lr.matched_count:>8} {lr.coverage_pct:>8.1f}% "
+            f"{len(lr.psgc_only):>10} {len(lr.geojson_only):>12}"
+        )
+
+    click.echo(sep)
+    click.echo(
+        f"  {'Total':<8} {report.total_psgc:>6} {report.total_geojson:>8} "
+        f"{report.total_matched:>8} {report.overall_coverage:>8.1f}% "
+        f"{sum(len(lr.psgc_only) for lr in report.levels.values()):>10} "
+        f"{sum(len(lr.geojson_only) for lr in report.levels.values()):>12}"
+    )
+    click.echo(f"\n  Overall coverage: {report.overall_coverage:.1f}%")
+
+    if verbose:
+        click.echo()
+        for adm_level in sorted(report.levels):
+            lr = report.levels[adm_level]
+            _print_unmatched(adm_level, lr)
+
+
+def _print_unmatched(adm_level: int, lr) -> None:
+    if lr.psgc_only:
+        click.echo(f"\n  PSGC-only ADM{adm_level} ({len(lr.psgc_only)}):")
+        for pcode, name in lr.psgc_only.items():
+            click.echo(f"    {pcode}  {name}")
+
+    if lr.geojson_only:
+        click.echo(f"\n  GeoJSON-only ADM{adm_level} ({len(lr.geojson_only)}):")
+        for pcode, name in lr.geojson_only.items():
+            click.echo(f"    {pcode}  {name}")
+
+
+@cli.command("reconcile")
+@click.option(
+    "--diff",
+    "diff_path",
+    required=True,
+    type=click.Path(exists=True),
+    help="Path to diff.json",
+)
+@click.option(
+    "--threshold", default=0.7, type=float, help="Name matching threshold (0-1)"
+)
+@click.option(
+    "--date", "as_of", default=None, type=str, help="PSGC data as-of date (YYYY-MM-DD)"
+)
+@click.option(
+    "--output", "-o", default=None, type=click.Path(), help="Output JSON path"
+)
+def reconcile_cmd(
+    diff_path: str, threshold: float, as_of: str | None, output: str | None
+) -> None:
+    import json
+
+    from barangay_boundaries_repository.reconcile import reconcile
+
+    result = reconcile(Path(diff_path), threshold=threshold, as_of=as_of)
+
+    click.echo(f"Reconciliation Report: {result.date}\n")
+
+    if result.adm2_exclusions:
+        click.echo(f"  ADM2 exclusions (structural): {len(result.adm2_exclusions)}")
+        for code, name in result.adm2_exclusions.items():
+            click.echo(f"    {code}  {name}")
+        click.echo()
+
+    click.echo(f"  ADM3 matches: {len(result.matches)}")
+    for m in result.matches:
+        click.echo(
+            f"    {m.psgc_code} [{m.psgc_name}] → {m.geojson_code} [{m.geojson_name}] ({m.score:.2f})"
+        )
+
+    click.echo(f"\n  ADM3 unresolved PSGC: {len(result.unresolved_psgc)}")
+    for code, name in result.unresolved_psgc.items():
+        click.echo(f"    {code}  {name}")
+
+    click.echo(f"\n  ADM3 unresolved GeoJSON: {len(result.unresolved_geojson)}")
+    for code, name in result.unresolved_geojson.items():
+        click.echo(f"    {code}  {name}")
+
+    click.echo(f"\n  ADM4 remapped: {len(result.adm4_remapped)}")
+    click.echo(f"  ADM4 unmatched PSGC: {len(result.adm4_unmatched_psgc)}")
+    click.echo(f"  ADM4 unmatched GeoJSON: {len(result.adm4_unmatched_geojson)}")
+
+    if output:
+        out = Path(output)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out_data = {
+            "date": result.date,
+            "adm3_matches": [m.model_dump() for m in result.matches],
+            "unresolved_psgc": result.unresolved_psgc,
+            "unresolved_geojson": result.unresolved_geojson,
+            "adm2_exclusions": result.adm2_exclusions,
+            "adm4_remapped": result.adm4_remapped,
+            "adm4_remapped_count": len(result.adm4_remapped),
+            "adm4_unmatched_psgc": result.adm4_unmatched_psgc,
+            "adm4_unmatched_geojson": result.adm4_unmatched_geojson,
+        }
+        with open(out, "w") as f:
+            json.dump(out_data, f, indent=2, ensure_ascii=False)
+        click.echo(f"\n  Report written to {output}")
+
+
+def _write_json_report(report, output_path: Path) -> None:
+    import json
+
+    levels_out: dict[str, dict] = {}
+    for adm_level in sorted(report.levels):
+        lr = report.levels[adm_level]
+        levels_out[f"ADM{adm_level}"] = {
+            "psgc_count": lr.psgc_count,
+            "geojson_count": lr.geojson_count,
+            "matched_count": lr.matched_count,
+            "coverage_pct": round(lr.coverage_pct, 2),
+            "psgc_only": lr.psgc_only,
+            "geojson_only": lr.geojson_only,
+        }
+
+    data = {
+        "date": report.date,
+        "overall_coverage": round(report.overall_coverage, 2),
+        "levels": levels_out,
+    }
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    click.echo(f"\n  Report written to {output_path}")

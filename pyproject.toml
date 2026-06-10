@@ -1,3 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+brgybnd = "barangay_boundaries_repository.cli:cli"
+
+[tool.uv]
+package = true
+
 [project]
 name = "barangay-boundaries-repository"
 version = "0.1.0"
@@ -5,7 +15,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "barangay>=0.3.3",
+    "barangay>=2026.4.13.3",
     "click>=8.0",
     "geojson>=3.3.0",
     "geopandas>=1.1.3",
