@@ -20,6 +20,17 @@ _SANITIZE_TOKENS = {
     "(not a province)",
 }
 
+_NON_ADMIN_PATTERNS = [
+    "forest land",
+    "timber land",
+    "mount apo",
+    "watershed",
+    "unclaimed area",
+    "national park",
+    "cemetery",
+    "mall (claimed",
+]
+
 
 def _sanitize(name: str) -> str:
     n = name.lower().strip()
@@ -180,8 +191,9 @@ def _enrich_adm3(
     bg.use_version(psgc_date)
     munis_df = bg.municipalities.to_frame()
     cities_df = bg.cities.to_frame()
+    sga_df = bg.special_geographic_areas.to_frame()
 
-    adm3_dfs = [df for df in (munis_df, cities_df) if len(df) > 0]
+    adm3_dfs = [df for df in (munis_df, cities_df, sga_df) if len(df) > 0]
     if not adm3_dfs:
         return _write_output(data, output_path)
 
@@ -276,29 +288,26 @@ def _enrich_adm4(
         psgc_by_parent[parent_pcode][psgc_pcode] = (psgc_id, name)
         psgc_by_code[psgc_pcode] = (psgc_id, name)
 
+    submuni_parents = huc_mapping.get("submunicipality_parents", {})
+    cross_parent_map = huc_mapping.get("cross_parent_mapping", {})
     adm3_to_psgc = huc_mapping.get("namria_adm3_to_psgc", {})
 
-    for feature in data["features"]:
-        props = feature["properties"]
-        namria_pcode = props.get("ADM4_PCODE", "")
-        namria_name = props.get("ADM4_EN", "")
-        namria_adm3_pcode = props.get("ADM3_PCODE", "")
+    def _resolve_parent_brgys(psgc_parent: str) -> dict[str, tuple[str, str]]:
+        brgys: dict[str, tuple[str, str]] = {}
+        brgys.update(psgc_by_parent.get(psgc_parent, {}))
+        for submuni_pcode in submuni_parents.get(psgc_parent, []):
+            brgys.update(psgc_by_parent.get(submuni_pcode, {}))
+        return brgys
 
-        psgc_parent = namria_adm3_pcode
-
-        if namria_adm3_pcode in adm3_to_psgc:
-            psgc_parent = adm3_to_psgc[namria_adm3_pcode]
-
-        psgc_brgys = psgc_by_parent.get(psgc_parent, {})
-
+    def _try_match(
+        psgc_brgys: dict[str, tuple[str, str]],
+        namria_pcode: str,
+        namria_name: str,
+    ) -> tuple[bool, str | None, str | None, str | None]:
         if namria_pcode in psgc_brgys:
             brgy_psgc_id, brgy_name = psgc_brgys[namria_pcode]
-            props["psgc_id"] = namria_pcode
-            props["psgc_code"] = brgy_psgc_id
-            props["psgc_name"] = brgy_name
-            props["psgc_status"] = "matched"
-            props["match_confidence"] = 1.0
-        elif psgc_brgys:
+            return True, namria_pcode, brgy_psgc_id, brgy_name
+        if psgc_brgys:
             gj_san = _sanitize(namria_name)
             best_psgc: str | None = None
             best_score = 0.0
@@ -315,17 +324,166 @@ def _enrich_adm4(
 
             if best_psgc and best_score >= 70:
                 brgy_psgc_id, brgy_name = psgc_brgys[best_psgc]
-                props["psgc_id"] = best_psgc
-                props["psgc_code"] = brgy_psgc_id
-                props["psgc_name"] = brgy_name
-                props["psgc_status"] = "fuzzy"
-                props["match_confidence"] = round(best_score / 100, 3)
+                return True, best_psgc, brgy_psgc_id, brgy_name
+        return False, None, None, None
+
+    for feature in data["features"]:
+        props = feature["properties"]
+        namria_pcode = props.get("ADM4_PCODE", "")
+        namria_name = props.get("ADM4_EN", "")
+        namria_adm3_pcode = props.get("ADM3_PCODE", "")
+
+        name_lower = namria_name.lower().strip()
+        if any(pat in name_lower for pat in _NON_ADMIN_PATTERNS):
+            props["psgc_id"] = None
+            props["psgc_code"] = None
+            props["psgc_name"] = None
+            props["psgc_status"] = "non-administrative"
+            props["match_confidence"] = None
+            continue
+
+        psgc_parent = namria_adm3_pcode
+
+        if namria_adm3_pcode in adm3_to_psgc:
+            psgc_parent = adm3_to_psgc[namria_adm3_pcode]
+
+        psgc_brgys = _resolve_parent_brgys(psgc_parent)
+
+        matched, match_id, match_code, match_name = _try_match(
+            psgc_brgys, namria_pcode, namria_name
+        )
+
+        if not matched:
+            for alt_parent in cross_parent_map.get(psgc_parent, []):
+                alt_brgys = _resolve_parent_brgys(alt_parent)
+                matched, match_id, match_code, match_name = _try_match(
+                    alt_brgys, namria_pcode, namria_name
+                )
+                if matched:
+                    break
+
+        if matched and match_id and match_code is not None and match_name is not None:
+            props["psgc_id"] = match_id
+            props["psgc_code"] = match_code
+            props["psgc_name"] = match_name
+            if match_id == namria_pcode:
+                props["psgc_status"] = "matched"
+                props["match_confidence"] = 1.0
             else:
-                props["psgc_status"] = "unmatched"
+                props["psgc_status"] = "fuzzy"
+                gj_san = _sanitize(namria_name)
+                psgc_san = _sanitize(match_name)
+                score = max(
+                    token_set_ratio(gj_san, psgc_san),
+                    token_sort_ratio(gj_san, psgc_san),
+                )
+                props["match_confidence"] = round(score / 100, 3)
         else:
             props["psgc_status"] = "unmatched"
 
     return _write_output(data, output_path)
+
+    combined = pd.concat(adm4_dfs, ignore_index=True)
+
+    psgc_by_parent: dict[str, dict[str, tuple[str, str]]] = defaultdict(dict)
+    psgc_by_code: dict[str, tuple[str, str]] = {}
+    for _, row in combined.iterrows():
+        psgc_id = str(row["psgc_id"])
+        psgc_pcode = "PH" + psgc_id[:10]
+        name = row.iloc[0]
+        parent_pcode = "PH" + str(row["parent_psgc_id"])[:7]
+        psgc_by_parent[parent_pcode][psgc_pcode] = (psgc_id, name)
+        psgc_by_code[psgc_pcode] = (psgc_id, name)
+
+    adm3_to_psgc = huc_mapping.get("namria_adm3_to_psgc", {})
+    submuni_parents = huc_mapping.get("submunicipality_parents", {})
+    cross_parent_map = huc_mapping.get("cross_parent_mapping", {})
+
+    for feature in data["features"]:
+        props = feature["properties"]
+        namria_pcode = props.get("ADM4_PCODE", "")
+        namria_name = props.get("ADM4_EN", "")
+        namria_adm3_pcode = props.get("ADM3_PCODE", "")
+
+        if _is_non_admin(namria_name):
+            props["psgc_status"] = "non-administrative"
+            props["match_confidence"] = None
+            continue
+
+        psgc_parent = namria_adm3_pcode
+
+        if namria_adm3_pcode in adm3_to_psgc:
+            psgc_parent = adm3_to_psgc[namria_adm3_pcode]
+
+        psgc_brgys = dict(psgc_by_parent.get(psgc_parent, {}))
+
+        for submuni_pcode in submuni_parents.get(psgc_parent, []):
+            psgc_brgys.update(psgc_by_parent.get(submuni_pcode, {}))
+
+        matched = _match_barangay(
+            props, namria_pcode, namria_name, psgc_brgys
+        )
+
+        if not matched:
+            for alt_parent in cross_parent_map.get(psgc_parent, []):
+                alt_brgys = dict(psgc_by_parent.get(alt_parent, {}))
+                for sp in submuni_parents.get(alt_parent, []):
+                    alt_brgys.update(psgc_by_parent.get(sp, {}))
+                matched = _match_barangay(
+                    props, namria_pcode, namria_name, alt_brgys
+                )
+                if matched:
+                    break
+
+        if not matched:
+            props["psgc_status"] = "unmatched"
+
+    return _write_output(data, output_path)
+
+
+def _is_non_admin(name: str) -> bool:
+    lower = name.lower()
+    return any(pat in lower for pat in _NON_ADMIN_PATTERNS)
+
+
+def _match_barangay(
+    props: dict,
+    namria_pcode: str,
+    namria_name: str,
+    psgc_brgys: dict[str, tuple[str, str]],
+) -> bool:
+    if namria_pcode in psgc_brgys:
+        brgy_psgc_id, brgy_name = psgc_brgys[namria_pcode]
+        props["psgc_id"] = namria_pcode
+        props["psgc_code"] = brgy_psgc_id
+        props["psgc_name"] = brgy_name
+        props["psgc_status"] = "matched"
+        props["match_confidence"] = 1.0
+        return True
+    if psgc_brgys:
+        gj_san = _sanitize(namria_name)
+        best_psgc: str | None = None
+        best_score = 0.0
+
+        for psgc_code, (brgy_psgc_id, psgc_name) in psgc_brgys.items():
+            psgc_san = _sanitize(psgc_name)
+            score = max(
+                token_set_ratio(gj_san, psgc_san),
+                token_sort_ratio(gj_san, psgc_san),
+            )
+            if score > best_score:
+                best_score = score
+                best_psgc = psgc_code
+
+        if best_psgc and best_score >= 70:
+            brgy_psgc_id, brgy_name = psgc_brgys[best_psgc]
+            props["psgc_id"] = best_psgc
+            props["psgc_code"] = brgy_psgc_id
+            props["psgc_name"] = brgy_name
+            props["psgc_status"] = "fuzzy"
+            props["match_confidence"] = round(best_score / 100, 3)
+            return True
+    return False
 
 
 def _write_output(data: dict, output_path: Path) -> dict:
