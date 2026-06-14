@@ -13,7 +13,6 @@ from barangay_boundaries_repository.coverage import (
 from barangay_boundaries_repository.enrich import enrich_geojson
 from barangay_boundaries_repository.generate_huc_mapping import generate_huc_mapping
 from barangay_boundaries_repository.namria_converter import convert_all
-from barangay_boundaries_repository.reconcile import reconcile
 
 logger = logging.getLogger(__name__)
 
@@ -32,10 +31,8 @@ def run_geojson_pipeline(
     date: str,
     tolerance: float = 0.005,
     levels: list[int] | None = None,
-    reconcile_threshold: float = 0.7,
     source_dir: Path | None = None,
     *,
-    skip_raw_reconcile: bool = False,
     skip_enrich: bool = False,
 ) -> None:
     if levels is None:
@@ -70,9 +67,7 @@ def run_geojson_pipeline(
     report.date = date
     _step_write_diff(report, raw_dir)
 
-    if not skip_raw_reconcile:
-        _step_reconcile(raw_dir, reconcile_threshold, date)
-        _step_write_summary(report, raw_dir, "raw")
+    _step_write_summary(report, raw_dir, "raw")
 
     if not skip_enrich:
         _step_enrich(raw_dir, enriched_dir, date, levels)
@@ -82,7 +77,6 @@ def run_geojson_pipeline(
         )
         enriched_report.date = date
         _step_write_diff(enriched_report, enriched_dir)
-        _step_reconcile(enriched_dir, reconcile_threshold, date)
         _step_write_summary(enriched_report, enriched_dir, "enriched")
     else:
         logger.info("Skipping enrichment")
@@ -160,30 +154,6 @@ def _step_write_diff(report: CoverageReport, output_dir: Path) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
     logger.info(
         "  Diff written to %s (coverage: %.3f%%)", diff_path, report.overall_coverage
-    )
-
-
-def _step_reconcile(output_dir: Path, threshold: float, date: str) -> None:
-    diff_path = output_dir / "diff.json"
-    result = reconcile(diff_path, threshold=threshold, as_of=date)
-    recon_path = output_dir / "recon_report.json"
-    out_data = {
-        "date": result.date,
-        "adm3_matches": [m.model_dump() for m in result.matches],
-        "unresolved_psgc": result.unresolved_psgc,
-        "unresolved_geojson": result.unresolved_geojson,
-        "adm2_exclusions": result.adm2_exclusions,
-        "adm4_remapped": result.adm4_remapped,
-        "adm4_remapped_count": len(result.adm4_remapped),
-        "adm4_unmatched_psgc": result.adm4_unmatched_psgc,
-        "adm4_unmatched_geojson": result.adm4_unmatched_geojson,
-    }
-    with open(recon_path, "w") as f:
-        json.dump(out_data, f, indent=2, ensure_ascii=False)
-    logger.info(
-        "  Reconciliation: %d ADM3 matches, %d unresolved",
-        len(result.matches),
-        len(result.unresolved_psgc),
     )
 
 

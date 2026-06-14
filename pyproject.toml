@@ -8,6 +8,9 @@ brgybnd = "barangay_boundaries_repository.cli:cli"
 [tool.uv]
 package = true
 
+[tool.uv.sources]
+barangay = { path = "../barangay", editable = true }
+
 [project]
 name = "barangay-boundaries-repository"
 version = "0.1.0"
@@ -15,7 +18,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "barangay>=2026.4.13.3",
+    "barangay",
     "click>=8.0",
     "geojson>=3.3.0",
     "geopandas>=1.1.3",

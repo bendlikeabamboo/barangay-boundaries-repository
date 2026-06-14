@@ -441,76 +441,6 @@ def _print_unmatched(adm_level: int, lr) -> None:
             click.echo(f"    {pcode}  {name}")
 
 
-@cli.command("reconcile")
-@click.option(
-    "--diff",
-    "diff_path",
-    required=True,
-    type=click.Path(exists=True),
-    help="Path to diff.json",
-)
-@click.option(
-    "--threshold", default=0.7, type=float, help="Name matching threshold (0-1)"
-)
-@click.option(
-    "--date", "as_of", default=None, type=str, help="PSGC data as-of date (YYYY-MM-DD)"
-)
-@click.option(
-    "--output", "-o", default=None, type=click.Path(), help="Output JSON path"
-)
-def reconcile_cmd(
-    diff_path: str, threshold: float, as_of: str | None, output: str | None
-) -> None:
-    import json
-
-    from barangay_boundaries_repository.reconcile import reconcile
-
-    result = reconcile(Path(diff_path), threshold=threshold, as_of=as_of)
-
-    click.echo(f"Reconciliation Report: {result.date}\n")
-
-    if result.adm2_exclusions:
-        click.echo(f"  ADM2 exclusions (structural): {len(result.adm2_exclusions)}")
-        for code, name in result.adm2_exclusions.items():
-            click.echo(f"    {code}  {name}")
-        click.echo()
-
-    click.echo(f"  ADM3 matches: {len(result.matches)}")
-    for m in result.matches:
-        click.echo(
-            f"    {m.psgc_code} [{m.psgc_name}] → {m.geojson_code} [{m.geojson_name}] ({m.score:.2f})"
-        )
-
-    click.echo(f"\n  ADM3 unresolved PSGC: {len(result.unresolved_psgc)}")
-    for code, name in result.unresolved_psgc.items():
-        click.echo(f"    {code}  {name}")
-
-    click.echo(f"\n  ADM3 unresolved GeoJSON: {len(result.unresolved_geojson)}")
-    for code, name in result.unresolved_geojson.items():
-        click.echo(f"    {code}  {name}")
-
-    click.echo(f"\n  ADM4 remapped: {len(result.adm4_remapped)}")
-    click.echo(f"  ADM4 unmatched PSGC: {len(result.adm4_unmatched_psgc)}")
-    click.echo(f"  ADM4 unmatched GeoJSON: {len(result.adm4_unmatched_geojson)}")
-
-    if output:
-        out = Path(output)
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out_data = {
-            "date": result.date,
-            "adm3_matches": [m.model_dump() for m in result.matches],
-            "unresolved_psgc": result.unresolved_psgc,
-            "unresolved_geojson": result.unresolved_geojson,
-            "adm2_exclusions": result.adm2_exclusions,
-            "adm4_remapped": result.adm4_remapped,
-            "adm4_remapped_count": len(result.adm4_remapped),
-            "adm4_unmatched_psgc": result.adm4_unmatched_psgc,
-            "adm4_unmatched_geojson": result.adm4_unmatched_geojson,
-        }
-        with open(out, "w") as f:
-            json.dump(out_data, f, indent=2, ensure_ascii=False)
-        click.echo(f"\n  Report written to {output}")
-
 
 @cli.command("enrich")
 @click.option("--date", required=True, help="PSGC snapshot date (YYYY-MM-DD)")
@@ -578,18 +508,6 @@ def enrich_cmd(
     help="NAMRIA shapefiles directory (default: ./namria)",
 )
 @click.option(
-    "--threshold",
-    default=0.7,
-    type=float,
-    help="Name matching threshold for reconciliation (default: 0.7)",
-)
-@click.option(
-    "--skip-raw-reconcile",
-    is_flag=True,
-    default=False,
-    help="Skip reconciliation of raw data (only enrich)",
-)
-@click.option(
     "--skip-enrich",
     is_flag=True,
     default=False,
@@ -600,11 +518,9 @@ def geojson_cmd(
     tolerance: float,
     levels: str,
     source: str | None,
-    threshold: float,
-    skip_raw_reconcile: bool,
     skip_enrich: bool,
 ) -> None:
-    """Full NAMRIA→GeoJSON pipeline: convert, cover, reconcile, enrich, cover, reconcile."""
+    """Full NAMRIA→GeoJSON pipeline: convert, cover, enrich, cover."""
     from barangay_boundaries_repository.geojson_pipeline import run_geojson_pipeline
 
     level_list = [int(part.strip()) for part in levels.split(",")]
@@ -614,9 +530,7 @@ def geojson_cmd(
         date=date,
         tolerance=tolerance,
         levels=level_list,
-        reconcile_threshold=threshold,
         source_dir=src,
-        skip_raw_reconcile=skip_raw_reconcile,
         skip_enrich=skip_enrich,
     )
 

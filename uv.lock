@@ -34,7 +34,7 @@ wheels = [
 [[package]]
 name = "barangay"
 version = "2026.4.13.3"
-source = { registry = "https://pypi.org/simple" }
+source = { editable = "../barangay" }
 dependencies = [
     { name = "click" },
     { name = "pandas" },
@@ -48,9 +48,50 @@ dependencies = [
     { name = "rich" },
     { name = "tornado" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/bb/5057ded2d902ae3dcbcb058a24bdb41d04565c5ad5d93d265850d544696f/barangay-2026.4.13.3.tar.gz", hash = "sha256:dbb7295aefe1325e4ae99be5fc83486675d25f423dbe031b3bcd3032daa266ef", size = 2969815, upload-time = "2026-06-09T04:03:08.71Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/85/2a07d43385cf7d66742cb2e940cfcaec9aa7862324d1eb0cf0a638aca5f4/barangay-2026.4.13.3-py3-none-any.whl", hash = "sha256:f6696a158b93f21fd1cef1e14a46c307ef460b6c024844b5f0c12cb6f53c6808", size = 2906646, upload-time = "2026-06-09T04:03:06.727Z" },
+
+[package.metadata]
+requires-dist = [
+    { name = "click", specifier = ">=8.4.1,<9.0.0" },
+    { name = "mkdocs", marker = "extra == 'docs'", specifier = ">=1.6.1" },
+    { name = "mkdocs-badges", marker = "extra == 'docs'", specifier = ">=0.5.2" },
+    { name = "mkdocs-shadcn", marker = "extra == 'docs'", specifier = ">=0.9.9" },
+    { name = "pandas", specifier = ">=3.0.3,<4.0.0" },
+    { name = "pip", specifier = ">=26.1.2" },
+    { name = "pyarrow", specifier = ">=18.0.0" },
+    { name = "pydantic", specifier = ">=2.13.4,<3.0.0" },
+    { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "pyyaml", specifier = ">=6.0.2,<7.0.0" },
+    { name = "rapidfuzz", specifier = ">=3.14.0,<4.0.0" },
+    { name = "requests", specifier = ">=2.34.2" },
+    { name = "rich", specifier = ">=15.0.0,<16.0.0" },
+    { name = "tornado", specifier = ">=6.5.6" },
+]
+provides-extras = ["docs"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "ipykernel", specifier = ">=7.1.0" },
+    { name = "ipywidgets", specifier = ">=8.1.7,<9" },
+    { name = "openpyxl", specifier = ">=3.1.5" },
+    { name = "pandas-stubs", specifier = ">=3.0.3.260530" },
+    { name = "pandera", extras = ["pandas"], specifier = ">=0.29.0" },
+    { name = "pip", specifier = ">=26.1.2" },
+    { name = "pip-audit", specifier = ">=2.10.0" },
+    { name = "pre-commit", specifier = ">=4.5.1" },
+    { name = "pyarrow", specifier = ">=18.0.0" },
+    { name = "pytest", specifier = ">=9.0.3" },
+    { name = "pytest-cov", specifier = ">=7.1.0" },
+    { name = "pytest-xdist", specifier = ">=3.8.0" },
+    { name = "pyyaml", specifier = ">=6.0.2,<7" },
+    { name = "ruff", specifier = ">=0.15.16" },
+    { name = "tqdm", specifier = ">=4.67.1,<5" },
+    { name = "ty", specifier = ">=0.0.44" },
+    { name = "types-pyyaml", specifier = ">=6.0.12.20260518" },
+]
+docs = [
+    { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-badges", specifier = ">=0.5.2" },
+    { name = "mkdocs-shadcn", specifier = ">=0.9.9" },
 ]
 
 [[package]]
@@ -78,7 +119,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "barangay", specifier = ">=2026.4.13.3" },
+    { name = "barangay", editable = "../barangay" },
     { name = "click", specifier = ">=8.0" },
     { name = "geojson", specifier = ">=3.3.0" },
     { name = "geopandas", specifier = ">=1.1.3" },
