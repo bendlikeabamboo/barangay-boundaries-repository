@@ -35,3 +35,8 @@ dependencies = [
     "shapely>=2.1.2",
     "ty>=0.0.45",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]

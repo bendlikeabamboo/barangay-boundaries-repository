@@ -1,0 +1,1664 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "psgc_type": "non_administrative",
+    "psgc_version": "2023-10-24",
+    "namria_version": "2023-11-06",
+    "feature_count": 20,
+    "match_summary": {
+      "exact": 0,
+      "huc_map": 0,
+      "fuzzy": 0,
+      "non_administrative": 20,
+      "unresolved": 0
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Sierra Madre Mountains Forest Land under Jurisdiction of Paete, Laguna",
+        "ADM4_PCODE": "PH0403418901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Paete",
+        "ADM3_PCODE": "PH0403418",
+        "ADM2_EN": "Laguna",
+        "ADM2_PCODE": "PH04034",
+        "ADM1_EN": "Region IV-A (Calabarzon)",
+        "ADM1_PCODE": "PH04",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.280998422427,
+        "Shape_Area": 0.00388372057614,
+        "AREA_SQKM": 46.3464766167,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.560608537,
+              14.412860440000031
+            ],
+            [
+              121.58534580100002,
+              14.357021670000051
+            ],
+            [
+              121.48588979400006,
+              14.35278302200004
+            ],
+            [
+              121.48145206100003,
+              14.372616722000032
+            ],
+            [
+              121.54663476400003,
+              14.408647624000025
+            ],
+            [
+              121.560608537,
+              14.412860440000031
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Unclaimed Area under Jurisdiction of Zamboanga City",
+        "ADM4_PCODE": "PH0907332902",
+        "ADM4_REF": null,
+        "ADM3_EN": "Zamboanga City",
+        "ADM3_PCODE": "PH0907332",
+        "ADM2_EN": "Zamboanga del Sur",
+        "ADM2_PCODE": "PH09073",
+        "ADM1_EN": "Region IX (Zamboanga Peninsula)",
+        "ADM1_PCODE": "PH09",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.598728589363,
+        "Shape_Area": 0.00488351494847,
+        "AREA_SQKM": 59.641623685,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                122.15312421600004,
+                7.183319707000067
+              ],
+              [
+                122.12121055800003,
+                7.168060161000028
+              ],
+              [
+                122.10462298900006,
+                7.177066893000074
+              ],
+              [
+                122.09482637400004,
+                7.164541586000041
+              ],
+              [
+                122.09495750400004,
+                7.181303358000036
+              ],
+              [
+                122.13640758300005,
+                7.219264487000032
+              ],
+              [
+                122.14592660000005,
+                7.241872963000048
+              ],
+              [
+                122.15484786600007,
+                7.219043873000032
+              ],
+              [
+                122.15312421600004,
+                7.183319707000067
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                122.21603039000001,
+                7.294935931000055
+              ],
+              [
+                122.1862286490001,
+                7.268302228000039
+              ],
+              [
+                122.19232533500008,
+                7.250872516000072
+              ],
+              [
+                122.17253456700007,
+                7.250872143000038
+              ],
+              [
+                122.16104210700007,
+                7.261429623000026
+              ],
+              [
+                122.17397410700005,
+                7.267030959000067
+              ],
+              [
+                122.18084260100011,
+                7.281842348000055
+              ],
+              [
+                122.15990795200003,
+                7.345544288000042
+              ],
+              [
+                122.16058501600003,
+                7.366221793000022
+              ],
+              [
+                122.17486160500005,
+                7.391799798000022
+              ],
+              [
+                122.17430829400007,
+                7.341284353000049
+              ],
+              [
+                122.21459861400001,
+                7.304329154000072
+              ],
+              [
+                122.21603039000001,
+                7.294935931000055
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Watershed Area under Jurisdiction of Zamboanga City",
+        "ADM4_PCODE": "PH0907332904",
+        "ADM4_REF": null,
+        "ADM3_EN": "Zamboanga City",
+        "ADM3_PCODE": "PH0907332",
+        "ADM2_EN": "Zamboanga del Sur",
+        "ADM2_PCODE": "PH09073",
+        "ADM1_EN": "Region IX (Zamboanga Peninsula)",
+        "ADM1_PCODE": "PH09",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.445806842232,
+        "Shape_Area": 0.00652051187945,
+        "AREA_SQKM": 79.6610286165,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              122.0481477300001,
+              7.150004481000053
+            ],
+            [
+              122.04059725000002,
+              7.131706243000053
+            ],
+            [
+              122.02134304700007,
+              7.135038042000076
+            ],
+            [
+              122.0066756440001,
+              7.121814153000059
+            ],
+            [
+              121.96713474800003,
+              7.04195968700003
+            ],
+            [
+              121.96125900200002,
+              7.039277536000043
+            ],
+            [
+              121.95641348400011,
+              7.049733006000054
+            ],
+            [
+              121.93524362200003,
+              7.049252153000054
+            ],
+            [
+              121.93515529900003,
+              7.100890071000038
+            ],
+            [
+              121.9514147320001,
+              7.118859731000043
+            ],
+            [
+              121.93397494800001,
+              7.145252396000046
+            ],
+            [
+              122.0481477300001,
+              7.150004481000053
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Timber Land under Jurisdiction of Jimenez, Misamis Occidental",
+        "ADM4_PCODE": "PH1004207901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Jimenez",
+        "ADM3_PCODE": "PH1004207",
+        "ADM2_EN": "Misamis Occidental",
+        "ADM2_PCODE": "PH10042",
+        "ADM1_EN": "Region X (Northern Mindanao)",
+        "ADM1_PCODE": "PH10",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.188788410722,
+        "Shape_Area": 0.00175951115459,
+        "AREA_SQKM": 21.4351887485,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              123.72958890900009,
+              8.351847841000051
+            ],
+            [
+              123.7293308620001,
+              8.322209057000066
+            ],
+            [
+              123.66058985000006,
+              8.32309129400005
+            ],
+            [
+              123.66029285500008,
+              8.343601887000034
+            ],
+            [
+              123.72958890900009,
+              8.351847841000051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Tangub City, Misamis Oriental",
+        "ADM4_PCODE": "PH1004215901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Tangub City",
+        "ADM3_PCODE": "PH1004215",
+        "ADM2_EN": "Misamis Occidental",
+        "ADM2_PCODE": "PH10042",
+        "ADM1_EN": "Region X (Northern Mindanao)",
+        "ADM1_PCODE": "PH10",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.297981749838,
+        "Shape_Area": 0.00287023147021,
+        "AREA_SQKM": 34.9827861776,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              123.68965318500011,
+              8.183309203000022
+            ],
+            [
+              123.67715166500011,
+              8.16967118100007
+            ],
+            [
+              123.69105591200002,
+              8.147184563000053
+            ],
+            [
+              123.6740945680001,
+              8.140919937000035
+            ],
+            [
+              123.67895016600005,
+              8.133524488000035
+            ],
+            [
+              123.65177296400009,
+              8.130254855000032
+            ],
+            [
+              123.64705472500009,
+              8.119504929000072
+            ],
+            [
+              123.62445499000012,
+              8.11912781600006
+            ],
+            [
+              123.59735905000002,
+              8.15178031000005
+            ],
+            [
+              123.66378290500006,
+              8.162059773000067
+            ],
+            [
+              123.66276525600006,
+              8.183198529000038
+            ],
+            [
+              123.68965318500011,
+              8.183309203000022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Mount Apo National Park under Jurisdiction of Davao City",
+        "ADM4_PCODE": "PH1102402901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Davao City",
+        "ADM3_PCODE": "PH1102402",
+        "ADM2_EN": "Davao del Sur",
+        "ADM2_PCODE": "PH11024",
+        "ADM1_EN": "Region XI (Davao Region)",
+        "ADM1_PCODE": "PH11",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.980130714533,
+        "Shape_Area": 0.0185543294377,
+        "AREA_SQKM": 226.687306837,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              125.28939525900012,
+              7.19711361100002
+            ],
+            [
+              125.31722983600002,
+              7.184539996000069
+            ],
+            [
+              125.35893085900011,
+              7.18134939600003
+            ],
+            [
+              125.35811461800006,
+              7.124254823000058
+            ],
+            [
+              125.33522563000008,
+              7.11227690000004
+            ],
+            [
+              125.32416862500008,
+              7.116558794000071
+            ],
+            [
+              125.31938162900008,
+              7.104934042000025
+            ],
+            [
+              125.3306041510001,
+              7.096174244000053
+            ],
+            [
+              125.33295846200008,
+              7.064237255000023
+            ],
+            [
+              125.38159485100005,
+              7.087403436000045
+            ],
+            [
+              125.37043345300003,
+              7.060922253000058
+            ],
+            [
+              125.38961098700008,
+              7.068575443000043
+            ],
+            [
+              125.36941968000008,
+              7.04780426800005
+            ],
+            [
+              125.37146357300003,
+              7.041538722000041
+            ],
+            [
+              125.3850185660001,
+              7.043025901000021
+            ],
+            [
+              125.3854216310001,
+              7.037044513000069
+            ],
+            [
+              125.35894164100011,
+              7.014722841000037
+            ],
+            [
+              125.35492731300008,
+              6.974747105000063
+            ],
+            [
+              125.2724863730001,
+              6.985103854000045
+            ],
+            [
+              125.24862393400008,
+              7.000539738000043
+            ],
+            [
+              125.25922056900004,
+              7.029416808000065
+            ],
+            [
+              125.29273864600009,
+              7.036055654000052
+            ],
+            [
+              125.28647233700008,
+              7.09133033300003
+            ],
+            [
+              125.29163036900002,
+              7.10567326000006
+            ],
+            [
+              125.22876936500006,
+              7.175858360000063
+            ],
+            [
+              125.22699740900009,
+              7.193372405000048
+            ],
+            [
+              125.28939525900012,
+              7.19711361100002
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Mount Apo National Park under Jurisdiction of Kidapawan City, Cotabato",
+        "ADM4_PCODE": "PH1204704901",
+        "ADM4_REF": null,
+        "ADM3_EN": "City of Kidapawan (Capital)",
+        "ADM3_PCODE": "PH1204704",
+        "ADM2_EN": "Cotabato (North Cotabato)",
+        "ADM2_PCODE": "PH12047",
+        "ADM1_EN": "Region XII (Soccsksargen)",
+        "ADM1_PCODE": "PH12",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.161031495115,
+        "Shape_Area": 0.00089260234266,
+        "AREA_SQKM": 10.9071439129,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              125.22598526900003,
+              7.033546651000051
+            ],
+            [
+              125.24862393400008,
+              7.000539738000043
+            ],
+            [
+              125.18808910500002,
+              7.002817341000025
+            ],
+            [
+              125.21178826700009,
+              7.012446373000046
+            ],
+            [
+              125.22598526900003,
+              7.033546651000051
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Mount Apo National Park under Jurisdiction of Magpet, Cotabato",
+        "ADM4_PCODE": "PH1204706901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Magpet",
+        "ADM3_PCODE": "PH1204706",
+        "ADM2_EN": "Cotabato (North Cotabato)",
+        "ADM2_PCODE": "PH12047",
+        "ADM1_EN": "Region XII (Soccsksargen)",
+        "ADM1_PCODE": "PH12",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.245179302728,
+        "Shape_Area": 0.00245141780687,
+        "AREA_SQKM": 29.9531194993,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              125.28933826100001,
+              7.068278346000056
+            ],
+            [
+              125.29176710700006,
+              7.03411257700003
+            ],
+            [
+              125.25922056900004,
+              7.029416808000065
+            ],
+            [
+              125.24862393400008,
+              7.000539738000043
+            ],
+            [
+              125.22502594000002,
+              7.034685854000031
+            ],
+            [
+              125.26036145400008,
+              7.068981393000058
+            ],
+            [
+              125.28933826100001,
+              7.068278346000056
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Manila North Cemetery",
+        "ADM4_PCODE": "PH1303901906",
+        "ADM4_REF": null,
+        "ADM3_EN": "City of Manila",
+        "ADM3_PCODE": "PH1303901",
+        "ADM2_EN": "Metropolitan Manila First District",
+        "ADM2_PCODE": "PH13039",
+        "ADM1_EN": "National Capital Region (NCR)",
+        "ADM1_PCODE": "PH13",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.0498586138702,
+        "Shape_Area": 5.56080228161e-05,
+        "AREA_SQKM": 0.662844478054,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.98568229900002,
+              14.639655100000027
+            ],
+            [
+              120.99197344400011,
+              14.636527028000046
+            ],
+            [
+              120.98676401500006,
+              14.626508566000041
+            ],
+            [
+              120.98070294100012,
+              14.631867212000031
+            ],
+            [
+              120.98568229900002,
+              14.639655100000027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Tutuban Mall (Claimed by Five Barangays of Tondo, Manila)",
+        "ADM4_PCODE": "PH1303901907",
+        "ADM4_REF": null,
+        "ADM3_EN": "City of Manila",
+        "ADM3_PCODE": "PH1303901",
+        "ADM2_EN": "Metropolitan Manila First District",
+        "ADM2_PCODE": "PH13039",
+        "ADM1_EN": "National Capital Region (NCR)",
+        "ADM1_PCODE": "PH13",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.0130265978111,
+        "Shape_Area": 8.02275497229e-06,
+        "AREA_SQKM": 0.0956416834869,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.97247344900006,
+              14.610735285000032
+            ],
+            [
+              120.97352007400002,
+              14.60650617300007
+            ],
+            [
+              120.97119288500005,
+              14.605997885000022
+            ],
+            [
+              120.97247344900006,
+              14.610735285000032
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Baco, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705201901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Baco",
+        "ADM3_PCODE": "PH1705201",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.707342849542,
+        "Shape_Area": 0.0256747573722,
+        "AREA_SQKM": 307.791221427,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.01287128600006,
+              13.370493699000065
+            ],
+            [
+              121.03616577100001,
+              13.347718151000038
+            ],
+            [
+              121.02428274200008,
+              13.33986881100003
+            ],
+            [
+              121.02460979800003,
+              13.320027423000056
+            ],
+            [
+              121.0542290520001,
+              13.295556102000035
+            ],
+            [
+              121.04836954900009,
+              13.278419819000021
+            ],
+            [
+              121.06353294700011,
+              13.266020727000068
+            ],
+            [
+              120.973278316,
+              13.197198405000051
+            ],
+            [
+              120.80067606600005,
+              13.280248262000043
+            ],
+            [
+              120.82005116900007,
+              13.312005979000048
+            ],
+            [
+              120.96122734900007,
+              13.356136621000076
+            ],
+            [
+              120.97332554400009,
+              13.366800432000048
+            ],
+            [
+              120.99539280800002,
+              13.359056087000056
+            ],
+            [
+              121.01287128600006,
+              13.370493699000065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Bansud, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705202901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Bansud",
+        "ADM3_PCODE": "PH1705202",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.562921156473,
+        "Shape_Area": 0.0170478862782,
+        "AREA_SQKM": 204.740416102,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.24354899100001,
+              12.899506232000022
+            ],
+            [
+              121.37967152700003,
+              12.890841641000065
+            ],
+            [
+              121.384352465,
+              12.84222860500006
+            ],
+            [
+              121.35683620100008,
+              12.827251167000043
+            ],
+            [
+              121.36159467800007,
+              12.819154058000038
+            ],
+            [
+              121.37971349600002,
+              12.820422817000065
+            ],
+            [
+              121.3786963230001,
+              12.781742534000045
+            ],
+            [
+              121.36989148000009,
+              12.760851873000036
+            ],
+            [
+              121.2587411290001,
+              12.756897567000067
+            ],
+            [
+              121.24354899100001,
+              12.899506232000022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Bongabong, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705203901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Bongabong",
+        "ADM3_PCODE": "PH1705203",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.505603039841,
+        "Shape_Area": 0.00797174217682,
+        "AREA_SQKM": 95.7898475723,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.29176322900003,
+              12.748837431000027
+            ],
+            [
+              121.33437942700004,
+              12.726356169000042
+            ],
+            [
+              121.33427634600002,
+              12.715120386000024
+            ],
+            [
+              121.30644458900008,
+              12.70419384400003
+            ],
+            [
+              121.30868123200003,
+              12.686899762000053
+            ],
+            [
+              121.32912231700004,
+              12.670692656000028
+            ],
+            [
+              121.3496183520001,
+              12.678826765000053
+            ],
+            [
+              121.35702086300012,
+              12.658193424000046
+            ],
+            [
+              121.37561644200002,
+              12.658528704000048
+            ],
+            [
+              121.38076723000006,
+              12.651255381000055
+            ],
+            [
+              121.37658760700003,
+              12.638869300000067
+            ],
+            [
+              121.35622238700012,
+              12.629995647000044
+            ],
+            [
+              121.3168686680001,
+              12.644389149000062
+            ],
+            [
+              121.2586164600001,
+              12.650692021000054
+            ],
+            [
+              121.2587411290001,
+              12.756897567000067
+            ],
+            [
+              121.28690727000003,
+              12.760934359000032
+            ],
+            [
+              121.29176322900003,
+              12.748837431000027
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Gloria, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705206901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Gloria",
+        "ADM3_PCODE": "PH1705206",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.392980846627,
+        "Shape_Area": 0.00748215996149,
+        "AREA_SQKM": 89.8212224052,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.24308735500006,
+              12.978253805000065
+            ],
+            [
+              121.34986872000002,
+              12.972014135000052
+            ],
+            [
+              121.31999805600003,
+              12.939958300000058
+            ],
+            [
+              121.34832895700004,
+              12.907203302000028
+            ],
+            [
+              121.33444610800007,
+              12.900366218000045
+            ],
+            [
+              121.33580831900008,
+              12.891476499000078
+            ],
+            [
+              121.24354899100001,
+              12.899506232000022
+            ],
+            [
+              121.24308735500006,
+              12.978253805000065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Naujan, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705208901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Naujan",
+        "ADM3_PCODE": "PH1705208",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.6417049537,
+        "Shape_Area": 0.0121371033612,
+        "AREA_SQKM": 145.559446886,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.0722620460001,
+              13.268233872000053
+            ],
+            [
+              121.08041654300007,
+              13.262744363000024
+            ],
+            [
+              121.07577265000009,
+              13.250616058000048
+            ],
+            [
+              121.10197556000003,
+              13.22992264000004
+            ],
+            [
+              121.10090834100004,
+              13.15953633600003
+            ],
+            [
+              121.1052435690001,
+              13.15376176500007
+            ],
+            [
+              121.12098974300011,
+              13.156871207000052
+            ],
+            [
+              121.13264559100003,
+              13.12169489200005
+            ],
+            [
+              121.1453160210001,
+              13.111307029000045
+            ],
+            [
+              121.16544274500006,
+              13.110997410000039
+            ],
+            [
+              121.18545674800009,
+              13.081633324000052
+            ],
+            [
+              121.16962748800006,
+              13.093317855000066
+            ],
+            [
+              121.11848852900005,
+              13.105488950000051
+            ],
+            [
+              120.973278316,
+              13.197198405000051
+            ],
+            [
+              121.0262206110001,
+              13.243218628000022
+            ],
+            [
+              121.0722620460001,
+              13.268233872000053
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Pinamalayan, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705209901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Pinamalayan",
+        "ADM3_PCODE": "PH1705209",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.266545538876,
+        "Shape_Area": 0.00252326124983,
+        "AREA_SQKM": 30.2845021928,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.28844179900011,
+              13.005739
+            ],
+            [
+              121.29548917200009,
+              12.997938636000072
+            ],
+            [
+              121.31148529100005,
+              13.003238317000068
+            ],
+            [
+              121.34201899200002,
+              12.998732508000046
+            ],
+            [
+              121.32887509600005,
+              12.988616738000076
+            ],
+            [
+              121.3321800970001,
+              12.974814620000075
+            ],
+            [
+              121.24308735500006,
+              12.978253805000065
+            ],
+            [
+              121.23957866800004,
+              13.010270545000026
+            ],
+            [
+              121.28844179900011,
+              13.005739
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Pola, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705210901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Pola",
+        "ADM3_PCODE": "PH1705210",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.277699541905,
+        "Shape_Area": 0.00378002394263,
+        "AREA_SQKM": 45.3475257828,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.50905646100011,
+              13.138759616000073
+            ],
+            [
+              121.53221992100009,
+              13.135418952000066
+            ],
+            [
+              121.55738967900004,
+              13.11914947300005
+            ],
+            [
+              121.53851013000008,
+              13.108627812000066
+            ],
+            [
+              121.54240749400003,
+              13.098705564000056
+            ],
+            [
+              121.52300656300008,
+              13.088318603000062
+            ],
+            [
+              121.5153464010001,
+              13.073216484000056
+            ],
+            [
+              121.49058985300007,
+              13.071299070000066
+            ],
+            [
+              121.48737799600008,
+              13.087382228000024
+            ],
+            [
+              121.46700157200007,
+              13.105972993000023
+            ],
+            [
+              121.48050875700005,
+              13.131317694000074
+            ],
+            [
+              121.50905646100011,
+              13.138759616000073
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Puerto Galera, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705211901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Puerto Galera",
+        "ADM3_PCODE": "PH1705211",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.340276208967,
+        "Shape_Area": 0.00372831943002,
+        "AREA_SQKM": 44.6678895982,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.9032032230001,
+              13.481980682000028
+            ],
+            [
+              120.91208087000007,
+              13.473462939000058
+            ],
+            [
+              120.928276578,
+              13.473582907000036
+            ],
+            [
+              120.9294703060001,
+              13.446798564000062
+            ],
+            [
+              120.92204637000009,
+              13.432746115000043
+            ],
+            [
+              120.95897480000008,
+              13.438185544000078
+            ],
+            [
+              120.97883858300008,
+              13.432015536000051
+            ],
+            [
+              120.97688779700002,
+              13.425957400000073
+            ],
+            [
+              120.93092834700008,
+              13.408275513000035
+            ],
+            [
+              120.88162226100008,
+              13.413462412000058
+            ],
+            [
+              120.88736742100002,
+              13.481380840000043
+            ],
+            [
+              120.9032032230001,
+              13.481980682000028
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Socorro, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705214901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Socorro",
+        "ADM3_PCODE": "PH1705214",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.282178616106,
+        "Shape_Area": 0.00352523310703,
+        "AREA_SQKM": 42.3022837613,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.27449434700009,
+              13.085900494000043
+            ],
+            [
+              121.27954623700009,
+              13.054402226000036
+            ],
+            [
+              121.31192602500005,
+              13.048767420000047
+            ],
+            [
+              121.30142560900003,
+              13.040130317000035
+            ],
+            [
+              121.28844179900011,
+              13.005739
+            ],
+            [
+              121.23957866800004,
+              13.010270545000026
+            ],
+            [
+              121.24088143300003,
+              13.065091710000047
+            ],
+            [
+              121.27449434700009,
+              13.085900494000043
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM4_EN": "Forest Land under Jurisdiction of Victoria, Oriental Mindoro",
+        "ADM4_PCODE": "PH1705215901",
+        "ADM4_REF": null,
+        "ADM3_EN": "Victoria",
+        "ADM3_PCODE": "PH1705215",
+        "ADM2_EN": "Oriental Mindoro",
+        "ADM2_PCODE": "PH17052",
+        "ADM1_EN": "Mimaropa Region",
+        "ADM1_PCODE": "PH17",
+        "ADM0_EN": "Philippines (the)",
+        "ADM0_PCODE": "PH",
+        "date": "2022-11-09",
+        "validOn": "2023-11-06",
+        "validTo": null,
+        "Shape_Leng": 0.382070358365,
+        "Shape_Area": 0.00490573221615,
+        "AREA_SQKM": 58.8531822034,
+        "psgc_id": null,
+        "psgc_code": null,
+        "psgc_name": null,
+        "psgc_status": "non-administrative",
+        "match_confidence": null,
+        "psgc_type": "non_administrative",
+        "match_method": "non_administrative",
+        "sga_member": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.20040379800002,
+              13.136672086000033
+            ],
+            [
+              121.24391240900002,
+              13.142800819000058
+            ],
+            [
+              121.25015968100001,
+              13.112754598000038
+            ],
+            [
+              121.28175331800003,
+              13.119822953000039
+            ],
+            [
+              121.28568586000006,
+              13.104178898000043
+            ],
+            [
+              121.26612387400007,
+              13.091738934000034
+            ],
+            [
+              121.27449434700009,
+              13.085900494000043
+            ],
+            [
+              121.24088143300003,
+              13.065091710000047
+            ],
+            [
+              121.18545674800009,
+              13.081633324000052
+            ],
+            [
+              121.19294522500002,
+              13.087948822000044
+            ],
+            [
+              121.18441186600012,
+              13.110664631000077
+            ],
+            [
+              121.19348613700004,
+              13.120646579000038
+            ],
+            [
+              121.19360104000009,
+              13.144316484000058
+            ],
+            [
+              121.20040379800002,
+              13.136672086000033
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1322 @@
+{
+  "psgc_version": "2023-10-24",
+  "namria_version": "2023-11-06",
+  "generated_at": "2026-06-14T15:15:08.247559+00:00",
+  "per_type": {
+    "country": {
+      "file": "country.geojson",
+      "feature_count": 3640,
+      "match_summary": {
+        "exact": 3640,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "region": {
+      "file": "regions.geojson",
+      "feature_count": 17,
+      "match_summary": {
+        "exact": 17,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "province": {
+      "file": "provinces.geojson",
+      "feature_count": 82,
+      "match_summary": {
+        "exact": 82,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "municipality": {
+      "file": "municipalities.geojson",
+      "feature_count": 1485,
+      "match_summary": {
+        "exact": 1467,
+        "huc_map": 0,
+        "fuzzy": 18,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "highly_urbanized_city": {
+      "file": "highly_urbanized_cities.geojson",
+      "feature_count": 34,
+      "match_summary": {
+        "exact": 31,
+        "huc_map": 1,
+        "fuzzy": 2,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "independent_component_city": {
+      "file": "independent_component_cities.geojson",
+      "feature_count": 6,
+      "match_summary": {
+        "exact": 6,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "component_city": {
+      "file": "component_cities.geojson",
+      "feature_count": 110,
+      "match_summary": {
+        "exact": 110,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "submunicipality": {
+      "file": "submunicipalities.geojson",
+      "feature_count": 0,
+      "match_summary": {
+        "exact": 0,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "barangay": {
+      "file": "barangays.geojson",
+      "feature_count": 42026,
+      "match_summary": {
+        "exact": 38771,
+        "huc_map": 0,
+        "fuzzy": 3255,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "special_geographic_area": {
+      "file": "special_geographic_areas.geojson",
+      "feature_count": 9,
+      "match_summary": {
+        "exact": 1,
+        "huc_map": 8,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 0
+      }
+    },
+    "unresolved": {
+      "file": "unresolved.geojson",
+      "feature_count": 6,
+      "match_summary": {
+        "exact": 0,
+        "huc_map": 4,
+        "fuzzy": 0,
+        "non_administrative": 0,
+        "unresolved": 2
+      },
+      "type_breakdown": {
+        "mm_district": 4,
+        "unresolved": 2
+      }
+    },
+    "non_administrative": {
+      "file": "non_administrative.geojson",
+      "feature_count": 20,
+      "match_summary": {
+        "exact": 0,
+        "huc_map": 0,
+        "fuzzy": 0,
+        "non_administrative": 20,
+        "unresolved": 0
+      }
+    }
+  },
+  "expected_counts": {
+    "country": {
+      "count": 1,
+      "tolerance": 100000
+    },
+    "region": {
+      "count": 17,
+      "tolerance": 0
+    },
+    "province": {
+      "count": 82,
+      "tolerance": 0
+    },
+    "municipality": {
+      "count": 1485,
+      "tolerance": 2
+    },
+    "highly_urbanized_city": {
+      "count": 33,
+      "tolerance": 1
+    },
+    "independent_component_city": {
+      "count": 6,
+      "tolerance": 0
+    },
+    "component_city": {
+      "count": 111,
+      "tolerance": 1
+    },
+    "submunicipality": {
+      "count": 14,
+      "tolerance": 0
+    },
+    "special_geographic_area": {
+      "count": 9,
+      "tolerance": 0
+    },
+    "barangay": {
+      "count": 42001,
+      "tolerance": 50
+    }
+  },
+  "count_reconciliation": {
+    "country": {
+      "actual": 3640,
+      "expected": 1,
+      "tolerance": 100000,
+      "diff": 3639,
+      "ok": true
+    },
+    "region": {
+      "actual": 17,
+      "expected": 17,
+      "tolerance": 0,
+      "diff": 0,
+      "ok": true
+    },
+    "province": {
+      "actual": 82,
+      "expected": 82,
+      "tolerance": 0,
+      "diff": 0,
+      "ok": true
+    },
+    "municipality": {
+      "actual": 1485,
+      "expected": 1485,
+      "tolerance": 2,
+      "diff": 0,
+      "ok": true
+    },
+    "highly_urbanized_city": {
+      "actual": 34,
+      "expected": 33,
+      "tolerance": 1,
+      "diff": 1,
+      "ok": true
+    },
+    "independent_component_city": {
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "diff": 0,
+      "ok": true
+    },
+    "component_city": {
+      "actual": 110,
+      "expected": 111,
+      "tolerance": 1,
+      "diff": -1,
+      "ok": true
+    },
+    "submunicipality": {
+      "actual": 0,
+      "expected": 14,
+      "tolerance": 0,
+      "diff": -14,
+      "ok": false
+    },
+    "barangay": {
+      "actual": 42026,
+      "expected": 42001,
+      "tolerance": 50,
+      "diff": 25,
+      "ok": true
+    },
+    "special_geographic_area": {
+      "actual": 9,
+      "expected": 9,
+      "tolerance": 0,
+      "diff": 0,
+      "ok": true
+    }
+  },
+  "limitations": {
+    "submunicipalities": {
+      "reason": "NAMRIA ADM4 contains no separate polygons for the 14 Manila submunicipalities (they exist only as barangay parents).",
+      "expected_pcodes": [
+        "PH1380601",
+        "PH1380602",
+        "PH1380603",
+        "PH1380604",
+        "PH1380605",
+        "PH1380606",
+        "PH1380607",
+        "PH1380608",
+        "PH1380609",
+        "PH1380610",
+        "PH1380611",
+        "PH1380612",
+        "PH1380613",
+        "PH1380614"
+      ],
+      "note": "Aggregation from barangays is out of scope."
+    }
+  },
+  "total_written": 47435,
+  "validation": {
+    "conservation_errors": [],
+    "ok": true
+  },
+  "coverage_gaps": {
+    "summary": {
+      "psgc_entities_without_namria_polygon": 230,
+      "namria_features_without_psgc_match": 6
+    },
+    "psgc_without_namria": {
+      "region": {
+        "expected": 17,
+        "matched": 17,
+        "missing": 0,
+        "items": []
+      },
+      "province": {
+        "expected": 82,
+        "matched": 82,
+        "missing": 0,
+        "items": []
+      },
+      "municipality": {
+        "expected": 1485,
+        "matched": 1476,
+        "missing": 9,
+        "items": [
+          {
+            "psgc_code": "1908705000",
+            "name": "Datu Odin Sinsuat"
+          },
+          {
+            "psgc_code": "1908708000",
+            "name": "Northern Kabuntalan"
+          },
+          {
+            "psgc_code": "1908710000",
+            "name": "Sultan Kudarat"
+          },
+          {
+            "psgc_code": "1908802000",
+            "name": "Buluan"
+          },
+          {
+            "psgc_code": "1908807000",
+            "name": "Datu Piang"
+          },
+          {
+            "psgc_code": "1908809000",
+            "name": "Datu Saudi Ampatuan"
+          },
+          {
+            "psgc_code": "1908811000",
+            "name": "Gen. S.K. Pendatun"
+          },
+          {
+            "psgc_code": "1908815000",
+            "name": "Pagagawan"
+          },
+          {
+            "psgc_code": "1908824000",
+            "name": "Talayan"
+          }
+        ]
+      },
+      "highly_urbanized_city": {
+        "expected": 33,
+        "matched": 33,
+        "missing": 0,
+        "items": []
+      },
+      "independent_component_city": {
+        "expected": 6,
+        "matched": 6,
+        "missing": 0,
+        "items": []
+      },
+      "component_city": {
+        "expected": 111,
+        "matched": 110,
+        "missing": 1,
+        "items": [
+          {
+            "psgc_code": "0990101000",
+            "name": "City of Isabela"
+          }
+        ]
+      },
+      "submunicipality": {
+        "expected": 14,
+        "matched": 0,
+        "missing": 14,
+        "items": [
+          {
+            "psgc_code": "1380601000",
+            "name": "Tondo I/II"
+          },
+          {
+            "psgc_code": "1380602000",
+            "name": "Binondo"
+          },
+          {
+            "psgc_code": "1380603000",
+            "name": "Quiapo"
+          },
+          {
+            "psgc_code": "1380604000",
+            "name": "San Nicolas"
+          },
+          {
+            "psgc_code": "1380605000",
+            "name": "Santa Cruz"
+          },
+          {
+            "psgc_code": "1380606000",
+            "name": "Sampaloc"
+          },
+          {
+            "psgc_code": "1380607000",
+            "name": "San Miguel"
+          },
+          {
+            "psgc_code": "1380608000",
+            "name": "Ermita"
+          },
+          {
+            "psgc_code": "1380609000",
+            "name": "Intramuros"
+          },
+          {
+            "psgc_code": "1380610000",
+            "name": "Malate"
+          },
+          {
+            "psgc_code": "1380611000",
+            "name": "Paco"
+          },
+          {
+            "psgc_code": "1380612000",
+            "name": "Pandacan"
+          },
+          {
+            "psgc_code": "1380613000",
+            "name": "Port Area"
+          },
+          {
+            "psgc_code": "1380614000",
+            "name": "Santa Ana"
+          }
+        ]
+      },
+      "special_geographic_area": {
+        "expected": 9,
+        "matched": 1,
+        "missing": 8,
+        "items": [
+          {
+            "psgc_code": "1999901000",
+            "name": "Carmen Cluster"
+          },
+          {
+            "psgc_code": "1999902000",
+            "name": "Kabacan Cluster"
+          },
+          {
+            "psgc_code": "1999903000",
+            "name": "Midsayap Cluster I"
+          },
+          {
+            "psgc_code": "1999904000",
+            "name": "Midsayap Cluster II"
+          },
+          {
+            "psgc_code": "1999905000",
+            "name": "Pigcawayan Cluster"
+          },
+          {
+            "psgc_code": "1999906000",
+            "name": "Pikit Cluster I"
+          },
+          {
+            "psgc_code": "1999907000",
+            "name": "Pikit Cluster II"
+          },
+          {
+            "psgc_code": "1999908000",
+            "name": "Pikit Cluster III"
+          }
+        ]
+      },
+      "barangay": {
+        "expected": 42001,
+        "matched": 41803,
+        "missing": 198,
+        "items": [
+          {
+            "psgc_code": "0330100012",
+            "name": "Lourdes Sur East"
+          },
+          {
+            "psgc_code": "0402103077",
+            "name": "Aniban 2"
+          },
+          {
+            "psgc_code": "0402103079",
+            "name": "Ligas 1"
+          },
+          {
+            "psgc_code": "0402103081",
+            "name": "Maliksi 2"
+          },
+          {
+            "psgc_code": "0402103082",
+            "name": "Mambog 2"
+          },
+          {
+            "psgc_code": "0402103084",
+            "name": "P.F. Espiritu 2"
+          },
+          {
+            "psgc_code": "0402103085",
+            "name": "P.F. Espiritu 4"
+          },
+          {
+            "psgc_code": "0402103086",
+            "name": "Poblacion"
+          },
+          {
+            "psgc_code": "0402103088",
+            "name": "Salinas 2"
+          },
+          {
+            "psgc_code": "0402103089",
+            "name": "Sinbanali"
+          },
+          {
+            "psgc_code": "0402103090",
+            "name": "Talaba 1"
+          },
+          {
+            "psgc_code": "0402103091",
+            "name": "Talaba 3"
+          },
+          {
+            "psgc_code": "0402103092",
+            "name": "Zapote 1"
+          },
+          {
+            "psgc_code": "0402103093",
+            "name": "Zapote 2"
+          },
+          {
+            "psgc_code": "0631000025",
+            "name": "Buhang Taft North"
+          },
+          {
+            "psgc_code": "0631000050",
+            "name": "Dungon A"
+          },
+          {
+            "psgc_code": "0631000051",
+            "name": "Dungon B"
+          },
+          {
+            "psgc_code": "0631000095",
+            "name": "Lopez Jaena Norte"
+          },
+          {
+            "psgc_code": "0631000096",
+            "name": "Lopez Jaena Sur"
+          },
+          {
+            "psgc_code": "0631000103",
+            "name": "Magsaysay Village"
+          },
+          {
+            "psgc_code": "0631000155",
+            "name": "San Jose"
+          },
+          {
+            "psgc_code": "0631000159",
+            "name": "San Pedro"
+          },
+          {
+            "psgc_code": "0631000173",
+            "name": "South San Jose"
+          },
+          {
+            "psgc_code": "0631000196",
+            "name": "Pale Benedicto Rizal"
+          },
+          {
+            "psgc_code": "0631000198",
+            "name": "Luna"
+          },
+          {
+            "psgc_code": "0631000199",
+            "name": "San Isidro"
+          },
+          {
+            "psgc_code": "0631000200",
+            "name": "San Jose"
+          },
+          {
+            "psgc_code": "0631000201",
+            "name": "Tabuc Suba"
+          },
+          {
+            "psgc_code": "0730600050",
+            "name": "Pahina Central"
+          },
+          {
+            "psgc_code": "0730600063",
+            "name": "Quiot Pardo"
+          },
+          {
+            "psgc_code": "0730600068",
+            "name": "San Nicolas Central"
+          },
+          {
+            "psgc_code": "0730600086",
+            "name": "To-ong Pardo"
+          },
+          {
+            "psgc_code": "0831600013",
+            "name": "Barangay 6-A"
+          },
+          {
+            "psgc_code": "0831600022",
+            "name": "Barangay 103-A"
+          },
+          {
+            "psgc_code": "0831600043",
+            "name": "Barangay 21-A"
+          },
+          {
+            "psgc_code": "0831600058",
+            "name": "Barangay 35-A"
+          },
+          {
+            "psgc_code": "0831600061",
+            "name": "Barangay 37-A"
+          },
+          {
+            "psgc_code": "0831600068",
+            "name": "Barangay 43-A"
+          },
+          {
+            "psgc_code": "0831600069",
+            "name": "Barangay 43-B"
+          },
+          {
+            "psgc_code": "0831600071",
+            "name": "Barangay 44-A"
+          },
+          {
+            "psgc_code": "0831600078",
+            "name": "Barangay 50-A"
+          },
+          {
+            "psgc_code": "0831600079",
+            "name": "Barangay 50-B"
+          },
+          {
+            "psgc_code": "0831600090",
+            "name": "Barangay 60-A"
+          },
+          {
+            "psgc_code": "0831600097",
+            "name": "Barangay 66-A"
+          },
+          {
+            "psgc_code": "0831600116",
+            "name": "Barangay 83-A"
+          },
+          {
+            "psgc_code": "0831600135",
+            "name": "Barangay 109-A"
+          },
+          {
+            "psgc_code": "0831600137",
+            "name": "Barangay 5-A"
+          },
+          {
+            "psgc_code": "0831600138",
+            "name": "Barangay 36-A"
+          },
+          {
+            "psgc_code": "0831600139",
+            "name": "Barangay 42-A"
+          },
+          {
+            "psgc_code": "0831600140",
+            "name": "Barangay 48-A"
+          },
+          {
+            "psgc_code": "0831600141",
+            "name": "Barangay 48-B"
+          },
+          {
+            "psgc_code": "0831600142",
+            "name": "Barangay 51-A"
+          },
+          {
+            "psgc_code": "0831600143",
+            "name": "Barangay 54-A"
+          },
+          {
+            "psgc_code": "0831600145",
+            "name": "Barangay 56-A"
+          },
+          {
+            "psgc_code": "0831600146",
+            "name": "Barangay 59-A"
+          },
+          {
+            "psgc_code": "0831600147",
+            "name": "Barangay 59-B"
+          },
+          {
+            "psgc_code": "0831600148",
+            "name": "Barangay 62-A"
+          },
+          {
+            "psgc_code": "0831600149",
+            "name": "Barangay 62-B"
+          },
+          {
+            "psgc_code": "0831600150",
+            "name": "Barangay 83-B"
+          },
+          {
+            "psgc_code": "0831600151",
+            "name": "Barangay 83-C"
+          },
+          {
+            "psgc_code": "0831600152",
+            "name": "Barangay 95-A"
+          },
+          {
+            "psgc_code": "0831600153",
+            "name": "Barangay 8-A"
+          },
+          {
+            "psgc_code": "0831600154",
+            "name": "Barangay 23-A"
+          },
+          {
+            "psgc_code": "0831600155",
+            "name": "Barangay 94-A"
+          },
+          {
+            "psgc_code": "0931700028",
+            "name": "Dulian"
+          },
+          {
+            "psgc_code": "0931700039",
+            "name": "Latuan"
+          },
+          {
+            "psgc_code": "1030900047",
+            "name": "Upper Hinaplanon"
+          },
+          {
+            "psgc_code": "1130700036",
+            "name": "Crossing Bayabas"
+          },
+          {
+            "psgc_code": "1130700082",
+            "name": "New Carmen"
+          },
+          {
+            "psgc_code": "1130700117",
+            "name": "Talomo River"
+          },
+          {
+            "psgc_code": "1230800003",
+            "name": "Baluan"
+          },
+          {
+            "psgc_code": "1230800004",
+            "name": "Buayan"
+          },
+          {
+            "psgc_code": "1230800005",
+            "name": "Bula"
+          },
+          {
+            "psgc_code": "1230800006",
+            "name": "Conel"
+          },
+          {
+            "psgc_code": "1230800007",
+            "name": "Dadiangas East"
+          },
+          {
+            "psgc_code": "1230800009",
+            "name": "Katangawan"
+          },
+          {
+            "psgc_code": "1230800011",
+            "name": "Lagao"
+          },
+          {
+            "psgc_code": "1230800012",
+            "name": "Labangal"
+          },
+          {
+            "psgc_code": "1230800015",
+            "name": "Ligaya"
+          },
+          {
+            "psgc_code": "1230800016",
+            "name": "Mabuhay"
+          },
+          {
+            "psgc_code": "1230800023",
+            "name": "San Isidro"
+          },
+          {
+            "psgc_code": "1230800024",
+            "name": "San Jose"
+          },
+          {
+            "psgc_code": "1230800026",
+            "name": "Sinawal"
+          },
+          {
+            "psgc_code": "1230800027",
+            "name": "Tambler"
+          },
+          {
+            "psgc_code": "1230800028",
+            "name": "Tinagacan"
+          },
+          {
+            "psgc_code": "1230800029",
+            "name": "Apopong"
+          },
+          {
+            "psgc_code": "1230800030",
+            "name": "Siguel"
+          },
+          {
+            "psgc_code": "1230800031",
+            "name": "Upper Labay"
+          },
+          {
+            "psgc_code": "1230800032",
+            "name": "Batomelong"
+          },
+          {
+            "psgc_code": "1230800033",
+            "name": "Calumpang"
+          },
+          {
+            "psgc_code": "1230800034",
+            "name": "City Heights"
+          },
+          {
+            "psgc_code": "1230800037",
+            "name": "Dadiangas West"
+          },
+          {
+            "psgc_code": "1230800038",
+            "name": "Fatima"
+          },
+          {
+            "psgc_code": "1230800039",
+            "name": "Olympog"
+          },
+          {
+            "psgc_code": "1380601203",
+            "name": "Barangay 202-A"
+          },
+          {
+            "psgc_code": "1380606194",
+            "name": "Barangay 587-A"
+          },
+          {
+            "psgc_code": "1380608002",
+            "name": "Barangay 659-A"
+          },
+          {
+            "psgc_code": "1380608004",
+            "name": "Barangay 660-A"
+          },
+          {
+            "psgc_code": "1380608014",
+            "name": "Barangay 663-A"
+          },
+          {
+            "psgc_code": "1380611004",
+            "name": "Barangay 664-A"
+          },
+          {
+            "psgc_code": "1380614101",
+            "name": "Barangay 818-A"
+          },
+          {
+            "psgc_code": "1380800009",
+            "name": "New Alabang Village"
+          },
+          {
+            "psgc_code": "1381300099",
+            "name": "San Isidro Labrador"
+          },
+          {
+            "psgc_code": "1381300114",
+            "name": "Silangan"
+          },
+          {
+            "psgc_code": "1381300142",
+            "name": "North Fairview"
+          },
+          {
+            "psgc_code": "1381500022",
+            "name": "New Lower Bicutan"
+          },
+          {
+            "psgc_code": "1381500037",
+            "name": "South Cembo"
+          },
+          {
+            "psgc_code": "1381600032",
+            "name": "Wawang Pulo"
+          },
+          {
+            "psgc_code": "1430300159",
+            "name": "Magsaysay, Upper"
+          },
+          {
+            "psgc_code": "1630400065",
+            "name": "Manila de Bugabus"
+          },
+          {
+            "psgc_code": "1731500063",
+            "name": "Inagawan Sub-Colony"
+          },
+          {
+            "psgc_code": "1908702003",
+            "name": "Cabayuan"
+          },
+          {
+            "psgc_code": "1908702004",
+            "name": "Calaan"
+          },
+          {
+            "psgc_code": "1908702006",
+            "name": "Edcor"
+          },
+          {
+            "psgc_code": "1908705001",
+            "name": "Ambolodto"
+          },
+          {
+            "psgc_code": "1908705002",
+            "name": "Awang"
+          },
+          {
+            "psgc_code": "1908705003",
+            "name": "Badak"
+          },
+          {
+            "psgc_code": "1908705004",
+            "name": "Bagoenged"
+          },
+          {
+            "psgc_code": "1908705005",
+            "name": "Baka"
+          },
+          {
+            "psgc_code": "1908705006",
+            "name": "Benolen"
+          },
+          {
+            "psgc_code": "1908705007",
+            "name": "Bitu"
+          },
+          {
+            "psgc_code": "1908705008",
+            "name": "Bongued"
+          },
+          {
+            "psgc_code": "1908709010",
+            "name": "Landasan"
+          },
+          {
+            "psgc_code": "1908709011",
+            "name": "Limbayan"
+          },
+          {
+            "psgc_code": "1908709024",
+            "name": "Tagudtongan"
+          },
+          {
+            "psgc_code": "1908710001",
+            "name": "Alamada"
+          },
+          {
+            "psgc_code": "1908710002",
+            "name": "Banatin"
+          },
+          {
+            "psgc_code": "1908710003",
+            "name": "Banubo"
+          },
+          {
+            "psgc_code": "1908710004",
+            "name": "Bulalo"
+          },
+          {
+            "psgc_code": "1908710005",
+            "name": "Bulibod"
+          },
+          {
+            "psgc_code": "1908710006",
+            "name": "Calsada"
+          },
+          {
+            "psgc_code": "1908801001",
+            "name": "Dicalongan"
+          },
+          {
+            "psgc_code": "1908801002",
+            "name": "Kakal"
+          },
+          {
+            "psgc_code": "1908802001",
+            "name": "Digal"
+          },
+          {
+            "psgc_code": "1908806009",
+            "name": "Katil"
+          },
+          {
+            "psgc_code": "1908806014",
+            "name": "Malala"
+          },
+          {
+            "psgc_code": "1908806016",
+            "name": "Manindolo"
+          },
+          {
+            "psgc_code": "1908806023",
+            "name": "Sepaka"
+          },
+          {
+            "psgc_code": "1908807001",
+            "name": "Alonganan"
+          },
+          {
+            "psgc_code": "1908807002",
+            "name": "Ambadao"
+          },
+          {
+            "psgc_code": "1908807003",
+            "name": "Balanakan"
+          },
+          {
+            "psgc_code": "1908807004",
+            "name": "Balong"
+          },
+          {
+            "psgc_code": "1908807005",
+            "name": "Buayan"
+          },
+          {
+            "psgc_code": "1908807006",
+            "name": "Dado"
+          },
+          {
+            "psgc_code": "1908807007",
+            "name": "Damabalas"
+          },
+          {
+            "psgc_code": "1908807008",
+            "name": "Duaminanga"
+          },
+          {
+            "psgc_code": "1908807009",
+            "name": "Kalipapa"
+          },
+          {
+            "psgc_code": "1908807015",
+            "name": "Poblacion"
+          },
+          {
+            "psgc_code": "1908809008",
+            "name": "Salbu"
+          },
+          {
+            "psgc_code": "1908811001",
+            "name": "Badak"
+          },
+          {
+            "psgc_code": "1908811002",
+            "name": "Bulod"
+          },
+          {
+            "psgc_code": "1908811003",
+            "name": "Kaladturan"
+          },
+          {
+            "psgc_code": "1908811004",
+            "name": "Kulasi"
+          },
+          {
+            "psgc_code": "1908811005",
+            "name": "Lao-lao"
+          },
+          {
+            "psgc_code": "1908811006",
+            "name": "Lasangan"
+          },
+          {
+            "psgc_code": "1908811007",
+            "name": "Lower Idtig"
+          },
+          {
+            "psgc_code": "1908811008",
+            "name": "Lumabao"
+          },
+          {
+            "psgc_code": "1908811009",
+            "name": "Makainis"
+          },
+          {
+            "psgc_code": "1908811011",
+            "name": "Midpandacan"
+          },
+          {
+            "psgc_code": "1908813002",
+            "name": "Dabenayan"
+          },
+          {
+            "psgc_code": "1908813005",
+            "name": "Liab"
+          },
+          {
+            "psgc_code": "1908813007",
+            "name": "Lusay"
+          },
+          {
+            "psgc_code": "1908813009",
+            "name": "Manongkaling"
+          },
+          {
+            "psgc_code": "1908813010",
+            "name": "Pidsandawan"
+          },
+          {
+            "psgc_code": "1908815001",
+            "name": "Balatungkayo"
+          },
+          {
+            "psgc_code": "1908815002",
+            "name": "Bulit"
+          },
+          {
+            "psgc_code": "1908815003",
+            "name": "Bulod"
+          },
+          {
+            "psgc_code": "1908815004",
+            "name": "Dungguan"
+          },
+          {
+            "psgc_code": "1908815005",
+            "name": "Limbalud"
+          },
+          {
+            "psgc_code": "1908815006",
+            "name": "Maridagao"
+          },
+          {
+            "psgc_code": "1908815007",
+            "name": "Nabundas"
+          },
+          {
+            "psgc_code": "1908815008",
+            "name": "Pagagawan"
+          },
+          {
+            "psgc_code": "1908815009",
+            "name": "Talapas"
+          },
+          {
+            "psgc_code": "1908815010",
+            "name": "Talitay"
+          },
+          {
+            "psgc_code": "1908815011",
+            "name": "Tunggol"
+          },
+          {
+            "psgc_code": "1908816001",
+            "name": "Bagoenged"
+          },
+          {
+            "psgc_code": "1908816002",
+            "name": "Buliok"
+          },
+          {
+            "psgc_code": "1908816004",
+            "name": "Damalasak"
+          },
+          {
+            "psgc_code": "1908820005",
+            "name": "Lapok"
+          },
+          {
+            "psgc_code": "1908823010",
+            "name": "Papakan"
+          },
+          {
+            "psgc_code": "1908824003",
+            "name": "Boboguiron"
+          },
+          {
+            "psgc_code": "1908824004",
+            "name": "Damablac"
+          },
+          {
+            "psgc_code": "1908824005",
+            "name": "Fugotan"
+          },
+          {
+            "psgc_code": "1908824006",
+            "name": "Fukol"
+          },
+          {
+            "psgc_code": "1908824007",
+            "name": "Katibpuan"
+          },
+          {
+            "psgc_code": "1908824010",
+            "name": "Linamunan"
+          },
+          {
+            "psgc_code": "1999901001",
+            "name": "Kib-Ayao"
+          },
+          {
+            "psgc_code": "1999901003",
+            "name": "Langogan"
+          },
+          {
+            "psgc_code": "1999901007",
+            "name": "Tupig"
+          },
+          {
+            "psgc_code": "1999902001",
+            "name": "Buluan"
+          },
+          {
+            "psgc_code": "1999902002",
+            "name": "Nanga-an"
+          },
+          {
+            "psgc_code": "1999902003",
+            "name": "Pedtad"
+          },
+          {
+            "psgc_code": "1999905001",
+            "name": "Balacayon"
+          },
+          {
+            "psgc_code": "1999905005",
+            "name": "Kadingilan"
+          },
+          {
+            "psgc_code": "1999905009",
+            "name": "Matilac"
+          },
+          {
+            "psgc_code": "1999905010",
+            "name": "Patot"
+          },
+          {
+            "psgc_code": "1999906007",
+            "name": "Nunguan"
+          },
+          {
+            "psgc_code": "1999907004",
+            "name": "Bulol"
+          }
+        ]
+      }
+    },
+    "namria_without_psgc": {
+      "count": 6,
+      "by_type": {
+        "mm_district": 4,
+        "unresolved": 2
+      },
+      "items": [
+        {
+          "psgc_type": "mm_district",
+          "adm_level": 2,
+          "name": "Metropolitan Manila First District",
+          "namria_pcode": "PH13039",
+          "psgc_status": "non-standard"
+        },
+        {
+          "psgc_type": "mm_district",
+          "adm_level": 2,
+          "name": "Metropolitan Manila Second District",
+          "namria_pcode": "PH13074",
+          "psgc_status": "non-standard"
+        },
+        {
+          "psgc_type": "mm_district",
+          "adm_level": 2,
+          "name": "Metropolitan Manila Third District",
+          "namria_pcode": "PH13075",
+          "psgc_status": "non-standard"
+        },
+        {
+          "psgc_type": "mm_district",
+          "adm_level": 2,
+          "name": "Metropolitan Manila Fourth District",
+          "namria_pcode": "PH13076",
+          "psgc_status": "non-standard"
+        },
+        {
+          "psgc_type": "unresolved",
+          "adm_level": 4,
+          "name": "Dadiangas South",
+          "namria_pcode": "PH1206303036",
+          "psgc_status": "unmatched"
+        },
+        {
+          "psgc_type": "unresolved",
+          "adm_level": 4,
+          "name": "Pedtad",
+          "namria_pcode": "PH1909902003",
+          "psgc_status": "unmatched"
+        }
+      ]
+    }
+  }
+}

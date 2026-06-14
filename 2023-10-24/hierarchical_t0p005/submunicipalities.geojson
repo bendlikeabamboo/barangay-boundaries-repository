@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "psgc_type": "submunicipality",
+    "psgc_version": "2023-10-24",
+    "namria_version": "2023-11-06",
+    "feature_count": 0,
+    "match_summary": {
+      "exact": 0,
+      "huc_map": 0,
+      "fuzzy": 0,
+      "non_administrative": 0,
+      "unresolved": 0
+    }
+  },
+  "features": []
+}

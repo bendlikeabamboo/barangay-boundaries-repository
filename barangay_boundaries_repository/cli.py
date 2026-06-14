@@ -441,7 +441,6 @@ def _print_unmatched(adm_level: int, lr) -> None:
             click.echo(f"    {pcode}  {name}")
 
 
-
 @cli.command("enrich")
 @click.option("--date", required=True, help="PSGC snapshot date (YYYY-MM-DD)")
 @click.option(
@@ -532,6 +531,75 @@ def geojson_cmd(
         levels=level_list,
         source_dir=src,
         skip_enrich=skip_enrich,
+    )
+
+
+@cli.command("build-hierarchical")
+@click.option(
+    "--date",
+    default="2023-10-24",
+    help="NAMRIA snapshot date (output dir, default 2023-10-24)",
+)
+@click.option(
+    "--psgc-date",
+    default="2023-10-24",
+    help="PSGC version to align against (default 2023-10-24)",
+)
+@click.option(
+    "--tolerance",
+    default=0.005,
+    type=float,
+    help="Douglas-Peucker simplification tolerance in degrees (default 0.005)",
+)
+@click.option(
+    "--skip-convert",
+    is_flag=True,
+    default=False,
+    help="Reuse existing raw_t0p005/ adm{0-4}.geojson",
+)
+@click.option(
+    "--skip-enrich",
+    is_flag=True,
+    default=False,
+    help="Reuse existing enriched_t0p005/ output",
+)
+def build_hierarchical_cmd(
+    date: str,
+    psgc_date: str,
+    tolerance: float,
+    skip_convert: bool,
+    skip_enrich: bool,
+) -> None:
+    """Build PSGC-hierarchical GeoJSON (per-type files) from NAMRIA shapefiles.
+
+    Runs convert → enrich → classify → split, writing ``{date}/hierarchical/``
+    with one GeoJSON per PSGC type plus ``classification_report.json``.
+    """
+    from barangay_boundaries_repository.hierarchical import build_hierarchical
+
+    try:
+        report = build_hierarchical(
+            date=date,
+            psgc_date=psgc_date,
+            tolerance=tolerance,
+            skip_convert=skip_convert,
+            skip_enrich=skip_enrich,
+        )
+    except RuntimeError as e:
+        click.echo(str(e), err=True)
+        raise SystemExit(1)
+    except FileNotFoundError as e:
+        click.echo(str(e), err=True)
+        raise SystemExit(1)
+
+    click.echo("\nHierarchical output written:")
+    for ptype, info in sorted(report.get("per_type", {}).items()):
+        click.echo(
+            f"  {ptype:<28} {info.get('feature_count', 0):>6}  {info.get('file', '')}"
+        )
+    click.echo(
+        f"\n  Total: {report.get('total_written', 0)} features  |  "
+        f"conservation: {'OK' if report.get('validation', {}).get('ok') else 'FAILED'}"
     )
 
 

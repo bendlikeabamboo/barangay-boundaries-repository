@@ -194,6 +194,40 @@ def load_psgc_pcodes_hierarchical(
     return result, adm3_to_psgc
 
 
+def expected_counts(psgc_date: str) -> dict[str, dict]:
+    """Per-PSGC-type expected feature counts with reconciliation tolerance.
+
+    Used by the hierarchical pipeline to sanity-check output feature counts
+    against the PSGC snapshot. Tolerances reflect NAMRIA/PSGC drift (newer
+    barangays absent from NAMRIA, municipality reclassification, etc.).
+    """
+    bg.use_version(psgc_date)
+
+    def _count(attr: str) -> int:
+        return len(getattr(bg, attr).to_frame())
+
+    sga_count = _count("special_geographic_areas")
+    sga_expected = 1 if sga_count == 0 else sga_count
+
+    return {
+        # Country: NAMRIA ADM0 is split into thousands of island polygons;
+        # only existence (>=1) is meaningful, so use a generous tolerance.
+        "country": {"count": 1, "tolerance": 100000},
+        "region": {"count": _count("regions"), "tolerance": 0},
+        "province": {"count": _count("provinces"), "tolerance": 0},
+        "municipality": {"count": _count("municipalities"), "tolerance": 2},
+        # HUC: +1 tolerated for City of Isabela (Basilan special case, absent
+        # from bg.hucs but resolved via the huc_isabela virtual province).
+        "highly_urbanized_city": {"count": _count("hucs"), "tolerance": 1},
+        "independent_component_city": {"count": _count("iccs"), "tolerance": 0},
+        # Component city: NAMRIA occasionally lacks 1 polygon vs PSGC.
+        "component_city": {"count": _count("component_cities"), "tolerance": 1},
+        "submunicipality": {"count": _count("submunicipalities"), "tolerance": 0},
+        "special_geographic_area": {"count": sga_expected, "tolerance": 0},
+        "barangay": {"count": _count("barangays"), "tolerance": 50},
+    }
+
+
 def load_geojson_pcodes(geojson_dir: Path) -> dict[int, dict[str, str]]:
     result: dict[int, dict[str, str]] = {}
 
