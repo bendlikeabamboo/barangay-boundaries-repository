@@ -14,9 +14,38 @@ barangay = { path = "../barangay", editable = true }
 [project]
 name = "barangay-boundaries-repository"
 version = "0.1.0"
-description = "Add your description here"
+description = "Enriched Philippine barangay boundaries (GeoJSON) and PSGC RDF linked data generated from PSA snapshots and NAMRIA shapefiles."
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.13"
+keywords = [
+    "psgc",
+    "barangay",
+    "philippines",
+    "geojson",
+    "boundaries",
+    "namria",
+    "rdf",
+    "linked-data",
+    "shapefile",
+    "administrative-boundaries",
+    "geospatial",
+    "huc",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+authors = [
+    { name = "Manuel Balmeo" },
+]
 dependencies = [
     "barangay",
     "click>=8.0",

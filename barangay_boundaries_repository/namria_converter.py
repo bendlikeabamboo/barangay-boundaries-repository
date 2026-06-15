@@ -5,12 +5,15 @@ import re
 from pathlib import Path
 
 import geopandas as gpd
-import shapely
 
 logger = logging.getLogger(__name__)
 
-_ADM0_PATTERN = re.compile(r"phl_admbnda_adm0_singlepart_psa_namria_\d+\.shp$", re.IGNORECASE)
-_ADMN_PATTERN = re.compile(r"phl_admbnda_adm([1-4])_psa_namria_\d+\.shp$", re.IGNORECASE)
+_ADM0_PATTERN = re.compile(
+    r"phl_admbnda_adm0_singlepart_psa_namria_\d+\.shp$", re.IGNORECASE
+)
+_ADMN_PATTERN = re.compile(
+    r"phl_admbnda_adm([1-4])_psa_namria_\d+\.shp$", re.IGNORECASE
+)
 
 _DROP_COLUMNS = {
     "Shape_Leng",
@@ -54,7 +57,11 @@ def convert_shapefile_to_geojson(
         gdf.geometry = gdf.geometry.simplify(tolerance, preserve_topology=True)
 
     if drop_columns:
-        keep = [c for c in gdf.columns if not any(c.upper() == d.upper() for d in _DROP_COLUMNS)]
+        keep = [
+            c
+            for c in gdf.columns
+            if not any(c.upper() == d.upper() for d in _DROP_COLUMNS)
+        ]
         gdf = gdf[keep]
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

@@ -302,7 +302,7 @@ def convert_geo_cmd(
     src = Path(source) if source else _REPO_ROOT / "namria"
     out = Path(output_dir) if output_dir else _REPO_ROOT / "2023-10-24"
 
-    level_list = [int(l.strip()) for l in levels.split(",")]
+    level_list = [int(lvl.strip()) for lvl in levels.split(",")]
 
     try:
         results = convert_all(
@@ -469,7 +469,7 @@ def enrich_cmd(
     out_dir = Path(output) if output else _REPO_ROOT / date / "enriched"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    level_list = [int(l.strip()) for l in levels.split(",")]
+    level_list = [int(lvl.strip()) for lvl in levels.split(",")]
 
     for level in level_list:
         gj_path = gj_dir / f"adm{level}.geojson"

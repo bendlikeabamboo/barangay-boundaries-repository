@@ -23,7 +23,9 @@ def generate_huc_mapping(
         data = json.load(f)
 
     cities_df = bg.cities.to_frame()
-    huc_cities = cities_df[cities_df["parent_psgc_id"].str.endswith("0000000", na=False)]
+    huc_cities = cities_df[
+        cities_df["parent_psgc_id"].str.endswith("0000000", na=False)
+    ]
 
     huc_by_region: dict[str, list[dict]] = defaultdict(list)
     for _, row in huc_cities.iterrows():
@@ -77,9 +79,7 @@ def generate_huc_mapping(
     huc_cities_under_province: dict[str, list[dict]] = {}
     namria_adm3_to_psgc: dict[str, str] = {}
 
-    non_standard_adm2 = {
-        code for code in namria_by_adm2 if code not in province_pcodes
-    }
+    non_standard_adm2 = {code for code in namria_by_adm2 if code not in province_pcodes}
 
     ncr_region_code = "PH13"
 
@@ -118,7 +118,9 @@ def generate_huc_mapping(
                         "name": namria_feat["adm3_name"],
                     }
                     province_hucs.append(mapping)
-                    namria_adm3_to_psgc[namria_feat["adm3_code"]] = best_match["psgc_pcode"]
+                    namria_adm3_to_psgc[namria_feat["adm3_code"]] = best_match[
+                        "psgc_pcode"
+                    ]
 
             if province_hucs:
                 huc_cities_under_province[adm2_code] = province_hucs
@@ -144,7 +146,9 @@ def generate_huc_mapping(
                         feat["adm3_name"], huc_by_region.get(region_num, [])
                     )
                     if best_match:
-                        namria_adm3_to_psgc[feat["adm3_code"]] = best_match["psgc_pcode"]
+                        namria_adm3_to_psgc[feat["adm3_code"]] = best_match[
+                            "psgc_pcode"
+                        ]
                         district_cities_pcodes.append(best_match["psgc_pcode"])
 
                 virtual_provinces[adm2_code] = {
@@ -227,10 +231,10 @@ if __name__ == "__main__":
 
     geojson_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("2023-10-24")
     date = sys.argv[2] if len(sys.argv) > 2 else "2023-10-24"
-    output_path = Path(
-        sys.argv[3]
-    ) if len(sys.argv) > 3 else Path(
-        "barangay_boundaries_repository/namria/huc_adm2_mapping.json"
+    output_path = (
+        Path(sys.argv[3])
+        if len(sys.argv) > 3
+        else Path("barangay_boundaries_repository/namria/huc_adm2_mapping.json")
     )
 
     mapping = generate_huc_mapping(geojson_dir, date)

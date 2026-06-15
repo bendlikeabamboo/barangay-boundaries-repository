@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # Keep GitHub Actions up to date.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"
+      include: scope
+
+  # Keep uv/Python dependencies up to date.
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "deps"
+      include: scope
+    # Note: the local editable `barangay` dependency (../barangay) is ignored by
+    # Dependabot; only registry packages are tracked.

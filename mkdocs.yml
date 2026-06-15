@@ -1,0 +1,82 @@
+site_name: PH Barangay Boundaries & PSGC
+site_url: https://bendlikeabamboo.github.io/barangay-boundaries-repository/
+site_description: >-
+  Enriched Philippine barangay boundaries (GeoJSON) and PSGC RDF linked data from
+  PSA Philippine Standard Geographic Code snapshots and NAMRIA administrative-boundary
+  shapefiles. Download GeoJSON per admin level and PSGC change-history deltas.
+site_author: Manuel Balmeo
+site_dir: site
+docs_dir: docs
+
+repo_url: https://github.com/bendlikeabamboo/barangay-boundaries-repository
+repo_name: bendlikeabamboo/barangay-boundaries-repository
+edit_uri: edit/main/docs/
+
+# Include raw HTML (JSON-LD, meta) in markdown.
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - def_list
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bendlikeabamboo/barangay-boundaries-repository
+  generator: false
+
+plugins:
+  - search
+  - tags
+
+nav:
+  - Home: index.md
+  - Data:
+      - Overview: data/index.md
+      - Barangay boundaries: data/barangay-boundaries.md
+      - Municipality boundaries: data/municipality-boundaries.md
+      - City boundaries: data/city-boundaries.md
+      - Province boundaries: data/province-boundaries.md
+      - Region boundaries: data/region-boundaries.md
+  - References:
+      - PSGC code structure: psgc.md
+      - HUC mapping: huc-mapping.md
+      - Citation: citation.md
+  - Snapshot history: changelog.md
