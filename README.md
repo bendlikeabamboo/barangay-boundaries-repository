@@ -12,8 +12,10 @@ pre-enrichment raw NAMRIA conversion are preserved as intermediate pipeline stag
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://docs.astral.sh/ruff/)
 [![CI](https://github.com/bendlikeabamboo/barangay-boundaries-repository/actions/workflows/ci.yml/badge.svg)](https://github.com/bendlikeabamboo/barangay-boundaries-repository/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/bendlikeabamboo/barangay-boundaries-repository?label=release)](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases)
-[![GitHub stars](https://img.shields.io/github/stars/bendlikeabamboo/barangay-boundaries-repository?style=social)](https://github.com/bendlikeabamboo/barangay-boundaries-repository)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/bendlikeabamboo/barangay-boundaries-repository/release.yml?label=Release)
+](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases)
+[![GitHub Repo stars](https://img.shields.io/github/stars/bendlikeabamboo/barangay-boundaries-repository)
+](https://github.com/bendlikeabamboo/barangay-boundaries-repository)
 ![Snapshot](https://img.shields.io/badge/latest%20snapshot-2023--10--24-orange)
 
 ## What this is
