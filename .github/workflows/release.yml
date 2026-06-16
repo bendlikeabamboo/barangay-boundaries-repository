@@ -42,7 +42,7 @@ jobs:
           echo "ARTIFACT_DIR=build/${{ steps.snap.outputs.date }}" >> "$GITHUB_ENV"
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: "v${{ steps.snap.outputs.date }}"
           name: "PSGC snapshot ${{ steps.snap.outputs.date }} — Enriched Philippine Barangay Boundaries GeoJSON"
