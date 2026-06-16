@@ -10,15 +10,27 @@ canonical **PSGC code**. Snapshot `2023-10-24`.
 
 ## Download
 
+**1. Hierarchical** (recommended) — per-class extract:
+
 ```bash
 curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/hierarchical/provinces.geojson
 ```
 
-Or the ADM2 file (provinces plus province-placed units):
+**2. Enriched** — ADM2 file (provinces plus province-placed HUC/MM-district units):
 
 ```bash
 curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/adm2.geojson
 ```
+
+**3. Raw** — NAMRIA-converted, pre-enrichment (in-repo):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm2.geojson
+```
+
+The enriched and hierarchical files above are also browsable in-repo at
+`2023-10-24/{enriched,hierarchical}_t0p005/`. See
+[Releases & versioning](../index.md#releases-versioning) for the `v<YYYY-MM-DD>` tag convention.
 
 ## Coverage
 

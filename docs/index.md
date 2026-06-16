@@ -17,19 +17,59 @@ administrative-boundary shapefiles, with the full quarterly change history publi
 - **License:** MIT (code); PSA & NAMRIA credited for data
 
 [Download from GitHub Releases :material-download:](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases){ .md-button .md-button--primary }
-[View on GitHub :fontawesome-brands-github:](https://github.com/bendlikeabamboo/barangay-boundaries-repository){ .md-button }
+[View on GitHub :fontawesome-github:](https://github.com/bendlikeabamboo/barangay-boundaries-repository){ .md-button }
 
 ## Download the data
 
 Prebuilt bundles and individual GeoJSON files are published on
 [GitHub Releases](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases).
 
-| Bundle | Contents | Format |
-|--------|----------|--------|
-| `barangay-boundaries-2023-10-24-enriched.zip` | `adm0`–`adm4.geojson`, PSGC-enriched | GeoJSON |
+| Bundle / file | Contents | Format |
+|---------------|----------|--------|
 | `barangay-boundaries-2023-10-24-hierarchical.zip` | per-class extracts (barangays, provinces, HUCs, …) | GeoJSON |
+| `barangay-boundaries-2023-10-24-enriched.zip` | `adm0`–`adm4.geojson`, PSGC-enriched | GeoJSON |
+| `raw_t0p005/adm0`–`adm4.geojson` | NAMRIA-converted, pre-enrichment (in-repo) | GeoJSON |
 | `manifest.json` | MD5 / SHA-256 / size / feature count per file | JSON |
 | `delta.{ttl,nt,jsonld}` | PSGC change-history RDF (per snapshot) | RDF / ORG |
+
+## Data transformation tiers
+
+The data flows through three tiers. **Hierarchical** is the recommended end product; **enriched**
+and **raw** are the intermediate transformation stages, documented for traceability.
+
+- **Hierarchical** (recommended) — per-class GeoJSON extracts (`barangays`, `provinces`, HUC/ICC/
+  component cities, …). Released as `*-hierarchical.zip` and individual `hierarchical/<file>.geojson`
+  files.
+- **Enriched** — `adm0`–`adm4.geojson` with each polygon annotated with its `psgc_code`, `psgc_name`,
+  and `psgc_status`. Released as `*-enriched.zip` and individual `adm{0-4}.geojson` files.
+- **Raw** — NAMRIA shapefiles converted to GeoJSON, before PSGC enrichment. Not a release artifact;
+  available in-repo only at
+  [`2023-10-24/raw_t0p005/`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/tree/main/2023-10-24/raw_t0p005)
+  via `raw.githubusercontent.com`.
+
+## Releases & versioning
+
+Each PSGC snapshot is published two ways. Use whichever fits your workflow.
+
+| Path | What you get | When to use |
+|------|--------------|-------------|
+| **GitHub Release** (versioned) | Pinned bundles + individual files attached to a tagged release | Citing a specific snapshot, reproducible downloads, checksum verification via `manifest.json` |
+| **In-repo** (always current) | The committed GeoJSON under `2023-10-24/{raw,enriched,hierarchical}_t0p005/`, fetched via `raw.githubusercontent.com` | Pulling the latest tip of `main`, scripting against individual files, browsing source |
+
+### Version tags
+
+Every snapshot maps to a git tag of the form **`v<YYYY-MM-DD>`** (e.g. `v2023-10-24`). Pushing such a
+tag triggers the `Release` workflow, which builds and attaches the `*-enriched.zip`,
+`*-hierarchical.zip`, individual `adm0`–`adm4.geojson`, and `manifest.json` to the matching GitHub
+Release:
+
+```bash
+git tag v2023-10-24
+git push origin v2023-10-24
+```
+
+Release assets are version-pinned to that snapshot and never change. The in-repo files track `main`,
+so they reflect whatever is currently committed (typically the latest snapshot).
 
 ## What's in each admin level
 
@@ -108,6 +148,12 @@ NAMRIA shapefile boundaries with PSGC codes to produce enriched GeoJSON. See the
   "distribution": [
     {
       "@type": "DataDownload",
+      "name": "Hierarchical per-class GeoJSON bundle",
+      "encodingFormat": "application/zip+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24"
+    },
+    {
+      "@type": "DataDownload",
       "name": "Enriched GeoJSON bundle (ADM0–ADM4)",
       "encodingFormat": "application/zip+json",
       "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24"
@@ -117,6 +163,12 @@ NAMRIA shapefile boundaries with PSGC codes to produce enriched GeoJSON. See the
       "name": "Barangay boundaries GeoJSON (ADM4)",
       "encodingFormat": "application/geo+json",
       "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/adm4.geojson"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Raw NAMRIA-converted GeoJSON (pre-enrichment)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/tree/main/2023-10-24/raw_t0p005"
     },
     {
       "@type": "DataDownload",

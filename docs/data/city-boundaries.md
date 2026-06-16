@@ -11,6 +11,8 @@ Component Cities report to the region, not a province — see [HUC mapping](../h
 
 ## Download
 
+**1. Hierarchical** (recommended) — cities split by legal class:
+
 ```bash
 # Highly Urbanized Cities (34) — e.g. Quezon City, Makati, Davao
 curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/hierarchical/highly_urbanized_cities.geojson
@@ -21,6 +23,23 @@ curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/relea
 # Component Cities (110)
 curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/hierarchical/component_cities.geojson
 ```
+
+**2. Enriched** — ADM3 file. Note: `adm3.geojson` mixes all cities with municipalities, with no
+class separation:
+
+```bash
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/adm3.geojson
+```
+
+**3. Raw** — NAMRIA-converted, pre-enrichment (in-repo; also municipalities + cities combined):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm3.geojson
+```
+
+The enriched and hierarchical files above are also browsable in-repo at
+`2023-10-24/{enriched,hierarchical}_t0p005/`. See
+[Releases & versioning](../index.md#releases-versioning) for the `v<YYYY-MM-DD>` tag convention.
 
 ## Counts (2023-10-24)
 
