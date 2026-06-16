@@ -13,7 +13,7 @@ Download **Philippine municipality boundaries** as GeoJSON, each polygon enriche
 **1. Hierarchical** (curated / recommended) — per-class extract (municipalities only):
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/municipalities.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/municipalities.geojson
 ```
 
 **2. Enriched** (pipeline stage) — ADM3 file, in-repo only. Note: `adm3.geojson` contains municipalities

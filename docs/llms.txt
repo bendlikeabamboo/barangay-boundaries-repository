@@ -9,32 +9,32 @@
 
 The curated end product is the **hierarchical per-class GeoJSON** collection. The `enriched`
 (`adm0`–`adm4`) and `raw` NAMRIA-converted files are intermediate pipeline stages kept for
-traceability. Per-class files are downloadable individually from the GitHub Release for the
-`v2023-10-24` snapshot; replace the tag to target another snapshot.
+traceability. The per-class files for the `2023-10-24` snapshot are downloadable individually from the
+`v2026.4.13.0` GitHub Release; replace the tag to target another release.
 
-Base release URL: https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/
+Base release URL: https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/
 
 ## Curated hierarchical per-class GeoJSON (recommended)
 
-- [barangays.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson): all ~42,000 barangay polygons (ADM4), PSGC-tagged
-- [municipalities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/municipalities.geojson): 1,485 municipalities
-- [provinces.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/provinces.geojson): 82 provinces
-- [regions.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/regions.geojson): 17 regions
-- [highly_urbanized_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/highly_urbanized_cities.geojson): 34 HUCs
-- [independent_component_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/independent_component_cities.geojson): 6 ICCs
-- [component_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/component_cities.geojson): 110 component cities
-- [special_geographic_areas.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/special_geographic_areas.geojson): 9 special geographic areas
-- [submunicipalities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/submunicipalities.geojson): Manila submunicipalities (empty — no NAMRIA polygons)
-- [country.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/country.geojson): national boundary (ADM0)
-- [non_administrative.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/non_administrative.geojson): features that did not map to a standard PSGC level
-- [unresolved.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/unresolved.geojson): features that could not be matched to a PSGC entity
-- [classification_report.json](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/classification_report.json): per-class feature counts and classification details
-- [summary.md](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/summary.md): human-readable classification summary with coverage gaps and known limitations
+- [barangays.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson): all ~42,000 barangay polygons (ADM4), PSGC-tagged
+- [municipalities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/municipalities.geojson): 1,485 municipalities
+- [provinces.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/provinces.geojson): 82 provinces
+- [regions.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/regions.geojson): 17 regions
+- [highly_urbanized_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/highly_urbanized_cities.geojson): 34 HUCs
+- [independent_component_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/independent_component_cities.geojson): 6 ICCs
+- [component_cities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/component_cities.geojson): 110 component cities
+- [special_geographic_areas.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/special_geographic_areas.geojson): 9 special geographic areas
+- [submunicipalities.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/submunicipalities.geojson): Manila submunicipalities (empty — no NAMRIA polygons)
+- [country.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/country.geojson): national boundary (ADM0)
+- [non_administrative.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/non_administrative.geojson): features that did not map to a standard PSGC level
+- [unresolved.geojson](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/unresolved.geojson): features that could not be matched to a PSGC entity
+- [classification_report.json](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/classification_report.json): per-class feature counts and classification details
+- [summary.md](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/summary.md): human-readable classification summary with coverage gaps and known limitations
 
 ## Bundle + checksums
 
-- [barangay-boundaries-2023-10-24-hierarchical.zip](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangay-boundaries-2023-10-24-hierarchical.zip): all per-class GeoJSON in one zip
-- [manifest.json](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/manifest.json): per-file MD5 / SHA-256 / size / feature count
+- [barangay-boundaries-2023-10-24-hierarchical.zip](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangay-boundaries-2023-10-24-hierarchical.zip): all per-class GeoJSON in one zip
+- [manifest.json](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/manifest.json): per-file MD5 / SHA-256 / size / feature count
 
 ## Intermediate pipeline stages (in-repo only)
 

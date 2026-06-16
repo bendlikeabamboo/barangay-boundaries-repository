@@ -37,6 +37,7 @@ and `delta.jsonld` (JSON-LD), plus the source PSA press release as Markdown. The
 
 ## Releases
 
-Tagged releases follow the pattern `vYYYY-MM-DD`, one per processed snapshot. See
+Tagged releases use a CalVer tag of the form `vYYYY.M.DD.PATCH` (e.g. `v2026.4.13.0`). See
 [Releases](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases). The inaugural
-data release is **[`v2023-10-24`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24)**.
+data release is **[`v2026.4.13.0`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0)**
+(shipping the fully enriched `2023-10-24` snapshot).

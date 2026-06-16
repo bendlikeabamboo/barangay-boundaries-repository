@@ -14,7 +14,7 @@ lowest-level administrative boundary dataset for the Philippines.
 **1. Hierarchical** (curated / recommended) — per-class extract:
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson
 ```
 
 **2. Enriched** (pipeline stage) — ADM4 file with PSGC codes (in-repo only):

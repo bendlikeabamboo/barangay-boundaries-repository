@@ -6,6 +6,10 @@ on:
       - "v*"
   workflow_dispatch:
     inputs:
+      version:
+        description: "Release version tag, including leading 'v' (e.g. v2026.4.13.0)"
+        required: true
+        default: "v2026.4.13.0"
       snapshot:
         description: "Snapshot date to release (e.g. 2023-10-24)"
         required: true
@@ -20,15 +24,18 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Resolve snapshot date
-        id: snap
+      - name: Resolve version and snapshot
+        id: vars
         run: |
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "date=${{ inputs.snapshot }}" >> "$GITHUB_OUTPUT"
+            echo "version=${{ inputs.version }}" >> "$GITHUB_OUTPUT"
+            echo "snapshot=${{ inputs.snapshot }}" >> "$GITHUB_OUTPUT"
           else
-            # Strip the leading 'v' from a vX.Y.Z / vYYYY-MM-DD tag.
-            TAG="${GITHUB_REF_NAME#v}"
-            echo "date=${TAG}" >> "$GITHUB_OUTPUT"
+            # Tag push: the version IS the tag. The snapshot it ships is decoupled
+            # and defaults to the fully enriched 2023-10-24 snapshot (use
+            # workflow_dispatch to release a different snapshot).
+            echo "version=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+            echo "snapshot=2023-10-24" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Set up Python
@@ -38,16 +45,16 @@ jobs:
 
       - name: Build release artifacts
         run: |
-          bash scripts/build_release_artifacts.sh "${{ steps.snap.outputs.date }}"
-          echo "ARTIFACT_DIR=build/${{ steps.snap.outputs.date }}" >> "$GITHUB_ENV"
+          bash scripts/build_release_artifacts.sh "${{ steps.vars.outputs.snapshot }}"
+          echo "ARTIFACT_DIR=build/${{ steps.vars.outputs.snapshot }}" >> "$GITHUB_ENV"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: "v${{ steps.snap.outputs.date }}"
-          name: "PSGC snapshot ${{ steps.snap.outputs.date }} — Hierarchical Philippine Barangay Boundaries GeoJSON"
+          tag_name: "${{ steps.vars.outputs.version }}"
+          name: "${{ steps.vars.outputs.version }} — Hierarchical Philippine Barangay Boundaries GeoJSON (snapshot ${{ steps.vars.outputs.snapshot }})"
           body: |
-            ## Curated hierarchical Philippine barangay boundaries — PSGC snapshot `${{ steps.snap.outputs.date }}`
+            ## Curated hierarchical Philippine barangay boundaries — `${{ steps.vars.outputs.version }}` (snapshot `${{ steps.vars.outputs.snapshot }}`)
 
             Philippine barangay, municipality, and city (split by legal class), province, region, and
             special-geographic-area boundaries as **per-class GeoJSON** — the curated end product — with
@@ -60,12 +67,12 @@ jobs:
 
             | Asset | Contents |
             |-------|----------|
-            | `barangay-boundaries-${{ steps.snap.outputs.date }}-hierarchical.zip` | per-class GeoJSON bundle (barangays, provinces, regions, HUC/ICC/component cities, …) |
+            | `barangay-boundaries-${{ steps.vars.outputs.snapshot }}-hierarchical.zip` | per-class GeoJSON bundle (barangays, provinces, regions, HUC/ICC/component cities, …) |
             | `barangays.geojson`, `regions.geojson`, `provinces.geojson`, … | individual per-class extracts |
             | `classification_report.json`, `summary.md` | per-class counts + classification summary |
             | `manifest.json` | MD5 / SHA-256 / size / feature count per file |
 
-            ### Data coverage (2023-10-24)
+            ### Data coverage (${{ steps.vars.outputs.snapshot }})
 
             | Level | Matched | Coverage |
             |-------|--------:|---------:|
@@ -81,7 +88,7 @@ jobs:
             - Boundaries © **NAMRIA**, shapefile version 2023-11-06.
             - Code © Manuel Balmeo, MIT License.
           files: |
-            ${{ env.ARTIFACT_DIR }}/barangay-boundaries-${{ steps.snap.outputs.date }}-hierarchical.zip
+            ${{ env.ARTIFACT_DIR }}/barangay-boundaries-${{ steps.vars.outputs.snapshot }}-hierarchical.zip
             ${{ env.ARTIFACT_DIR }}/manifest.json
             ${{ env.ARTIFACT_DIR }}/classification_report.json
             ${{ env.ARTIFACT_DIR }}/summary.md

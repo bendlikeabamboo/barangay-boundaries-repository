@@ -55,7 +55,7 @@ Each GeoJSON feature carries:
 ## Download
 
 Get any file from the
-[2023-10-24 release](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24).
+[2023-10-24 snapshot release](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0).
 
 Explore by level:
 [Barangay](barangay-boundaries.md) ·

@@ -13,7 +13,7 @@ canonical **PSGC code**. Snapshot `2023-10-24`.
 **1. Hierarchical** (curated / recommended) — per-class extract:
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/provinces.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/provinces.geojson
 ```
 
 **2. Enriched** (pipeline stage) — ADM2 file, in-repo only (provinces plus province-placed HUC/MM-district

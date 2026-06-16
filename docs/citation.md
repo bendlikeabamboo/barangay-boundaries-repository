@@ -18,7 +18,7 @@ If this dataset supports your work, please cite it. The canonical citation is de
   year         = {2026},
   howpublished = {GitHub repository},
   url          = {https://github.com/bendlikeabamboo/barangay-boundaries-repository},
-  note         = {Release v2023-10-24; data: PSA PSGC snapshots and NAMRIA boundaries v2023-11-06},
+  note         = {Release v2026.4.13.0 (snapshot 2023-10-24); data: PSA PSGC snapshots and NAMRIA boundaries v2023-11-06},
   license      = {MIT}
 }
 ```
@@ -26,7 +26,7 @@ If this dataset supports your work, please cite it. The canonical citation is de
 ## APA
 
 > Balmeo, M. (2026). *Philippine Barangay Boundaries GeoJSON with PSGC Codes and RDF Change
-> History* (Release v2023-10-24) [Computer software]. GitHub.
+> History* (Release v2026.4.13.0, snapshot 2023-10-24) [Computer software]. GitHub.
 > https://github.com/bendlikeabamboo/barangay-boundaries-repository
 
 ## Data attribution

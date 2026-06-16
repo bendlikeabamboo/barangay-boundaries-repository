@@ -55,7 +55,7 @@ bundle, individual per-class files, and a checksum manifest. The enriched `adm*`
 NAMRIA conversion are intermediate pipeline stages kept in-repo for traceability. See
 [Releases](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases).
 
-The inaugural release **`v2023-10-24`** bundles the fully processed snapshot:
+The inaugural release **`v2026.4.13.0`** ships the fully processed `2023-10-24` snapshot:
 
 | Asset | Contents | Tier |
 |-------|----------|------|
@@ -70,7 +70,7 @@ Or grab an individual per-class file directly, e.g.:
 
 ```bash
 # All ~42,000 barangay polygons (curated per-class extract)
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson
 ```
 
 ## Quick start

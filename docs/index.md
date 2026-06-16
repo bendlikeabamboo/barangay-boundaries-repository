@@ -61,13 +61,13 @@ Each PSGC snapshot is published two ways. Use whichever fits your workflow.
 
 ### Version tags
 
-Every snapshot maps to a git tag of the form **`v<YYYY-MM-DD>`** (e.g. `v2023-10-24`). Pushing such a
+Every snapshot maps to a git tag of the form **`v<YYYY.M.DD.PATCH>`** (e.g. `v2026.4.13.0`). Pushing such a
 tag triggers the `Release` workflow, which builds and attaches the `*-hierarchical.zip` bundle, the
 individual per-class `<class>.geojson` files, and `manifest.json` to the matching GitHub Release:
 
 ```bash
-git tag v2023-10-24
-git push origin v2023-10-24
+git tag v2026.4.13.0
+git push origin v2026.4.13.0
 ```
 
 Release assets are version-pinned to that snapshot and never change. The in-repo files track `main`,
@@ -153,13 +153,13 @@ NAMRIA shapefile boundaries with PSGC codes to produce the curated hierarchical 
       "@type": "DataDownload",
       "name": "Curated hierarchical per-class GeoJSON bundle",
       "encodingFormat": "application/zip+json",
-      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24"
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0"
     },
     {
       "@type": "DataDownload",
       "name": "Barangay boundaries GeoJSON (curated per-class extract)",
       "encodingFormat": "application/geo+json",
-      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson"
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson"
     },
     {
       "@type": "DataDownload",

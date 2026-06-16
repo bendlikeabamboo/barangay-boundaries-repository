@@ -13,7 +13,7 @@ regions) as GeoJSON, each polygon tagged with its **PSGC code**.
 **1. Hierarchical** (curated / recommended) — per-class extract:
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/regions.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/regions.geojson
 ```
 
 **2. Enriched** (pipeline stage) — ADM1 file with PSGC codes (in-repo only):

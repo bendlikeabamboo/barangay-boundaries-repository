@@ -33,7 +33,7 @@ repository-code: "https://github.com/bendlikeabamboo/barangay-boundaries-reposit
 url: "https://github.com/bendlikeabamboo/barangay-boundaries-repository"
 identifiers:
   - type: url
-    value: "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24"
+    value: "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0"
     description: "Inaugural hierarchical per-class GeoJSON release (PSGC snapshot 2023-10-24)"
 preferred-citation:
   type: software

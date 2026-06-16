@@ -15,13 +15,13 @@ Component Cities report to the region, not a province — see [HUC mapping](../h
 
 ```bash
 # Highly Urbanized Cities (34) — e.g. Quezon City, Makati, Davao
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/highly_urbanized_cities.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/highly_urbanized_cities.geojson
 
 # Independent Component Cities (6)
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/independent_component_cities.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/independent_component_cities.geojson
 
 # Component Cities (110)
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/component_cities.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/component_cities.geojson
 ```
 
 **2. Enriched** (pipeline stage) — ADM3 file, in-repo only. Note: `adm3.geojson` mixes all cities with
