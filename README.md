@@ -1,10 +1,12 @@
 # Barangay Boundaries Repository — Philippine Barangay Boundaries GeoJSON & PSGC RDF
 
-Enriched **Philippine barangay boundaries (GeoJSON)** and **PSGC RDF linked data** generated from
-[PSA](https://psa.gov.ph/) Philippine Standard Geographic Code snapshots and
-[NAMRIA](https://namria.gov.ph/) administrative-boundary shapefiles. Download ready-to-use
-GeoJSON per administrative level (region, province, city, municipality, barangay), or consume the
-full history of quarterly PSGC changes as a W3C ORG-ontology knowledge graph.
+**Hierarchical per-class Philippine administrative boundaries (GeoJSON)** — barangays, municipalities,
+and cities split by legal class (highly urbanized, independent component, component), plus provinces,
+regions, and special geographic areas — each polygon annotated with its canonical **PSGC code**.
+Generated from [PSA](https://psa.gov.ph/) Philippine Standard Geographic Code snapshots and
+[NAMRIA](https://namria.gov.ph/) administrative-boundary shapefiles, with the full history of quarterly
+PSGC changes published as a W3C ORG-ontology knowledge graph. The enriched `adm0`–`adm4` files and the
+pre-enrichment raw NAMRIA conversion are preserved as intermediate pipeline stages.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
@@ -16,25 +18,30 @@ full history of quarterly PSGC changes as a W3C ORG-ontology knowledge graph.
 
 ## What this is
 
-This repository is both a **dataset** and the **toolchain** that produces it. The dataset delivers
-enriched GeoJSON for every Philippine administrative level — barangays, municipalities, cities,
-provinces, and regions — with each polygon annotated with its canonical **PSGC code**, name, and
-status. The toolchain (`brgybnd`) ingests PSA PSGC Excel/PDF snapshots and NAMRIA shapefiles, then
-emits RDF linked data using the [W3C ORG ontology](https://www.w3.org/TR/vocab-org/) plus
-machine-readable deltas across **17 quarterly snapshots** (2021-08-19 → 2026-04-13).
+This repository is both a **dataset** and the **toolchain** that produces it. The dataset's curated
+output is the **hierarchical per-class GeoJSON collection** — one file per administrative class
+(`barangays`, `provinces`, `municipalities`, `highly_urbanized_cities`, `independent_component_cities`,
+`component_cities`, `special_geographic_areas`, …) — with each polygon annotated with its canonical
+**PSGC code**, name, and status. These are produced from NAMRIA shapefiles enriched with PSA PSGC
+data; the `enriched` (`adm0`–`adm4`) and `raw` NAMRIA-converted files are kept as intermediate stages
+of the same pipeline. The toolchain (`brgybnd`) also ingests PSA PSGC Excel/PDF snapshots and emits RDF
+linked data using the [W3C ORG ontology](https://www.w3.org/TR/vocab-org/) plus machine-readable deltas
+across **17 quarterly snapshots** (2021-08-19 → 2026-04-13).
 
 It is built for GIS analysts, researchers, journalists, and civic-tech projects who need
 **authoritative, code-stable Philippine boundary data** that can be joined to any PSGC-keyed dataset.
 
 ## Key features
 
+- **Hierarchical per-class extracts** — the curated end product: one GeoJSON per administrative class
+  (`barangays`, `provinces`, `municipalities`, `highly_urbanized_cities`,
+  `independent_component_cities`, `component_cities`, `special_geographic_areas`, …) with cities split
+  by legal class and each polygon tagged with its canonical PSGC code.
+- **PSGC pcode enrichment** — pipeline stage (`enriched_t0p005/`) that annotates every feature with
+  `psgc_id`, `psgc_code`, `psgc_name`, `psgc_status`, and a `match_confidence` score
+  (exact / HUC-map / fuzzy); this feeds the classifier that produces the hierarchical output.
 - **GeoJSON per administrative level** — country (ADM0), region (ADM1), province (ADM2),
   municipality/city (ADM3), barangay (ADM4), simplified with Douglas–Peucker (tolerance `0.005°`).
-- **PSGC pcode enrichment** — every feature carries `psgc_id`, `psgc_code`, `psgc_name`,
-  `psgc_status`, and a `match_confidence` score (exact / HUC-map / fuzzy).
-- **Hierarchical extracts** — ready-made per-class files: `barangays.geojson`,
-  `provinces.geojson`, `highly_urbanized_cities.geojson`, `special_geographic_areas.geojson`, and
-  more.
 - **17 quarterly snapshots** of PSGC change history as RDF (`delta.ttl` / `.nt` / `.jsonld`) with
   creation, deletion, transfer, merger, split, rename, and code-change events.
 - **HUC mapping** — resolves the Highly-Urbanized-City / NAMRIA-province mismatch (see
@@ -43,24 +50,27 @@ It is built for GIS analysts, researchers, journalists, and civic-tech projects 
 
 ## Download the data
 
-Prebuilt bundles are published as **GitHub Releases** (raw GeoJSON is attached, plus a zipped
-artifact with checksum manifest). See
+The **curated hierarchical per-class GeoJSON** is published as **GitHub Releases** — as a zipped
+bundle, individual per-class files, and a checksum manifest. The enriched `adm*` files and raw
+NAMRIA conversion are intermediate pipeline stages kept in-repo for traceability. See
 [Releases](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases).
 
 The inaugural release **`v2023-10-24`** bundles the fully processed snapshot:
 
-| Bundle | Contents | Levels | Snapshot |
-|--------|----------|--------|----------|
-| `barangay-boundaries-2023-10-24-enriched.zip` | `enriched_t0p005/adm{0..4}.geojson` | ADM0–ADM4 | 2023-10-24 |
-| `barangay-boundaries-2023-10-24-hierarchical.zip` | per-class GeoJSON (barangays, provinces, regions, municipalities, HUCs, …) | classified | 2023-10-24 |
-| `manifest.json` | per-file MD5/SHA-256, size, feature count | — | 2023-10-24 |
-| `delta.{ttl,nt,jsonld}` | PSGC change-history RDF | — | per-snapshot |
+| Asset | Contents | Tier |
+|-------|----------|------|
+| `barangay-boundaries-2023-10-24-hierarchical.zip` | per-class GeoJSON (barangays, provinces, regions, municipalities, HUC/ICC/component cities, …) | curated (recommended) |
+| `barangays.geojson`, `provinces.geojson`, `regions.geojson`, … | individual per-class extracts | curated (recommended) |
+| `manifest.json` | per-file MD5/SHA-256, size, feature count | — |
+| `delta.{ttl,nt,jsonld}` | PSGC change-history RDF | — |
+| `enriched_t0p005/adm{0..4}.geojson` | PSGC-enriched, pre-classification (in-repo only) | intermediate stage |
+| `raw_t0p005/adm{0..4}.geojson` | NAMRIA-converted, pre-enrichment (in-repo only) | intermediate stage |
 
-Or grab an individual file directly, e.g.:
+Or grab an individual per-class file directly, e.g.:
 
 ```bash
-# All ~42,000 barangay polygons (PSGC-enriched)
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/adm4.geojson
+# All ~42,000 barangay polygons (curated per-class extract)
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson
 ```
 
 ## Quick start
@@ -81,12 +91,12 @@ brgybnd ingest --date 2023-10-24
 # 2. Convert NAMRIA shapefiles to simplified GeoJSON (ADM0–ADM4)
 brgybnd convert-geo --levels 0,1,2,3,4 --tolerance 0.005
 
-# 3. Enrich GeoJSON features with canonical PSGC codes
-brgybnd enrich --date 2023-10-24
+# 3. Build the curated per-class hierarchical GeoJSON (convert → enrich → classify → split)
+brgybnd build-hierarchical --date 2023-10-24
 ```
 
 Other commands: `brgybnd list`, `brgybnd process`, `brgybnd process-all`, `brgybnd delta`,
-`brgybnd validate`, `brgybnd coverage`. Run `brgybnd --help` for the full reference.
+`brgybnd validate`, `brgybnd coverage`, `brgybnd enrich`. Run `brgybnd --help` for the full reference.
 
 ## Data coverage (snapshot 2023-10-24)
 
@@ -159,9 +169,9 @@ Each snapshot directory (`YYYY-MM-DD/`) contains:
 |------|-------------|
 | `delta.ttl` / `.nt` / `.jsonld` | PSGC change-history RDF (W3C ORG) for that snapshot |
 | `Press-Release-*.md` | Source PSA press-release text (extracted from PDF) |
-| `raw_t0p005/` | NAMRIA shapefile → GeoJSON, before enrichment |
-| `enriched_t0p005/` | GeoJSON annotated with PSGC codes (`adm0`–`adm4`) |
-| `hierarchical_t0p005/` | Per-class GeoJSON extracts |
+| `hierarchical_t0p005/` | **curated** per-class GeoJSON extracts + `classification_report.json` + `summary.md` |
+| `enriched_t0p005/` | **intermediate** GeoJSON annotated with PSGC codes (`adm0`–`adm4`) |
+| `raw_t0p005/` | **intermediate** NAMRIA shapefile → GeoJSON, before enrichment |
 
 > The full pipeline and architecture are documented in [`AGENTS.md`](AGENTS.md).
 

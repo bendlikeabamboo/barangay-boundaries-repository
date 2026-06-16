@@ -2,11 +2,13 @@ cff-version: 1.2.0
 message: "If this dataset or toolchain supports your work, please cite it as below."
 title: "Philippine Barangay Boundaries GeoJSON with PSGC Codes and RDF Change History"
 abstract: >-
-  Enriched Philippine administrative boundaries (barangay, municipality, city, province, region)
-  as GeoJSON, with each polygon annotated with its canonical Philippine Standard Geographic Code
-  (PSGC). Derived from PSA PSGC snapshots and NAMRIA administrative-boundary shapefiles
-  (v2023-11-06). Includes a quarterly PSGC change history published as W3C ORG RDF linked data
-  across 17 snapshots (2021-08-19 to 2026-04-13).
+  Curated hierarchical Philippine administrative boundaries as per-class GeoJSON (barangay,
+  municipality, cities split by legal class, province, region), with each polygon annotated with its
+  canonical Philippine Standard Geographic Code (PSGC). The full ADM0–ADM4 enriched files and the
+  pre-enrichment raw NAMRIA conversion are preserved as intermediate pipeline stages. Derived from
+  PSA PSGC snapshots and NAMRIA administrative-boundary shapefiles (v2023-11-06). Includes a
+  quarterly PSGC change history published as W3C ORG RDF linked data across 17 snapshots
+  (2021-08-19 to 2026-04-13).
 authors:
   - family-names: Balmeo
     given-names: Manuel
@@ -32,7 +34,7 @@ url: "https://github.com/bendlikeabamboo/barangay-boundaries-repository"
 identifiers:
   - type: url
     value: "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2023-10-24"
-    description: "Inaugural enriched GeoJSON release (PSGC snapshot 2023-10-24)"
+    description: "Inaugural hierarchical per-class GeoJSON release (PSGC snapshot 2023-10-24)"
 preferred-citation:
   type: software
   title: "Philippine Barangay Boundaries GeoJSON with PSGC Codes and RDF Change History"

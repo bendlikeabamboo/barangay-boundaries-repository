@@ -2,7 +2,7 @@
 
 ## What This Is
 
-PSGC (Philippine Standard Geographic Code) snapshot processor. Converts government Excel/PDF snapshots into RDF linked data (W3C ORG ontology) and matches NAMRIA shapefile boundaries with PSGC codes to produce enriched GeoJSON.
+PSGC (Philippine Standard Geographic Code) snapshot processor. Converts government Excel/PDF snapshots into RDF linked data (W3C ORG ontology) and matches NAMRIA shapefile boundaries with PSGC codes to produce **hierarchical per-class GeoJSON** — the curated end product — plus enriched and raw stages as intermediate pipeline outputs.
 
 ## Tech Stack
 
@@ -10,7 +10,7 @@ Python 3.13 | Hatchling build | UV package manager | Click CLI | Pydantic v2 | r
 
 ## CLI Entry Point
 
-`brgybnd` → `barangay_boundaries_repository/cli:cli` (9 Click commands)
+`brgybnd` → `barangay_boundaries_repository/cli:cli` (10 Click commands)
 
 ## Architecture — Two Parallel Pipelines
 
@@ -27,16 +27,25 @@ PSGC XLSX snapshots (~/commons/barangay/YYYY-MM-DD/)
   → Output: YYYY-MM-DD/delta.{ttl,nt,jsonld}
 ```
 
-### Pipeline B: NAMRIA Shapefiles → Enriched GeoJSON
+### Pipeline B: NAMRIA Shapefiles → Hierarchical Per-Class GeoJSON
 
 ```
 namria/phl_admbnda_adm{0-4}_*.shp (version 2023-11-06)
-  → namria_converter.py         — shapefile → GeoJSON (Douglas-Peucker simplify, default 0.005°)
+  → namria_converter.py         — shapefile → GeoJSON (Douglas-Peucker simplify, default 0.005°)   [stage 1: raw_t0p005/]
   → coverage.py                  — PSGC pcode vs GeoJSON pcode comparison per admin level
   → generate_huc_mapping.py     — builds huc_adm2_mapping.json for HUCs, MM districts, Special Geographic Areas
-  → enrich.py                    — adds psgc_id, psgc_code, psgc_name, psgc_status, match_confidence to GeoJSON features
-  → Output: YYYY-MM-DD/adm{0-4}.geojson + YYYY-MM-DD/enriched/
+  → enrich.py                    — adds psgc_id, psgc_code, psgc_name, psgc_status, match_confidence   [stage 2: enriched_t0p005/]
+  → classifier.py                — assigns PSGC type/class (barangay, HUC, ICC, component city, …) per feature
+  → splitter.py                  — splits enriched features into per-class files
+  → hierarchical.py              — orchestrates phases 3–5 (classify → split → report)               [curated: hierarchical_t0p005/]
+  → Output: YYYY-MM-DD/hierarchical_t0p005/<class>.geojson + classification_report.json + summary.md
 ```
+
+### Data tiers
+
+- **Hierarchical** = curated / recommended end product. Per-class GeoJSON files (`barangays`, `provinces`, `municipalities`, `highly_urbanized_cities`, `independent_component_cities`, `component_cities`, `submunicipalities`, `special_geographic_areas`, …) plus `classification_report.json` and `summary.md`. This is what GitHub Releases publish.
+- **Enriched** = intermediate enrichment stage. `adm0`–`adm4.geojson` annotated with PSGC `psgc_code`/`psgc_name`/`psgc_status`/`match_confidence`. Output of `enrich.py`; consumed by the classifier.
+- **Raw** = intermediate source stage. NAMRIA-converted GeoJSON, pre-enrichment. Output of `namria_converter.py`.
 
 ## CLI Commands
 
@@ -51,6 +60,7 @@ namria/phl_admbnda_adm{0-4}_*.shp (version 2023-11-06)
 | `brgybnd validate --input FILE` | cli.py:323 | Validate RDF + ORG conformance |
 | `brgybnd coverage --date DATE` | cli.py:353 | PSGC vs GeoJSON coverage |
 | `brgybnd enrich --date DATE` | cli.py:515 | Enrich GeoJSON with PSGC IDs |
+| `brgybnd build-hierarchical --date YYYY-MM-DD [--skip-convert] [--skip-enrich]` | cli.py:566 | Run convert → enrich → classify → split, writes `hierarchical_t0p005/` (curated per-class output) |
 
 ## Key Data Model (models/schemas.py)
 
@@ -121,12 +131,18 @@ barangay_boundaries_repository/
   coverage.py               — PSGC vs GeoJSON pcode coverage
   enrich.py                 — GeoJSON feature enrichment with PSGC IDs
   namria_converter.py        — shapefile to GeoJSON converter
+  classifier.py              — assigns PSGC type/class per feature (feeds splitter)
+  splitter.py                — splits enriched features into per-class GeoJSON files
+  hierarchical.py            — orchestrates classify → split → report (curated output)
   generate_huc_mapping.py    — HUC-to-ADM2 mapping generator (standalone script)
   namria/huc_adm2_mapping.json — generated mapping artifact
 prompts/                    — YAML LLM prompt templates (extract_psgc_entities, extract_change_events, map_to_org_rdf)
 namria/                     — NAMRIA shapefiles (v2023-11-06), ADM0-ADM4 polygons + points + lines + lookup
 findings/                   — 16 validation reports (delta vs press release), see findings/README.md
 YYYY-MM-DD/                 — 18 snapshot output dirs, each with delta.{ttl,nt,jsonld} + press release .md
+  hierarchical_t0p005/      — (curated) per-class GeoJSON + classification_report.json + summary.md
+  enriched_t0p005/          — (enrichment stage) adm0–adm4.geojson annotated with PSGC
+  raw_t0p005/               — (source stage) NAMRIA-converted GeoJSON, pre-enrichment
 ```
 
 ## Linting

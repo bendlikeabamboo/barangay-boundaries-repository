@@ -11,26 +11,26 @@ lowest-level administrative boundary dataset for the Philippines.
 
 ## Download
 
-**1. Hierarchical** (recommended) — per-class extract:
+**1. Hierarchical** (curated / recommended) — per-class extract:
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/hierarchical/barangays.geojson
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/barangays.geojson
 ```
 
-**2. Enriched** — ADM4 file with PSGC codes:
+**2. Enriched** (pipeline stage) — ADM4 file with PSGC codes (in-repo only):
 
 ```bash
-curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2023-10-24/adm4.geojson
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm4.geojson
 ```
 
-**3. Raw** — NAMRIA-converted, pre-enrichment (in-repo):
+**3. Raw** (pipeline stage) — NAMRIA-converted, pre-enrichment (in-repo):
 
 ```bash
 curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm4.geojson
 ```
 
-The enriched and hierarchical files above are also browsable in-repo at
-`2023-10-24/{enriched,hierarchical}_t0p005/`. See
+The enriched and raw files above are intermediate pipeline stages, browsable in-repo at
+`2023-10-24/{raw,enriched,hierarchical}_t0p005/`. See
 [Releases & versioning](../index.md#releases-versioning) for the `v<YYYY-MM-DD>` tag convention.
 
 ## Coverage (ADM4)

@@ -1,9 +1,9 @@
 site_name: PH Barangay Boundaries & PSGC
 site_url: https://bendlikeabamboo.github.io/barangay-boundaries-repository/
 site_description: >-
-  Enriched Philippine barangay boundaries (GeoJSON) and PSGC RDF linked data from
-  PSA Philippine Standard Geographic Code snapshots and NAMRIA administrative-boundary
-  shapefiles. Download GeoJSON per admin level and PSGC change-history deltas.
+  Curated hierarchical Philippine barangay, municipality, city-class, province, and region
+  boundaries as per-class GeoJSON, enriched with canonical PSGC codes from PSA snapshots and
+  NAMRIA administrative-boundary shapefiles. PSGC change-history deltas published as W3C ORG RDF.
 site_author: Manuel Balmeo
 site_dir: site
 docs_dir: docs

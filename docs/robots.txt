@@ -1,3 +1,6 @@
+# robots.txt — Barangay Boundaries Repository docs site.
+# llms.txt (https://llmstxt.org/) is served at the site root for LLM consumers;
+# it is crawlable under the Allow: / rule below.
 User-agent: *
 Allow: /
 

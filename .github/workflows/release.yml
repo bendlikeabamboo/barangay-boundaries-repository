@@ -45,22 +45,24 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: "v${{ steps.snap.outputs.date }}"
-          name: "PSGC snapshot ${{ steps.snap.outputs.date }} — Enriched Philippine Barangay Boundaries GeoJSON"
+          name: "PSGC snapshot ${{ steps.snap.outputs.date }} — Hierarchical Philippine Barangay Boundaries GeoJSON"
           body: |
-            ## Enriched Philippine barangay boundaries — PSGC snapshot `${{ steps.snap.outputs.date }}`
+            ## Curated hierarchical Philippine barangay boundaries — PSGC snapshot `${{ steps.snap.outputs.date }}`
 
-            Philippine barangay, municipality, city, province, and region boundaries as
-            **GeoJSON**, enriched with canonical **PSGC codes** and derived from **NAMRIA**
-            administrative-boundary shapefiles (v2023-11-06) and **PSA** Philippine Standard
-            Geographic Code snapshots.
+            Philippine barangay, municipality, and city (split by legal class), province, region, and
+            special-geographic-area boundaries as **per-class GeoJSON** — the curated end product — with
+            every polygon annotated with its canonical **PSGC code**. Derived from **PSA** Philippine
+            Standard Geographic Code snapshots and **NAMRIA** administrative-boundary shapefiles
+            (v2023-11-06). The `enriched` (`adm0`–`adm4`) and `raw` NAMRIA-converted files are
+            intermediate pipeline stages kept in-repo for traceability (not attached to this release).
 
             ### Downloads
 
             | Asset | Contents |
             |-------|----------|
-            | `barangay-boundaries-${{ steps.snap.outputs.date }}-enriched.zip` | `adm0`–`adm4.geojson` (PSGC-enriched) |
-            | `barangay-boundaries-${{ steps.snap.outputs.date }}-hierarchical.zip` | per-class extracts (barangays, provinces, regions, HUCs, …) |
-            | `adm0.geojson` … `adm4.geojson` | individual enriched files |
+            | `barangay-boundaries-${{ steps.snap.outputs.date }}-hierarchical.zip` | per-class GeoJSON bundle (barangays, provinces, regions, HUC/ICC/component cities, …) |
+            | `barangays.geojson`, `regions.geojson`, `provinces.geojson`, … | individual per-class extracts |
+            | `classification_report.json`, `summary.md` | per-class counts + classification summary |
             | `manifest.json` | MD5 / SHA-256 / size / feature count per file |
 
             ### Data coverage (2023-10-24)
@@ -79,14 +81,11 @@ jobs:
             - Boundaries © **NAMRIA**, shapefile version 2023-11-06.
             - Code © Manuel Balmeo, MIT License.
           files: |
-            ${{ env.ARTIFACT_DIR }}/barangay-boundaries-${{ steps.snap.outputs.date }}-enriched.zip
             ${{ env.ARTIFACT_DIR }}/barangay-boundaries-${{ steps.snap.outputs.date }}-hierarchical.zip
             ${{ env.ARTIFACT_DIR }}/manifest.json
-            ${{ env.ARTIFACT_DIR }}/adm0.geojson
-            ${{ env.ARTIFACT_DIR }}/adm1.geojson
-            ${{ env.ARTIFACT_DIR }}/adm2.geojson
-            ${{ env.ARTIFACT_DIR }}/adm3.geojson
-            ${{ env.ARTIFACT_DIR }}/adm4.geojson
+            ${{ env.ARTIFACT_DIR }}/classification_report.json
+            ${{ env.ARTIFACT_DIR }}/summary.md
+            ${{ env.ARTIFACT_DIR }}/*.geojson
           generate_release_notes: true
           draft: false
           prerelease: false
