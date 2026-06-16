@@ -11,6 +11,9 @@ package = true
 [tool.uv.sources]
 barangay = { path = "../barangay", editable = true }
 
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+
 [project]
 name = "barangay-boundaries-repository"
 version = "0.1.0"
@@ -47,7 +50,7 @@ authors = [
     { name = "Manuel Balmeo" },
 ]
 dependencies = [
-    "barangay",
+    "barangay>=2026.4.13.4",
     "click>=8.0",
     "geojson>=3.3.0",
     "geopandas>=1.1.3",
