@@ -1,0 +1,1488 @@
+[
+  {
+    "objectID": "boundaries/index.html",
+    "href": "boundaries/index.html",
+    "title": "Boundaries (GeoJSON)",
+    "section": "",
+    "text": "The dataset’s curated output is the per-class (hierarchical) GeoJSON collection — e.g. barangays, provinces, municipalities, and cities split by legal class (highly urbanized, independent component, component). Every polygon is enriched with its canonical PSGC code, name, and status. Boundaries originate from NAMRIA shapefiles (v2023-11-06); PSGC codes from PSA snapshots (latest: 2023-10-24).\nThe full adm0–adm4 enriched files and the pre-enrichment raw NAMRIA conversion are also available as intermediate transformation stages of the pipeline that produces the hierarchical output.",
+    "crumbs": [
+      "Boundaries",
+      "Boundaries (GeoJSON)"
+    ]
+  },
+  {
+    "objectID": "boundaries/index.html#data-transformation-tiers",
+    "href": "boundaries/index.html#data-transformation-tiers",
+    "title": "Boundaries (GeoJSON)",
+    "section": "Data transformation tiers",
+    "text": "Data transformation tiers\nThe pipeline runs in three tiers — raw (NAMRIA shapefile → GeoJSON, no PSGC) → enriched (adds psgc_code/name/status) → hierarchical (per-class extracts, the curated end product). See Pipeline B for the full transformation, and Releases & versioning for the v&lt;YYYY-MM-DD&gt; tag convention.\nEvery file is available two ways: as a versioned GitHub Release asset (pinned to a v&lt;YYYY-MM-DD&gt; tag, with manifest.json checksums) or in-repo at 2023-10-24/{tier}_t0p005/ via raw.githubusercontent.com.",
+    "crumbs": [
+      "Boundaries",
+      "Boundaries (GeoJSON)"
+    ]
+  },
+  {
+    "objectID": "boundaries/index.html#coverage-by-level",
+    "href": "boundaries/index.html#coverage-by-level",
+    "title": "Boundaries (GeoJSON)",
+    "section": "Coverage by level",
+    "text": "Coverage by level\nOverall match for snapshot 2023-10-24 is 99.945% PSGC ↔︎ NAMRIA pcode. Per-level figures and known gaps are detailed in coverage & match quality.",
+    "crumbs": [
+      "Boundaries",
+      "Boundaries (GeoJSON)"
+    ]
+  },
+  {
+    "objectID": "boundaries/index.html#whats-in-each-admin-level",
+    "href": "boundaries/index.html#whats-in-each-admin-level",
+    "title": "Boundaries (GeoJSON)",
+    "section": "What’s in each admin level",
+    "text": "What’s in each admin level\n\n\n\nLevel\nClass\nFeatures (2023-10-24)\nPage\n\n\n\n\nADM0\nCountry\n1\n—\n\n\nADM1\nRegion\n17\nRegions\n\n\nADM2\nProvince\n82\nProvinces\n\n\nADM3\nMunicipality\n1,485\nMunicipalities\n\n\nADM3\nCity (HUC + component + ICC)\n150\nCities\n\n\nADM4\nBarangay\n42,026\nBarangays",
+    "crumbs": [
+      "Boundaries",
+      "Boundaries (GeoJSON)"
+    ]
+  },
+  {
+    "objectID": "boundaries/index.html#properties-download",
+    "href": "boundaries/index.html#properties-download",
+    "title": "Boundaries (GeoJSON)",
+    "section": "Properties & download",
+    "text": "Properties & download\n\nEvery feature carries the PSGC enrichment properties — see feature properties & schema.\nFor release assets, version tags, and per-class curl snippets, see download & versioning.",
+    "crumbs": [
+      "Boundaries",
+      "Boundaries (GeoJSON)"
+    ]
+  },
+  {
+    "objectID": "boundaries/municipalities.html",
+    "href": "boundaries/municipalities.html",
+    "title": "Municipalities",
+    "section": "",
+    "text": "Download Philippine municipality boundaries as GeoJSON, each polygon enriched with its PSGC code. Snapshot 2023-10-24 contains 1,485 municipality polygons.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Municipalities"
+    ]
+  },
+  {
+    "objectID": "boundaries/municipalities.html#download",
+    "href": "boundaries/municipalities.html#download",
+    "title": "Municipalities",
+    "section": "Download",
+    "text": "Download\n\nHierarchical (curated / recommended)Enriched (pipeline stage)Raw (pipeline stage)\n\n\nPer-class extract — municipalities only:\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/municipalities.geojson\n\n\nADM3 file, in-repo only. Note: adm3.geojson contains municipalities and cities combined (see city boundaries):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm3.geojson\n\n\nNAMRIA-converted, pre-enrichment (in-repo; also municipalities + cities combined):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm3.geojson\n\n\n\nThe enriched and raw tabs above are intermediate pipeline stages; see Releases & versioning for the tag convention and the in-repo stage paths.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Municipalities"
+    ]
+  },
+  {
+    "objectID": "boundaries/municipalities.html#coverage",
+    "href": "boundaries/municipalities.html#coverage",
+    "title": "Municipalities",
+    "section": "Coverage",
+    "text": "Coverage\n\n\n\nMetric\nValue\n\n\n\n\nPSGC municipalities\n1,485\n\n\nPolygons\n1,485\n\n\nExact matches\n1,467\n\n\nFuzzy matches\n18\n\n\n\nMunicipalities are ADM3-level units; cities are published separately by class (see city boundaries).",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Municipalities"
+    ]
+  },
+  {
+    "objectID": "boundaries/municipalities.html#properties",
+    "href": "boundaries/municipalities.html#properties",
+    "title": "Municipalities",
+    "section": "Properties",
+    "text": "Properties\nEach feature carries psgc_code (10-digit, municipality segment PPCCCMMLL0), psgc_name, psgc_status, match_confidence, and the source NAMRIA attributes.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Municipalities"
+    ]
+  },
+  {
+    "objectID": "boundaries/cities.html",
+    "href": "boundaries/cities.html",
+    "title": "Cities",
+    "section": "",
+    "text": "Philippine cities are split by legal class into separate GeoJSON extracts, each enriched with PSGC codes. The class split matters because Highly Urbanized Cities (HUCs) and Independent Component Cities report to the region, not a province — see HUC mapping.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Cities"
+    ]
+  },
+  {
+    "objectID": "boundaries/cities.html#download",
+    "href": "boundaries/cities.html#download",
+    "title": "Cities",
+    "section": "Download",
+    "text": "Download\n\nHierarchical (curated / recommended)Enriched (pipeline stage)Raw (pipeline stage)\n\n\nCities split by legal class:\n# Highly Urbanized Cities (34) — e.g. Quezon City, Makati, Davao\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/highly_urbanized_cities.geojson\n\n# Independent Component Cities (6)\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/independent_component_cities.geojson\n\n# Component Cities (110)\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/component_cities.geojson\n\n\nADM3 file, in-repo only. Note: adm3.geojson mixes all cities with municipalities, with no class separation:\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm3.geojson\n\n\nNAMRIA-converted, pre-enrichment (in-repo; also municipalities + cities combined):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm3.geojson\n\n\n\nThe enriched and raw tabs above are intermediate pipeline stages; see Releases & versioning for the tag convention and the in-repo stage paths.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Cities"
+    ]
+  },
+  {
+    "objectID": "boundaries/cities.html#counts-2023-10-24",
+    "href": "boundaries/cities.html#counts-2023-10-24",
+    "title": "Cities",
+    "section": "Counts (2023-10-24)",
+    "text": "Counts (2023-10-24)\n\n\n\nClass\nFeatures\nExact\nHUC map\nFuzzy\n\n\n\n\nHighly Urbanized City\n34\n31\n1\n2\n\n\nIndependent Component City\n6\n6\n0\n0\n\n\nComponent City\n110\n110\n0\n0\n\n\nTotal cities\n150",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Cities"
+    ]
+  },
+  {
+    "objectID": "boundaries/cities.html#coverage-notes",
+    "href": "boundaries/cities.html#coverage-notes",
+    "title": "Cities",
+    "section": "Coverage notes",
+    "text": "Coverage notes\n\n\n\n\n\n\nNote\n\n\n\n\nAll cities also appear at ADM3 (adm3.geojson); ADM2-level enrichment handles the HUC province-mismatch via huc_adm2_mapping.json.\n1 component city (City of Isabela, Basilan) has no NAMRIA polygon.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Cities"
+    ]
+  },
+  {
+    "objectID": "boundaries/regions.html",
+    "href": "boundaries/regions.html",
+    "title": "Regions",
+    "section": "",
+    "text": "Download all 17 Philippine region boundaries (including NCR, BARMM, and the provinces-acting-as regions) as GeoJSON, each polygon tagged with its PSGC code.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Regions"
+    ]
+  },
+  {
+    "objectID": "boundaries/regions.html#download",
+    "href": "boundaries/regions.html#download",
+    "title": "Regions",
+    "section": "Download",
+    "text": "Download\n\nHierarchical (curated / recommended)Enriched (pipeline stage)Raw (pipeline stage)\n\n\nPer-class extract:\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/regions.geojson\n\n\nADM1 file with PSGC codes (in-repo only):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm1.geojson\n\n\nNAMRIA-converted, pre-enrichment (in-repo):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm1.geojson\n\n\n\nThe enriched and raw tabs above are intermediate pipeline stages; see Releases & versioning for the tag convention and the in-repo stage paths.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Regions"
+    ]
+  },
+  {
+    "objectID": "boundaries/regions.html#coverage",
+    "href": "boundaries/regions.html#coverage",
+    "title": "Regions",
+    "section": "Coverage",
+    "text": "Coverage\n\n\n\nMetric\nValue\n\n\n\n\nPSGC regions\n17\n\n\nPolygons\n17\n\n\nMatched\n17\n\n\nCoverage\n100.000%\n\n\n\nRegions are ADM1-level units. Each region’s PSGC code occupies the first two digits (PP) of the 10-digit PSGC hierarchy — see PSGC code structure.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Regions"
+    ]
+  },
+  {
+    "objectID": "boundaries/enriched.html",
+    "href": "boundaries/enriched.html",
+    "title": "Enriched pipeline stage (enriched_t0p005/)",
+    "section": "",
+    "text": "The enriched tier is the intermediate enrichment stage of Pipeline B. It is the output of enrich.py and the input to classifier.py. It is kept in-repo for traceability — most users should use the curated hierarchical per-class files instead.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Enriched pipeline stage (`enriched_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/enriched.html#what-it-is",
+    "href": "boundaries/enriched.html#what-it-is",
+    "title": "Enriched pipeline stage (enriched_t0p005/)",
+    "section": "What it is",
+    "text": "What it is\nadm0–adm4.geojson — the full NAMRIA polygon set at each administrative level, with each polygon annotated with its psgc_code, psgc_name, psgc_status, and match_confidence.\n\n\n\n\n\n\nNote\n\n\n\nIntermediate pipeline stage — most users want the curated hierarchical per-class files instead.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Enriched pipeline stage (`enriched_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/enriched.html#file-inventory",
+    "href": "boundaries/enriched.html#file-inventory",
+    "title": "Enriched pipeline stage (enriched_t0p005/)",
+    "section": "File inventory",
+    "text": "File inventory\nKept in-repo at 2023-10-24/enriched_t0p005/ for traceability:\n\n\n\n\n\n\n\nFile\nContents\n\n\n\n\nadm0.geojson–adm4.geojson\nNAMRIA polygons at each admin level, each annotated with psgc_code, psgc_name, psgc_status, and match_confidence\n\n\ndiff.json\nPSGC-vs-NAMRIA reconciliation diff (matches, gaps, mismatches)\n\n\nsummary.md\nhuman-readable summary of the enrichment pass\n\n\n\nadm3 mixes municipalities and cities because this stage is pre-classification — features are not yet split by city class. The classifier + splitter (see Pipeline B) separate them into the curated per-class files.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Enriched pipeline stage (`enriched_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/enriched.html#download-in-repo",
+    "href": "boundaries/enriched.html#download-in-repo",
+    "title": "Enriched pipeline stage (enriched_t0p005/)",
+    "section": "Download (in-repo)",
+    "text": "Download (in-repo)\nFetch a single file via raw.githubusercontent.com:\ncurl -O https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm4.geojson\nHow enrichment works (name normalization + HUC mapping + fuzzy match) is documented in Pipeline B; the HUC reconciliation in HUC mapping; the match_confidence values (exact / huc_map / fuzzy) in feature properties.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Enriched pipeline stage (`enriched_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/coverage.html",
+    "href": "boundaries/coverage.html",
+    "title": "Coverage & match quality",
+    "section": "",
+    "text": "Coverage measures how completely NAMRIA polygons were enriched with canonical PSGC codes. The headline figure for snapshot 2023-10-24 is 99.945% PSGC ↔︎ NAMRIA pcode match.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Coverage & match quality"
+    ]
+  },
+  {
+    "objectID": "boundaries/coverage.html#coverage-by-level",
+    "href": "boundaries/coverage.html#coverage-by-level",
+    "title": "Coverage & match quality",
+    "section": "Coverage by level",
+    "text": "Coverage by level\n\n\n\n\n\n\n\n\n\n\nLevel\nFile\nFeatures\nMatched\nCoverage\n\n\n\n\nADM0\nadm0.geojson\n1\n1\n100.000%\n\n\nADM1 Region\nadm1.geojson\n17\n17\n100.000%\n\n\nADM2 Province\nadm2.geojson\n88\n88\n100.000%\n\n\nADM3 Municipality/City\nadm3.geojson\n1,626\n1,624\n99.877%\n\n\nADM4 Barangay\nadm4.geojson\n41,825\n41,803\n99.947%\n\n\n\nPer-class extracts (hierarchical) split cities by class (highly urbanized, independent component, component) and separate special geographic areas.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Coverage & match quality"
+    ]
+  },
+  {
+    "objectID": "boundaries/coverage.html#per-level-detail",
+    "href": "boundaries/coverage.html#per-level-detail",
+    "title": "Coverage & match quality",
+    "section": "Per-level detail",
+    "text": "Per-level detail\nPer-level coverage breakdowns live on each per-class page: barangays · municipalities · cities · provinces · regions.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Coverage & match quality"
+    ]
+  },
+  {
+    "objectID": "boundaries/coverage.html#known-gaps",
+    "href": "boundaries/coverage.html#known-gaps",
+    "title": "Coverage & match quality",
+    "section": "Known gaps",
+    "text": "Known gaps\n\n\n\n\n\n\nWarning\n\n\n\n\n~198 PSGC barangays (mostly in BARMM and Metro Manila) — and ~230 PSGC entities in total — have no NAMRIA polygon.\n6 features could not be resolved to a PSGC entity (unresolved.geojson).\n1 component city (City of Isabela, Basilan) has no NAMRIA polygon.\n\n\n\nFor how match confidence (exact / huc_map / fuzzy) is assigned, see feature properties and the HUC mapping reference.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Coverage & match quality"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Philippine Boundaries & PSGC",
+    "section": "",
+    "text": "Curated hierarchical Philippine administrative boundaries as GeoJSON — barangays, municipalities, and cities split by legal class (highly urbanized, independent component, component), plus provinces, regions, and special geographic areas — each polygon annotated with its canonical PSGC code, name, and status. Generated from PSA Philippine Standard Geographic Code snapshots and NAMRIA administrative-boundary shapefiles, with the full quarterly change history published as W3C ORG RDF linked data. The enriched (adm0–adm4) and raw NAMRIA-converted files are kept as intermediate pipeline stages.",
+    "crumbs": [
+      "Changelog",
+      "Philippine Boundaries & PSGC"
+    ]
+  },
+  {
+    "objectID": "index.html#pick-your-path",
+    "href": "index.html#pick-your-path",
+    "title": "Philippine Boundaries & PSGC",
+    "section": "Pick your path",
+    "text": "Pick your path\nThis dataset ships two data products plus a full developer toolchain. Choose the section that matches what you need.\n\n\n\nBoundaries (GeoJSON) ›\nCurated per-class Philippine boundary polygons (barangays, municipalities, cities by class, provinces, regions, special geographic areas), each tagged with its PSGC code. For data consumers — the 95% case.\n\n\nChange history (RDF) ›\nThe quarterly PSGC change history as W3C ORG linked data — creation, merger, split, transfer, rename, code-change events across 17 snapshots. For linked-data / semantic users.\n\n\nToolchain ›\nThe brgybnd CLI, the two pipelines (PSGC → RDF and NAMRIA → GeoJSON), data model, configuration, and repository layout. For developers and reproducers.\n\n\n\nCross-cutting reference material (PSGC codes, HUC mapping, citation) lives under References; dataset/version history lives in the Changelog and the per-snapshot timeline under Change history (RDF).",
+    "crumbs": [
+      "Changelog",
+      "Philippine Boundaries & PSGC"
+    ]
+  },
+  {
+    "objectID": "references/index.html",
+    "href": "references/index.html",
+    "title": "References",
+    "section": "",
+    "text": "Cross-cutting look-up material that applies across the Boundaries, Change history (RDF), and Toolchain sections.\n\nPSGC code structure — the 10-digit hierarchical code, decoded.\nHUC mapping — the Highly Urbanized City / Metro Manila mismatch and how it is resolved.\nCitation — how to cite this dataset.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html",
+    "href": "references/huc-mapping.html",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "",
+    "text": "A Highly Urbanized City (HUC) is a Philippine city that is administratively independent of any province and reports directly to the region. Examples: Quezon City, Makati, Davao City, Cebu City.",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html#what-is-a-highly-urbanized-city-huc",
+    "href": "references/huc-mapping.html#what-is-a-highly-urbanized-city-huc",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "",
+    "text": "A Highly Urbanized City (HUC) is a Philippine city that is administratively independent of any province and reports directly to the region. Examples: Quezon City, Makati, Davao City, Cebu City.",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html#the-mismatch",
+    "href": "references/huc-mapping.html#the-mismatch",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "The mismatch",
+    "text": "The mismatch\n\n\n\n\n\n\nWarning\n\n\n\nTwo authoritative sources disagree about an HUC’s parent:\n\n\n\n\n\n\n\nSource\nHUC parent recorded as\n\n\n\n\nPSGC (PSA)\nthe region\n\n\nNAMRIA boundaries\nthe province it sits geographically inside\n\n\n\nA naive parent-lookup that joins NAMRIA polygons to PSGC by province would therefore misclassify every HUC (e.g. place Makati under Rizal Province instead of NCR).",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html#how-this-dataset-resolves-it",
+    "href": "references/huc-mapping.html#how-this-dataset-resolves-it",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "How this dataset resolves it",
+    "text": "How this dataset resolves it\nThe script generate_huc_mapping.py produces namria/huc_adm2_mapping.json, an explicit lookup from each HUC to its correct PSGC parent. This mapping is consumed by:\n\ncoverage.py — so coverage stats count HUCs correctly.\nenrich.py — so each HUC feature gets the right psgc_code and parent.",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html#metro-manila-virtual-provinces",
+    "href": "references/huc-mapping.html#metro-manila-virtual-provinces",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "Metro Manila: virtual provinces",
+    "text": "Metro Manila: virtual provinces\nMetro Manila (NCR) has no PSGC province-level units — it is regions → cities → barangays directly. NAMRIA, however, publishes the four NCR legislative districts as ADM2 polygons. To reconcile, this dataset maps those districts as virtual provinces of type mm_district:\n\n\n\n\n\n\n\nNAMRIA feature\nMapped type\n\n\n\n\nMetropolitan Manila First District\nmm_district (virtual province)\n\n\nMetropolitan Manila Second District\nmm_district (virtual province)\n\n\nMetropolitan Manila Third District\nmm_district (virtual province)\n\n\nMetropolitan Manila Fourth District\nmm_district (virtual province)\n\n\n\nThese four features appear in non_administrative.geojson because they are not standard PSGC provinces — they are documented honestly rather than silently dropped.",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "references/huc-mapping.html#match-confidence",
+    "href": "references/huc-mapping.html#match-confidence",
+    "title": "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch",
+    "section": "Match confidence",
+    "text": "Match confidence\nBecause HUCs require special handling, enriched features carry a match_confidence value (exact / huc_map / fuzzy) — see feature properties.\nFor the 2023-10-24 snapshot, 31 of 34 HUCs matched exactly, 1 via the HUC map, and 2 via fuzzy matching.",
+    "crumbs": [
+      "References",
+      "HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch"
+    ]
+  },
+  {
+    "objectID": "rdf/index.html",
+    "href": "rdf/index.html",
+    "title": "Change history (RDF)",
+    "section": "",
+    "text": "This dataset publishes two data products. The Boundaries (GeoJSON) section covers the spatial polygons; this section covers the linked-data change history — the output of Pipeline A.",
+    "crumbs": [
+      "Change history",
+      "Change history (RDF)"
+    ]
+  },
+  {
+    "objectID": "rdf/index.html#what-the-rdf-is",
+    "href": "rdf/index.html#what-the-rdf-is",
+    "title": "Change history (RDF)",
+    "section": "What the RDF is",
+    "text": "What the RDF is\nFor every PSGC snapshot, Pipeline A emits a delta (delta.ttl / delta.nt / delta.jsonld) describing how Philippine administrative units changed relative to the previous snapshot: created, deleted, renamed, merged, split, transferred, reclassified, or re-coded. The deltas are serialized on the W3C ORG ontology with PROV provenance and Dublin Core terms.",
+    "crumbs": [
+      "Change history",
+      "Change history (RDF)"
+    ]
+  },
+  {
+    "objectID": "rdf/index.html#why-it-exists",
+    "href": "rdf/index.html#why-it-exists",
+    "title": "Change history (RDF)",
+    "section": "Why it exists",
+    "text": "Why it exists\nPSGC codes are not stable: barangays are continually created, merged, split, renamed, transferred between parents, and re-coded. The RDF deltas let a downstream system track an entity’s identity across quarters via the 9-digit correspondence code (see PSGC code structure) and answer questions like “what happened to barangay X between 2023 and 2024?”.",
+    "crumbs": [
+      "Change history",
+      "Change history (RDF)"
+    ]
+  },
+  {
+    "objectID": "rdf/index.html#what-a-delta-file-contains",
+    "href": "rdf/index.html#what-a-delta-file-contains",
+    "title": "Change history (RDF)",
+    "section": "What a delta file contains",
+    "text": "What a delta file contains\nA walkthrough of 2023-10-24/delta.ttl, the delta for the 2023-10-24 snapshot. It carries three kinds of resources:\nChange events (psgc:event/{date}/{seq}) — typed org:ChangeEvent. Each carries the snapshot date (dct:date), a one-line human description (dct:description), the change type (org:classification → psgc:concept/change-type/{type}), and the entities involved via org:originalOrganization (entity removed/renamed-from) and/or org:resultingOrganization (entity created/renamed-to). For example, a code change:\n&lt;https://psgc.gov.ph/event/2023-10-24/0082&gt; a org:ChangeEvent ;\n    dct:date \"2023-10-24\"^^xsd:date ;\n    dct:description \"PSGC code changed from 1380300033 to 1381500036\"@en ;\n    org:classification &lt;https://psgc.gov.ph/concept/change-type/code_change&gt; ;\n    org:originalOrganization &lt;https://psgc.gov.ph/entity/1380300033&gt; ;\n    org:resultingOrganization &lt;https://psgc.gov.ph/entity/1381500036&gt; .\nA creation carries only org:resultingOrganization; a deletion carries only org:originalOrganization.\nEntities (psgc:entity/{code}) — the units touched by the delta. The 10-digit PSGC code and the 9-digit correspondence code (identity that survives re-codings) are both recorded on org:identifier, the name on skos:prefLabel, and population on schema:population:\n&lt;https://psgc.gov.ph/entity/1381500036&gt; a org:OrganizationalUnit ;\n    dct:date \"2023-10-24\"^^xsd:date ;\n    schema1:population 15103 ;\n    skos:prefLabel \"Rizal\"@en ;\n    org:classification &lt;https://psgc.gov.ph/concept/geographic-level/Bgy&gt;,\n        &lt;https://psgc.gov.ph/concept/urban-rural/U&gt; ;\n    org:identifier \"137602033\"^^xsd:string,\n        \"1381500036\"^^xsd:string,\n        \"137602033\"^^psgc:correspondence-code .\nConcepts (psgc:concept/{scheme}/{value}) — skos:Concept nodes for the controlled vocabularies used in the delta: change-type/ (creation, deletion, code_change, …), geographic-level/ (Bgy, Mun, …) and urban-rural/ (Urban/Rural), some with skos:prefLabel labels.\nThis snapshot’s 92 events break down as 29 creations, 55 deletions, and 11 code changes — a single quarter’s worth of barangay creation/deletion/re-coding events.\nSee also:\n\nOntology & namespaces\nEntity & event URIs\nChange-event types\nSerialisations\nQuerying",
+    "crumbs": [
+      "Change history",
+      "Change history (RDF)"
+    ]
+  },
+  {
+    "objectID": "rdf/snapshots.html",
+    "href": "rdf/snapshots.html",
+    "title": "PSGC snapshot history",
+    "section": "",
+    "text": "This dataset tracks 17 quarterly PSGC snapshots. Each snapshot is processed into an RDF delta (delta.ttl / .nt / .jsonld) capturing creation, deletion, transfer, merger, split, renaming, reclassification, and code-change events relative to the previous snapshot — see change-event types.",
+    "crumbs": [
+      "Change history",
+      "PSGC snapshot history"
+    ]
+  },
+  {
+    "objectID": "rdf/snapshots.html#reading-the-deltas",
+    "href": "rdf/snapshots.html#reading-the-deltas",
+    "title": "PSGC snapshot history",
+    "section": "Reading the deltas",
+    "text": "Reading the deltas\nEach snapshot directory in the repository contains delta.ttl (Turtle), delta.nt (N-Triples), and delta.jsonld (JSON-LD), plus the source PSA press release as Markdown. The RDF uses the W3C ORG ontology with PROV provenance and Dublin Core terms.\nFor dataset and documentation versions (release tags), see the Changelog; for the version-tag convention see Releases & versioning.",
+    "crumbs": [
+      "Change history",
+      "PSGC snapshot history"
+    ]
+  },
+  {
+    "objectID": "rdf/ontology.html",
+    "href": "rdf/ontology.html",
+    "title": "Ontology & namespaces",
+    "section": "",
+    "text": "The PSGC change-history RDF is built on the W3C ORG ontology for organizational structure, with PROV for provenance, Dublin Core Terms for metadata, and per-snapshot PSGC concepts.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Ontology & namespaces"
+    ]
+  },
+  {
+    "objectID": "rdf/ontology.html#namespaces",
+    "href": "rdf/ontology.html#namespaces",
+    "title": "Ontology & namespaces",
+    "section": "Namespaces",
+    "text": "Namespaces\nNamespaces used across the delta files:\n\norg: — W3C ORG (FormalOrganization for Reg/Prov/City/Mun, OrganizationalUnit for Bgy/SubMun)\npsgc: — the project’s own vocabulary (entity / event / concept URIs — see URIs)\ndct: — Dublin Core Terms (title, source, legal basis metadata)\nprov: — PROV-O provenance (linking events to their snapshot and source PSA press release)\ntime: — temporal positioning of effective / plebiscite dates\nschema: — schema.org supplementary terms",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Ontology & namespaces"
+    ]
+  },
+  {
+    "objectID": "rdf/ontology.html#ontology-mapping",
+    "href": "rdf/ontology.html#ontology-mapping",
+    "title": "Ontology & namespaces",
+    "section": "Ontology mapping",
+    "text": "Ontology mapping\n\nPSGC level → ORG class\nEach PSGC level is typed as one of two ORG classes (from rdf/builder.py):\n\n\n\n\n\n\n\n\nPSGC level\nORG class\nTyped as\n\n\n\n\nRegion (Reg)\norg:FormalOrganization\nautonomous top-level unit\n\n\nProvince (Prov)\norg:FormalOrganization\n\n\n\nMunicipality (Mun)\norg:FormalOrganization\n\n\n\nCity (City)\norg:FormalOrganization\n\n\n\nBarangay (Bgy)\norg:OrganizationalUnit\nsub-unit\n\n\nSub-municipality (SubMun)\norg:OrganizationalUnit\nsub-unit\n\n\n\n\nA delta only emits the entities touched by that quarter’s changes, so a delta may contain only OrganizationalUnit instances (e.g. the 2023-10-24 delta is all barangays). The --full build emits the entire entity graph with both classes.\n\n\n\nHierarchy\nParent/child relationships are derived from the PSGC code structure and encoded with ORG containment predicates in full builds:\n\norg:hasSubOrganization — FormalOrganization → FormalOrganization (e.g. region → province, province → city/municipality).\norg:hasUnit — FormalOrganization → OrganizationalUnit (e.g. municipality → barangay).\n\n\n\nChange events\nEach change is an org:ChangeEvent typed via org:classification → a psgc:concept/change-type/{type} concept. The participating entities are attached with org:originalOrganization (the pre-change entity) and org:resultingOrganization (the post-change entity). See Change-event types for the per-type triple shape.\n\n\nProvenance & metadata\nEach change event carries its provenance: dct:source for the legal basis (Republic Act number, Executive Order, plebiscite resolution, etc.), prov:generatedAtTime for the effective date, and dct:description for a human-readable summary of what changed and why.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Ontology & namespaces"
+    ]
+  },
+  {
+    "objectID": "rdf/serialisations.html",
+    "href": "rdf/serialisations.html",
+    "title": "Serialisations",
+    "section": "",
+    "text": "Every snapshot directory ships the same delta in three RDF serialisations.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Serialisations"
+    ]
+  },
+  {
+    "objectID": "rdf/serialisations.html#formats",
+    "href": "rdf/serialisations.html#formats",
+    "title": "Serialisations",
+    "section": "Formats",
+    "text": "Formats\n\n\n\n\n\n\n\n\nFile\nFormat\nWhen to use\n\n\n\n\ndelta.ttl\nTurtle\nHuman-readable, compact; default for browsing/editing\n\n\ndelta.nt\nN-Triples\nStreaming / line-oriented ingestion; no prefix declarations\n\n\ndelta.jsonld\nJSON-LD\nWeb/JS consumers; embeddable in JSON pipelines; links to schema.org context",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Serialisations"
+    ]
+  },
+  {
+    "objectID": "rdf/serialisations.html#side-by-side",
+    "href": "rdf/serialisations.html#side-by-side",
+    "title": "Serialisations",
+    "section": "Side-by-side",
+    "text": "Side-by-side\nThe same statement (a barangay’s English label) in all three formats, as actually shipped in 2023-10-24/. Turtle is compact with prefix declarations; N-Triples is fully expanded and line-oriented; the JSON-LD is shipped in expanded form (full URIs, no @context).\nTurtle (delta.ttl):\n@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .\n\n&lt;https://psgc.gov.ph/entity/1381500036&gt; skos:prefLabel \"Rizal\"@en .\nN-Triples (delta.nt) — every term fully spelled out:\n&lt;https://psgc.gov.ph/entity/1381500036&gt; &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; \"Rizal\"@en .\nJSON-LD (delta.jsonld) — expanded, one node per object:\n{\n  \"@id\": \"https://psgc.gov.ph/entity/1381500036\",\n  \"http://www.w3.org/2004/02/skos/core#prefLabel\": [\n    { \"@language\": \"en\", \"@value\": \"Rizal\" }\n  ]\n}",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Serialisations"
+    ]
+  },
+  {
+    "objectID": "rdf/serialisations.html#consistency-across-snapshots",
+    "href": "rdf/serialisations.html#consistency-across-snapshots",
+    "title": "Serialisations",
+    "section": "Consistency across snapshots",
+    "text": "Consistency across snapshots\nThe three serialisations are generated from the same in-memory graph. Treat the Turtle file as canonical when the three disagree.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Serialisations"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html",
+    "href": "toolchain/index.html",
+    "title": "Toolchain",
+    "section": "",
+    "text": "The brgybnd CLI converts PSA PSGC Excel/PDF snapshots into RDF linked data (W3C ORG ontology) and matches NAMRIA shapefile boundaries with PSGC codes to produce hierarchical per-class GeoJSON — the curated end product — plus enriched and raw stages as intermediate pipeline outputs.",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html#tech-stack",
+    "href": "toolchain/index.html#tech-stack",
+    "title": "Toolchain",
+    "section": "Tech stack",
+    "text": "Tech stack\nPython 3.13 · Hatchling build · UV package manager · Click CLI · Pydantic v2 · rdflib · geopandas · OpenAI-compatible LLM client.",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html#two-parallel-pipelines",
+    "href": "toolchain/index.html#two-parallel-pipelines",
+    "title": "Toolchain",
+    "section": "Two parallel pipelines",
+    "text": "Two parallel pipelines\nThe repository runs two independent pipelines side by side:\n\nPipeline A — PSGC → RDF. Parses PSGC Excel/PDF snapshots, normalizes ~50 raw change types to 10 canonical ones, builds an ORG-ontology RDF graph, and computes per-snapshot deltas. See Pipeline A: PSGC → RDF.\nPipeline B — NAMRIA → hierarchical GeoJSON. Converts NAMRIA shapefiles to GeoJSON, enriches every polygon with its PSGC code (handling the HUC mismatch), classifies features by PSGC type/class, and splits into per-class files. See Pipeline B: NAMRIA → hierarchical GeoJSON.",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html#data-tiers",
+    "href": "toolchain/index.html#data-tiers",
+    "title": "Toolchain",
+    "section": "Data tiers",
+    "text": "Data tiers\nPipeline B produces three tiers: raw (NAMRIA-converted, pre-enrichment) → enriched (adm0–adm4 annotated with psgc_code/name/status/match_confidence) → hierarchical (the curated per-class end product that GitHub Releases publish). See Pipeline B and the Boundaries overview.",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html#install",
+    "href": "toolchain/index.html#install",
+    "title": "Toolchain",
+    "section": "Install",
+    "text": "Install\nThe project is managed with UV and targets Python 3.13. From a clone of the repository:\n# install dependencies into the project environment\nuv sync\n\n# expose the brgybnd CLI globally (optional)\nuv tool install .\nThis installs the brgybnd entry point (barangay_boundaries_repository/cli:cli) — see the CLI reference for the 10 subcommands.\n\nRequired inputs\nbrgybnd reads from two on-disk sources that are not committed to this repo (too large):\n\nPSGC snapshots — live under $PSGC_DATA_DIR (default ~/commons/barangay), in per-snapshot YYYY-MM-DD/ subdirectories of Excel/PDF files that ingest/scanner.py classifies. Set this in configuration or via the PSGC_DATA_DIR environment variable.\nNAMRIA shapefiles — committed under namria/ (phl_admbnda_adm{0-4}_*.shp, version 2023-11-06).\n\nThe optional LLM batch-extraction step of Pipeline A needs OPENAI_API_KEY (defaults target the GLM API). Everything else runs offline. See configuration.\nFor a copy-paste quick start (install + first run), see the README.",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/index.html#where-to-next",
+    "href": "toolchain/index.html#where-to-next",
+    "title": "Toolchain",
+    "section": "Where to next",
+    "text": "Where to next\n\nCLI reference — the 10 brgybnd commands\nRepository layout — file map\nHUC mapping generation",
+    "crumbs": [
+      "Toolchain"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-rdf.html",
+    "href": "toolchain/pipeline-rdf.html",
+    "title": "Pipeline A — PSGC → RDF",
+    "section": "",
+    "text": "Pipeline A turns PSA PSGC Excel/PDF snapshots into W3C ORG RDF linked data, and computes a per-snapshot change-history delta. Its end product is the delta.{ttl,nt,jsonld} files that live under each YYYY-MM-DD/ snapshot directory — see the Change history (RDF) section for consuming them.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline A — PSGC → RDF"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-rdf.html#flow",
+    "href": "toolchain/pipeline-rdf.html#flow",
+    "title": "Pipeline A — PSGC → RDF",
+    "section": "Flow",
+    "text": "Flow\n\n\n\n\n\nflowchart LR\n  src[\"PSGC XLSX snapshots&lt;br/&gt;(~/commons/barangay/YYYY-MM-DD/)\"]\n  scanner[\"ingest/scanner.py&lt;br/&gt;classify files by regex\"]\n  xlsx[\"ingest/xlsx_parser.py&lt;br/&gt;PSGC sheet + changes; ~50 → 10 canonical change types\"]\n  pdf[\"ingest/pdf_parser.py&lt;br/&gt;OCR text from press-release PDFs\"]\n  agent[\"agent/pipeline.py&lt;br/&gt;(optional) LLM batch extraction\"]\n  builder[\"rdf/builder.py&lt;br/&gt;ORG ontology graph\"]\n  delta[\"rdf/delta.py&lt;br/&gt;compute_delta()\"]\n  out[(\"YYYY-MM-DD/&lt;br/&gt;delta.{ttl,nt,jsonld}\")]\n\n  src --&gt; scanner --&gt; xlsx --&gt; pdf\n  pdf -.optional.-&gt; agent --&gt; builder\n  xlsx --&gt; builder\n  builder --&gt; delta --&gt; out",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline A — PSGC → RDF"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-rdf.html#stages",
+    "href": "toolchain/pipeline-rdf.html#stages",
+    "title": "Pipeline A — PSGC → RDF",
+    "section": "Stages",
+    "text": "Stages\n\ningest/scanner.py — classifies snapshot files by regex (datafile, changes, press release, province summary).\ningest/xlsx_parser.py — parses the PSGC sheet (entities) + changes sheets; normalizes ~50 raw change types to 10 canonical ones.\ningest/pdf_parser.py — OCR text from PDF press releases (kreuzberg).\nagent/pipeline.py (optional) — LLM batch extraction (structured JSON output, batches of 50 entities / 100 changes). See configuration for the required env vars.\nrdf/builder.py — builds the RDF graph on the ORG ontology.\nrdf/delta.py — compute_delta() between two snapshots.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline A — PSGC → RDF"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-rdf.html#detected-change-event-types",
+    "href": "toolchain/pipeline-rdf.html#detected-change-event-types",
+    "title": "Pipeline A — PSGC → RDF",
+    "section": "Detected change-event types",
+    "text": "Detected change-event types\ncompute_delta() detects: creation, deletion, code_change, rename, merger, split, name_correction, transfer. See RDF event types and the PSGC code structure reference (9-digit correspondence codes drive identity tracking across code changes).",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline A — PSGC → RDF"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-rdf.html#running-it",
+    "href": "toolchain/pipeline-rdf.html#running-it",
+    "title": "Pipeline A — PSGC → RDF",
+    "section": "Running it",
+    "text": "Running it\nbrgybnd ingest --date 2023-10-24\nbrgybnd process --date 2023-10-24 --format turtle\nSee the CLI reference for all flags.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline A — PSGC → RDF"
+    ]
+  },
+  {
+    "objectID": "toolchain/configuration.html",
+    "href": "toolchain/configuration.html",
+    "title": "Configuration",
+    "section": "",
+    "text": "The brgybnd toolchain is configured via environment variables (read by config.py with python-dotenv). The LLM-related variables are only required for the optional Pipeline A agent batch-extraction step.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Configuration"
+    ]
+  },
+  {
+    "objectID": "toolchain/configuration.html#variables",
+    "href": "toolchain/configuration.html#variables",
+    "title": "Configuration",
+    "section": "Variables",
+    "text": "Variables\n\n\n\n\n\n\n\n\nVariable\nDefault\nPurpose\n\n\n\n\nOPENAI_API_KEY\n(none — required for LLM agent pipeline)\nAPI key for the OpenAI-compatible LLM client\n\n\nOPENAI_BASE_URL\nhttps://api.z.ai/api/paas/v4/ (GLM API)\nBase URL of the OpenAI-compatible endpoint\n\n\nOPENAI_MODEL\nglm-4.7\nModel name for structured-output extraction\n\n\nPSGC_DATA_DIR\n~/commons/barangay\nDirectory holding the PSGC snapshot source files",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Configuration"
+    ]
+  },
+  {
+    "objectID": "toolchain/configuration.html#env-example",
+    "href": "toolchain/configuration.html#env-example",
+    "title": "Configuration",
+    "section": ".env example",
+    "text": ".env example\nA .env in the repository root (loaded by config.py via python-dotenv) only needs the data directory in practice; the three OPENAI_* vars are for the optional Pipeline A LLM step and can be omitted for offline runs:\n# required to point at the PSGC snapshot source tree\nPSGC_DATA_DIR=~/commons/barangay\n\n# optional — only for the LLM batch-extraction step of Pipeline A\nOPENAI_API_KEY=your-key\nOPENAI_BASE_URL=https://api.z.ai/api/paas/v4/\nOPENAI_MODEL=glm-4.7\nPSGC_DATA_DIR is the root of the snapshot tree. ingest/scanner.py expects each snapshot as a per-quarter subdirectory named YYYY-MM-DD/ (e.g. 2023-10-24/) containing the PSA Excel datafile, the changes sheet(s), and the PDF press release — it classifies the files inside by filename regex. Pointing PSGC_DATA_DIR anywhere else just relocates that tree.\nThe GLM defaults (OPENAI_BASE_URL / OPENAI_MODEL) target the Z.ai GLM endpoint; set them to any OpenAI-compatible base URL and structured-output model of your choice.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Configuration"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-geo.html",
+    "href": "toolchain/pipeline-geo.html",
+    "title": "Pipeline B — NAMRIA → hierarchical GeoJSON",
+    "section": "",
+    "text": "Pipeline B turns NAMRIA administrative-boundary shapefiles into the curated hierarchical per-class GeoJSON that is the dataset’s recommended end product. Its intermediate stages — raw and enriched — are documented under Boundaries.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline B — NAMRIA → hierarchical GeoJSON"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-geo.html#flow",
+    "href": "toolchain/pipeline-geo.html#flow",
+    "title": "Pipeline B — NAMRIA → hierarchical GeoJSON",
+    "section": "Flow",
+    "text": "Flow\n\n\n\n\n\nflowchart LR\n  shp[(\"namria/phl_admbnda_adm{0-4}_*.shp&lt;br/&gt;v2023-11-06\")]\n  conv[\"namria_converter.py&lt;br/&gt;shapefile → GeoJSON&lt;br/&gt;(Douglas-Peucker simplify, 0.005°)\"]\n  raw[(\"stage 1:&lt;br/&gt;raw_t0p005/\")]\n  cov[\"coverage.py&lt;br/&gt;PSGC pcode vs GeoJSON pcode\"]\n  huc[\"generate_huc_mapping.py&lt;br/&gt;huc_adm2_mapping.json&lt;br/&gt;(HUCs, MM districts, SGAs)\"]\n  enrich[\"enrich.py&lt;br/&gt;adds psgc_id / code / name / status / match_confidence\"]\n  enr[(\"stage 2:&lt;br/&gt;enriched_t0p005/\")]\n  cls[\"classifier.py&lt;br/&gt;assigns PSGC type/class\"]\n  split[\"splitter.py&lt;br/&gt;per-class files\"]\n  hier[\"hierarchical.py&lt;br/&gt;orchestrate classify → split → report\"]\n  cur[(\"curated:&lt;br/&gt;hierarchical_t0p005/&lt;br/&gt;&lt;class&gt;.geojson +&lt;br/&gt;classification_report.json +&lt;br/&gt;summary.md\")]\n\n  shp --&gt; conv --&gt; raw\n  raw --&gt; cov --&gt; huc --&gt; enrich --&gt; enr\n  enr --&gt; cls --&gt; split --&gt; hier --&gt; cur",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline B — NAMRIA → hierarchical GeoJSON"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-geo.html#stages",
+    "href": "toolchain/pipeline-geo.html#stages",
+    "title": "Pipeline B — NAMRIA → hierarchical GeoJSON",
+    "section": "Stages",
+    "text": "Stages\n\nnamria_converter.py — shapefile → GeoJSON (Douglas-Peucker simplify, default 0.005°). Output: raw tier.\ncoverage.py — PSGC pcode vs GeoJSON pcode comparison per admin level.\ngenerate_huc_mapping.py — builds huc_adm2_mapping.json for HUCs, MM districts, and Special Geographic Areas. See HUC mapping generation and the HUC mapping reference.\nenrich.py — adds psgc_id, psgc_code, psgc_name, psgc_status, match_confidence. Output: enriched tier.\nclassifier.py — assigns the PSGC type/class (barangay, HUC, ICC, component city, …) per feature.\nsplitter.py — splits enriched features into per-class files.\nhierarchical.py — orchestrates phases 3–5 (classify → split → report). Output: the curated hierarchical tier plus classification_report.json and summary.md.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline B — NAMRIA → hierarchical GeoJSON"
+    ]
+  },
+  {
+    "objectID": "toolchain/pipeline-geo.html#running-it",
+    "href": "toolchain/pipeline-geo.html#running-it",
+    "title": "Pipeline B — NAMRIA → hierarchical GeoJSON",
+    "section": "Running it",
+    "text": "Running it\nbrgybnd build-hierarchical --date 2023-10-24\nbuild-hierarchical runs convert → enrich → classify → split. Use --skip-convert / --skip-enrich to reuse existing intermediate stages. See the CLI reference.",
+    "crumbs": [
+      "Toolchain",
+      "Pipelines",
+      "Pipeline B — NAMRIA → hierarchical GeoJSON"
+    ]
+  },
+  {
+    "objectID": "toolchain/repo-layout.html",
+    "href": "toolchain/repo-layout.html",
+    "title": "Repository layout & file map",
+    "section": "",
+    "text": "File\nPurpose\n\n\n\n\nbarangay_boundaries_repository/cli.py\nAll CLI commands (Click)\n\n\nconfig.py\nEnv-based settings (python-dotenv)\n\n\nmodels/schemas.py\nPydantic models (GeographicEntity, ChangeEvent, RdfTriple)\n\n\ningest/scanner.py\nSnapshot directory scanner\n\n\ningest/xlsx_parser.py\nPSGC datafile + changes parser (~50 change normalizations)\n\n\ningest/pdf_parser.py\nPDF press release text extraction\n\n\nagent/client.py\nOpenAI-compatible LLM client (structured output, 3 retries)\n\n\nagent/pipeline.py\nLLM batch extraction pipeline\n\n\nprompts/base.py\nYAML prompt template loader\n\n\nrdf/builder.py\nRdfBuilder (ORG ontology graph construction)\n\n\nrdf/delta.py\ncompute_delta() between two snapshots (~410 lines)\n\n\ncoverage.py\nPSGC vs GeoJSON pcode coverage\n\n\nenrich.py\nGeoJSON feature enrichment with PSGC IDs\n\n\nnamria_converter.py\nShapefile → GeoJSON converter\n\n\nclassifier.py\nAssigns PSGC type/class per feature (feeds splitter)\n\n\nsplitter.py\nSplits enriched features into per-class files\n\n\nhierarchical.py\nOrchestrates classify → split → report (curated output)\n\n\ngenerate_huc_mapping.py\nHUC-to-ADM2 mapping generator (standalone script)\n\n\nnamria/huc_adm2_mapping.json\nGenerated mapping artifact",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Repository layout & file map"
+    ]
+  },
+  {
+    "objectID": "toolchain/repo-layout.html#file-map",
+    "href": "toolchain/repo-layout.html#file-map",
+    "title": "Repository layout & file map",
+    "section": "",
+    "text": "File\nPurpose\n\n\n\n\nbarangay_boundaries_repository/cli.py\nAll CLI commands (Click)\n\n\nconfig.py\nEnv-based settings (python-dotenv)\n\n\nmodels/schemas.py\nPydantic models (GeographicEntity, ChangeEvent, RdfTriple)\n\n\ningest/scanner.py\nSnapshot directory scanner\n\n\ningest/xlsx_parser.py\nPSGC datafile + changes parser (~50 change normalizations)\n\n\ningest/pdf_parser.py\nPDF press release text extraction\n\n\nagent/client.py\nOpenAI-compatible LLM client (structured output, 3 retries)\n\n\nagent/pipeline.py\nLLM batch extraction pipeline\n\n\nprompts/base.py\nYAML prompt template loader\n\n\nrdf/builder.py\nRdfBuilder (ORG ontology graph construction)\n\n\nrdf/delta.py\ncompute_delta() between two snapshots (~410 lines)\n\n\ncoverage.py\nPSGC vs GeoJSON pcode coverage\n\n\nenrich.py\nGeoJSON feature enrichment with PSGC IDs\n\n\nnamria_converter.py\nShapefile → GeoJSON converter\n\n\nclassifier.py\nAssigns PSGC type/class per feature (feeds splitter)\n\n\nsplitter.py\nSplits enriched features into per-class files\n\n\nhierarchical.py\nOrchestrates classify → split → report (curated output)\n\n\ngenerate_huc_mapping.py\nHUC-to-ADM2 mapping generator (standalone script)\n\n\nnamria/huc_adm2_mapping.json\nGenerated mapping artifact",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Repository layout & file map"
+    ]
+  },
+  {
+    "objectID": "toolchain/repo-layout.html#repository-layout",
+    "href": "toolchain/repo-layout.html#repository-layout",
+    "title": "Repository layout & file map",
+    "section": "Repository layout",
+    "text": "Repository layout\nbarangay_boundaries_repository/      — Python package (CLI + pipelines)\nprompts/                              — YAML LLM prompt templates\nnamria/                               — NAMRIA shapefiles (v2023-11-06), ADM0-ADM4\nYYYY-MM-DD/                           — 17 snapshot output dirs:\n  delta.{ttl,nt,jsonld}               — PSGC change-history RDF\n  hierarchical_t0p005/                — curated per-class GeoJSON + report + summary\n  enriched_t0p005/                    — adm0–adm4 GeoJSON annotated with PSGC\n  raw_t0p005/                         — NAMRIA-converted GeoJSON, pre-enrichment\nEach pipeline stage is documented under Pipeline A and Pipeline B; each output tier is documented under Boundaries and Change history (RDF).",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "Repository layout & file map"
+    ]
+  },
+  {
+    "objectID": "toolchain/cli.html",
+    "href": "toolchain/cli.html",
+    "title": "CLI reference (brgybnd)",
+    "section": "",
+    "text": "The brgybnd command-line tool (Click) exposes 10 subcommands covering both pipelines. Entry point: barangay_boundaries_repository/cli:cli.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "CLI reference (`brgybnd`)"
+    ]
+  },
+  {
+    "objectID": "toolchain/cli.html#commands",
+    "href": "toolchain/cli.html#commands",
+    "title": "CLI reference (brgybnd)",
+    "section": "Commands",
+    "text": "Commands\n\n\n\n\n\n\n\n\nCommand\nSource\nPurpose\n\n\n\n\nbrgybnd list\ncli.py:34\nList PSGC snapshots\n\n\nbrgybnd ingest --date YYYY-MM-DD\ncli.py:46\nParse datafile + changes + press release\n\n\nbrgybnd process --date YYYY-MM-DD [--full] [--format ...]\ncli.py:83\nBuild full RDF or delta\n\n\nbrgybnd process-all\ncli.py:158\nGenerate all deltas\n\n\nbrgybnd delta --from DATE --to DATE\ncli.py:234\nDelta between two dates\n\n\nbrgybnd convert-geo [--levels] [--tolerance]\ncli.py:262\nShapefile → GeoJSON\n\n\nbrgybnd validate --input FILE\ncli.py:323\nValidate RDF + ORG conformance\n\n\nbrgybnd coverage --date DATE\ncli.py:353\nPSGC vs GeoJSON coverage\n\n\nbrgybnd enrich --date DATE\ncli.py:515\nEnrich GeoJSON with PSGC IDs\n\n\nbrgybnd build-hierarchical --date YYYY-MM-DD [--skip-...]\ncli.py:566\nRun convert → enrich → classify → split, writes hierarchical_t0p005/",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "CLI reference (`brgybnd`)"
+    ]
+  },
+  {
+    "objectID": "toolchain/cli.html#examples",
+    "href": "toolchain/cli.html#examples",
+    "title": "CLI reference (brgybnd)",
+    "section": "Examples",
+    "text": "Examples\nEach command writes into a YYYY-MM-DD/ snapshot output directory.\nEnd-to-end Pipeline B (NAMRIA → curated per-class GeoJSON). Runs convert → enrich → classify → split and writes hierarchical_t0p005/:\nbrgybnd build-hierarchical --date 2023-10-24\nSingle-snapshot RDF delta (Pipeline A). Emits delta.{ttl,nt,jsonld} for one snapshot, in the chosen serialisation:\nbrgybnd process --date 2023-10-24 --format turtle\nAd-hoc delta between two snapshots, written to the --to directory:\nbrgybnd delta --from 2023-08-15 --to 2023-10-24\nSee Pipeline A and Pipeline B for what each run produces, and configuration for the env vars the ingest/enrich steps expect.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "CLI reference (`brgybnd`)"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html",
+    "href": "toolchain/huc-mapping.html",
+    "title": "HUC mapping generation",
+    "section": "",
+    "text": "generate_huc_mapping.py is a standalone script that produces namria/huc_adm2_mapping.json, the explicit lookup consumed by coverage.py and enrich.py in Pipeline B.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html#the-problem",
+    "href": "toolchain/huc-mapping.html#the-problem",
+    "title": "HUC mapping generation",
+    "section": "The problem",
+    "text": "The problem\nHighly Urbanized Cities have PSGC parent = region (not province), but NAMRIA places them under provinces. Metro Manila also lacks PSGC province-level units — NAMRIA’s 4 NCR legislative districts are mapped as virtual_provinces of type mm_district.\nSee the HUC mapping reference for the full domain explanation and the consumer-facing impact.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html#consumers",
+    "href": "toolchain/huc-mapping.html#consumers",
+    "title": "HUC mapping generation",
+    "section": "Consumers",
+    "text": "Consumers\nThe generated huc_adm2_mapping.json is consumed by:\n\ncoverage.py — so coverage stats count HUCs correctly.\nenrich.py — so each HUC feature gets the right psgc_code and parent.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html#huc_adm2_mapping.json-schema",
+    "href": "toolchain/huc-mapping.html#huc_adm2_mapping.json-schema",
+    "title": "HUC mapping generation",
+    "section": "huc_adm2_mapping.json schema",
+    "text": "huc_adm2_mapping.json schema\nThe file (committed to each snapshot’s raw_t0p005/) is keyed by NAMRIA pcode and carries seven sections:\n\n\n\n\n\n\n\nSection\nPurpose\n\n\n\n\nvirtual_provinces\nADM2 pcodes that are not real provinces: HUCs (e.g. Isabela, type: huc_isabela), the four Metro Manila legislative districts (type: mm_district), and the SGA cluster (type: sga). Each maps to {psgc_code, psgc_pcode, name, type}.\n\n\nmetro_manila_districts\neach NCR legislative-district pcode → the list of city pcodes it contains.\n\n\nhuc_cities_under_province\nfor each province pcode, the HUC cities NAMRIA nests under it (with their namria_adm3_pcode).\n\n\nnamria_adm3_to_psgc\ndirect ADM3 pcode → PSGC code lookup.\n\n\nbarmm_adm3_to_psgc\nBARMM-specific ADM3 → PSGC lookup (post-2023 SGA reorganization).\n\n\nsubmunicipality_parents\nManila sub-municipality parent pcodes.\n\n\ncross_parent_mapping\ncases where a feature’s parent differs between the two sources.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html#regenerating",
+    "href": "toolchain/huc-mapping.html#regenerating",
+    "title": "HUC mapping generation",
+    "section": "Regenerating",
+    "text": "Regenerating\ngenerate_huc_mapping.py is a standalone script — re-run it whenever the NAMRIA shapefiles or PSGC snapshot change:\npython barangay_boundaries_repository/generate_huc_mapping.py\nThe output is written to namria/huc_adm2_mapping.json and copied into the snapshot’s raw_t0p005/ during the convert stage of Pipeline B.",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "toolchain/huc-mapping.html#name-sanitization",
+    "href": "toolchain/huc-mapping.html#name-sanitization",
+    "title": "HUC mapping generation",
+    "section": "Name sanitization",
+    "text": "Name sanitization\nMatching NAMRIA names to PSGC names requires normalization — stripping \"(Capital)\" / \"(Pob.)\" suffixes, the \"City of\" prefix, diacritics, and punctuation. That step is duplicated in two places: generate_huc_mapping.py (≈ lines 180–193) and enrich.py (≈ lines 35–42). If you adjust the normalization rules, update both so the mapping file and the enrichment pass stay consistent (see AGENTS.md).",
+    "crumbs": [
+      "Toolchain",
+      "Reference",
+      "HUC mapping generation"
+    ]
+  },
+  {
+    "objectID": "changelog.html",
+    "href": "changelog.html",
+    "title": "Changelog",
+    "section": "",
+    "text": "This page tracks released versions of the dataset, documentation, and toolchain (dataset bundles, per-class GeoJSON, RDF deltas, and the docs site). For the 17-snapshot PSGC timeline and how each snapshot becomes an RDF delta, see PSGC snapshot history.\nReleases are tagged with CalVer of the form vYYYY.M.DD.PATCH (e.g. v2026.4.13.0). See Releases & versioning for the tag convention and the release workflow.",
+    "crumbs": [
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "changelog.html#v2026.4.13.0-2026-06-16",
+    "href": "changelog.html#v2026.4.13.0-2026-06-16",
+    "title": "Changelog",
+    "section": "v2026.4.13.0 — 2026-06-16",
+    "text": "v2026.4.13.0 — 2026-06-16\nInaugural data release, shipping the fully enriched 2023-10-24 snapshot.\n\nData: hierarchical per-class GeoJSON bundle (barangay-boundaries-2023-10-24-hierarchical.zip) plus individual per-class files (barangays, provinces, municipalities, highly_urbanized_cities, independent_component_cities, component_cities, regions, country, special_geographic_areas, submunicipalities, non_administrative, unresolved), classification_report.json, summary.md, and manifest.json checksums.\nRDF: PSGC change-history delta for snapshot 2023-10-24 (delta.{ttl,nt,jsonld}, W3C ORG).\nDocs: Quarto documentation site launched (Boundaries, Change history, Toolchain, References).\n\nSee the release on GitHub: v2026.4.13.0.",
+    "crumbs": [
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "rdf/querying.html",
+    "href": "rdf/querying.html",
+    "title": "Querying the PSGC RDF",
+    "section": "",
+    "text": "The delta files are plain RDF — load them with any RDF library and query with SPARQL.\nThe delta files are plain RDF — load them with any RDF library and query with SPARQL.",
+    "crumbs": [
+      "Change history",
+      "Using the data",
+      "Querying the PSGC RDF"
+    ]
+  },
+  {
+    "objectID": "rdf/querying.html#loading-with-rdflib",
+    "href": "rdf/querying.html#loading-with-rdflib",
+    "title": "Querying the PSGC RDF",
+    "section": "Loading with rdflib",
+    "text": "Loading with rdflib\nfrom rdflib import Graph\n\ng = Graph()\ng.parse(\"2023-10-24/delta.ttl\", format=\"turtle\")\nprint(len(g), \"triples loaded\")\nLoad several snapshots into one graph to query across time:\nimport glob\ng = Graph()\nfor ttl in glob.glob(\"20*/delta.ttl\"):\n    g.parse(ttl, format=\"turtle\")",
+    "crumbs": [
+      "Change history",
+      "Using the data",
+      "Querying the PSGC RDF"
+    ]
+  },
+  {
+    "objectID": "rdf/querying.html#sparql-recipes",
+    "href": "rdf/querying.html#sparql-recipes",
+    "title": "Querying the PSGC RDF",
+    "section": "SPARQL recipes",
+    "text": "SPARQL recipes\nAll three queries run against the committed YYYY-MM-DD/delta.ttl files. They use the predicates actually emitted — see Entity & event URIs for the shapes.\n1. List every creation event in a snapshot. The event type is an org:classification link to a psgc:concept/change-type/... concept:\nprefix org:  &lt;http://www.w3.org/ns/org#&gt;\nprefix dct:  &lt;http://purl.org/dc/terms/&gt;\nprefix psgc: &lt;https://psgc.gov.ph/&gt;\n\nselect ?event ?desc where {\n  ?event a org:ChangeEvent ;\n         org:classification psgc:concept/change-type/creation ;\n         dct:description ?desc .\n}\norder by ?event\n2. Trace an entity’s history across snapshots via its correspondence code. The 9-digit correspondence code (the identity that survives PSGC re-codings) is carried as a typed literal; org:originalOrganization/org:resultingOrganization link the two codes:\nprefix org:  &lt;http://www.w3.org/ns/org#&gt;\nprefix psgc: &lt;https://psgc.gov.ph/&gt;\nprefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;\n\nselect ?ev ?entity ?code where {\n  ?entity org:identifier \"137602033\"^^psgc:correspondence-code ;\n          org:identifier ?code .\n  filter(str(?code) != \"137602033\")   # the 10-digit PSGC code, not the correspondence code\n  # which code_change events touch this correspondence code (the event URI embeds the snapshot date)\n  ?ev org:originalOrganization|org:resultingOrganization ?entity .\n}\norder by ?ev\n3. Count events by type per snapshot. When several snapshots are loaded into one graph, group by the dct:date on each event and the change-type concept:\nprefix org: &lt;http://www.w3.org/ns/org#&gt;\nprefix dct: &lt;http://purl.org/dc/terms/&gt;\n\nselect ?date ?type (count(?ev) as ?n) where {\n  ?ev a org:ChangeEvent ;\n      dct:date ?date ;\n      org:classification ?typeConcept .\n  bind(strafter(str(?typeConcept), \"change-type/\") as ?type)\n}\ngroup by ?date ?type\norder by ?date ?type",
+    "crumbs": [
+      "Change history",
+      "Using the data",
+      "Querying the PSGC RDF"
+    ]
+  },
+  {
+    "objectID": "rdf/uris.html",
+    "href": "rdf/uris.html",
+    "title": "Entity & event URIs",
+    "section": "",
+    "text": "The RDF graph uses three URI patterns under the psgc: namespace.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Entity & event URIs"
+    ]
+  },
+  {
+    "objectID": "rdf/uris.html#uri-patterns",
+    "href": "rdf/uris.html#uri-patterns",
+    "title": "Entity & event URIs",
+    "section": "URI patterns",
+    "text": "URI patterns\npsgc:entity/{code}              — entity URI\npsgc:event/{date}/{seq}         — change event URI (seq = 0001, 0002, ...)\npsgc:concept/{scheme}/{value}   — concept URI (for levels, classes, etc.)\n\npsgc:entity/{code} — one per Philippine administrative unit, keyed by its 10-digit PSGC code (see PSGC code structure). Identity across code changes is tracked by the 9-digit correspondence code, not by this URI.\npsgc:event/{date}/{seq} — one per detected change in a snapshot’s delta; the {seq} suffix (0001, 0002, …) disambiguates multiple events on the same date.\npsgc:concept/{scheme}/{value} — concept URIs for levels (region/province/…/barangay), city classes (HUC/ICC/component), and other controlled vocabularies.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Entity & event URIs"
+    ]
+  },
+  {
+    "objectID": "rdf/uris.html#worked-examples",
+    "href": "rdf/uris.html#worked-examples",
+    "title": "Entity & event URIs",
+    "section": "Worked examples",
+    "text": "Worked examples\nPulled verbatim from 2023-10-24/delta.ttl.\nEntity URI. A barangay that was created in this snapshot — note both the 10-digit PSGC code and the 9-digit correspondence code on org:identifier, the name on skos:prefLabel, and its level (Bgy) plus urban/rural classification as org:classification concepts:\n&lt;https://psgc.gov.ph/entity/1381500036&gt; a org:OrganizationalUnit ;\n    dct:date \"2023-10-24\"^^xsd:date ;\n    schema1:population 15103 ;\n    skos:prefLabel \"Rizal\"@en ;\n    org:classification &lt;https://psgc.gov.ph/concept/geographic-level/Bgy&gt;,\n        &lt;https://psgc.gov.ph/concept/urban-rural/U&gt; ;\n    org:identifier \"137602033\"^^xsd:string,\n        \"1381500036\"^^xsd:string,\n        \"137602033\"^^psgc:correspondence-code .\nCreation event URI. A creation carries only the resulting organization:\n&lt;https://psgc.gov.ph/event/2023-10-24/0000&gt; a org:ChangeEvent ;\n    dct:date \"2023-10-24\"^^xsd:date ;\n    dct:description \"Aniban 1 (Bgy) created\"@en ;\n    org:classification &lt;https://psgc.gov.ph/concept/change-type/creation&gt; ;\n    org:resultingOrganization &lt;https://psgc.gov.ph/entity/0402103076&gt; .\nCode-change event URI. A re-coding carries both the original and the resulting entity, so a consumer can follow the identity from old code to new:\n&lt;https://psgc.gov.ph/event/2023-10-24/0082&gt; a org:ChangeEvent ;\n    dct:date \"2023-10-24\"^^xsd:date ;\n    dct:description \"PSGC code changed from 1380300033 to 1381500036\"@en ;\n    org:classification &lt;https://psgc.gov.ph/concept/change-type/code_change&gt; ;\n    org:originalOrganization &lt;https://psgc.gov.ph/entity/1380300033&gt; ;\n    org:resultingOrganization &lt;https://psgc.gov.ph/entity/1381500036&gt; .\nTransfer / source provenance. There are no PROV-O triples in the committed deltas linking events to their PSA press release — the builder supports dct:source (legal basis) and prov:generatedAtTime (effective date) but the source data does not populate them. Until that gap closes, trace an event to its snapshot by the dct:date and the date embedded in the event URI (/event/2023-10-24/...). See Change-event types › Known limitations.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Entity & event URIs"
+    ]
+  },
+  {
+    "objectID": "rdf/event-types.html",
+    "href": "rdf/event-types.html",
+    "title": "Change-event types",
+    "section": "",
+    "text": "compute_delta() (in rdf/delta.py) classifies the difference between two PSGC snapshots into a fixed set of canonical event types, emitted as psgc:event/... URIs (see URIs).",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Change-event types"
+    ]
+  },
+  {
+    "objectID": "rdf/event-types.html#canonical-event-types",
+    "href": "rdf/event-types.html#canonical-event-types",
+    "title": "Change-event types",
+    "section": "Canonical event types",
+    "text": "Canonical event types\nThe authoritative set is the ChangeEvent.event_type enum in models/schemas.py (10 types). compute_delta() actually emits these seven:\n\ncreation — a new entity appears in the later snapshot.\ndeletion — an entity disappears.\ncode_change — identity preserved (same correspondence code), but the 10-digit PSGC code changed.\nrenaming — name change, same identity.\nmerger — two or more entities combine into one.\nsplit — one entity divides into two or more.\ntransfer — an entity moves to a different parent unit.\n\nThe remaining three enum values — reclassification, reenlistment, and unknown — are modelled by the schema and accepted by the parser/RDF builder, but are not currently produced by compute_delta() (reclassifications, for example, surface as a creation+deletion pair today).",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Change-event types"
+    ]
+  },
+  {
+    "objectID": "rdf/event-types.html#per-type-triple-shape",
+    "href": "rdf/event-types.html#per-type-triple-shape",
+    "title": "Change-event types",
+    "section": "Per-type triple shape",
+    "text": "Per-type triple shape\nEvery event is an org:ChangeEvent with a dct:date (the snapshot date), a dct:description, and an org:classification link to a psgc:concept/change-type/{type} concept. The difference between types is which organization links they carry:\n\n\n\n\n\n\n\n\n\nType\norg:originalOrganization\norg:resultingOrganization\nMeaning\n\n\n\n\ncreation\n—\n✓ (1)\nnew entity appears\n\n\ndeletion\n✓ (1)\n—\nentity disappears\n\n\ncode_change\n✓ (1)\n✓ (1)\nsame identity, new 10-digit PSGC code\n\n\nrenaming\n✓ (1)\n✓ (1)\nname change, identity preserved\n\n\nmerger\n✓ (n)\n✓ (1)\nseveral entities combine into one\n\n\nsplit\n✓ (1)\n✓ (n)\none entity divides into several\n\n\ntransfer\n✓ (1)\n✓ (1)\nentity moves to a different parent\n\n\n\nWorked examples of these links are in Entity & event URIs.\nEach committed delta carries the legal basis for its events via dct:source, the effective date via prov:generatedAtTime, and a human-readable summary via dct:description.",
+    "crumbs": [
+      "Change history",
+      "Reference",
+      "Change-event types"
+    ]
+  },
+  {
+    "objectID": "DEPLOYMENT.html",
+    "href": "DEPLOYMENT.html",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "This Quarto site (quarto-docs/) is the live documentation, published to GitHub Pages from the gh-pages branch by .github/workflows/quarto-pages.yml. The workflow runs on every push to main that touches quarto-docs/** (and is also available as a manual workflow_dispatch).\nThe previous MkDocs Material site (docs/ + mkdocs.yml + .github/workflows/pages.yml) was removed during the cutover. The two could not deploy at the same time because they used mutually exclusive GitHub Pages source modes:\n\n\n\n\n\n\n\n\nPipeline\nPages source mode\nWorkflow\n\n\n\n\nMkDocs (removed)\nGitHub Actions artifact upload\n.github/workflows/pages.yml\n\n\nQuarto (live)\ngh-pages branch (push)\n.github/workflows/quarto-pages.yml\n\n\n\nGitHub Pages has one repo-wide source setting; only one of these modes can be active at a time.\n\n\n\nquarto-docs/ renders cleanly: quarto render quarto-docs/ → quarto-docs/_site/.\n.github/workflows/quarto-pages.yml is enabled and runs on push to main. It renders the site and force-pushes the output to the gh-pages branch via peaceiris/actions-gh-pages.\ndocs/, mkdocs.yml, and pages.yml have been deleted from the repo.\nGitHub Pages source must point at the gh-pages branch / / (root) folder (see “Required GitHub Pages settings” below).\n\n\n\n\nquarto preview quarto-docs/\nOpens a local server (default http://localhost:4599). Check the light/dark toggle, the per-section sidebars (Data, References, root), the JSON-LD block on the landing page, the ::: {.panel-tabset} download tabs on every data page, and the Mermaid pipeline diagrams on the architecture page.\n\n\n\nThe Pages source is a repo-wide setting that cannot be changed from code. It must be set to the gh-pages branch once, after which the Quarto workflow keeps it current:\n\nSettings → Pages → Build and deployment → Source = Deploy from a branch.\nBranch = gh-pages, folder = / (root).\n\nIf the setting is still on “GitHub Actions” (the old MkDocs mode), the gh-pages branch pushed by the workflow will not be served until it is switched. The workflow does not create the branch until its first successful run.\n\n\n\n\nAutomatic — any push to main that changes quarto-docs/** or the workflow file triggers a rebuild and republish.\nManual — Actions → Quarto Pages → Run workflow (uses the workflow_dispatch trigger).\n\n\n\n\nOnce the workflow succeeds and the Pages source points at gh-pages, open the published Pages URL and check:\n\nLanding page renders with JSON-LD (view-source: for application/ld+json).\n/llms.txt and /robots.txt are served at the site root.\nNavbar and per-section sidebars navigate correctly.\nMermaid diagrams on /references/architecture.html render.\n\n\n\n\nThe old MkDocs URL scheme and the new Quarto URL scheme match at the section level except for the references, which moved under /references/:\n\n/psgc/ → /references/psgc/\n/huc-mapping/ → /references/huc-mapping/\n/citation/ → /references/citation/\n/data/ → /boundaries/\nThe architecture page is new (/references/architecture/).\n\nThe repo’s README.md and quarto-docs/llms.txt already point to the new paths.\n\n\n\nThe MkDocs sources are recoverable from git history (the cutover commit removed docs/, mkdocs.yml, and .github/workflows/pages.yml). To roll back:\n\nRestore the MkDocs files from the commit before the cutover:\ngit checkout &lt;pre-cutover-sha&gt; -- docs/ mkdocs.yml .github/workflows/pages.yml\nRe-enable .github/workflows/pages.yml in Actions (it is inactive once restored until its next push trigger).\nSwitch the Pages source back to GitHub Actions.\nDisable .github/workflows/quarto-pages.yml in Actions (or comment out the push: trigger).\nOptionally delete the gh-pages branch."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#current-state",
+    "href": "DEPLOYMENT.html#current-state",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "quarto-docs/ renders cleanly: quarto render quarto-docs/ → quarto-docs/_site/.\n.github/workflows/quarto-pages.yml is enabled and runs on push to main. It renders the site and force-pushes the output to the gh-pages branch via peaceiris/actions-gh-pages.\ndocs/, mkdocs.yml, and pages.yml have been deleted from the repo.\nGitHub Pages source must point at the gh-pages branch / / (root) folder (see “Required GitHub Pages settings” below)."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#local-preview",
+    "href": "DEPLOYMENT.html#local-preview",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "quarto preview quarto-docs/\nOpens a local server (default http://localhost:4599). Check the light/dark toggle, the per-section sidebars (Data, References, root), the JSON-LD block on the landing page, the ::: {.panel-tabset} download tabs on every data page, and the Mermaid pipeline diagrams on the architecture page."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#required-github-pages-settings-repo-owner-action",
+    "href": "DEPLOYMENT.html#required-github-pages-settings-repo-owner-action",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "The Pages source is a repo-wide setting that cannot be changed from code. It must be set to the gh-pages branch once, after which the Quarto workflow keeps it current:\n\nSettings → Pages → Build and deployment → Source = Deploy from a branch.\nBranch = gh-pages, folder = / (root).\n\nIf the setting is still on “GitHub Actions” (the old MkDocs mode), the gh-pages branch pushed by the workflow will not be served until it is switched. The workflow does not create the branch until its first successful run."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#triggering-a-deployment",
+    "href": "DEPLOYMENT.html#triggering-a-deployment",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "Automatic — any push to main that changes quarto-docs/** or the workflow file triggers a rebuild and republish.\nManual — Actions → Quarto Pages → Run workflow (uses the workflow_dispatch trigger)."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#verification-checklist",
+    "href": "DEPLOYMENT.html#verification-checklist",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "Once the workflow succeeds and the Pages source points at gh-pages, open the published Pages URL and check:\n\nLanding page renders with JSON-LD (view-source: for application/ld+json).\n/llms.txt and /robots.txt are served at the site root.\nNavbar and per-section sidebars navigate correctly.\nMermaid diagrams on /references/architecture.html render."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#redirect-considerations-from-the-mkdocs-site",
+    "href": "DEPLOYMENT.html#redirect-considerations-from-the-mkdocs-site",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "The old MkDocs URL scheme and the new Quarto URL scheme match at the section level except for the references, which moved under /references/:\n\n/psgc/ → /references/psgc/\n/huc-mapping/ → /references/huc-mapping/\n/citation/ → /references/citation/\n/data/ → /boundaries/\nThe architecture page is new (/references/architecture/).\n\nThe repo’s README.md and quarto-docs/llms.txt already point to the new paths."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#rollback-quarto-back-to-mkdocs",
+    "href": "DEPLOYMENT.html#rollback-quarto-back-to-mkdocs",
+    "title": "Quarto deployment & cutover runbook",
+    "section": "",
+    "text": "The MkDocs sources are recoverable from git history (the cutover commit removed docs/, mkdocs.yml, and .github/workflows/pages.yml). To roll back:\n\nRestore the MkDocs files from the commit before the cutover:\ngit checkout &lt;pre-cutover-sha&gt; -- docs/ mkdocs.yml .github/workflows/pages.yml\nRe-enable .github/workflows/pages.yml in Actions (it is inactive once restored until its next push trigger).\nSwitch the Pages source back to GitHub Actions.\nDisable .github/workflows/quarto-pages.yml in Actions (or comment out the push: trigger).\nOptionally delete the gh-pages branch."
+  },
+  {
+    "objectID": "references/psgc.html",
+    "href": "references/psgc.html",
+    "title": "PSGC code structure",
+    "section": "",
+    "text": "The Philippine Standard Geographic Code (PSGC) is a 10-digit hierarchical identifier maintained by the Philippine Statistics Authority (PSA). Each administrative unit occupies a fixed segment of the code.",
+    "crumbs": [
+      "References",
+      "PSGC code structure"
+    ]
+  },
+  {
+    "objectID": "references/psgc.html#the-10-digit-hierarchy",
+    "href": "references/psgc.html#the-10-digit-hierarchy",
+    "title": "PSGC code structure",
+    "section": "The 10-digit hierarchy",
+    "text": "The 10-digit hierarchy\nFormat: PPCCCMMLLL0 (the final digit is a check/reserved position).\n\n\n\n\n\n\n\n\n\n\nSegment\nDigits\nLevel\nExample code\nExample\n\n\n\n\nRegion\nPP\nADM1\n1300000000\nNational Capital Region (NCR)\n\n\nProvince\nPPCCC\nADM2\n0139000000\n(province segment)\n\n\nMunicipality/City\nPPCCCMMLL\nADM3\n1376020000\na municipality/city\n\n\nBarangay\nPPCCCMMLLL\nADM4\n1376020068\na barangay\n\n\n\n\nWorked example\n1339060014 decodes as:\n\n13 — NCR (region)\n1339 — City of Makati (province-level / HUC)\n133906 — City of Makati (municipality/city level)\n1339060014 — a specific barangay within Makati",
+    "crumbs": [
+      "References",
+      "PSGC code structure"
+    ]
+  },
+  {
+    "objectID": "references/psgc.html#correspondence-codes-9-digit-identity",
+    "href": "references/psgc.html#correspondence-codes-9-digit-identity",
+    "title": "PSGC code structure",
+    "section": "Correspondence codes (9-digit identity)",
+    "text": "Correspondence codes (9-digit identity)\nA 9-digit correspondence code tracks an entity’s identity across PSGC code changes. When a barangay is renamed, merged, split, or transferred, its 10-digit PSGC code may change but its 9-digit correspondence code stays stable. This repository uses correspondence codes to compute deltas between snapshots.",
+    "crumbs": [
+      "References",
+      "PSGC code structure"
+    ]
+  },
+  {
+    "objectID": "references/psgc.html#code-change-events-detected",
+    "href": "references/psgc.html#code-change-events-detected",
+    "title": "PSGC code structure",
+    "section": "Code-change events detected",
+    "text": "Code-change events detected\nThe RDF deltas (delta.{ttl,nt,jsonld}) classify changes into the canonical event types of the ChangeEvent.event_type enum — creation, deletion, transfer, renaming, merger, split, code_change, plus the model-only reclassification, reenlistment, and unknown. See change-event types for which of these compute_delta() actually emits.\nSee PSGC snapshot history for the 17 processed quarters.",
+    "crumbs": [
+      "References",
+      "PSGC code structure"
+    ]
+  },
+  {
+    "objectID": "references/citation.html",
+    "href": "references/citation.html",
+    "title": "Citation",
+    "section": "",
+    "text": "If this dataset supports your work, please cite it. The canonical citation is defined in CITATION.cff (GitHub’s “Cite this repository” button reads it automatically).",
+    "crumbs": [
+      "References",
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "references/citation.html#bibtex",
+    "href": "references/citation.html#bibtex",
+    "title": "Citation",
+    "section": "BibTeX",
+    "text": "BibTeX\n@misc{BalmeoBarangayBoundaries,\n  author       = {Balmeo, Manuel},\n  title        = {Philippine Barangay Boundaries GeoJSON with PSGC Codes and RDF Change History},\n  year         = {2026},\n  howpublished = {GitHub repository},\n  url          = {https://github.com/bendlikeabamboo/barangay-boundaries-repository},\n  note         = {Release v2026.4.13.0 (snapshot 2023-10-24); data: PSA PSGC snapshots and NAMRIA boundaries v2023-11-06},\n  license      = {MIT}\n}",
+    "crumbs": [
+      "References",
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "references/citation.html#apa",
+    "href": "references/citation.html#apa",
+    "title": "Citation",
+    "section": "APA",
+    "text": "APA\n\nBalmeo, M. (2026). Philippine Barangay Boundaries GeoJSON with PSGC Codes and RDF Change History (Release v2026.4.13.0, snapshot 2023-10-24) [Computer software]. GitHub. https://github.com/bendlikeabamboo/barangay-boundaries-repository",
+    "crumbs": [
+      "References",
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "references/citation.html#data-attribution",
+    "href": "references/citation.html#data-attribution",
+    "title": "Citation",
+    "section": "Data attribution",
+    "text": "Data attribution\nThis dataset redistributes and enriches government data. Please also credit the original sources:\n\nPhilippine Statistics Authority (PSA) — Philippine Standard Geographic Code (PSGC) snapshots. https://psa.gov.ph/classification/psgc/\nNAMRIA — Administrative-boundary shapefiles, version 2023-11-06. https://namria.gov.ph/",
+    "crumbs": [
+      "References",
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "references/citation.html#doi",
+    "href": "references/citation.html#doi",
+    "title": "Citation",
+    "section": "DOI",
+    "text": "DOI\nThis project is GitHub-only for now; a Zenodo DOI is a flagged future follow-up. Until then, the GitHub Release URL above is the persistent identifier.",
+    "crumbs": [
+      "References",
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "boundaries/properties.html",
+    "href": "boundaries/properties.html",
+    "title": "Feature properties & schema",
+    "section": "",
+    "text": "Every GeoJSON feature in the curated hierarchical per-class files carries a set of PSGC enrichment properties alongside the original NAMRIA source attributes.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Feature properties & schema"
+    ]
+  },
+  {
+    "objectID": "boundaries/properties.html#psgc-enrichment-properties",
+    "href": "boundaries/properties.html#psgc-enrichment-properties",
+    "title": "Feature properties & schema",
+    "section": "PSGC enrichment properties",
+    "text": "PSGC enrichment properties\nEach feature carries:\n\npsgc_id — stable entity URI\npsgc_code — 10-digit Philippine Standard Geographic Code\npsgc_name — canonical name\npsgc_status — e.g. existing\nmatch_confidence — exact | huc_map | fuzzy",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Feature properties & schema"
+    ]
+  },
+  {
+    "objectID": "boundaries/properties.html#source-namria-attributes",
+    "href": "boundaries/properties.html#source-namria-attributes",
+    "title": "Feature properties & schema",
+    "section": "Source NAMRIA attributes",
+    "text": "Source NAMRIA attributes\nThe original NAMRIA shapefile attributes are preserved on each feature (e.g. ADM4_EN, ADM4_PCODE, ADM3_EN, …), so a feature can be joined back to either the PSGC or the NAMRIA identifier space.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Feature properties & schema"
+    ]
+  },
+  {
+    "objectID": "boundaries/properties.html#match-confidence",
+    "href": "boundaries/properties.html#match-confidence",
+    "title": "Feature properties & schema",
+    "section": "Match confidence",
+    "text": "Match confidence\nThe match_confidence field records how a feature’s PSGC code was resolved:\n\nexact — direct PSGC code match\nhuc_map — resolved via the HUC mapping\nfuzzy — matched by name similarity (lower confidence)\n\nSee HUC mapping for why HUCs need special handling, and coverage for per-level match statistics.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Feature properties & schema"
+    ]
+  },
+  {
+    "objectID": "boundaries/special-geographic-areas.html",
+    "href": "boundaries/special-geographic-areas.html",
+    "title": "Special geographic areas & non-standard classes",
+    "section": "",
+    "text": "This page documents the non-standard administrative classes shipped in the curated hierarchical output (2023-10-24/hierarchical_t0p005/). Beyond the standard per-class files (barangays, municipalities, cities, provinces, regions), the bundle also contains the files below.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Special geographic areas & non-standard classes"
+    ]
+  },
+  {
+    "objectID": "boundaries/special-geographic-areas.html#special-geographic-areas",
+    "href": "boundaries/special-geographic-areas.html#special-geographic-areas",
+    "title": "Special geographic areas & non-standard classes",
+    "section": "Special Geographic Areas",
+    "text": "Special Geographic Areas\nSpecial Geographic Areas (SGAs) are nine units created under BARMM (Bangsamoro Autonomous Region in Muslim Mindanao) legislation (the 2023 SGA Act) from barangays in North Cotabato that voted to join the BARMM. They sit outside the standard region → province → municipality → barangay hierarchy — they have no province or municipality parent — so they get their own class. Their PSGC codes share the 19999... prefix.\n\nspecial_geographic_areas.geojson — the 9 SGAs (snapshot 2023-10-24).\n\ncurl -O https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/special_geographic_areas.geojson",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Special geographic areas & non-standard classes"
+    ]
+  },
+  {
+    "objectID": "boundaries/special-geographic-areas.html#other-non-standard-files",
+    "href": "boundaries/special-geographic-areas.html#other-non-standard-files",
+    "title": "Special geographic areas & non-standard classes",
+    "section": "Other non-standard files",
+    "text": "Other non-standard files\n\n\n\nFile\nFeatures\nWhat it is\n\n\n\n\ncountry.geojson\n3,640\nthe national boundary (ADM0) — a single country represented as many polygons (islands)\n\n\nnon_administrative.geojson\n20\nfeatures that map to no standard PSGC level — the four NCR legislative districts, represented as mm_district virtual provinces (see HUC mapping)\n\n\nunresolved.geojson\n6\nfeatures that could not be matched to any PSGC entity (see coverage)\n\n\nsubmunicipalities.geojson\n0\nManila’s 14 sub-municipalities — empty, because NAMRIA publishes no sub-municipality polygon layer (they exist only as barangay parents)\n\n\n\nFeature counts are from summary.md.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Special geographic areas & non-standard classes"
+    ]
+  },
+  {
+    "objectID": "boundaries/raw.html",
+    "href": "boundaries/raw.html",
+    "title": "Raw pipeline stage (raw_t0p005/)",
+    "section": "",
+    "text": "The raw tier is the intermediate source stage of Pipeline B: NAMRIA shapefiles converted to GeoJSON by namria_converter.py, before any PSGC enrichment. It is kept in-repo for traceability — most users should use the curated hierarchical per-class files instead.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Raw pipeline stage (`raw_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/raw.html#what-it-is",
+    "href": "boundaries/raw.html#what-it-is",
+    "title": "Raw pipeline stage (raw_t0p005/)",
+    "section": "What it is",
+    "text": "What it is\nadm0–adm4.geojson — the NAMRIA administrative-boundary shapefiles (v2023-11-06), converted to GeoJSON and simplified (Douglas-Peucker, default tolerance 0.005°). No PSGC properties are present yet; only the original NAMRIA attributes.\n\n\n\n\n\n\nNote\n\n\n\nIntermediate pipeline stage — most users want the curated hierarchical per-class files instead.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Raw pipeline stage (`raw_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/raw.html#file-inventory",
+    "href": "boundaries/raw.html#file-inventory",
+    "title": "Raw pipeline stage (raw_t0p005/)",
+    "section": "File inventory",
+    "text": "File inventory\nKept in-repo at 2023-10-24/raw_t0p005/ for traceability:\n\n\n\nFile\nContents\n\n\n\n\nadm0.geojson–adm4.geojson\nNAMRIA boundaries (shapefile v2023-11-06) converted to GeoJSON and simplified; original NAMRIA attributes only, no PSGC properties yet\n\n\nhuc_adm2_mapping.json\nthe HUC / Metro-Manila-district / SGA lookup used to reconcile parents (see HUC mapping generation)\n\n\ndiff.json\nconversion reconciliation diff\n\n\nsummary.md\nhuman-readable conversion summary\n\n\n\nThe conversion runs Douglas-Peucker simplification at a default tolerance of 0.005° (hence the _t0p005 directory name). Full parameters are in Pipeline B.",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Raw pipeline stage (`raw_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/raw.html#re-running-with-a-different-tolerance",
+    "href": "boundaries/raw.html#re-running-with-a-different-tolerance",
+    "title": "Raw pipeline stage (raw_t0p005/)",
+    "section": "Re-running with a different tolerance",
+    "text": "Re-running with a different tolerance\nbrgybnd convert-geo --tolerance 0.01",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Raw pipeline stage (`raw_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/raw.html#download-in-repo",
+    "href": "boundaries/raw.html#download-in-repo",
+    "title": "Raw pipeline stage (raw_t0p005/)",
+    "section": "Download (in-repo)",
+    "text": "Download (in-repo)\ncurl -O https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm4.geojson",
+    "crumbs": [
+      "Boundaries",
+      "Pipeline stages",
+      "Raw pipeline stage (`raw_t0p005/`)"
+    ]
+  },
+  {
+    "objectID": "boundaries/provinces.html",
+    "href": "boundaries/provinces.html",
+    "title": "Provinces",
+    "section": "",
+    "text": "Download all 82 Philippine province boundaries as GeoJSON, each polygon tagged with its canonical PSGC code. Snapshot 2023-10-24.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Provinces"
+    ]
+  },
+  {
+    "objectID": "boundaries/provinces.html#download",
+    "href": "boundaries/provinces.html#download",
+    "title": "Provinces",
+    "section": "Download",
+    "text": "Download\n\nHierarchical (curated / recommended)Enriched (pipeline stage)Raw (pipeline stage)\n\n\nPer-class extract:\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/provinces.geojson\n\n\nADM2 file, in-repo only (provinces plus province-placed HUC/MM-district units):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm2.geojson\n\n\nNAMRIA-converted, pre-enrichment (in-repo):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm2.geojson\n\n\n\nThe enriched and raw tabs above are intermediate pipeline stages; see Releases & versioning for the tag convention and the in-repo stage paths.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Provinces"
+    ]
+  },
+  {
+    "objectID": "boundaries/provinces.html#coverage",
+    "href": "boundaries/provinces.html#coverage",
+    "title": "Provinces",
+    "section": "Coverage",
+    "text": "Coverage\n\n\n\nMetric\nValue\n\n\n\n\nPSGC provinces\n82\n\n\nPolygons\n82\n\n\nMatched\n82\n\n\nCoverage\n100.000%",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Provinces"
+    ]
+  },
+  {
+    "objectID": "boundaries/provinces.html#note-on-adm2",
+    "href": "boundaries/provinces.html#note-on-adm2",
+    "title": "Provinces",
+    "section": "Note on ADM2",
+    "text": "Note on ADM2\n\n\n\n\n\n\nNote\n\n\n\nNAMRIA’s ADM2 layer contains 88 features: the 82 provinces plus province-level placements of some HUCs and Metro Manila districts. The huc_adm2_mapping.json file reconciles these to PSGC parents.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Provinces"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html",
+    "href": "boundaries/barangays.html",
+    "title": "Barangays",
+    "section": "",
+    "text": "Download all Philippine barangay boundaries as one GeoJSON file, every polygon tagged with its canonical PSGC code. With 42,026 barangay polygons (snapshot 2023-10-24), this is the lowest-level administrative boundary dataset for the Philippines.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html#download",
+    "href": "boundaries/barangays.html#download",
+    "title": "Barangays",
+    "section": "Download",
+    "text": "Download\nThe barangay file is available through all three pipeline tiers. The Hierarchical tab is the curated, recommended download; Enriched and Raw are intermediate pipeline stages documented for traceability.\n\nHierarchical (curated / recommended)Enriched (pipeline stage)Raw (pipeline stage)\n\n\nPer-class extract — barangays only:\ncurl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson\n\n\nADM4 file with PSGC codes (in-repo only):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm4.geojson\n\n\nNAMRIA-converted, pre-enrichment (in-repo):\ncurl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm4.geojson\n\n\n\nThe enriched and raw tabs above are intermediate pipeline stages; see Releases & versioning for the tag convention and the in-repo stage paths.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html#coverage-adm4",
+    "href": "boundaries/barangays.html#coverage-adm4",
+    "title": "Barangays",
+    "section": "Coverage (ADM4)",
+    "text": "Coverage (ADM4)\n\n\n\nMetric\nValue\n\n\n\n\nPSGC barangays\n42,010\n\n\nNAMRIA polygons\n41,825\n\n\nMatched\n41,803\n\n\nCoverage\n99.947%\n\n\nExact matches\n38,771\n\n\nFuzzy matches\n3,255",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html#properties-per-feature",
+    "href": "boundaries/barangays.html#properties-per-feature",
+    "title": "Barangays",
+    "section": "Properties per feature",
+    "text": "Properties per feature\nEach barangay feature includes psgc_code (10-digit), psgc_name, psgc_status, match_confidence, plus the original NAMRIA attributes (e.g. ADM4_EN, ADM4_PCODE).",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html#use-it",
+    "href": "boundaries/barangays.html#use-it",
+    "title": "Barangays",
+    "section": "Use it",
+    "text": "Use it\nLoad into geopandas, QGIS, or any GeoJSON reader, then join on psgc_code to census, health, election, or financial data keyed by Philippine Standard Geographic Code.",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/barangays.html#limitations",
+    "href": "boundaries/barangays.html#limitations",
+    "title": "Barangays",
+    "section": "Limitations",
+    "text": "Limitations\n\n\n\n\n\n\nWarning\n\n\n\nCoverage gaps in this barangay layer:\n\n~198 PSGC barangays (mostly in BARMM and Metro Manila) — and ~230 PSGC entities in total — have no NAMRIA polygon.\n6 features could not be resolved to a PSGC entity (unresolved.geojson).",
+    "crumbs": [
+      "Boundaries",
+      "Per-class files",
+      "Barangays"
+    ]
+  },
+  {
+    "objectID": "boundaries/download.html",
+    "href": "boundaries/download.html",
+    "title": "Download & versioning",
+    "section": "",
+    "text": "The curated hierarchical per-class GeoJSON is published on GitHub Releases as a bundle, individual per-class files, and a checksum manifest.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Download & versioning"
+    ]
+  },
+  {
+    "objectID": "boundaries/download.html#release-assets",
+    "href": "boundaries/download.html#release-assets",
+    "title": "Download & versioning",
+    "section": "Release assets",
+    "text": "Release assets\n\n\n\n\n\n\n\n\nAsset / file\nContents\nFormat\n\n\n\n\nbarangay-boundaries-2023-10-24-hierarchical.zip\nper-class extracts (barangays, provinces, HUC/ICC/component cities, …)\nGeoJSON\n\n\nbarangays.geojson, provinces.geojson, …\nindividual per-class extracts\nGeoJSON\n\n\ncountry.geojson\nnational boundary (ADM0)\nGeoJSON\n\n\nsubmunicipalities.geojson\nManila sub-municipalities (empty — no NAMRIA layer)\nGeoJSON\n\n\nnon_administrative.geojson\nnon-standard features (NCR legislative districts / mm_district)\nGeoJSON\n\n\nunresolved.geojson\nfeatures that could not be matched to a PSGC entity\nGeoJSON\n\n\nclassification_report.json, summary.md\nper-class counts and a human-readable classification summary\nJSON / MD\n\n\nmanifest.json\nMD5 / SHA-256 / size / feature count per file\nJSON\n\n\ndelta.{ttl,nt,jsonld}\nPSGC change-history RDF (per snapshot)\nRDF / ORG\n\n\nenriched_t0p005/adm0–adm4.geojson\nintermediate enrichment stage (in-repo)\nGeoJSON\n\n\nraw_t0p005/adm0–adm4.geojson\nNAMRIA-converted, pre-enrichment (in-repo)\nGeoJSON",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Download & versioning"
+    ]
+  },
+  {
+    "objectID": "boundaries/download.html#release-vs-in-repo",
+    "href": "boundaries/download.html#release-vs-in-repo",
+    "title": "Download & versioning",
+    "section": "Release vs in-repo",
+    "text": "Release vs in-repo\nEach PSGC snapshot is published two ways. Use whichever fits your workflow.\n\n\n\n\n\n\n\n\nPath\nWhat you get\nWhen to use\n\n\n\n\nGitHub Release (versioned)\nPinned hierarchical bundle + individual per-class files + manifest.json\nCiting a specific snapshot, reproducible downloads, checksum verification\n\n\nIn-repo (always current)\nThe committed GeoJSON under 2023-10-24/{raw,enriched,hierarchical}_t0p005/, fetched via raw.githubusercontent.com\nPulling the latest tip of main, scripting against individual files, browsing source",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Download & versioning"
+    ]
+  },
+  {
+    "objectID": "boundaries/download.html#version-tags",
+    "href": "boundaries/download.html#version-tags",
+    "title": "Download & versioning",
+    "section": "Version tags",
+    "text": "Version tags\nEvery snapshot maps to a git tag of the form v&lt;YYYY.M.DD.PATCH&gt; (e.g. v2026.4.13.0). Pushing such a tag triggers the Release workflow, which builds and attaches the *-hierarchical.zip bundle, the individual per-class &lt;class&gt;.geojson files, and manifest.json to the matching GitHub Release:\ngit tag v2026.4.13.0\ngit push origin v2026.4.13.0\nRelease assets are version-pinned to that snapshot and never change. The in-repo files track main, so they reflect whatever is currently committed (typically the latest snapshot).",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Download & versioning"
+    ]
+  },
+  {
+    "objectID": "boundaries/download.html#per-class-download-snippets",
+    "href": "boundaries/download.html#per-class-download-snippets",
+    "title": "Download & versioning",
+    "section": "Per-class download snippets",
+    "text": "Per-class download snippets\nIndividual per-class download commands (curl) live on each per-class page: barangays · municipalities · cities · provinces · regions.",
+    "crumbs": [
+      "Boundaries",
+      "Using the data",
+      "Download & versioning"
+    ]
+  }
+]

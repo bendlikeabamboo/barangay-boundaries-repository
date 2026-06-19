@@ -1,0 +1,74 @@
+/* Custom CSS — Material-style hero buttons and brand accents.
+   Loaded after SCSS theme overrides via `css:` in _quarto.yml. */
+
+/* Hero / call-to-action buttons (replace mkdocs-material .md-button). */
+.btn-hero {
+  display: inline-block;
+  font-family: "Roboto", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0.7rem 1.5rem;
+  margin: 0.35rem 0.5rem 0.35rem 0;
+  border-radius: 0.35rem;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.05s ease;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+.btn-hero:active {
+  transform: translateY(1px);
+}
+.btn-hero-primary {
+  background-color: #3f51b5;
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(63, 81, 181, 0.25);
+}
+.btn-hero-primary:hover {
+  background-color: #303f9f;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-hero-secondary {
+  background-color: transparent;
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+.btn-hero-secondary:hover {
+  background-color: rgba(63, 81, 181, 0.08);
+  color: #303f9f;
+  text-decoration: none;
+}
+
+/* Hero button row container (index page only). */
+.hero-actions {
+  margin: 1.25rem 0 1.5rem;
+}
+
+/* Accent color for active sidebar / TOC links (deep orange). */
+.nav-link.active,
+.sidebar-link.active,
+#TOC .active > a {
+  border-left-color: #ff5722 !important;
+}
+
+/* Tighten the landing-page intro paragraph block. */
+.lead {
+  font-size: 1.1rem;
+}
+
+/* Dark mode button accents (darkly sets dark bg). */
+.quarto-dark .btn-hero-primary {
+  background-color: #5c6bc0;
+}
+.quarto-dark .btn-hero-primary:hover {
+  background-color: #3f51b5;
+}
+.quarto-dark .btn-hero-secondary {
+  color: #b0bec5;
+  border-color: #5c6bc0;
+}
+.quarto-dark .btn-hero-secondary:hover {
+  color: #cfd8dc;
+  background-color: rgba(92, 107, 192, 0.18);
+}
