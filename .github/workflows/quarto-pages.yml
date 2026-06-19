@@ -1,19 +1,16 @@
 name: Quarto Pages
 
-# Manual-only for now. This workflow publishes the `quarto-docs/` Quarto site to
-# the `gh-pages` branch, which collides with the live MkDocs `Pages` workflow
-# (`.github/workflows/pages.yml`) that uses the GitHub Actions artifact deploy
-# mode. The two are mutually exclusive at the repo level — do NOT enable the
-# `push` trigger until the cutover documented in `quarto-docs/DEPLOYMENT.md`
-# has been executed (disable pages.yml, switch Pages source to the gh-pages
-# branch).
+# Publishes the `quarto-docs/` Quarto site to the `gh-pages` branch, which is
+# the GitHub Pages source. This is the live documentation pipeline since the
+# MkDocs cutover (the old `docs/` + `mkdocs.yml` + `pages.yml` have been
+# retired). See `quarto-docs/DEPLOYMENT.md` for the deployment runbook.
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [main]
-  #   paths:
-  #     - "quarto-docs/**"
-  #     - ".github/workflows/quarto-pages.yml"
+  push:
+    branches: [main]
+    paths:
+      - "quarto-docs/**"
+      - ".github/workflows/quarto-pages.yml"
 
 permissions:
   contents: read

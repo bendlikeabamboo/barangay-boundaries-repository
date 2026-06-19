@@ -164,8 +164,9 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
+# Quarto site build output
+quarto-docs/_site/
+quarto-docs/.quarto/
 
 # mypy
 .mypy_cache/
