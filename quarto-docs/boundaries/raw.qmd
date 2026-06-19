@@ -1,0 +1,53 @@
+---
+title: Raw pipeline stage (`raw_t0p005/`)
+description: |
+  The raw intermediate pipeline stage: NAMRIA shapefiles converted to GeoJSON by
+  namria_converter.py (Douglas-Peucker simplify, 0.005°), before any PSGC enrichment.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The **raw** tier is the intermediate source stage of Pipeline B: NAMRIA shapefiles converted to
+GeoJSON by `namria_converter.py`, before any PSGC enrichment. It is kept in-repo for
+traceability — most users should use the curated [hierarchical per-class files](index.qmd) instead.
+
+## What it is
+
+`adm0`–`adm4.geojson` — the NAMRIA administrative-boundary shapefiles (v2023-11-06), converted to
+GeoJSON and simplified (Douglas-Peucker, default tolerance `0.005°`). No PSGC properties are
+present yet; only the original NAMRIA attributes.
+
+::: {.callout-note}
+Intermediate pipeline stage — most users want the curated
+[hierarchical per-class files](index.qmd) instead.
+:::
+
+## File inventory
+
+Kept in-repo at `2023-10-24/raw_t0p005/` for traceability:
+
+| File | Contents |
+|------|----------|
+| `adm0.geojson`–`adm4.geojson` | NAMRIA boundaries (shapefile v2023-11-06) converted to GeoJSON and simplified; original NAMRIA attributes only, **no PSGC properties yet** |
+| `huc_adm2_mapping.json` | the HUC / Metro-Manila-district / SGA lookup used to reconcile parents (see [HUC mapping generation](../toolchain/huc-mapping.qmd)) |
+| `diff.json` | conversion reconciliation diff |
+| `summary.md` | human-readable conversion summary |
+
+The conversion runs Douglas-Peucker simplification at a default tolerance of `0.005°` (hence the
+`_t0p005` directory name). Full parameters are in [Pipeline B](../toolchain/pipeline-geo.qmd).
+
+## Re-running with a different tolerance
+
+```bash
+brgybnd convert-geo --tolerance 0.01
+```
+
+## Download (in-repo)
+
+```bash
+curl -O https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm4.geojson
+```

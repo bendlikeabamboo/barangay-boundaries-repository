@@ -1,0 +1,69 @@
+---
+title: Pipeline A — PSGC → RDF
+description: |
+  Pipeline A of the brgybnd toolchain: PSA PSGC Excel/PDF snapshots ingested, normalized, built into
+  a W3C ORG RDF graph, and diffed into per-snapshot change-history deltas.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+    mermaid:
+      theme: default
+---
+
+Pipeline A turns **PSA** PSGC Excel/PDF snapshots into W3C ORG RDF linked data, and computes a
+per-snapshot change-history delta. Its end product is the `delta.{ttl,nt,jsonld}` files that live
+under each `YYYY-MM-DD/` snapshot directory — see the [Change history (RDF)](../rdf/index.qmd)
+section for consuming them.
+
+## Flow
+
+```{mermaid}
+flowchart LR
+  src["PSGC XLSX snapshots<br/>(~/commons/barangay/YYYY-MM-DD/)"]
+  scanner["ingest/scanner.py<br/>classify files by regex"]
+  xlsx["ingest/xlsx_parser.py<br/>PSGC sheet + changes; ~50 → 10 canonical change types"]
+  pdf["ingest/pdf_parser.py<br/>OCR text from press-release PDFs"]
+  agent["agent/pipeline.py<br/>(optional) LLM batch extraction"]
+  builder["rdf/builder.py<br/>ORG ontology graph"]
+  delta["rdf/delta.py<br/>compute_delta()"]
+  out[("YYYY-MM-DD/<br/>delta.{ttl,nt,jsonld}")]
+
+  src --> scanner --> xlsx --> pdf
+  pdf -.optional.-> agent --> builder
+  xlsx --> builder
+  builder --> delta --> out
+```
+
+## Stages
+
+- **`ingest/scanner.py`** — classifies snapshot files by regex (datafile, changes, press release,
+  province summary).
+
+- **`ingest/xlsx_parser.py`** — parses the PSGC sheet (entities) + changes sheets; normalizes ~50
+  raw change types to 10 canonical ones.
+
+- **`ingest/pdf_parser.py`** — OCR text from PDF press releases (kreuzberg).
+- **`agent/pipeline.py`** *(optional)* — LLM batch extraction (structured JSON output, batches of
+  50 entities / 100 changes). See [configuration](configuration.qmd) for the required env vars.
+
+- **`rdf/builder.py`** — builds the RDF graph on the ORG ontology.
+- **`rdf/delta.py`** — `compute_delta()` between two snapshots.
+
+## Detected change-event types
+
+`compute_delta()` detects: `creation`, `deletion`, `code_change`, `rename`, `merger`, `split`,
+`name_correction`, `transfer`. See [RDF event types](../rdf/event-types.qmd) and the
+[PSGC code structure](../references/psgc.qmd) reference (9-digit correspondence codes drive identity
+tracking across code changes).
+
+## Running it
+
+```bash
+brgybnd ingest --date 2023-10-24
+brgybnd process --date 2023-10-24 --format turtle
+```
+
+See the [CLI reference](cli.qmd) for all flags.

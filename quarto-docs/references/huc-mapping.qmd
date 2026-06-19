@@ -1,0 +1,65 @@
+---
+title: HUC mapping — Highly Urbanized Cities and the NAMRIA province mismatch
+description: |
+  How the barangay-boundaries-repository resolves the Highly Urbanized City (HUC) mismatch between
+  PSGC parent (region) and NAMRIA province placement, plus Metro Manila virtual provinces.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+## What is a Highly Urbanized City (HUC)?
+
+A **Highly Urbanized City (HUC)** is a Philippine city that is administratively independent of any
+province and reports directly to the **region**. Examples: Quezon City, Makati, Davao City, Cebu
+City.
+
+## The mismatch
+
+::: {.callout-warning}
+Two authoritative sources disagree about an HUC's parent:
+
+| Source                | HUC parent recorded as                          |
+|-----------------------|-------------------------------------------------|
+| **PSGC (PSA)**        | the **region**                                  |
+| **NAMRIA boundaries** | the **province** it sits geographically inside  |
+
+A naive parent-lookup that joins NAMRIA polygons to PSGC by province would therefore misclassify
+every HUC (e.g. place Makati under Rizal Province instead of NCR).
+:::
+
+## How this dataset resolves it
+
+The script `generate_huc_mapping.py` produces
+[`namria/huc_adm2_mapping.json`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/blob/main/namria/huc_adm2_mapping.json),
+an explicit lookup from each HUC to its correct PSGC parent. This mapping is consumed by:
+
+- `coverage.py` — so coverage stats count HUCs correctly.
+- `enrich.py` — so each HUC feature gets the right `psgc_code` and parent.
+
+## Metro Manila: virtual provinces
+
+Metro Manila (NCR) has **no PSGC province-level units** — it is regions → cities → barangays
+directly. NAMRIA, however, publishes the four **NCR legislative districts** as ADM2 polygons. To
+reconcile, this dataset maps those districts as **virtual provinces** of type `mm_district`:
+
+| NAMRIA feature                    | Mapped type                       |
+|-----------------------------------|-----------------------------------|
+| Metropolitan Manila First District  | `mm_district` (virtual province) |
+| Metropolitan Manila Second District | `mm_district` (virtual province) |
+| Metropolitan Manila Third District  | `mm_district` (virtual province) |
+| Metropolitan Manila Fourth District | `mm_district` (virtual province) |
+
+These four features appear in `non_administrative.geojson` because they are not standard PSGC
+provinces — they are documented honestly rather than silently dropped.
+
+## Match confidence
+
+Because HUCs require special handling, enriched features carry a `match_confidence` value
+(`exact` / `huc_map` / `fuzzy`) — see [feature properties](../boundaries/properties.qmd).
+
+For the 2023-10-24 snapshot, 31 of 34 HUCs matched exactly, 1 via the HUC map, and 2 via fuzzy
+matching.

@@ -1,0 +1,67 @@
+---
+title: HUC mapping generation
+description: |
+  How generate_huc_mapping.py builds huc_adm2_mapping.json to reconcile the Highly Urbanized City
+  and Metro Manila district mismatch between PSGC parents and NAMRIA ADM2 placements.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+`generate_huc_mapping.py` is a standalone script that produces
+[`namria/huc_adm2_mapping.json`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/blob/main/namria/huc_adm2_mapping.json),
+the explicit lookup consumed by `coverage.py` and `enrich.py` in [Pipeline B](pipeline-geo.qmd).
+
+## The problem
+
+Highly Urbanized Cities have PSGC parent = region (not province), but NAMRIA places them under
+provinces. Metro Manila also lacks PSGC province-level units — NAMRIA's 4 NCR legislative districts
+are mapped as `virtual_provinces` of type `mm_district`.
+
+See the [HUC mapping reference](../references/huc-mapping.qmd) for the full domain explanation and
+the consumer-facing impact.
+
+## Consumers
+
+The generated `huc_adm2_mapping.json` is consumed by:
+
+- `coverage.py` — so coverage stats count HUCs correctly.
+- `enrich.py` — so each HUC feature gets the right `psgc_code` and parent.
+
+## `huc_adm2_mapping.json` schema
+
+The file (committed to each snapshot's `raw_t0p005/`) is keyed by NAMRIA pcode and carries seven
+sections:
+
+| Section | Purpose |
+|---------|---------|
+| `virtual_provinces` | ADM2 pcodes that are not real provinces: HUCs (e.g. Isabela, `type: huc_isabela`), the four Metro Manila legislative districts (`type: mm_district`), and the SGA cluster (`type: sga`). Each maps to `{psgc_code, psgc_pcode, name, type}`. |
+| `metro_manila_districts` | each NCR legislative-district pcode → the list of city pcodes it contains. |
+| `huc_cities_under_province` | for each province pcode, the HUC cities NAMRIA nests under it (with their `namria_adm3_pcode`). |
+| `namria_adm3_to_psgc` | direct ADM3 pcode → PSGC code lookup. |
+| `barmm_adm3_to_psgc` | BARMM-specific ADM3 → PSGC lookup (post-2023 SGA reorganization). |
+| `submunicipality_parents` | Manila sub-municipality parent pcodes. |
+| `cross_parent_mapping` | cases where a feature's parent differs between the two sources. |
+
+## Regenerating
+
+`generate_huc_mapping.py` is a standalone script — re-run it whenever the NAMRIA shapefiles or PSGC
+snapshot change:
+
+```bash
+python barangay_boundaries_repository/generate_huc_mapping.py
+```
+
+The output is written to `namria/huc_adm2_mapping.json` and copied into the snapshot's
+`raw_t0p005/` during the convert stage of [Pipeline B](pipeline-geo.qmd).
+
+## Name sanitization
+
+Matching NAMRIA names to PSGC names requires normalization — stripping `"(Capital)"` / `"(Pob.)"`
+suffixes, the `"City of"` prefix, diacritics, and punctuation. That step is **duplicated** in two
+places: `generate_huc_mapping.py` (≈ lines 180–193) and `enrich.py` (≈ lines 35–42). If you adjust
+the normalization rules, update **both** so the mapping file and the enrichment pass stay consistent
+(see `AGENTS.md`).

@@ -1,0 +1,37 @@
+---
+title: Changelog
+description: |
+  Versioned changelog for the barangay-boundaries-repository dataset, documentation, and toolchain.
+  Per-snapshot PSGC timeline lives in the Change history (RDF) section.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+This page tracks **released versions** of the dataset, documentation, and toolchain (dataset
+bundles, per-class GeoJSON, RDF deltas, and the docs site). For the 17-snapshot PSGC timeline and
+how each snapshot becomes an RDF delta, see [PSGC snapshot history](rdf/snapshots.qmd).
+
+Releases are tagged with CalVer of the form **`vYYYY.M.DD.PATCH`** (e.g. `v2026.4.13.0`). See
+[Releases & versioning](boundaries/download.qmd) for the tag convention and the release workflow.
+
+## v2026.4.13.0 — 2026-06-16
+
+Inaugural data release, shipping the fully enriched `2023-10-24` snapshot.
+
+- **Data:** hierarchical per-class GeoJSON bundle (`barangay-boundaries-2023-10-24-hierarchical.zip`)
+  plus individual per-class files (`barangays`, `provinces`, `municipalities`,
+  `highly_urbanized_cities`, `independent_component_cities`, `component_cities`, `regions`,
+  `country`, `special_geographic_areas`, `submunicipalities`, `non_administrative`,
+  `unresolved`), `classification_report.json`, `summary.md`, and `manifest.json` checksums.
+
+- **RDF:** PSGC change-history delta for snapshot `2023-10-24`
+  (`delta.{ttl,nt,jsonld}`, W3C ORG).
+
+- **Docs:** Quarto documentation site launched (Boundaries, Change history, Toolchain, References).
+
+See the release on GitHub:
+[`v2026.4.13.0`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0).

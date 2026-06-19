@@ -1,0 +1,64 @@
+---
+title: Download & versioning
+description: |
+  How to download the curated hierarchical Philippine boundaries GeoJSON — GitHub Release bundle,
+  individual per-class files, checksum manifest — and the vYYYY.M.DD.PATCH version-tag convention.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The curated **hierarchical per-class GeoJSON** is published on
+[GitHub Releases](https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases) as a
+bundle, individual per-class files, and a checksum manifest.
+
+## Release assets
+
+| Asset / file                                          | Contents                                                              | Format    |
+|-------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+| `barangay-boundaries-2023-10-24-hierarchical.zip`     | per-class extracts (barangays, provinces, HUC/ICC/component cities, …)| GeoJSON   |
+| `barangays.geojson`, `provinces.geojson`, …           | individual per-class extracts                                         | GeoJSON   |
+| `country.geojson`                                     | national boundary (ADM0)                                              | GeoJSON   |
+| `submunicipalities.geojson`                           | Manila sub-municipalities (empty — no NAMRIA layer)                   | GeoJSON   |
+| `non_administrative.geojson`                          | non-standard features (NCR legislative districts / `mm_district`)     | GeoJSON   |
+| `unresolved.geojson`                                  | features that could not be matched to a PSGC entity                   | GeoJSON   |
+| `classification_report.json`, `summary.md`            | per-class counts and a human-readable classification summary          | JSON / MD |
+| `manifest.json`                                       | MD5 / SHA-256 / size / feature count per file                         | JSON      |
+| `delta.{ttl,nt,jsonld}`                               | PSGC change-history RDF (per snapshot)                                | RDF / ORG |
+| `enriched_t0p005/adm0`–`adm4.geojson`                 | intermediate enrichment stage (in-repo)                               | GeoJSON   |
+| `raw_t0p005/adm0`–`adm4.geojson`                      | NAMRIA-converted, pre-enrichment (in-repo)                            | GeoJSON   |
+
+## Release vs in-repo
+
+Each PSGC snapshot is published two ways. Use whichever fits your workflow.
+
+| Path | What you get | When to use |
+|------|--------------|-------------|
+| **GitHub Release** (versioned) | Pinned hierarchical bundle + individual per-class files + `manifest.json` | Citing a specific snapshot, reproducible downloads, checksum verification |
+| **In-repo** (always current) | The committed GeoJSON under `2023-10-24/{raw,enriched,hierarchical}_t0p005/`, fetched via `raw.githubusercontent.com` | Pulling the latest tip of `main`, scripting against individual files, browsing source |
+
+## Version tags
+
+Every snapshot maps to a git tag of the form **`v<YYYY.M.DD.PATCH>`** (e.g. `v2026.4.13.0`). Pushing
+such a tag triggers the `Release` workflow, which builds and attaches the `*-hierarchical.zip` bundle,
+the individual per-class `<class>.geojson` files, and `manifest.json` to the matching GitHub Release:
+
+```bash
+git tag v2026.4.13.0
+git push origin v2026.4.13.0
+```
+
+Release assets are version-pinned to that snapshot and never change. The in-repo files track `main`,
+so they reflect whatever is currently committed (typically the latest snapshot).
+
+## Per-class download snippets
+
+Individual per-class download commands (`curl`) live on each per-class page:
+[barangays](barangays.qmd) ·
+[municipalities](municipalities.qmd) ·
+[cities](cities.qmd) ·
+[provinces](provinces.qmd) ·
+[regions](regions.qmd).

@@ -1,0 +1,49 @@
+---
+title: Configuration
+description: |
+  Environment variables consumed by the brgybnd toolchain: OPENAI_API_KEY, OPENAI_BASE_URL,
+  OPENAI_MODEL, PSGC_DATA_DIR.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The `brgybnd` toolchain is configured via environment variables (read by `config.py` with
+`python-dotenv`). The LLM-related variables are only required for the optional
+[Pipeline A](pipeline-rdf.qmd) agent batch-extraction step.
+
+## Variables
+
+| Variable           | Default                                          | Purpose |
+|--------------------|--------------------------------------------------|---------|
+| `OPENAI_API_KEY`   | *(none — required for LLM agent pipeline)*       | API key for the OpenAI-compatible LLM client |
+| `OPENAI_BASE_URL`  | `https://api.z.ai/api/paas/v4/` (GLM API)        | Base URL of the OpenAI-compatible endpoint |
+| `OPENAI_MODEL`     | `glm-4.7`                                        | Model name for structured-output extraction |
+| `PSGC_DATA_DIR`    | `~/commons/barangay`                             | Directory holding the PSGC snapshot source files |
+
+## .env example
+
+A `.env` in the repository root (loaded by `config.py` via `python-dotenv`) only needs the data
+directory in practice; the three `OPENAI_*` vars are for the optional
+[Pipeline A](pipeline-rdf.qmd) LLM step and can be omitted for offline runs:
+
+```bash
+# required to point at the PSGC snapshot source tree
+PSGC_DATA_DIR=~/commons/barangay
+
+# optional — only for the LLM batch-extraction step of Pipeline A
+OPENAI_API_KEY=your-key
+OPENAI_BASE_URL=https://api.z.ai/api/paas/v4/
+OPENAI_MODEL=glm-4.7
+```
+
+`PSGC_DATA_DIR` is the **root** of the snapshot tree. `ingest/scanner.py` expects each snapshot as a
+per-quarter subdirectory named `YYYY-MM-DD/` (e.g. `2023-10-24/`) containing the PSA Excel datafile,
+the changes sheet(s), and the PDF press release — it classifies the files inside by filename regex.
+Pointing `PSGC_DATA_DIR` anywhere else just relocates that tree.
+
+The GLM defaults (`OPENAI_BASE_URL` / `OPENAI_MODEL`) target the Z.ai GLM endpoint; set them to any
+OpenAI-compatible base URL and structured-output model of your choice.

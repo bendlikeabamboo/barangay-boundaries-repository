@@ -1,0 +1,60 @@
+---
+title: Regions
+description: |
+  Download all 17 Philippine region boundaries as GeoJSON enriched with PSGC codes, derived from
+  NAMRIA shapefiles and PSA PSGC snapshots.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Download **all 17 Philippine region boundaries** (including NCR, BARMM, and the provinces-acting-as
+regions) as GeoJSON, each polygon tagged with its **PSGC code**.
+
+## Download
+
+::: {.panel-tabset}
+
+## Hierarchical (curated / recommended)
+
+Per-class extract:
+
+```bash
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/regions.geojson
+```
+
+## Enriched (pipeline stage)
+
+ADM1 file with PSGC codes (in-repo only):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm1.geojson
+```
+
+## Raw (pipeline stage)
+
+NAMRIA-converted, pre-enrichment (in-repo):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm1.geojson
+```
+
+:::
+
+The enriched and raw tabs above are intermediate pipeline stages; see
+[Releases & versioning](download.qmd) for the tag convention and the in-repo stage paths.
+
+## Coverage
+
+| Metric        | Value   |
+|---------------|--------:|
+| PSGC regions  | 17      |
+| Polygons      | 17      |
+| Matched       | 17      |
+| Coverage      | 100.000%|
+
+Regions are ADM1-level units. Each region's PSGC code occupies the first two digits (`PP`) of the
+10-digit PSGC hierarchy — see [PSGC code structure](../references/psgc.qmd).

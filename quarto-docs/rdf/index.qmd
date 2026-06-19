@@ -1,0 +1,85 @@
+---
+title: Change history (RDF)
+description: |
+  The W3C ORG RDF change-history output of Pipeline A: what each per-snapshot delta.ttl / .nt /
+  .jsonld file contains, why it exists, and how it differs from the GeoJSON data product.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+This dataset publishes **two** data products. The [Boundaries (GeoJSON)](../boundaries/index.qmd)
+section covers the spatial polygons; **this section covers the linked-data change history** — the
+output of [Pipeline A](../toolchain/pipeline-rdf.qmd).
+
+## What the RDF is
+
+For every PSGC snapshot, Pipeline A emits a **delta** (`delta.ttl` / `delta.nt` / `delta.jsonld`)
+describing how Philippine administrative units changed relative to the previous snapshot: created,
+deleted, renamed, merged, split, transferred, reclassified, or re-coded. The deltas are serialized
+on the [W3C ORG ontology](https://www.w3.org/TR/vocab-org/) with PROV provenance and Dublin Core
+terms.
+
+## Why it exists
+
+PSGC codes are not stable: barangays are continually created, merged, split, renamed, transferred
+between parents, and re-coded. The RDF deltas let a downstream system track an entity's identity
+across quarters via the 9-digit **correspondence code** (see [PSGC code structure](../references/psgc.qmd))
+and answer questions like "what happened to barangay X between 2023 and 2024?".
+
+## What a delta file contains
+
+A walkthrough of [`2023-10-24/delta.ttl`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/blob/main/2023-10-24/delta.ttl),
+the delta for the 2023-10-24 snapshot. It carries three kinds of resources:
+
+**Change events** (`psgc:event/{date}/{seq}`) — typed `org:ChangeEvent`. Each carries the snapshot
+date (`dct:date`), a one-line human description (`dct:description`), the change type
+(`org:classification` → `psgc:concept/change-type/{type}`), and the entities involved via
+`org:originalOrganization` (entity removed/renamed-from) and/or `org:resultingOrganization` (entity
+created/renamed-to). For example, a code change:
+
+```turtle
+<https://psgc.gov.ph/event/2023-10-24/0082> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300033 to 1381500036"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+```
+
+A creation carries only `org:resultingOrganization`; a deletion carries only
+`org:originalOrganization`.
+
+**Entities** (`psgc:entity/{code}`) — the units touched by the delta. The 10-digit PSGC code and the
+9-digit **correspondence code** (identity that survives re-codings) are both recorded on
+`org:identifier`, the name on `skos:prefLabel`, and population on `schema:population`:
+
+```turtle
+<https://psgc.gov.ph/entity/1381500036> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 15103 ;
+    skos:prefLabel "Rizal"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602033"^^xsd:string,
+        "1381500036"^^xsd:string,
+        "137602033"^^psgc:correspondence-code .
+```
+
+**Concepts** (`psgc:concept/{scheme}/{value}`) — `skos:Concept` nodes for the controlled vocabularies
+used in the delta: `change-type/` (creation, deletion, code_change, …), `geographic-level/` (Bgy,
+Mun, …) and `urban-rural/` (Urban/Rural), some with `skos:prefLabel` labels.
+
+This snapshot's 92 events break down as 29 creations, 55 deletions, and 11 code changes — a single
+quarter's worth of barangay creation/deletion/re-coding events.
+
+See also:
+
+- [Ontology & namespaces](ontology.qmd)
+- [Entity & event URIs](uris.qmd)
+- [Change-event types](event-types.qmd)
+- [Serialisations](serialisations.qmd)
+- [Querying](querying.qmd)

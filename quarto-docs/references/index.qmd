@@ -1,0 +1,21 @@
+---
+title: References
+description: |
+  Cross-cutting reference material for the barangay-boundaries-repository: PSGC code structure, HUC
+  mapping, and citation.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Cross-cutting look-up material that applies across the [Boundaries](../boundaries/index.qmd),
+[Change history (RDF)](../rdf/index.qmd), and [Toolchain](../toolchain/index.qmd) sections.
+
+- [PSGC code structure](psgc.qmd) — the 10-digit hierarchical code, decoded.
+- [HUC mapping](huc-mapping.qmd) — the Highly Urbanized City / Metro Manila mismatch and how it is
+  resolved.
+
+- [Citation](citation.qmd) — how to cite this dataset.

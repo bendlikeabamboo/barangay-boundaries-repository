@@ -1,0 +1,42 @@
+---
+title: Special geographic areas & non-standard classes
+description: |
+  Philippine special geographic areas (BARMM), Manila sub-municipalities, and other non-standard
+  classes as per-class GeoJSON extracts, enriched with PSGC codes.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+This page documents the non-standard administrative classes shipped in the curated hierarchical
+output (`2023-10-24/hierarchical_t0p005/`). Beyond the standard per-class files
+([barangays](barangays.qmd), [municipalities](municipalities.qmd), [cities](cities.qmd),
+[provinces](provinces.qmd), [regions](regions.qmd)), the bundle also contains the files below.
+
+## Special Geographic Areas
+
+**Special Geographic Areas (SGAs)** are nine units created under BARMM (Bangsamoro Autonomous Region
+in Muslim Mindanao) legislation (the 2023 SGA Act) from barangays in North Cotabato that voted to
+join the BARMM. They sit **outside** the standard region → province → municipality → barangay
+hierarchy — they have no province or municipality parent — so they get their own class. Their PSGC
+codes share the `19999...` prefix.
+
+- `special_geographic_areas.geojson` — the 9 SGAs (snapshot `2023-10-24`).
+
+```bash
+curl -O https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/special_geographic_areas.geojson
+```
+
+## Other non-standard files
+
+| File | Features | What it is |
+|------|---------:|------------|
+| `country.geojson` | 3,640 | the national boundary (ADM0) — a single country represented as many polygons (islands) |
+| `non_administrative.geojson` | 20 | features that map to no standard PSGC level — the four NCR legislative districts, represented as `mm_district` virtual provinces (see [HUC mapping](../references/huc-mapping.qmd)) |
+| `unresolved.geojson` | 6 | features that could not be matched to any PSGC entity (see [coverage](coverage.qmd)) |
+| `submunicipalities.geojson` | 0 | Manila's 14 sub-municipalities — **empty**, because NAMRIA publishes no sub-municipality polygon layer (they exist only as barangay parents) |
+
+Feature counts are from [`summary.md`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/blob/main/2023-10-24/hierarchical_t0p005/summary.md).

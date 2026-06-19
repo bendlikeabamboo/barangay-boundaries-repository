@@ -147,7 +147,7 @@ The Philippine Standard Geographic Code is a **10-digit hierarchical identifier*
 | `PPCCCMMLLL` | Barangay | `1339060014` — a barangay of Makati |
 
 A 9-digit **correspondence code** tracks entity identity across code changes (used to compute
-deltas). See [PSGC reference](https://bendlikeabamboo.github.io/barangay-boundaries-repository/psgc/)
+deltas). See [PSGC reference](https://bendlikeabamboo.github.io/barangay-boundaries-repository/references/psgc.html)
 for the full breakdown.
 
 ## The HUC problem
@@ -161,7 +161,7 @@ This repository resolves the mismatch with `namria/huc_adm2_mapping.json` (gener
 separately: it has no PSGC province-level units, so NAMRIA's four NCR legislative districts are
 mapped as **virtual provinces** of type `mm_district`.
 
-Read the full explainer → [HUC mapping](https://bendlikeabamboo.github.io/barangay-boundaries-repository/huc-mapping/).
+Read the full explainer → [HUC mapping](https://bendlikeabamboo.github.io/barangay-boundaries-repository/references/huc-mapping.html).
 
 ## Outputs / file map
 
@@ -185,14 +185,15 @@ Each snapshot directory (`YYYY-MM-DD/`) contains:
 fully enriched release) · `2024-01-23` · `2024-04-23` · `2024-05-08` · `2024-07-12` · `2024-10-18` ·
 `2025-01-30` · `2025-04-23` · `2025-08-29` · `2025-10-13` · `2026-01-13` · `2026-04-13`.
 
-Browse the full changelog →
-[snapshot history](https://bendlikeabamboo.github.io/barangay-boundaries-repository/changelog/).
+Browse the full snapshot timeline →
+[PSGC snapshot history](https://bendlikeabamboo.github.io/barangay-boundaries-repository/rdf/snapshots.html),
+or the [version changelog](https://bendlikeabamboo.github.io/barangay-boundaries-repository/changelog.html).
 
 ## Citation
 
 If this dataset supports your work, please cite it. See [`CITATION.cff`](CITATION.cff) (or use
 GitHub's **"Cite this repository"** button) and the
-[citation page](https://bendlikeabamboo.github.io/barangay-boundaries-repository/citation/) for
+[citation page](https://bendlikeabamboo.github.io/barangay-boundaries-repository/references/citation.html) for
 ready-to-paste BibTeX and APA entries.
 
 ## License

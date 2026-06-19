@@ -1,0 +1,53 @@
+---
+title: Repository layout & file map
+description: |
+  File map of the barangay-boundaries-repository: the Python package, prompts, NAMRIA shapefiles,
+  findings, and per-snapshot output directories (delta RDF + raw / enriched / hierarchical GeoJSON).
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+## File map
+
+| File                                   | Purpose                                                    |
+|----------------------------------------|------------------------------------------------------------|
+| `barangay_boundaries_repository/cli.py`| All CLI commands (Click)                                   |
+| `config.py`                            | Env-based settings (python-dotenv)                         |
+| `models/schemas.py`                    | Pydantic models (GeographicEntity, ChangeEvent, RdfTriple) |
+| `ingest/scanner.py`                    | Snapshot directory scanner                                 |
+| `ingest/xlsx_parser.py`                | PSGC datafile + changes parser (~50 change normalizations) |
+| `ingest/pdf_parser.py`                 | PDF press release text extraction                          |
+| `agent/client.py`                      | OpenAI-compatible LLM client (structured output, 3 retries)|
+| `agent/pipeline.py`                    | LLM batch extraction pipeline                              |
+| `prompts/base.py`                      | YAML prompt template loader                                |
+| `rdf/builder.py`                       | RdfBuilder (ORG ontology graph construction)               |
+| `rdf/delta.py`                         | `compute_delta()` between two snapshots (~410 lines)       |
+| `coverage.py`                          | PSGC vs GeoJSON pcode coverage                             |
+| `enrich.py`                            | GeoJSON feature enrichment with PSGC IDs                   |
+| `namria_converter.py`                  | Shapefile → GeoJSON converter                              |
+| `classifier.py`                        | Assigns PSGC type/class per feature (feeds splitter)       |
+| `splitter.py`                          | Splits enriched features into per-class files              |
+| `hierarchical.py`                      | Orchestrates classify → split → report (curated output)    |
+| `generate_huc_mapping.py`              | HUC-to-ADM2 mapping generator (standalone script)          |
+| `namria/huc_adm2_mapping.json`         | Generated mapping artifact                                 |
+
+## Repository layout
+
+```
+barangay_boundaries_repository/      — Python package (CLI + pipelines)
+prompts/                              — YAML LLM prompt templates
+namria/                               — NAMRIA shapefiles (v2023-11-06), ADM0-ADM4
+YYYY-MM-DD/                           — 17 snapshot output dirs:
+  delta.{ttl,nt,jsonld}               — PSGC change-history RDF
+  hierarchical_t0p005/                — curated per-class GeoJSON + report + summary
+  enriched_t0p005/                    — adm0–adm4 GeoJSON annotated with PSGC
+  raw_t0p005/                         — NAMRIA-converted GeoJSON, pre-enrichment
+```
+
+Each pipeline stage is documented under [Pipeline A](pipeline-rdf.qmd) and
+[Pipeline B](pipeline-geo.qmd); each output tier is documented under
+[Boundaries](../boundaries/index.qmd) and [Change history (RDF)](../rdf/index.qmd).

@@ -1,0 +1,142 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - llms.txt
+    - robots.txt
+
+website:
+  title: "PH Barangay Boundaries & PSGC"
+  site-url: "https://bendlikeabamboo.github.io/barangay-boundaries-repository/"
+  site-path: "/barangay-boundaries-repository/"
+  description: >-
+    Curated hierarchical Philippine barangay, municipality, city-class, province, and region
+    boundaries as per-class GeoJSON, enriched with canonical PSGC codes from PSA snapshots and
+    NAMRIA administrative-boundary shapefiles. PSGC change-history deltas published as W3C ORG RDF.
+  repo-url: "https://github.com/bendlikeabamboo/barangay-boundaries-repository"
+  repo-branch: main
+  repo-actions: [edit, source, issue]
+  favicon: _static/favicon.png
+  page-navigation: true
+  bread-crumbs: true
+  search:
+    location: navbar
+    type: overlay
+    show-item-context: true
+    copy-button: true
+  reader-mode: false
+
+  navbar:
+    background: primary
+    logo: _static/favicon.png
+    logo-alt: "Barangay Boundaries Repository"
+    title: "barangay-boundaries-repository"
+    search: true
+    left:
+      - text: "Boundaries"
+        href: boundaries/index.qmd
+      - text: "Change history"
+        href: rdf/index.qmd
+      - text: "Toolchain"
+        href: toolchain/index.qmd
+      - text: "References"
+        href: references/index.qmd
+      - text: "Changelog"
+        href: changelog.qmd
+
+  sidebar:
+    - id: root
+      contents:
+        - index.qmd
+        - changelog.qmd
+    - id: boundaries
+      title: "Boundaries (GeoJSON)"
+      contents:
+        - boundaries/index.qmd
+        - section: "Per-class files"
+          contents:
+            - boundaries/barangays.qmd
+            - boundaries/municipalities.qmd
+            - boundaries/cities.qmd
+            - boundaries/provinces.qmd
+            - boundaries/regions.qmd
+            - boundaries/special-geographic-areas.qmd
+        - section: "Pipeline stages"
+          contents:
+            - boundaries/enriched.qmd
+            - boundaries/raw.qmd
+        - section: "Using the data"
+          contents:
+            - boundaries/properties.qmd
+            - boundaries/download.qmd
+            - boundaries/coverage.qmd
+    - id: rdf
+      title: "Change history (RDF)"
+      contents:
+        - rdf/index.qmd
+        - rdf/snapshots.qmd
+        - section: "Reference"
+          contents:
+            - rdf/ontology.qmd
+            - rdf/uris.qmd
+            - rdf/event-types.qmd
+            - rdf/serialisations.qmd
+        - section: "Using the data"
+          contents:
+            - rdf/querying.qmd
+    - id: toolchain
+      title: "Toolchain"
+      contents:
+        - toolchain/index.qmd
+        - section: "Reference"
+          contents:
+            - toolchain/cli.qmd
+            - toolchain/configuration.qmd
+            - toolchain/huc-mapping.qmd
+            - toolchain/repo-layout.qmd
+        - section: "Pipelines"
+          contents:
+            - toolchain/pipeline-rdf.qmd
+            - toolchain/pipeline-geo.qmd
+    - id: references
+      title: "References"
+      contents:
+        - references/index.qmd
+        - references/psgc.qmd
+        - references/huc-mapping.qmd
+        - references/citation.qmd
+
+  page-footer:
+    left: |
+      &copy; 2026 Manuel Balmeo &middot; MIT (code) &middot; PSA & NAMRIA credited for data
+    right: |
+      Built with [Quarto](https://quarto.org).
+
+format:
+  html:
+    theme:
+      light: [cosmo, _static/styles.scss]
+      dark: [darkly, _static/styles.scss]
+    css: _static/custom.css
+    font: { google: [Roboto, "Roboto Mono"] }
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    anchor-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-link: true
+    code-tools: false
+    lightbox: auto
+    fig-responsive: true
+    html-math-method: plain
+    link-external-newwindow: true
+    link-external-icon: false
+    highlight-style: github
+    grid:
+      sidebar-width: 260px
+      body-width: 900px
+      margin-width: 250px
+
+execute:
+  freeze: auto

@@ -1,0 +1,75 @@
+---
+title: Ontology & namespaces
+description: |
+  The vocabularies used by the PSGC change-history RDF: W3C ORG, PSGC, Dublin Core Terms, PROV,
+  time, and schema.org, and how they combine.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The PSGC change-history RDF is built on the [W3C ORG ontology](https://www.w3.org/TR/vocab-org/)
+for organizational structure, with PROV for provenance, Dublin Core Terms for metadata, and
+per-snapshot PSGC concepts.
+
+## Namespaces
+
+Namespaces used across the delta files:
+
+- `org:` — [W3C ORG](https://www.w3.org/TR/vocab-org/) (FormalOrganization for Reg/Prov/City/Mun,
+  OrganizationalUnit for Bgy/SubMun)
+
+- `psgc:` — the project's own vocabulary (entity / event / concept URIs — see [URIs](uris.qmd))
+- `dct:` — [Dublin Core Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+  (title, source, legal basis metadata)
+
+- `prov:` — [PROV-O](https://www.w3.org/TR/prov-o/) provenance (linking events to their snapshot
+  and source PSA press release)
+
+- `time:` — temporal positioning of effective / plebiscite dates
+- `schema:` — [schema.org](https://schema.org/) supplementary terms
+
+## Ontology mapping
+
+### PSGC level → ORG class
+
+Each PSGC level is typed as one of two ORG classes (from `rdf/builder.py`):
+
+| PSGC level | ORG class | Typed as |
+|------------|-----------|----------|
+| Region (`Reg`) | `org:FormalOrganization` | autonomous top-level unit |
+| Province (`Prov`) | `org:FormalOrganization` | |
+| Municipality (`Mun`) | `org:FormalOrganization` | |
+| City (`City`) | `org:FormalOrganization` | |
+| Barangay (`Bgy`) | `org:OrganizationalUnit` | sub-unit |
+| Sub-municipality (`SubMun`) | `org:OrganizationalUnit` | sub-unit |
+
+> A **delta** only emits the entities touched by that quarter's changes, so a delta may contain only
+`OrganizationalUnit` instances (e.g. the 2023-10-24 delta is all barangays). The `--full` build
+emits the entire entity graph with both classes.
+
+### Hierarchy
+
+Parent/child relationships are derived from the [PSGC code structure](../references/psgc.qmd) and
+encoded with ORG containment predicates in full builds:
+
+- `org:hasSubOrganization` — FormalOrganization → FormalOrganization (e.g. region → province,
+  province → city/municipality).
+
+- `org:hasUnit` — FormalOrganization → OrganizationalUnit (e.g. municipality → barangay).
+
+### Change events
+
+Each change is an `org:ChangeEvent` typed via `org:classification` → a
+`psgc:concept/change-type/{type}` concept. The participating entities are attached with
+`org:originalOrganization` (the pre-change entity) and `org:resultingOrganization` (the post-change
+entity). See [Change-event types](event-types.qmd) for the per-type triple shape.
+
+### Provenance & metadata
+
+Each change event carries its provenance: `dct:source` for the legal basis (Republic Act number,
+Executive Order, plebiscite resolution, etc.), `prov:generatedAtTime` for the effective date, and
+`dct:description` for a human-readable summary of what changed and why.

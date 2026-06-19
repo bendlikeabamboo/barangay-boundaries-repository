@@ -1,0 +1,66 @@
+---
+title: Municipalities
+description: |
+  Download Philippine municipality boundaries (1,485 polygons) as GeoJSON enriched with PSGC codes
+  from NAMRIA shapefiles and PSA PSGC snapshots.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Download **Philippine municipality boundaries** as GeoJSON, each polygon enriched with its
+**PSGC code**. Snapshot `2023-10-24` contains 1,485 municipality polygons.
+
+## Download
+
+::: {.panel-tabset}
+
+## Hierarchical (curated / recommended)
+
+Per-class extract — municipalities only:
+
+```bash
+curl -LO https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/municipalities.geojson
+```
+
+## Enriched (pipeline stage)
+
+ADM3 file, in-repo only. Note: `adm3.geojson` contains municipalities **and** cities combined
+(see [city boundaries](cities.qmd)):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm3.geojson
+```
+
+## Raw (pipeline stage)
+
+NAMRIA-converted, pre-enrichment (in-repo; also municipalities + cities combined):
+
+```bash
+curl -LO https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/raw_t0p005/adm3.geojson
+```
+
+:::
+
+The enriched and raw tabs above are intermediate pipeline stages; see
+[Releases & versioning](download.qmd) for the tag convention and the in-repo stage paths.
+
+## Coverage
+
+| Metric              | Value |
+|---------------------|------:|
+| PSGC municipalities | 1,485 |
+| Polygons            | 1,485 |
+| Exact matches       | 1,467 |
+| Fuzzy matches       | 18    |
+
+Municipalities are ADM3-level units; cities are published separately by class (see
+[city boundaries](cities.qmd)).
+
+## Properties
+
+Each feature carries `psgc_code` (10-digit, municipality segment `PPCCCMMLL0`), `psgc_name`,
+`psgc_status`, `match_confidence`, and the source NAMRIA attributes.

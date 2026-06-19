@@ -1,0 +1,42 @@
+---
+title: Feature properties & schema
+description: |
+  Properties carried by every feature in the curated hierarchical Philippine boundaries GeoJSON:
+  psgc_id, psgc_code, psgc_name, psgc_status, match_confidence, plus source NAMRIA attributes.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Every GeoJSON feature in the curated hierarchical per-class files carries a set of **PSGC
+enrichment properties** alongside the original NAMRIA source attributes.
+
+## PSGC enrichment properties
+
+Each feature carries:
+
+- `psgc_id` — stable entity URI
+- `psgc_code` — 10-digit Philippine Standard Geographic Code
+- `psgc_name` — canonical name
+- `psgc_status` — e.g. `existing`
+- `match_confidence` — `exact` | `huc_map` | `fuzzy`
+
+## Source NAMRIA attributes
+
+The original NAMRIA shapefile attributes are preserved on each feature (e.g. `ADM4_EN`,
+`ADM4_PCODE`, `ADM3_EN`, …), so a feature can be joined back to either the PSGC or the NAMRIA
+identifier space.
+
+## Match confidence
+
+The `match_confidence` field records how a feature's PSGC code was resolved:
+
+- `exact` — direct PSGC code match
+- `huc_map` — resolved via the [HUC mapping](../references/huc-mapping.qmd)
+- `fuzzy` — matched by name similarity (lower confidence)
+
+See [HUC mapping](../references/huc-mapping.qmd) for why HUCs need special handling, and
+[coverage](coverage.qmd) for per-level match statistics.

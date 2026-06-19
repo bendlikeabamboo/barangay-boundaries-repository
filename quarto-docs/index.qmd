@@ -1,0 +1,151 @@
+---
+title: Philippine Boundaries & PSGC
+description: |
+  Download curated hierarchical Philippine barangay, municipality, city, province, and region
+  boundaries as per-class GeoJSON, enriched with canonical PSGC codes from PSA snapshots and
+  NAMRIA shapefiles.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+**Curated hierarchical Philippine administrative boundaries** as GeoJSON — barangays, municipalities,
+and cities split by legal class (highly urbanized, independent component, component), plus provinces,
+regions, and special geographic areas — each polygon annotated with its canonical **PSGC code**, name,
+and status. Generated from **PSA** Philippine Standard Geographic Code snapshots and **NAMRIA**
+administrative-boundary shapefiles, with the full quarterly change history published as
+**W3C ORG RDF linked data**. The `enriched` (`adm0`–`adm4`) and `raw` NAMRIA-converted files are kept
+as intermediate pipeline stages.
+
+- **Coverage:** 99.945% PSGC ↔ NAMRIA pcode match (snapshot `2023-10-24`)
+- **Barangays:** 42,026 polygons (NAMRIA; 42,010 PSGC entities — see [coverage](boundaries/coverage.qmd)) · **Provinces:** 82 · **Regions:** 17
+- **History:** 17 quarterly snapshots (2021-08-19 → 2026-04-13)
+- **License:** MIT (code); PSA & NAMRIA credited for data
+
+::: {.hero-actions}
+```{=html}
+<a class="btn-hero btn-hero-primary" href="https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases">⬇ Download from GitHub Releases</a>
+<a class="btn-hero btn-hero-secondary" href="https://github.com/bendlikeabamboo/barangay-boundaries-repository">★ View on GitHub</a>
+```
+:::
+
+## Pick your path
+
+This dataset ships **two** data products plus a full developer toolchain. Choose the section that
+matches what you need.
+
+::: {layout-ncol="3"}
+### [Boundaries (GeoJSON) ›](boundaries/index.qmd)
+
+Curated per-class Philippine boundary polygons (barangays, municipalities, cities by class,
+provinces, regions, special geographic areas), each tagged with its PSGC code. **For data
+consumers** — the 95% case.
+
+### [Change history (RDF) ›](rdf/index.qmd)
+
+The quarterly PSGC change history as W3C ORG linked data — creation, merger, split, transfer,
+rename, code-change events across 17 snapshots. **For linked-data / semantic users.**
+
+### [Toolchain ›](toolchain/index.qmd)
+
+The `brgybnd` CLI, the two pipelines (PSGC → RDF and NAMRIA → GeoJSON), data model, configuration,
+and repository layout. **For developers and reproducers.**
+:::
+
+Cross-cutting reference material (PSGC codes, HUC mapping, citation) lives under
+[References](references/index.qmd); dataset/version history lives in the
+[Changelog](changelog.qmd) and the per-snapshot timeline under [Change history (RDF)](rdf/snapshots.qmd).
+
+---
+
+```{=html}
+<!-- JSON-LD structured data: Dataset schema for Google Dataset Search. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Philippine Barangay Boundaries GeoJSON with PSGC Codes",
+  "description": "Curated hierarchical Philippine administrative boundaries (barangay, municipality, city classes, province, region) as per-class GeoJSON, with each polygon annotated with its canonical Philippine Standard Geographic Code (PSGC). Derived from PSA PSGC snapshots and NAMRIA administrative-boundary shapefiles (v2023-11-06). Includes a quarterly PSGC change history published as W3C ORG RDF linked data across 17 snapshots from 2021-08-19 to 2026-04-13.",
+  "url": "https://github.com/bendlikeabamboo/barangay-boundaries-repository",
+  "creator": {
+    "@type": "Person",
+    "name": "Manuel Balmeo",
+    "@id": "https://orcid.org/0000-0003-4815-858X"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Manuel Balmeo",
+    "@id": "https://orcid.org/0000-0003-4815-858X"
+  },
+  "license": "https://spdx.org/licenses/MIT.html",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "Philippines",
+    "barangay",
+    "PSGC",
+    "GeoJSON",
+    "boundaries",
+    "NAMRIA",
+    "shapefile",
+    "administrative boundaries",
+    "RDF",
+    "linked data",
+    "W3C ORG",
+    "provinces",
+    "municipalities",
+    "cities"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Philippines",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "4.5 116.9 21.2 126.6"
+    }
+  },
+  "temporalCoverage": "2021-08-19/2026-04-13",
+  "inLanguage": "en",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Curated hierarchical per-class GeoJSON bundle",
+      "encodingFormat": "application/zip+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/tag/v2026.4.13.0"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Barangay boundaries GeoJSON (curated per-class extract)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/releases/download/v2026.4.13.0/barangays.geojson"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Enriched GeoJSON (ADM0–ADM4, intermediate pipeline stage)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/tree/main/2023-10-24/enriched_t0p005"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Raw NAMRIA-converted GeoJSON (pre-enrichment, intermediate stage)",
+      "encodingFormat": "application/geo+json",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository/tree/main/2023-10-24/raw_t0p005"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "PSGC change-history RDF",
+      "encodingFormat": "text/turtle",
+      "contentUrl": "https://github.com/bendlikeabamboo/barangay-boundaries-repository"
+    }
+  ],
+  "citation": "https://github.com/bendlikeabamboo/barangay-boundaries-repository",
+  "publisher": {
+    "@type": "Person",
+    "name": "Manuel Balmeo",
+    "@id": "https://orcid.org/0000-0003-4815-858X"
+  }
+}
+</script>
+```

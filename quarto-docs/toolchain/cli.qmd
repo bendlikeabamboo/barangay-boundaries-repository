@@ -1,0 +1,57 @@
+---
+title: CLI reference (`brgybnd`)
+description: |
+  The 10 brgybnd CLI commands (Click): list, ingest, process, process-all, delta, convert-geo,
+  validate, coverage, enrich, build-hierarchical.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The `brgybnd` command-line tool (Click) exposes 10 subcommands covering both pipelines. Entry
+point: `barangay_boundaries_repository/cli:cli`.
+
+## Commands
+
+| Command                                                              | Source       | Purpose |
+|----------------------------------------------------------------------|--------------|---------|
+| `brgybnd list`                                                       | cli.py:34    | List PSGC snapshots |
+| `brgybnd ingest --date YYYY-MM-DD`                                   | cli.py:46    | Parse datafile + changes + press release |
+| `brgybnd process --date YYYY-MM-DD [--full] [--format ...]`          | cli.py:83    | Build full RDF or delta |
+| `brgybnd process-all`                                                | cli.py:158   | Generate all deltas |
+| `brgybnd delta --from DATE --to DATE`                                | cli.py:234   | Delta between two dates |
+| `brgybnd convert-geo [--levels] [--tolerance]`                       | cli.py:262   | Shapefile → GeoJSON |
+| `brgybnd validate --input FILE`                                      | cli.py:323   | Validate RDF + ORG conformance |
+| `brgybnd coverage --date DATE`                                       | cli.py:353   | PSGC vs GeoJSON coverage |
+| `brgybnd enrich --date DATE`                                         | cli.py:515   | Enrich GeoJSON with PSGC IDs |
+| `brgybnd build-hierarchical --date YYYY-MM-DD [--skip-...]`          | cli.py:566   | Run convert → enrich → classify → split, writes `hierarchical_t0p005/` |
+
+## Examples
+
+Each command writes into a `YYYY-MM-DD/` snapshot output directory.
+
+**End-to-end Pipeline B** (NAMRIA → curated per-class GeoJSON). Runs convert → enrich → classify →
+split and writes `hierarchical_t0p005/`:
+
+```bash
+brgybnd build-hierarchical --date 2023-10-24
+```
+
+**Single-snapshot RDF delta** (Pipeline A). Emits `delta.{ttl,nt,jsonld}` for one snapshot, in the
+chosen serialisation:
+
+```bash
+brgybnd process --date 2023-10-24 --format turtle
+```
+
+**Ad-hoc delta between two snapshots**, written to the `--to` directory:
+
+```bash
+brgybnd delta --from 2023-08-15 --to 2023-10-24
+```
+
+See [Pipeline A](pipeline-rdf.qmd) and [Pipeline B](pipeline-geo.qmd) for what each run produces, and
+[configuration](configuration.qmd) for the env vars the ingest/enrich steps expect.

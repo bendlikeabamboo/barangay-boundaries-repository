@@ -1,0 +1,80 @@
+---
+title: Entity & event URIs
+description: |
+  URI patterns in the PSGC change-history RDF: psgc:entity/{code}, psgc:event/{date}/{seq}, and
+  psgc:concept/{scheme}/{value}.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The RDF graph uses three URI patterns under the `psgc:` namespace.
+
+## URI patterns
+
+```
+psgc:entity/{code}              — entity URI
+psgc:event/{date}/{seq}         — change event URI (seq = 0001, 0002, ...)
+psgc:concept/{scheme}/{value}   — concept URI (for levels, classes, etc.)
+```
+
+- **`psgc:entity/{code}`** — one per Philippine administrative unit, keyed by its 10-digit PSGC
+  code (see [PSGC code structure](../references/psgc.qmd)). Identity across code changes is tracked
+  by the 9-digit correspondence code, not by this URI.
+
+- **`psgc:event/{date}/{seq}`** — one per detected change in a snapshot's delta; the `{seq}` suffix
+  (`0001`, `0002`, …) disambiguates multiple events on the same date.
+
+- **`psgc:concept/{scheme}/{value}`** — concept URIs for levels (region/province/…/barangay),
+  city classes (HUC/ICC/component), and other controlled vocabularies.
+
+## Worked examples
+
+Pulled verbatim from [`2023-10-24/delta.ttl`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/blob/main/2023-10-24/delta.ttl).
+
+**Entity URI.** A barangay that was created in this snapshot — note both the 10-digit PSGC code and
+the 9-digit correspondence code on `org:identifier`, the name on `skos:prefLabel`, and its level
+(`Bgy`) plus urban/rural classification as `org:classification` concepts:
+
+```turtle
+<https://psgc.gov.ph/entity/1381500036> a org:OrganizationalUnit ;
+    dct:date "2023-10-24"^^xsd:date ;
+    schema1:population 15103 ;
+    skos:prefLabel "Rizal"@en ;
+    org:classification <https://psgc.gov.ph/concept/geographic-level/Bgy>,
+        <https://psgc.gov.ph/concept/urban-rural/U> ;
+    org:identifier "137602033"^^xsd:string,
+        "1381500036"^^xsd:string,
+        "137602033"^^psgc:correspondence-code .
+```
+
+**Creation event URI.** A `creation` carries only the resulting organization:
+
+```turtle
+<https://psgc.gov.ph/event/2023-10-24/0000> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "Aniban 1 (Bgy) created"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/creation> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/0402103076> .
+```
+
+**Code-change event URI.** A re-coding carries both the original and the resulting entity, so a
+consumer can follow the identity from old code to new:
+
+```turtle
+<https://psgc.gov.ph/event/2023-10-24/0082> a org:ChangeEvent ;
+    dct:date "2023-10-24"^^xsd:date ;
+    dct:description "PSGC code changed from 1380300033 to 1381500036"@en ;
+    org:classification <https://psgc.gov.ph/concept/change-type/code_change> ;
+    org:originalOrganization <https://psgc.gov.ph/entity/1380300033> ;
+    org:resultingOrganization <https://psgc.gov.ph/entity/1381500036> .
+```
+
+**Transfer / source provenance.** There are **no** PROV-O triples in the committed deltas linking
+events to their PSA press release — the builder supports `dct:source` (legal basis) and
+`prov:generatedAtTime` (effective date) but the source data does not populate them. Until that gap
+closes, trace an event to its snapshot by the `dct:date` and the date embedded in the event URI
+(`/event/2023-10-24/...`). See [Change-event types › Known limitations](event-types.qmd).

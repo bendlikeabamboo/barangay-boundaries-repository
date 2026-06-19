@@ -1,0 +1,52 @@
+name: Quarto Pages
+
+# Manual-only for now. This workflow publishes the `quarto-docs/` Quarto site to
+# the `gh-pages` branch, which collides with the live MkDocs `Pages` workflow
+# (`.github/workflows/pages.yml`) that uses the GitHub Actions artifact deploy
+# mode. The two are mutually exclusive at the repo level — do NOT enable the
+# `push` trigger until the cutover documented in `quarto-docs/DEPLOYMENT.md`
+# has been executed (disable pages.yml, switch Pages source to the gh-pages
+# branch).
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - "quarto-docs/**"
+  #     - ".github/workflows/quarto-pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: quarto-pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Quarto
+        uses: quarto-dev/setup-quarto@v2
+
+      - name: Render site
+        run: quarto render quarto-docs/
+
+      - name: Publish to gh-pages branch
+        id: deployment
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: quarto-docs/_site
+          publish_branch: gh-pages
+          keep_files: false
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Publish Quarto site (${{ github.sha }})"

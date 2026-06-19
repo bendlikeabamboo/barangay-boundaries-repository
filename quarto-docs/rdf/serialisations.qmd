@@ -1,0 +1,58 @@
+---
+title: Serialisations
+description: |
+  The three serialisations shipped per PSGC snapshot (delta.ttl, delta.nt, delta.jsonld) and how to
+  pick between them.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Every snapshot directory ships the same delta in three RDF serialisations.
+
+## Formats
+
+| File              | Format        | When to use |
+|-------------------|---------------|-------------|
+| `delta.ttl`       | Turtle        | Human-readable, compact; default for browsing/editing |
+| `delta.nt`        | N-Triples     | Streaming / line-oriented ingestion; no prefix declarations |
+| `delta.jsonld`    | JSON-LD       | Web/JS consumers; embeddable in JSON pipelines; links to schema.org context |
+
+## Side-by-side
+
+The same statement (a barangay's English label) in all three formats, as actually shipped in
+`2023-10-24/`. Turtle is compact with prefix declarations; N-Triples is fully expanded and
+line-oriented; the JSON-LD is shipped in **expanded** form (full URIs, no `@context`).
+
+**Turtle** (`delta.ttl`):
+
+```turtle
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://psgc.gov.ph/entity/1381500036> skos:prefLabel "Rizal"@en .
+```
+
+**N-Triples** (`delta.nt`) — every term fully spelled out:
+
+```ntriples
+<https://psgc.gov.ph/entity/1381500036> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rizal"@en .
+```
+
+**JSON-LD** (`delta.jsonld`) — expanded, one node per object:
+
+```json
+{
+  "@id": "https://psgc.gov.ph/entity/1381500036",
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+    { "@language": "en", "@value": "Rizal" }
+  ]
+}
+```
+
+## Consistency across snapshots
+
+The three serialisations are generated from the same in-memory graph. Treat the Turtle file as
+canonical when the three disagree.

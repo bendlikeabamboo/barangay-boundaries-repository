@@ -1,0 +1,92 @@
+---
+title: Querying the PSGC RDF
+description: |
+  Starter queries against the PSGC change-history RDF: loading with rdflib and example SPARQL
+  patterns for creation, transfer, and merger events.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The delta files are plain RDF — load them with any RDF library and query with SPARQL.
+
+The delta files are plain RDF — load them with any RDF library and query with SPARQL.
+
+## Loading with rdflib
+
+```python
+from rdflib import Graph
+
+g = Graph()
+g.parse("2023-10-24/delta.ttl", format="turtle")
+print(len(g), "triples loaded")
+```
+
+Load several snapshots into one graph to query across time:
+
+```python
+import glob
+g = Graph()
+for ttl in glob.glob("20*/delta.ttl"):
+    g.parse(ttl, format="turtle")
+```
+
+## SPARQL recipes
+
+All three queries run against the committed `YYYY-MM-DD/delta.ttl` files. They use the predicates
+actually emitted — see [Entity & event URIs](uris.qmd) for the shapes.
+
+**1. List every `creation` event in a snapshot.** The event type is an `org:classification` link to
+a `psgc:concept/change-type/...` concept:
+
+```sparql
+prefix org:  <http://www.w3.org/ns/org#>
+prefix dct:  <http://purl.org/dc/terms/>
+prefix psgc: <https://psgc.gov.ph/>
+
+select ?event ?desc where {
+  ?event a org:ChangeEvent ;
+         org:classification psgc:concept/change-type/creation ;
+         dct:description ?desc .
+}
+order by ?event
+```
+
+**2. Trace an entity's history across snapshots via its correspondence code.** The 9-digit
+correspondence code (the identity that survives PSGC re-codings) is carried as a typed literal;
+`org:originalOrganization`/`org:resultingOrganization` link the two codes:
+
+```sparql
+prefix org:  <http://www.w3.org/ns/org#>
+prefix psgc: <https://psgc.gov.ph/>
+prefix xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+select ?ev ?entity ?code where {
+  ?entity org:identifier "137602033"^^psgc:correspondence-code ;
+          org:identifier ?code .
+  filter(str(?code) != "137602033")   # the 10-digit PSGC code, not the correspondence code
+  # which code_change events touch this correspondence code (the event URI embeds the snapshot date)
+  ?ev org:originalOrganization|org:resultingOrganization ?entity .
+}
+order by ?ev
+```
+
+**3. Count events by type per snapshot.** When several snapshots are loaded into one graph, group by
+the `dct:date` on each event and the change-type concept:
+
+```sparql
+prefix org: <http://www.w3.org/ns/org#>
+prefix dct: <http://purl.org/dc/terms/>
+
+select ?date ?type (count(?ev) as ?n) where {
+  ?ev a org:ChangeEvent ;
+      dct:date ?date ;
+      org:classification ?typeConcept .
+  bind(strafter(str(?typeConcept), "change-type/") as ?type)
+}
+group by ?date ?type
+order by ?date ?type
+```

@@ -1,0 +1,51 @@
+---
+title: Coverage & match quality
+description: |
+  PSGC ↔ NAMRIA polygon coverage and match-quality statistics per administrative level for the
+  curated Philippine boundaries GeoJSON (snapshot 2023-10-24).
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+Coverage measures how completely NAMRIA polygons were enriched with canonical **PSGC codes**.
+The headline figure for snapshot `2023-10-24` is **99.945% PSGC ↔ NAMRIA pcode match**.
+
+## Coverage by level
+
+| Level                 | File            | Features | Matched | Coverage |
+|-----------------------|-----------------|---------:|--------:|---------:|
+| ADM0                  | `adm0.geojson`  | 1        | 1       | 100.000% |
+| ADM1 Region           | `adm1.geojson`  | 17       | 17      | 100.000% |
+| ADM2 Province         | `adm2.geojson`  | 88       | 88      | 100.000% |
+| ADM3 Municipality/City| `adm3.geojson`  | 1,626    | 1,624   | 99.877%  |
+| ADM4 Barangay         | `adm4.geojson`  | 41,825   | 41,803  | 99.947%  |
+
+Per-class extracts (hierarchical) split cities by class (highly urbanized, independent component,
+component) and separate special geographic areas.
+
+## Per-level detail
+
+Per-level coverage breakdowns live on each per-class page:
+[barangays](barangays.qmd) ·
+[municipalities](municipalities.qmd) ·
+[cities](cities.qmd) ·
+[provinces](provinces.qmd) ·
+[regions](regions.qmd).
+
+## Known gaps
+
+::: {.callout-warning}
+
+- ~198 PSGC barangays (mostly in BARMM and Metro Manila) — and ~230 PSGC entities in total — have
+  no NAMRIA polygon.
+
+- 6 features could not be resolved to a PSGC entity (`unresolved.geojson`).
+- 1 component city (City of Isabela, Basilan) has no NAMRIA polygon.
+:::
+
+For how match confidence (`exact` / `huc_map` / `fuzzy`) is assigned, see
+[feature properties](properties.qmd) and the [HUC mapping](../references/huc-mapping.qmd) reference.

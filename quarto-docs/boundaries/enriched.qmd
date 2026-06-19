@@ -1,0 +1,53 @@
+---
+title: Enriched pipeline stage (`enriched_t0p005/`)
+description: |
+  The enriched intermediate pipeline stage: adm0–adm4.geojson with PSGC psgc_code / psgc_name /
+  psgc_status / match_confidence, output of enrich.py and input to the classifier.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The **enriched** tier is the intermediate enrichment stage of Pipeline B. It is the output of
+`enrich.py` and the input to `classifier.py`. It is kept in-repo for traceability — most users
+should use the curated [hierarchical per-class files](index.qmd) instead.
+
+## What it is
+
+`adm0`–`adm4.geojson` — the full NAMRIA polygon set at each administrative level, with each
+polygon annotated with its `psgc_code`, `psgc_name`, `psgc_status`, and `match_confidence`.
+
+::: {.callout-note}
+Intermediate pipeline stage — most users want the curated
+[hierarchical per-class files](index.qmd) instead.
+:::
+
+## File inventory
+
+Kept in-repo at `2023-10-24/enriched_t0p005/` for traceability:
+
+| File | Contents |
+|------|----------|
+| `adm0.geojson`–`adm4.geojson` | NAMRIA polygons at each admin level, each annotated with `psgc_code`, `psgc_name`, `psgc_status`, and `match_confidence` |
+| `diff.json` | PSGC-vs-NAMRIA reconciliation diff (matches, gaps, mismatches) |
+| `summary.md` | human-readable summary of the enrichment pass |
+
+`adm3` mixes municipalities **and** cities because this stage is **pre-classification** — features
+are not yet split by city class. The classifier + splitter (see
+[Pipeline B](../toolchain/pipeline-geo.qmd)) separate them into the curated per-class files.
+
+## Download (in-repo)
+
+Fetch a single file via `raw.githubusercontent.com`:
+
+```bash
+curl -O https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/enriched_t0p005/adm4.geojson
+```
+
+How enrichment works (name normalization + HUC mapping + fuzzy match) is documented in
+[Pipeline B](../toolchain/pipeline-geo.qmd); the HUC reconciliation in
+[HUC mapping](../references/huc-mapping.qmd); the `match_confidence` values (`exact` / `huc_map` /
+`fuzzy`) in [feature properties](properties.qmd).

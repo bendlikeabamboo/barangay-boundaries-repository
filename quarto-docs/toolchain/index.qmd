@@ -1,0 +1,82 @@
+---
+title: Toolchain
+description: |
+  Developer overview of the barangay-boundaries-repository toolchain: the brgybnd CLI, the two
+  parallel pipelines (PSGC → RDF and NAMRIA → hierarchical GeoJSON), tech stack, and install.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+The `brgybnd` CLI converts **PSA** PSGC Excel/PDF snapshots into RDF linked data (W3C ORG ontology)
+and matches **NAMRIA** shapefile boundaries with PSGC codes to produce **hierarchical per-class
+GeoJSON** — the curated end product — plus `enriched` and `raw` stages as intermediate pipeline
+outputs.
+
+## Tech stack
+
+Python 3.13 · Hatchling build · UV package manager · Click CLI · Pydantic v2 · rdflib · geopandas ·
+OpenAI-compatible LLM client.
+
+## Two parallel pipelines
+
+The repository runs two independent pipelines side by side:
+
+- **Pipeline A — PSGC → RDF.** Parses PSGC Excel/PDF snapshots, normalizes ~50 raw change types to
+  10 canonical ones, builds an ORG-ontology RDF graph, and computes per-snapshot deltas. See
+  [Pipeline A: PSGC → RDF](pipeline-rdf.qmd).
+
+- **Pipeline B — NAMRIA → hierarchical GeoJSON.** Converts NAMRIA shapefiles to GeoJSON, enriches
+  every polygon with its PSGC code (handling the [HUC mismatch](../references/huc-mapping.qmd)),
+  classifies features by PSGC type/class, and splits into per-class files. See
+  [Pipeline B: NAMRIA → hierarchical GeoJSON](pipeline-geo.qmd).
+
+## Data tiers
+
+Pipeline B produces three tiers: **raw** (NAMRIA-converted, pre-enrichment) → **enriched**
+(`adm0`–`adm4` annotated with `psgc_code`/`name`/`status`/`match_confidence`) → **hierarchical**
+(the curated per-class end product that GitHub Releases publish). See
+[Pipeline B](pipeline-geo.qmd) and the [Boundaries overview](../boundaries/index.qmd).
+
+## Install
+
+The project is managed with [UV](https://docs.astral.sh/uv/) and targets Python 3.13. From a clone of
+the repository:
+
+```bash
+# install dependencies into the project environment
+uv sync
+
+# expose the brgybnd CLI globally (optional)
+uv tool install .
+```
+
+This installs the `brgybnd` entry point (`barangay_boundaries_repository/cli:cli`) — see the
+[CLI reference](cli.qmd) for the 10 subcommands.
+
+### Required inputs
+
+`brgybnd` reads from two on-disk sources that are **not** committed to this repo (too large):
+
+- **PSGC snapshots** — live under `$PSGC_DATA_DIR` (default `~/commons/barangay`), in per-snapshot
+  `YYYY-MM-DD/` subdirectories of Excel/PDF files that `ingest/scanner.py` classifies. Set this in
+  [configuration](configuration.qmd) or via the `PSGC_DATA_DIR` environment variable.
+
+- **NAMRIA shapefiles** — committed under [`namria/`](https://github.com/bendlikeabamboo/barangay-boundaries-repository/tree/main/namria)
+  (`phl_admbnda_adm{0-4}_*.shp`, version 2023-11-06).
+
+The optional LLM batch-extraction step of [Pipeline A](pipeline-rdf.qmd) needs `OPENAI_API_KEY`
+(defaults target the GLM API). Everything else runs offline. See
+[configuration](configuration.qmd).
+
+For a copy-paste quick start (install + first run), see the
+[README](https://github.com/bendlikeabamboo/barangay-boundaries-repository#readme).
+
+## Where to next
+
+- [CLI reference](cli.qmd) — the 10 `brgybnd` commands
+- [Repository layout](repo-layout.qmd) — file map
+- [HUC mapping generation](huc-mapping.qmd)

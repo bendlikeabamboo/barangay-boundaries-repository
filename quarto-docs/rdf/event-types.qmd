@@ -1,0 +1,54 @@
+---
+title: Change-event types
+description: |
+  The canonical change-event types in the PSGC RDF deltas: the 10-type ChangeEvent.event_type enum
+  from models/schemas.py, and which seven compute_delta() actually emits (creation, deletion,
+  code_change, renaming, merger, split, transfer).
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+---
+
+`compute_delta()` (in `rdf/delta.py`) classifies the difference between two PSGC snapshots into a
+fixed set of canonical event types, emitted as `psgc:event/...` URIs (see [URIs](uris.qmd)).
+
+## Canonical event types
+
+The authoritative set is the `ChangeEvent.event_type` enum in `models/schemas.py` (10 types).
+`compute_delta()` actually **emits** these seven:
+
+- `creation` — a new entity appears in the later snapshot.
+- `deletion` — an entity disappears.
+- `code_change` — identity preserved (same correspondence code), but the 10-digit PSGC code changed.
+- `renaming` — name change, same identity.
+- `merger` — two or more entities combine into one.
+- `split` — one entity divides into two or more.
+- `transfer` — an entity moves to a different parent unit.
+
+The remaining three enum values — `reclassification`, `reenlistment`, and `unknown` — are modelled
+by the schema and accepted by the parser/RDF builder, but are not currently produced by
+`compute_delta()` (reclassifications, for example, surface as a `creation`+`deletion` pair today).
+
+## Per-type triple shape
+
+Every event is an `org:ChangeEvent` with a `dct:date` (the snapshot date), a `dct:description`, and
+an `org:classification` link to a `psgc:concept/change-type/{type}` concept. The difference between
+types is **which organization links** they carry:
+
+| Type | `org:originalOrganization` | `org:resultingOrganization` | Meaning |
+|------|:---:|:---:|---------|
+| `creation` | — | ✓ (1) | new entity appears |
+| `deletion` | ✓ (1) | — | entity disappears |
+| `code_change` | ✓ (1) | ✓ (1) | same identity, new 10-digit PSGC code |
+| `renaming` | ✓ (1) | ✓ (1) | name change, identity preserved |
+| `merger` | ✓ (n) | ✓ (1) | several entities combine into one |
+| `split` | ✓ (1) | ✓ (n) | one entity divides into several |
+| `transfer` | ✓ (1) | ✓ (1) | entity moves to a different parent |
+
+Worked examples of these links are in [Entity & event URIs](uris.qmd).
+
+Each committed delta carries the legal basis for its events via `dct:source`, the effective date via
+`prov:generatedAtTime`, and a human-readable summary via `dct:description`.

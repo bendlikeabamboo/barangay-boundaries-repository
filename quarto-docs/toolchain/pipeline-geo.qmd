@@ -1,0 +1,68 @@
+---
+title: Pipeline B — NAMRIA → hierarchical GeoJSON
+description: |
+  Pipeline B of the brgybnd toolchain: NAMRIA shapefiles converted to GeoJSON, enriched with PSGC
+  codes, classified by type/class, and split into the curated per-class hierarchical files.
+author: Manuel Balmeo
+format:
+  html:
+    toc: true
+    code-copy: true
+    lightbox: auto
+    mermaid:
+      theme: default
+---
+
+Pipeline B turns **NAMRIA** administrative-boundary shapefiles into the curated **hierarchical
+per-class GeoJSON** that is the dataset's recommended end product. Its intermediate stages —
+`raw` and `enriched` — are documented under [Boundaries](../boundaries/index.qmd).
+
+## Flow
+
+```{mermaid}
+flowchart LR
+  shp[("namria/phl_admbnda_adm{0-4}_*.shp<br/>v2023-11-06")]
+  conv["namria_converter.py<br/>shapefile → GeoJSON<br/>(Douglas-Peucker simplify, 0.005°)"]
+  raw[("stage 1:<br/>raw_t0p005/")]
+  cov["coverage.py<br/>PSGC pcode vs GeoJSON pcode"]
+  huc["generate_huc_mapping.py<br/>huc_adm2_mapping.json<br/>(HUCs, MM districts, SGAs)"]
+  enrich["enrich.py<br/>adds psgc_id / code / name / status / match_confidence"]
+  enr[("stage 2:<br/>enriched_t0p005/")]
+  cls["classifier.py<br/>assigns PSGC type/class"]
+  split["splitter.py<br/>per-class files"]
+  hier["hierarchical.py<br/>orchestrate classify → split → report"]
+  cur[("curated:<br/>hierarchical_t0p005/<br/>&lt;class&gt;.geojson +<br/>classification_report.json +<br/>summary.md")]
+
+  shp --> conv --> raw
+  raw --> cov --> huc --> enrich --> enr
+  enr --> cls --> split --> hier --> cur
+```
+
+## Stages
+
+- **`namria_converter.py`** — shapefile → GeoJSON (Douglas-Peucker simplify, default `0.005°`).
+  Output: [raw tier](../boundaries/raw.qmd).
+
+- **`coverage.py`** — PSGC pcode vs GeoJSON pcode comparison per admin level.
+- **`generate_huc_mapping.py`** — builds `huc_adm2_mapping.json` for HUCs, MM districts, and Special
+  Geographic Areas. See [HUC mapping generation](huc-mapping.qmd) and the
+  [HUC mapping reference](../references/huc-mapping.qmd).
+
+- **`enrich.py`** — adds `psgc_id`, `psgc_code`, `psgc_name`, `psgc_status`, `match_confidence`.
+  Output: [enriched tier](../boundaries/enriched.qmd).
+
+- **`classifier.py`** — assigns the PSGC type/class (barangay, HUC, ICC, component city, …) per
+  feature.
+
+- **`splitter.py`** — splits enriched features into per-class files.
+- **`hierarchical.py`** — orchestrates phases 3–5 (classify → split → report). Output: the curated
+  [hierarchical tier](../boundaries/index.qmd) plus `classification_report.json` and `summary.md`.
+
+## Running it
+
+```bash
+brgybnd build-hierarchical --date 2023-10-24
+```
+
+`build-hierarchical` runs convert → enrich → classify → split. Use `--skip-convert` /
+`--skip-enrich` to reuse existing intermediate stages. See the [CLI reference](cli.qmd).
